@@ -1,0 +1,17 @@
+Rs final from 10L: base Rs 71,78,036 | no regime (30.48%) Rs 1,09,26,003 -> regime filter cost in tune Rs 37,47,967 | no stop (25.59%) Rs 77,51,987 | no regime/no stop (32.54%) Rs 1,25,82,241
+25bps, STCG20/LTCG12.5: pre-tax 24.52% Rs 71,78,036 -> after-tax 20.59% Rs 53,82,324; tax paid Rs 10,56,606; drag 3.9pp
+25bps, taxed as business income at ~30% slab (STCG->30%): pre-tax 24.52% Rs 71,78,036 -> after-tax 18.66% Rs 46,53,620; tax paid Rs 14,44,999; drag 5.9pp
+100bps/side, STCG20/LTCG12.5: pre-tax 18.03% Rs 44,37,530 -> after-tax 15.12% Rs 35,44,835; tax paid Rs 6,38,873; drag 2.9pp
+50bps/side, STCG20/LTCG12.5: pre-tax 22.32% Rs 61,16,704 -> after-tax 18.74% Rs 46,81,345; tax paid Rs 8,98,213; drag 3.6pp
+share of days fully in cash: 26.9%
+
+Account size -> Rs loss at drawdown levels
+    Rs 10,00,000: -34% Rs 3,44,000 | -50% Rs 5,00,000 | -60% Rs 6,00,000 | 2018-style -22.9% yr Rs 2,29,000 | worst month -15.8% Rs 1,58,000
+    Rs 25,00,000: -34% Rs 8,60,000 | -50% Rs 12,50,000 | -60% Rs 15,00,000 | 2018-style -22.9% yr Rs 5,72,500 | worst month -15.8% Rs 3,95,000
+    Rs 50,00,000: -34% Rs 17,20,000 | -50% Rs 25,00,000 | -60% Rs 30,00,000 | 2018-style -22.9% yr Rs 11,45,000 | worst month -15.8% Rs 7,90,000
+  Rs 1,00,00,000: -34% Rs 34,40,000 | -50% Rs 50,00,000 | -60% Rs 60,00,000 | 2018-style -22.9% yr Rs 22,90,000 | worst month -15.8% Rs 15,80,000
+stops n 33  ; per stop avg weight ~ 1/15
+AUM Rs 10,00,000: position Rs 66,667; ADV needed at 10% participation Rs 6,66,667/day; exit-in-1-day at 20% part Rs 3,33,333; annual traded value Rs 71,00,000
+AUM Rs 1,00,00,000: position Rs 6,66,667; ADV needed at 10% participation Rs 66,66,667/day; exit-in-1-day at 20% part Rs 33,33,333; annual traded value Rs 7,10,00,000
+AUM Rs 5,00,00,000: position Rs 33,33,333; ADV needed at 10% participation Rs 3,33,33,333/day; exit-in-1-day at 20% part Rs 1,66,66,667; annual traded value Rs 35,50,00,000
+AUM Rs 10,00,00,000: position Rs 66,66,667; ADV needed at 10% participation Rs 6,66,66,667/day; exit-in-1-day at 20% part Rs 3,33,33,333; annual traded value Rs 71,00,00,000

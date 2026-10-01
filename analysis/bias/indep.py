@@ -26,6 +26,7 @@ def signals(px, bench, top_n=15, lookback=252, skip=21, ma=200, start="2010-01-0
         mom = P[i-skip] / P[i-lookback] - 1
         ok = has & (cur > ma_v) & (mom > 0) & (cur >= 0.75*hi)
         ok = ok & ~np.isnan(mom)
+        if not filt: ok = ~np.isnan(cur) & ~np.isnan(mom)       # 'random_all' universe: any name with a price and a momentum value
         idx = np.where(ok)[0]
         idx = idx[np.argsort(-mom[idx], kind="stable")]
         out[i] = (list(idx), bool(breg[i]))

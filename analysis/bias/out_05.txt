@@ -1,0 +1,32 @@
+base {'CAGR': 0.2451980067456303, 'MaxDD': -0.3441969926488835, 'Sharpe': 1.2885752778588777}
+trades overlapping a stale run>=5 bars or a >40% 1-day move: 4 of 446 (0.9%); share of sum pnl 5.3%
+              name      edate      xdate       ret    why
+253  AVANTIFEED.NS 2014-03-03 2015-05-04  3.133157  rebal
+26    KIRLOSENG.NS 2010-06-01 2010-07-01  1.266208  rebal
+162   DEEPAKNTR.NS 2013-04-01 2013-07-01 -0.036765  rebal
+174   MINDACORP.NS 2013-04-01 2013-08-01 -0.042904  rebal
+cleaned: masked names ['ABBOTINDIA.NS', 'AVANTIFEED.NS', 'CDSL.NS', 'CHOLAHLDNG.NS', 'FSL.NS', 'GALLANTT.NS', 'GVT&D.NS', 'HFCL.NS', 'J&KBANK.NS', 'JSL.NS', 'KIRLOSBROS.NS', 'KIRLOSENG.NS', 'MINDACORP.NS', 'NESTLEIND.NS', 'TECHNOE.NS', 'WHIRLPOOL.NS', 'ZENSARTECH.NS']
+CLEANED data: {'CAGR': 0.24148009592159814, 'MaxDD': -0.3441969926488837, 'Sharpe': 1.279720002019905}
+
+Top 10 names by share of total P&L (sum over trades of entry value x return):
+               share_of_pnl  n_trades
+name                                 
+HEGAM.NS              0.222         2
+GRAPHITE.NS           0.120         2
+PCBL.NS               0.068         7
+JBMA.NS               0.067         1
+UNOMINDA.NS           0.058         7
+HSCL.NS               0.054         5
+GRAVITA.NS            0.050         5
+AVANTIFEED.NS         0.048         7
+KEI.NS                0.042         5
+WELSPUNLIV.NS         0.037        10
+top3 share 41.1%, top5 53.6%, top10 76.6% | names traded 176
+drop top 0 [] {'CAGR': 0.2452, 'MaxDD': -0.3442, 'Sharpe': 1.2886}
+drop top 1 ['HEGAM.NS'] {'CAGR': 0.2255, 'MaxDD': -0.376, 'Sharpe': 1.2118}
+drop top 3 ['HEGAM.NS', 'GRAPHITE.NS', 'PCBL.NS'] {'CAGR': 0.213, 'MaxDD': -0.3706, 'Sharpe': 1.173}
+drop top 5 ['HEGAM.NS', 'GRAPHITE.NS', 'PCBL.NS', 'JBMA.NS', 'UNOMINDA.NS'] {'CAGR': 0.1929, 'MaxDD': -0.3797, 'Sharpe': 1.0829}
+drop top 10 ['HEGAM.NS', 'GRAPHITE.NS', 'PCBL.NS', 'JBMA.NS', 'UNOMINDA.NS', 'HSCL.NS', 'GRAVITA.NS', 'AVANTIFEED.NS', 'KEI.NS', 'WELSPUNLIV.NS'] {'CAGR': 0.1741, 'MaxDD': -0.3637, 'Sharpe': 0.9998}
+drop 3 random traded names: CAGR mean 0.2512 sd 0.0065 min 0.2232
+cleaned + drop top3: {'CAGR': 0.2093345255683956, 'MaxDD': -0.37055779927797505, 'Sharpe': 1.1630186320983458}
+trade P&L: median ret 0.014, mean 0.106; share of trades >= +50%: 0.074; sum pnl positive from top-decile trades 125.8%

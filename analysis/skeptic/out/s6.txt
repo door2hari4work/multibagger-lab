@@ -1,0 +1,52 @@
+breadth (% of valid names above own 200DMA) -- ffilled prices; sample: 0.85 0.69 0.87 0.13 0.82 0.47
+
+EW 272 survivors: buy&hold CAGR 22.85% MaxDD -31.2% | monthly-rebal 19.04% / -34.1% | daily-rebal 19.51% / -33.3%
+bt.buy_hold(all 499, ffill, fillna0 mean): 12.12% / -20.4%
+EW survivors buy&hold, one LTCG exit at end: pre-tax 22.85% -> after-tax 21.32%
+
+NAV-unit P&L: names alive 2010-01-04 6.21 (92%); names first priced after 2010-01-04 0.56 (8%); the latter = 227 later-listed/ later-priced tickers (IPOs, demergers, or data starts) -> in 2010 they were NOT index members
+top-10 contributors: first price date / 2010 adj price :
+  HEGAM.NS        1.20  first 2009-01-02  px at first 15.6  px 2018-12 638.7
+  GRAPHITE.NS     0.72  first 2009-01-02  px at first 20.1  px 2018-12 613.3
+  UNOMINDA.NS     0.54  first 2009-01-02  px at first 2.8  px 2018-12 157.9
+  HSCL.NS         0.43  first 2009-01-02  px at first 12.4  px 2018-12 129.4
+  KEI.NS          0.39  first 2009-01-02  px at first 13.6  px 2018-12 352.5
+  WELSPUNLIV.NS   0.35  first 2009-01-02  px at first 1.9  px 2018-12 56.4
+  JBMA.NS         0.35  first 2009-01-02  px at first 0.9  px 2018-12 59.7
+  GRAVITA.NS      0.30  first 2010-11-16  px at first 36.5  px 2018-12 72.1
+  AVANTIFEED.NS   0.30  first 2010-01-08  px at first 1.2  px 2018-12 350.0
+  PCBL.NS         0.28  first 2009-01-02  px at first 2.5  px 2018-12 79.2
+
+BREADTH TERCILE (month-end breadth -> NEXT month): ranges {'low': {'min': 0.14, 'max': 0.48}, 'mid': {'min': 0.53, 'max': 0.74}, 'high': {'min': 0.75, 'max': 0.97}}
+       strat   nifty      ew
+terc                        
+low  -0.0040  0.0086  0.0060
+mid   0.0175  0.0039  0.0076
+high  0.0479  0.0130  0.0172
+share of months strat<0: {'low': 0.36, 'mid': 0.29, 'high': 0.22}
+Nifty>200DMA but breadth<35%: months 5; strat next-mo mean 0.20% (<0 in 60%), nifty 0.71%, ew 1.07%
+Nifty>200DMA but breadth<45%: months 12; strat next-mo mean 0.29% (<0 in 58%), nifty -0.14%, ew -0.12%
+
+2017-12..2018-12 month-end breadth / strat / nifty / ew
+            breadth  regime_on  strat  nifty     ew
+2017-12-31    0.830       True  0.061  0.030  0.037
+2018-01-31    0.743       True  0.044  0.047 -0.007
+2018-02-28    0.604       True -0.058 -0.049 -0.022
+2018-03-31    0.464      False -0.061 -0.036 -0.040
+2018-04-30    0.597       True  0.036  0.062  0.050
+2018-05-31    0.430       True -0.026 -0.000 -0.035
+2018-06-30    0.300       True -0.072 -0.002 -0.036
+2018-07-31    0.365       True  0.050  0.060  0.036
+2018-08-31    0.467       True  0.059  0.029  0.028
+2018-09-30    0.249       True -0.158 -0.064 -0.093
+2018-10-31    0.223      False -0.022 -0.050 -0.001
+2018-11-30    0.308       True -0.001  0.047  0.018
+2018-12-31    0.397       True -0.025 -0.001  0.020
+DD 2018-01-15->2018-10-09: breadth 87% -> 13%
+DD 2016-10-25->2016-12-26: breadth 82% -> 47%
+DD 2010-11-10->2011-04-01: breadth 85% -> 40%
+DD 2013-01-29->2013-04-12: breadth 69% -> 31%
+breadth 0%-30%: days 246, next-63d strat mean 1.1%, worst -15.1%, %neg 20%
+breadth 30%-60%: days 796, next-63d strat mean 1.2%, worst -20.9%, %neg 28%
+breadth 60%-80%: days 708, next-63d strat mean 9.5%, worst -20.8%, %neg 26%
+breadth 80%-100%: days 473, next-63d strat mean 14.4%, worst -23.0%, %neg 26%

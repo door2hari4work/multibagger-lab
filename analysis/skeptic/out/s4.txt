@@ -1,0 +1,25 @@
+=== KIRLOSENG around 2010-06-24 ===
+Date
+2010-06-18    126.29
+2010-06-21    126.29
+2010-06-22    126.29
+2010-06-23    126.29
+2010-06-24    310.83
+2010-06-25    325.87
+2010-06-28    307.79
+2010-06-29    287.03
+2010-06-30    291.27
+
+=== all days >+25% or <-25% in tune window, with strategy NAV-unit contribution that day ===
+n: 38 | held on the day: 2
+/home/user/multibagger-lab/analysis/skeptic/s4_base_rates.py:11: UserWarning: obj.round has no effect with datetime, timedelta, or period dtypes. Use obj.dt.round(...) instead.
+  print(X[X.contrib!=0].round(3).to_string())
+        date        ticker    ret  contrib
+4 2010-06-24  KIRLOSENG.NS  1.461    0.111
+7 2010-12-24  KIRLOSENG.NS -0.390   -0.043
+
+=== Forward 3y 5x base rate by month-end entry (names with data) ===
+unconditional: P(max within 3y >=5x) = 9.1%  (n=21491); >=2x 48.5%
+rule-selected (top-15, regime on): P(5x in 3y) = 15.4% (n=765); P(2x in 3y) = 61.4%
+-> rule's precision for 5x over ex-ante; compare with unconditional (hindsight on survivors).
+selected names drawing down >=30% below entry within 12m (ignoring stop): 23.4% (n=765)

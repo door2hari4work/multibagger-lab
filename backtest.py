@@ -132,7 +132,8 @@ def metrics(eq, trades=None):
     return out
 
 def buy_hold(px):
-    r = px.ffill().pct_change().fillna(0).mean(axis=1)
+    # average only over names that have a price on both days; fillna(0) before the mean would count unlisted names as 0% returns
+    r = px.pct_change(fill_method=None).mean(axis=1).fillna(0)
     return (1 + r).cumprod()
 
 def periods(eq, bench, splits):

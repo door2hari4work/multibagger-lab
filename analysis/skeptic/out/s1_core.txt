@@ -27,3 +27,4 @@ PCBL.NS          0.283
 drop top-3 winners from universe       CAGR 21.059% MaxDD -41.05%
 drop top-5 winners from universe       CAGR 20.306% MaxDD -38.24%
 drop top-10 winners from universe      CAGR 17.413% MaxDD -36.37%
+random 75% subuniverse CAGR: [0.308 0.273 0.263 0.275 0.251]

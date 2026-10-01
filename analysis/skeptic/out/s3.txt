@@ -1,0 +1,95 @@
+=== DATA GLITCH SCAN (single-day moves in tune window) ===
+days with >+50% : 3  days with < -40%: 4
+Date        Ticker       
+2010-01-08  NESTLEIND.NS    -0.76
+2015-11-19  JSL.NS          -0.61
+2017-02-27  J&KBANK.NS      -0.54
+2017-07-03  CDSL.NS         -0.50
+2010-06-24  KIRLOSENG.NS     1.46
+2010-01-08  ABBOTINDIA.NS    1.88
+            WHIRLPOOL.NS     5.70
+Date        Ticker       
+2010-01-08  NESTLEIND.NS    -0.76
+2015-11-19  JSL.NS          -0.61
+2017-02-27  J&KBANK.NS      -0.54
+2017-07-03  CDSL.NS         -0.50
+2010-06-24  KIRLOSENG.NS     1.46
+2010-01-08  ABBOTINDIA.NS    1.88
+            WHIRLPOOL.NS     5.70
+
+=== TOP CONTRIBUTORS: price path check ===
+HEGAM.NS       first 2010-01-04 px 53.5->638.7 max/min over window ratio 40.9x; max 1d +20% min 1d -11%; NAV contrib 1.20
+GRAPHITE.NS    first 2010-01-04 px 49.1->613.3 max/min over window ratio 21.4x; max 1d +20% min 1d -10%; NAV contrib 0.72
+UNOMINDA.NS    first 2010-01-04 px 7.1->157.9 max/min over window ratio 55.6x; max 1d +20% min 1d -11%; NAV contrib 0.54
+HSCL.NS        first 2010-01-04 px 41.9->129.4 max/min over window ratio 15.5x; max 1d +20% min 1d -16%; NAV contrib 0.43
+KEI.NS         first 2010-01-04 px 30.5->352.5 max/min over window ratio 71.1x; max 1d +20% min 1d -15%; NAV contrib 0.39
+WELSPUNLIV.NS  first 2010-01-04 px 7.8->56.4 max/min over window ratio 58.5x; max 1d +19% min 1d -20%; NAV contrib 0.35
+JBMA.NS        first 2010-01-04 px 2.4->59.7 max/min over window ratio 61.1x; max 1d +20% min 1d -19%; NAV contrib 0.35
+GRAVITA.NS     first 2010-11-16 px 36.5->72.1 max/min over window ratio 12.3x; max 1d +20% min 1d -20%; NAV contrib 0.30
+
+Total NAV-unit P&L 6.77 (sum of positive 10.17, negative -3.40); names ever held: 179
+top- 1 names = 12% of gross profit, 18% of net P&L
+top- 3 names = 24% of gross profit, 36% of net P&L
+top- 5 names = 32% of gross profit, 49% of net P&L
+top-10 names = 48% of gross profit, 72% of net P&L
+top-20 names = 68% of gross profit, 101% of net P&L
+P&L by year (NAV units, additive):
+Date
+2010    0.57
+2011   -0.14
+2012    0.33
+2013    0.10
+2014    2.14
+2015    0.80
+2016   -0.18
+2017    5.09
+2018   -1.93
+
+=== MULTI-BAGGER BASE RATES (2010-01 to 2018-12) ===
+Traceback (most recent call last):
+  File "pandas/_libs/index.pyx", line 660, in pandas._libs.index.DatetimeEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 2761, in pandas._libs.hashtable.Int64HashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 2785, in pandas._libs.hashtable.Int64HashTable.get_item
+KeyError: 1262304000000
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/pandas/core/indexes/base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 628, in pandas._libs.index.DatetimeEngine.get_loc
+  File "pandas/_libs/index.pyx", line 662, in pandas._libs.index.DatetimeEngine.get_loc
+KeyError: Timestamp('2010-01-01 00:00:00')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/pandas/core/indexes/datetimes.py", line 996, in get_loc
+    return Index.get_loc(self, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: Timestamp('2010-01-01 00:00:00')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/multibagger-lab/analysis/skeptic/s3_5x_glitch.py", line 33, in <module>
+    alive=px.loc[START].notna()
+          ~~~~~~^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pandas/core/indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pandas/core/indexing.py", line 1449, in _getitem_axis
+    return self._get_label(key, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pandas/core/indexing.py", line 1399, in _get_label
+    return self.obj.xs(label, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pandas/core/generic.py", line 4241, in xs
+    loc = index.get_loc(key)
+          ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pandas/core/indexes/datetimes.py", line 998, in get_loc
+    raise KeyError(orig_key) from err
+KeyError: Timestamp('2010-01-01 00:00:00')

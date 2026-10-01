@@ -1,0 +1,61 @@
+=== BREADTH / NARROWNESS: strategy next-month return by breadth tercile at month-end ===
+       strat   nifty      ew
+        mean    mean    mean
+terc                        
+low   0.0186  0.0177  0.0123
+mid  -0.0012 -0.0033  0.0003
+high  0.0435  0.0108  0.0179
+n per bucket {'low': 36, 'high': 36, 'mid': 35}
+share of months strat<0: {'low': 0.36, 'mid': 0.29, 'high': 0.22}
+by 3m change in breadth:
+          strat   nifty      ew
+bchg                           
+falling  0.0151  0.0145  0.0155
+flat     0.0289  0.0041  0.0037
+rising   0.0177  0.0068  0.0115
+
+'Nifty>200DMA but <30% of names above own 200DMA' (filter ON, market narrow): months 28 | strat next-month mean 0.0236 | ew mean 0.0055
+2018 detail (month-end breadth, regime state, strategy month return):
+            breadth  regime_on  strat_m  nifty_m   ew_m
+2017-12-31    0.792       True    0.061    0.030  0.037
+2018-01-31    0.709       True    0.044    0.047 -0.007
+2018-02-28    0.575       True   -0.058   -0.049 -0.022
+2018-03-31    0.440      False   -0.061   -0.036 -0.040
+2018-04-30    0.568       True    0.036    0.062  0.050
+2018-05-31    0.409       True   -0.026   -0.000 -0.035
+2018-06-30    0.286       True   -0.072   -0.002 -0.036
+2018-07-31    0.350       True    0.050    0.060  0.036
+2018-08-31    0.452       True    0.059    0.029  0.028
+2018-09-30    0.241       True   -0.158   -0.064 -0.093
+2018-10-31    0.214      False   -0.022   -0.050 -0.001
+2018-11-30    0.297       True   -0.001    0.047  0.018
+2018-12-31    0.382       True   -0.025   -0.001  0.020
+
+=== MOMENTUM-CRASH CHECK: worst 8 strategy months vs Nifty/EW same month ===
+2018-09 strat -15.8%  nifty -6.4%  ew-universe -9.3%  regime_on(prev ME) True
+2016-11 strat -14.2%  nifty -4.8%  ew-universe -3.3%  regime_on(prev ME) True
+2011-01 strat -11.8%  nifty -10.2%  ew-universe -6.3%  regime_on(prev ME) True
+2013-02 strat -9.1%  nifty -5.7%  ew-universe -5.8%  regime_on(prev ME) True
+2015-08 strat -7.8%  nifty -6.6%  ew-universe -3.3%  regime_on(prev ME) True
+2016-12 strat -7.5%  nifty -0.5%  ew-universe -1.2%  regime_on(prev ME) True
+2018-06 strat -7.2%  nifty -0.2%  ew-universe -3.6%  regime_on(prev ME) True
+2018-03 strat -6.1%  nifty -3.6%  ew-universe -4.0%  regime_on(prev ME) True
+worst 12m strategy window:  2018-12-26 -20.1%
+monthly beta to Nifty 0.60; downside capture (Nifty<0 months) 0.35; strat avg in Nifty<-3% months -3.64% (n=22) vs nifty -5.41%
+
+=== TAX (illustrative; assumed live-era rules) ===
+realised events 802; share of realised gain that is short-term: 94.2% (by gross gains)
+STCG 20% / LTCG 12.5% above Rs 1.25L (post-Jul-2024 rule, ASSUMED for all years): pre-tax final Rs 71,78,036 CAGR 24.52% | after-tax final Rs 53,82,324 CAGR 20.59% | total tax paid Rs 10,56,606 | tax drag 3.9 pp/yr
+   FY (np.int64(2010), 6208, 0, 1291)
+   FY (np.int64(2011), 325248, 0, 67652)
+   FY (np.int64(2012), 58151, 0, 12095)
+   FY (np.int64(2013), 102384, 0, 21296)
+   FY (np.int64(2014), 78369, 58883, 16301)
+   FY (np.int64(2015), 1580613, 0, 328767)
+   FY (np.int64(2016), 802825, 240143, 181956)
+   FY (np.int64(2017), -51676, 0, 0)
+   FY (np.int64(2018), 1663308, 318169, 371080)
+   FY (np.int64(2019), 270034, 0, 56167)
+STCG 15% / LTCG 10% above Rs 1L (2019-Jul2024 rule): pre-tax final Rs 71,78,036 CAGR 24.52% | after-tax final Rs 57,83,060 CAGR 21.56% | total tax paid Rs 8,32,419 | tax drag 3.0 pp/yr
+Nifty buy&hold single exit: pre 8.47% after-tax CAGR 7.73%
+turnover 7.1x NAV/yr; on average NAV Rs 30L (illustrative) this is Rs 213L traded per year; STT 0.1%*each side etc

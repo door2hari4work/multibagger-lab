@@ -1,0 +1,49 @@
+=== HEADLINE ===
+strategy CAGR 24.52% MaxDD -34.42% final Rs 71,78,036; Nifty price CAGR 8.47% MaxDD -27.89%
+Rs max drawdown on Rs 10L: Rs 36,42,242
+
+=== WORST STRATEGY DRAWDOWN EPISODES ===
+peak 2018-01-15 trough 2018-10-09 recover NOT RECOVERED | strat -34.4% (Rs Rs 36,42,242) | Nifty -4.1% (maxdd in window -12.2%) | 267d down | Nifty>200DMA 93% of days | breadth(%>200d) at peak 83% trough 13%
+   worst contributors (NAV units): PCBL -0.538, GPIL -0.354, AVANTIFEED -0.256, GRAVITA -0.235, RADICO -0.227
+   regime state at month-ends in window: 0.89  n_eligible avg 136.3
+peak 2016-10-25 trough 2016-12-26 recover 2017-05-11 | strat -23.5% (Rs Rs 12,91,743) | Nifty -9.0% (maxdd in window -9.0%) | 62d down | Nifty>200DMA 42% of days | breadth(%>200d) at peak 79% trough 45%
+   worst contributors (NAV units): SARDAEN -0.159, ESCORTS -0.138, CHOLAFIN -0.119, BAJFINANCE -0.115, MUTHOOTFIN -0.100
+   regime state at month-ends in window: 1.0  n_eligible avg 192.0
+peak 2010-11-10 trough 2011-04-01 recover 2012-11-06 | strat -23.2% (Rs Rs 4,00,736) | Nifty -7.2% (maxdd in window -16.7%) | 142d down | Nifty>200DMA 59% of days | breadth(%>200d) at peak 3% trough 39%
+   worst contributors (NAV units): PFOCUS -0.063, KIRLOSENG -0.044, COROMANDEL -0.033, TVSMOTOR -0.032, WHIRLPOOL -0.030
+   regime state at month-ends in window: 0.6  n_eligible avg 107.4
+peak 2013-01-29 trough 2013-04-12 recover 2013-12-20 | strat -14.5% (Rs Rs 2,55,968) | Nifty -8.6% (maxdd in window -9.3%) | 73d down | Nifty>200DMA 87% of days | breadth(%>200d) at peak 0% trough 0%
+   worst contributors (NAV units): PGEL -0.054, BBOX -0.037, THANGAMAYL -0.023, AARTIIND -0.023, ARE&M -0.021
+   regime state at month-ends in window: 1.0  n_eligible avg 127.3
+longest underwater stretch (days): 493  | % of days >10% below peak: 45% | >20% below: 9%
+rolling 12m: strat <0 18% | strat<Nifty 28% | worst 12m -20.1% | 5th pct -11.2%
+calendar-year strat vs Nifty:
+            strat  nifty   diff
+2010-12-31  0.546  0.172  0.374
+2011-12-31 -0.103 -0.246  0.143
+2012-12-31  0.218  0.277 -0.059
+2013-12-31  0.042  0.068 -0.026
+2014-12-31  1.193  0.314  0.879
+2015-12-31  0.187 -0.041  0.227
+2016-12-31 -0.057  0.030 -0.087
+2017-12-31  1.155  0.286  0.868
+2018-12-31 -0.229  0.032 -0.260
+
+=== REGIME FILTER ===
+month-ends: 120; filter ON 69%; state flips 19; months in cash(<15 sel) 12; avg names selected 13.5/15; months with <15 eligible 12
+Nifty next-month return when filter ON  : mean 0.57%, %pos 52%
+Nifty next-month return when filter OFF : mean 1.64%, %pos 61%  (n=28)
+OFF months where Nifty rose >3% next month (missed): 14 of 28 ; avg missed gain 0.065331206096334
+prev month-end state ON=False: n=28 strat mean 0.09% bench mean 1.64%
+prev month-end state ON=True: n=79 strat mean 2.75% bench mean 0.57%
+
+=== STOPS ===
+stop exits: 33 | rebalance exits: 413 | per year ~ 3.7
+stop exits: avg exit vs peak -32.0% (nominal -30%), worst -47.0%; avg gap below trigger -2.9%; avg trade pnl 8.7%, %winners 21%
+after stop, +63d: price above exit price 53% (n=30), mean +6.8%, median +2.7%
+after stop, +126d: price above exit price 54% (n=28), mean +19.6%, median +7.5%
+after stop, +252d: price above exit price 56% (n=25), mean +42.9%, median +25.0%
+regained prior peak within 252d: 50%; re-selected by rule within ~3m: 45%
+
+=== TURNOVER / COST === one-way traded/yr 7.10x NAV; model cost drag 1.78% NAV/yr (25bps/side)
+  at 50bps/side drag 3.55%/yr; STT 0.1% each side + stamp 0.015% buy alone = 0.76%/yr (before spread/impact)

@@ -6,8 +6,8 @@ dates = px.index
 rows=[]
 for y in range(2010, 2019):
     d = px.loc[f"{y}-01-01":].index[0]
-    hist = px.loc[:d]
-    listed = int(hist.iloc[-1].notna().sum())
+    hist = px.ffill().loc[:d]      # same ffill the engine applies
+    listed = int(px.loc[:d].iloc[-1].notna().sum())
     elig = int((hist.iloc[-252:].notna().all()).sum())          # >=252 clean bars, i.e. signal-eligible
     rows.append(dict(year_start=d.date(), with_price=listed, signal_eligible=elig, slots=500,
                      pct_slots_covered=round(100*listed/500,1)))

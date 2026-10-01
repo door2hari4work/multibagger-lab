@@ -1,0 +1,47 @@
+=== MULTI-BAGGER BASE RATES (2010-01 to 2018-12) ===
+names with data at 2010-01-04: 272 | total tickers with >=1y data in window: 346
+buy&hold 5x (2010->2018 end/start>=5) among alive-at-start: 90 | >=3x: 140 | <1x (lost money): 53
+names with an in-window trough->peak >=5x: 206 (runs <=3y: 12 )
+               drawup  run_days  pct_days_held  ever_held  nav_contrib
+ticker                                                                
+AVANTIFEED.NS  784.28      2683           0.26       True         0.62
+AJANTPHARM.NS  145.81      2462           0.35       True         0.17
+BAJFINANCE.NS  115.74      3107           0.18       True        -0.06
+WHIRLPOOL.NS    85.27      3159           0.14       True         0.06
+KEI.NS          71.07      1696           0.28       True         0.45
+ASTRAL.NS       70.89      3256           0.16       True         0.18
+EICHERMOT.NS    66.98      2761           0.14       True         0.06
+JBMA.NS         61.14      1543           0.13       True         0.35
+MINDACORP.NS    60.00      2110           0.09       True        -0.04
+WELSPUNLIV.NS   58.53      1639           0.26       True         0.38
+UNOMINDA.NS     55.56      1604           0.32       True         0.56
+ATUL.NS         51.37      3217           0.09       True        -0.05
+NATCOPHARM.NS   51.31      2688           0.07       True         0.01
+CANFINHOME.NS   51.05      2641           0.05       True         0.13
+PCBL.NS         49.69      1610           0.27       True         0.86
+PAGEIND.NS      49.52      3085           0.08       True         0.11
+AARTIIND.NS     43.46      3191           0.06       True         0.01
+HEGAM.NS        40.92       963           0.39       True         1.32
+OLECTRA.NS      38.17      1656           0.16       True        -0.00
+LTFOODS.NS      34.19      2028           0.12       True         0.02
+ABBOTINDIA.NS   33.78      3171           0.08       True         0.02
+CCL.NS          33.72      1889           0.21       True         0.15
+KAJARIACER.NS   33.29      2903           0.09       True        -0.01
+FINCABLES.NS    33.16      2226           0.07       True         0.07
+CEATLTD.NS      32.19      2197           0.16       True         0.18
+of 206 names with >=5x run: ever held during run 145 (70%); held >=50% of run days 1; mean pct days held 7%
+sum NAV contribution from these during their runs: 11.29 of net 6.77
+
+trades: 446, hit rate 55%, mean 10.6%, median 1.4%, >=+100% 3.1%, >=+300% 0.2% (5x) , <=-30% 2.0%, worst -47%
+holding days: median 60.0 | share held <365d: 99%
+trades >=5x count: 1
+
+=== GLITCH DAYS: was the strategy holding the name? (NAV-unit contribution on that day) ===
+2010-06-24 KIRLOSENG.NS contrib 0.1111 ret 1.46
+2015-11-19 JSL.NS contrib -0.0 ret -0.61
+2017-02-27 J&KBANK.NS contrib -0.0 ret -0.54
+2017-07-03 CDSL.NS contrib -0.0 ret -0.5
+2010-01-08 WHIRLPOOL.NS contrib 0.0 ret 5.7
+HEGAM.NS best single day NAV contrib 0.111 2018-02-07 | share of its total 0.09
+GRAPHITE.NS best single day NAV contrib 0.084 2017-09-15 | share of its total 0.12
+UNOMINDA.NS best single day NAV contrib 0.088 2018-05-23 | share of its total 0.16
