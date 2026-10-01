@@ -15,3 +15,10 @@ Known data hazards to resolve before trusting any result:
 - Renames/mergers breaking symbol continuity (e.g. HDFC -> HDFC Bank).
 - Adjusted vs unadjusted prices mixed.
 - Restated fundamentals overwriting originally reported values.
+
+## STATUS (as built by fetch_data.py)
+- Universe = TODAY's Nifty 500 (nifty500_current.csv), Yahoo adjusted closes. SURVIVORSHIP-BIASED: only 272 names have
+  data on 2010-01-04; every delisted/dropped name (e.g. DHFL, Satyam) is absent. Treat all results as an UPPER BOUND.
+- Benchmark = ^NSEI price index (no dividends). Nifty 50 TRI not available from Yahoo.
+- No point-in-time fundamentals and no point-in-time membership exist yet.
+- prices_tune.parquet / bench_tune.parquet: 2009-2018 (agents may read). *_SEALED.parquet: 2019+ (do not read).

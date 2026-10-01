@@ -16,12 +16,26 @@ def load_prices(tickers, start):
     df = yf.download(tickers, start=start, auto_adjust=True, progress=False)["Close"]
     return df.dropna(how="all")
 
+def apply_end_policy(px, policy="zero"):
+    """Series that END before the sample does (delisted/suspended) must not be ffilled at their last price.
+    policy="zero": price collapses to ~0 the day after the last print (worst case; honest default)
+    policy="last": old behaviour, dead name keeps last price (flatters results; use only to measure the bias)."""
+    px = px.copy()
+    if policy == "last":
+        return px
+    last = px.apply(lambda s: s.last_valid_index())
+    for t, d in last.items():
+        if d is not None and d < px.index[-1] - pd.Timedelta(days=10):
+            nxt = px.index[px.index > d][0]
+            px.loc[nxt:, t] = px.at[d, t] * 1e-4
+    return px
+
 def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
-             mode="momentum", lookback=252, skip=21, ma=200, seed=0):
+             mode="momentum", lookback=252, skip=21, ma=200, seed=0, end_policy="zero", start=None):
     """Monthly rebalance. Signals at close of day t are executed at close of t+1 (no look-ahead).
     Trailing stop breaches seen at close t are also executed at close t+1."""
     rng = np.random.default_rng(seed)
-    px = px.ffill()
+    px = apply_end_policy(px, end_policy).ffill()
     ret = px.pct_change().fillna(0.0)
     ma_ = px.rolling(ma).mean()
     mom = px.shift(skip) / px.shift(lookback) - 1
@@ -84,10 +98,14 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
             block = set()
             elig = (px.loc[d] > ma_.loc[d]) & (mom.loc[d] > 0) & (px.loc[d] >= 0.75 * hi52.loc[d])
             elig = elig.fillna(False)
+            if mode == "random_all":  # unfiltered random picks among every name with a price today
+                elig = px.loc[d].notna() & (mom.loc[d].notna())
+            if start is not None and d < pd.Timestamp(start):
+                elig = elig & False  # warm-up: no trading before TUNE_START
             cand = list(elig[elig].index)
             if mode == "momentum":
                 cand = list(mom.loc[d, cand].sort_values(ascending=False).index)[:top_n]
-            else:  # random baseline among the same eligible names
+            else:  # random baseline ("random" = same filters, "random_all" = no filters)
                 rng.shuffle(cand); cand = cand[:top_n]
             tw = pd.Series(0.0, index=px.columns)
             if (not regime) or bool(b_ok.loc[d]):
@@ -109,7 +127,7 @@ def metrics(eq, trades=None):
         rets = np.array([(x / e - 1) for _, e, x, _ in trades if e])
         if len(rets):
             out.update(Trades=len(rets), HitRate=(rets > 0).mean(),
-                       Over2x=(rets >= 1).mean(), WorstTrade=rets.min(), AvgWin=rets[rets > 0].mean() if (rets > 0).any() else 0,
+                       Over2x=(rets >= 1).mean(), Over5x=(rets >= 4).mean(), WorstTrade=rets.min(), AvgWin=rets[rets > 0].mean() if (rets > 0).any() else 0,
                        AvgLoss=rets[rets <= 0].mean() if (rets <= 0).any() else 0)
     return out
 
