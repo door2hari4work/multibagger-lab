@@ -33,7 +33,7 @@ def signals(px, bench, top_n=15, lookback=252, skip=21, ma=200, start="2010-01-0
     return out
 
 def sim(px, bench, sig=None, top_n=15, stop=0.30, cost_bps=25, regime=True, k=0, capital=1_000_000.0,
-        whole_shares=False, perm=None, start="2010-01-01", **sk):
+        whole_shares=False, perm=None, circ=None, start="2010-01-01", **sk):
     """k: extra bars of delay between signal close and fill close (k=0 => t+1).  perm: dict month_end_idx -> other month_end_idx
     whose candidate list is used instead (placebo)."""
     P = px.values; dates = px.index; n = len(dates); cols = px.columns
@@ -47,10 +47,16 @@ def sim(px, bench, sig=None, top_n=15, stop=0.30, cost_bps=25, regime=True, k=0,
     ent_val = np.zeros(P.shape[1])
     bps = cost_bps / 1e4
     def nav(i): return cash + np.nansum(sh * P[i])
+    def blocked_dn(j, i): return circ is not None and i >= 1 and P[i-1, j] > 0 and P[i, j]/P[i-1, j]-1 <= -circ
+    def blocked_up(j, i): return circ is not None and i >= 1 and P[i-1, j] > 0 and P[i, j]/P[i-1, j]-1 >= circ
+    stats = dict(buy_blocked=0, sell_delayed=0, fills=0)
     def do_exit(names, i):
         nonlocal cash
         for j in names:
+            if sh[j] > 0 and blocked_dn(j, i) and i+1 < n:      # lower-circuit lock: cannot sell today, retry tomorrow
+                pend_exit.setdefault(i+1, set()).add(j); stats["sell_delayed"] += 1; continue
             if sh[j] > 0:
+                stats["fills"] += 1
                 v = sh[j] * P[i, j]; cash += v - v * bps
                 trades.append((cols[j], ent_i[j], i, ent_px[j], P[i, j], "stop", ent_val[j]))
                 sh[j] = 0; peak[j] = np.nan
@@ -61,7 +67,13 @@ def sim(px, bench, sig=None, top_n=15, stop=0.30, cost_bps=25, regime=True, k=0,
         tgt = np.zeros(len(sh))
         pos = N / top_n
         for j in cand:
-            if not np.isnan(P[i, j]): tgt[j] = pos
+            if not np.isnan(P[i, j]):
+                if sh[j] == 0 and blocked_up(j, i): stats["buy_blocked"] += 1; continue   # upper-circuit lock: cannot buy today
+                tgt[j] = pos; stats["fills"] += sh[j] == 0
+        if circ is not None:
+            for j in np.where((sh > 0) & (tgt == 0))[0]:
+                if blocked_dn(j, i) and i+1 < n:
+                    tgt[j] = cur_val[j]; pend_exit.setdefault(i+1, set()).add(j); stats["sell_delayed"] += 1
         turn = np.abs(tgt - cur_val).sum()
         cf = turn * bps / N
         tgt = tgt * (1 - cf)           # same convention as backtest.py: cost scales the whole book
@@ -100,6 +112,7 @@ def sim(px, bench, sig=None, top_n=15, stop=0.30, cost_bps=25, regime=True, k=0,
             elif e < n: pend_tgt[e] = cand
         nav_hist[i] = nav(i)
     eq = pd.Series(nav_hist, index=dates).ffill()
+    sim.stats = stats
     return eq, trades
 
 def trades_df(trades, dates):

@@ -9,3 +9,7 @@ base {'CAGR': 0.2451980067456303, 'MaxDD': -0.3441969926488835, 'Sharpe': 1.2885
            3 1.2200 -0.1546  4.1879
            6 1.2796 -0.1601  4.2636
           12 0.9918 -0.1601  3.8700
+PLACEBO permuted-month lists (1000): CAGR median 0.1885 p5 0.1177 p95 0.2685 max 0.3661 | MaxDD median -0.333 | base percentile 88.8%
+random (same filters) x1000: CAGR median 0.1229 p5 0.0837 p95 0.1633 | MaxDD median -0.282 p5 -0.344 | base CAGR percentile 100.0% | base MaxDD better than 4.7% of draws
+random_all (no filters) x1000: CAGR median 0.0725 p5 0.0308 p95 0.1149 | MaxDD median -0.379 p5 -0.475 | base CAGR percentile 100.0% | base MaxDD better than 75.9% of draws
+EW buyhold {'CAGR': 0.2002682741911197, 'MaxDD': -0.328628805706216, 'Sharpe': 1.2219636231733932}

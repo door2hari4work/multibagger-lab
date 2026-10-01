@@ -1,0 +1,22 @@
+== cost stress (bps per side), indep engine ==
+25 {'CAGR': 0.2452, 'MaxDD': -0.3442, 'Sharpe': 1.2886}
+50 {'CAGR': 0.2232, 'MaxDD': -0.3556, 'Sharpe': 1.1929}
+75 {'CAGR': 0.2016, 'MaxDD': -0.3669, 'Sharpe': 1.096}
+100 {'CAGR': 0.1803, 'MaxDD': -0.3785, 'Sharpe': 0.998}
+150 {'CAGR': 0.1388, 'MaxDD': -0.4062, 'Sharpe': 0.8001}
+200 {'CAGR': 0.0985, 'MaxDD': -0.4327, 'Sharpe': 0.6015}
+== circuit-lock proxies (close-to-close move >= threshold treated as locked: buys skipped, sells retried next bar) ==
+0.048 {'CAGR': 0.2456, 'MaxDD': -0.3426, 'Sharpe': 1.3317} {'buy_blocked': 46, 'sell_delayed': 18, 'fills': np.int64(476)}
+0.095 {'CAGR': 0.2543, 'MaxDD': -0.338, 'Sharpe': 1.3387} {'buy_blocked': 5, 'sell_delayed': 3, 'fills': np.int64(488)}
+0.19 {'CAGR': 0.2448, 'MaxDD': -0.3442, 'Sharpe': 1.2869} {'buy_blocked': 1, 'sell_delayed': 0, 'fills': np.int64(494)}
+== whole shares, Rs 10,00,000 start ==
+fractional {'CAGR': 0.2451980067456303, 'MaxDD': -0.3441969926488835, 'Sharpe': 1.2885752778588777} NAV end Rs 7,178,564
+whole-share {'CAGR': 0.24517167680814667, 'MaxDD': -0.34407006610436597, 'Sharpe': 1.289170960366237} NAV end Rs 7,177,200
+entries where ONE share > 10% of the position: 0.2%; > 50%: 0.0% (adjusted prices)
+entry value Rs: min 66500 median 137225 max 646210
+first-year (2010) position size Rs 66667; adjusted price max over window of names held: 30295
+max adj close in tune file (any name): 79757.515625
+trades w/ >=10% zero-return days in prior 60 bars: 1.6% of trades; 1.7% of sum pnl; median zero60 0.000
+trades with adjusted entry price < Rs 20: 8.1% of trades, 19.9% of pnl
+re-run excluding 5 names flagged illiquid by zero-return proxy: {'CAGR': 0.2543098166493092, 'MaxDD': -0.34419699264888315, 'Sharpe': 1.3323612156367333}
+stop exits: n=33, median ret -0.188, worst -0.470; share of stop exits worse than -35%: 9.1%

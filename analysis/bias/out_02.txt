@@ -1,0 +1,14 @@
+ k   CAGR   MaxDD  Sharpe
+-1 0.2626 -0.3723  1.3635
+ 0 0.2452 -0.3442  1.2886
+ 1 0.2491 -0.3235  1.2975
+ 2 0.2383 -0.3387  1.2477
+ 5 0.2522 -0.3060  1.3006
+ECLERX.NS      signal bar 2010-01-29 (month-end=True) fill bar 2010-02-01 fill px 67.72 == raw close on fill bar 67.72; conds(>MA200,mom>0,>=75%hi)=(np.True_, np.True_, np.True_) rank=15/238 regime=True
+    exit bar 2010-03-02 px 64.63  ret -4.6%  why rebal
+NATCOPHARM.NS  signal bar 2010-12-31 (month-end=True) fill bar 2011-01-03 fill px 55.20 == raw close on fill bar 55.20; conds(>MA200,mom>0,>=75%hi)=(np.True_, np.True_, np.True_) rank=3/157 regime=True
+    exit bar 2011-02-01 px 49.11  ret -11.0%  why rebal
+POLYMED.NS     signal bar 2013-02-28 (month-end=True) fill bar 2013-03-01 fill px 53.02 == raw close on fill bar 53.02; conds(>MA200,mom>0,>=75%hi)=(np.True_, np.True_, np.True_) rank=11/118 regime=True
+    exit bar 2013-08-01 px 61.21  ret +15.5%  why rebal
+RKFORGE.NS     signal bar 2015-02-27 (month-end=True) fill bar 2015-03-02 fill px 85.97 == raw close on fill bar 85.97; conds(>MA200,mom>0,>=75%hi)=(np.True_, np.True_, np.True_) rank=12/217 regime=True
+    exit bar 2015-05-04 px 101.66  ret +18.3%  why rebal
