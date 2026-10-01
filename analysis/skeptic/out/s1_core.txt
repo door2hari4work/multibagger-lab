@@ -1,0 +1,29 @@
+BASE (15,30%,regime,25bps)             CAGR 24.519% MaxDD -34.42%
+Nifty price idx (^NSEI)                CAGR  8.466% MaxDD -27.89%
+EW daily-rebal, 272 survivors          CAGR 19.512% MaxDD -33.32%
+no regime filter                       CAGR 30.477% MaxDD -33.91%
+no stop (99%)                          CAGR 25.589% MaxDD -32.87%
+no regime, no stop                     CAGR 32.542% MaxDD -32.76%
+stop 20%                               CAGR 22.475% MaxDD -34.59%
+stop 40%                               CAGR 25.696% MaxDD -32.87%
+cost 50 bps/side                       CAGR 22.322% MaxDD -35.57%
+cost 100 bps/side                      CAGR 18.031% MaxDD -37.86%
+cost 200 bps/side                      CAGR  9.851% MaxDD -43.28%
+random same filters                    CAGR mean 12.754% [3.834%,19.371%]  MaxDD mean -29.07% [-37.87%,-24.90%]
+random_all (no filters)                CAGR mean 8.198% [4.220%,13.498%]  MaxDD mean -38.63% [-45.71%,-33.50%]
+
+Top 10 contributors (NAV units, 1.0 = start capital):
+Ticker
+HEGAM.NS         1.204
+GRAPHITE.NS      0.720
+UNOMINDA.NS      0.544
+HSCL.NS          0.433
+KEI.NS           0.392
+WELSPUNLIV.NS    0.352
+JBMA.NS          0.347
+GRAVITA.NS       0.299
+AVANTIFEED.NS    0.296
+PCBL.NS          0.283
+drop top-3 winners from universe       CAGR 21.059% MaxDD -41.05%
+drop top-5 winners from universe       CAGR 20.306% MaxDD -38.24%
+drop top-10 winners from universe      CAGR 17.413% MaxDD -36.37%
