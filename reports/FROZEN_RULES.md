@@ -12,3 +12,5 @@ Engine: backtest.py as committed with this file. Candidate config (analysis/impr
 Selection history: 72 cells tried on 2010-2018 (regime x score x breaker x N) after an earlier 144-cell grid; chosen as the simplest
 config inside the best-drawdown band, not the single best cell. The 2018 drawdown was known when the design was made (partly in-sample).
 Pass criteria on the test (all four): CAGR > BeES and > random medians; MaxDD shallower than BeES and than random medians; survive 2x cost.
+
+Freeze commit: 6bc9ac667c53 (parent of the commit adding this line)
