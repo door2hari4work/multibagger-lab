@@ -31,7 +31,8 @@ def apply_end_policy(px, policy="zero"):
     return px
 
 def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
-             mode="momentum", lookback=252, skip=21, ma=200, seed=0, end_policy="zero", start=None):
+             mode="momentum", lookback=252, skip=21, ma=200, seed=0, end_policy="zero", start=None,
+             regime_series=None, score=None, dd_breaker=None, cash_rate=0.0):
     """Monthly rebalance. Signals at close of day t are executed at close of t+1 (no look-ahead).
     Trailing stop breaches seen at close t are also executed at close t+1."""
     rng = np.random.default_rng(seed)
@@ -41,6 +42,10 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
     mom = px.shift(skip) / px.shift(lookback) - 1
     hi52 = px.rolling(252).max()
     b_ok = (bench > bench.rolling(ma).mean()).reindex(px.index).ffill().fillna(False)
+    if regime_series is not None:  # caller-supplied boolean regime (breadth, other index, combos); computed from past data only
+        b_ok = regime_series.reindex(px.index).ffill().fillna(False).astype(bool)
+    rank = mom if score is None else score  # caller-supplied ranking score (e.g. momentum/vol), also past-data only
+    peak_nav = 1.0; cool = False
     dates = px.index
     last_of_month = set(px.groupby([dates.year, dates.month]).tail(1).index)
 
@@ -59,7 +64,7 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
         day_ret = float((w * ret.iloc[i]).sum())
         w = w * (1 + ret.iloc[i])
         tot = w.sum()
-        nav = eq[-1] * (1 + day_ret)
+        nav = eq[-1] * (1 + day_ret + cash_rate / 252 * max(0.0, 1 - float(w.sum())))
         # drift weights relative to NAV (cash is the remainder)
         w = w / (1 + day_ret)
 
@@ -84,6 +89,10 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
             w = tw.copy()
         nav *= (1 - cost)
         eq.append(nav); eq_dates.append(d)
+        if dd_breaker is not None:  # portfolio-level circuit breaker: liquidate next close, stay in cash to month-end
+            peak_nav = max(peak_nav, nav)
+            if not cool and w.sum() > 0 and nav / peak_nav - 1 < -dd_breaker:
+                pending_target = pd.Series(0.0, index=px.columns); cool = True; peak_nav = nav
 
         # 3) update peaks, flag stop breaches for tomorrow
         held = w[w > 0].index
@@ -104,11 +113,12 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
                 elig = elig & False  # warm-up: no trading before TUNE_START
             cand = list(elig[elig].index)
             if mode == "momentum":
-                cand = list(mom.loc[d, cand].sort_values(ascending=False).index)[:top_n]
+                cand = list(rank.loc[d, cand].sort_values(ascending=False).index)[:top_n]
             else:  # random baseline ("random" = same filters, "random_all" = no filters)
                 rng.shuffle(cand); cand = cand[:top_n]
             tw = pd.Series(0.0, index=px.columns)
-            if (not regime) or bool(b_ok.loc[d]):
+            cool = False
+            if ((not regime) or bool(b_ok.loc[d])) and not cool:
                 if cand:
                     tw[cand] = 1.0 / top_n  # unfilled slots stay in cash
             pending_target = tw
