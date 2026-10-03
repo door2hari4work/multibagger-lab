@@ -22,3 +22,7 @@ Known data hazards to resolve before trusting any result:
 - Benchmark = ^NSEI price index (no dividends). Nifty 50 TRI not available from Yahoo.
 - No point-in-time fundamentals and no point-in-time membership exist yet.
 - prices_tune.parquet / bench_tune.parquet: 2009-2018 (agents may read). *_SEALED.parquet: 2019+ (do not read).
+
+## US set (fetch_us.py)
+us_prices_tune/test_SEALED.parquet, us_extra_*: CURRENT S&P 500 members (data/raw/sp500_current.csv), Yahoo adjusted closes; ^GSPC and SPY
+(dividend-adjusted TRI proxy). Survivor-biased like India (418 of 503 alive on 2010-01-04). US test (2019+) is sealed and unused.
