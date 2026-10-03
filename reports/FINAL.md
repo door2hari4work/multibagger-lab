@@ -54,3 +54,9 @@ The regime filter avoided the 2020 crash here, but it can whipsaw (2025 flat, Ja
 ## Next steps
 Supply PIT constituents, delisted prices, PIT fundamentals; test regime-only vs regime+ranking; add the quality gate; paper trade
 with kill-switches (-25% warning, -35% stop, >30 months underwater) before real money.
+
+## Update 2026-10-03: live India screen, US dataset, SEC fundamentals
+- Live India signal at 2026-09-30: regime OFF (Nifty 500 22,072 < 200d MA 22,966), so the frozen rule holds cash; ranked list in results/live_india_picks.csv.
+- US (S&P 500 survivors, tune only, same rule, not re-tuned): 16.2% CAGR / -20.8% vs SPY 11.4% / -19.3%; beats SPY and random on return but not on drawdown. Not validated; US 2019+ sealed and unused.
+- US quality gate with SEC point-in-time filings: hurts (best gated variants 5.8-13.3% CAGR vs 14.6% ungated on the same universe; no drawdown benefit). See reports/US_quality_gate.md.
+  Implication: the "quality" leg is not supported by evidence so far. It remains untested for India.

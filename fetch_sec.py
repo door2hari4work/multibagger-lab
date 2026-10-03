@@ -12,6 +12,11 @@ CONC = {
  "da": ["DepreciationDepletionAndAmortization", "DepreciationAndAmortization", "DepreciationAmortizationAndAccretionNet", "DepreciationNonproduction"],
  "ocf": ["NetCashProvidedByUsedInOperatingActivities"],
  "capex": ["PaymentsToAcquirePropertyPlantAndEquipment"],
+ # fallbacks (used only when the primary concept is missing for that fiscal year)
+ "dep": ["Depreciation"], "amort": ["AmortizationOfIntangibleAssets"],
+ "pretax": ["IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"],
+ "intexp": ["InterestExpense", "InterestExpenseDebt", "InterestAndDebtExpense"],
 }
 sp = pd.read_csv(config.ROOT / "data/raw/sp500_current.csv")
 tick = requests.get("https://www.sec.gov/files/company_tickers.json", headers=UA, timeout=60).json()
@@ -45,6 +50,12 @@ def one(sym):
             for e, v in annual_facts(facts, [c]).items():
                 if e not in seen: seen[e] = v
         m[k] = seen
+    for e in set(m["dep"]) & set(m["amort"]):   # D&A fallback = depreciation + intangible amortization
+        if e not in m["da"]:
+            m["da"][e] = (m["dep"][e][0] + m["amort"][e][0], max(m["dep"][e][1], m["amort"][e][1]), "dep+amort")
+    for e in set(m["pretax"]) & set(m["intexp"]):  # EBIT fallback = pre-tax income + interest expense
+        if e not in m["opinc"]:
+            m["opinc"][e] = (m["pretax"][e][0] + abs(m["intexp"][e][0]), max(m["pretax"][e][1], m["intexp"][e][1]), "pretax+int")
     rows = []
     for e in m["revenue"]:
         if e in m["opinc"] and e in m["da"]:

@@ -26,3 +26,4 @@ Known data hazards to resolve before trusting any result:
 ## US set (fetch_us.py)
 us_prices_tune/test_SEALED.parquet, us_extra_*: CURRENT S&P 500 members (data/raw/sp500_current.csv), Yahoo adjusted closes; ^GSPC and SPY
 (dividend-adjusted TRI proxy). Survivor-biased like India (418 of 503 alive on 2010-01-04). US test (2019+) is sealed and unused.
+data/pit/us_fundamentals.parquet (fetch_sec.py): US annual point-in-time fundamentals (SEC, filing dates, originally reported values).

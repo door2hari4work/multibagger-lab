@@ -32,7 +32,7 @@ def apply_end_policy(px, policy="zero"):
 
 def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
              mode="momentum", lookback=252, skip=21, ma=200, seed=0, end_policy="zero", start=None,
-             regime_series=None, score=None, dd_breaker=None, cash_rate=0.0):
+             regime_series=None, score=None, dd_breaker=None, cash_rate=0.0, gate=None):
     """Monthly rebalance. Signals at close of day t are executed at close of t+1 (no look-ahead).
     Trailing stop breaches seen at close t are also executed at close t+1."""
     rng = np.random.default_rng(seed)
@@ -44,6 +44,8 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
     b_ok = (bench > bench.rolling(ma).mean()).reindex(px.index).ffill().fillna(False)
     if regime_series is not None:  # caller-supplied boolean regime (breadth, other index, combos); computed from past data only
         b_ok = regime_series.reindex(px.index).ffill().fillna(False).astype(bool)
+    if gate is not None:  # point-in-time eligibility matrix (rebalance dates x symbols, bool), forward-filled; names absent => not eligible
+        gate = gate.reindex(px.index).ffill().reindex(columns=px.columns).fillna(False).astype(bool)
     rank = mom if score is None else score  # caller-supplied ranking score (e.g. momentum/vol), also past-data only
     peak_nav = 1.0; cool = False
     dates = px.index
@@ -107,6 +109,8 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
             block = set()
             elig = (px.loc[d] > ma_.loc[d]) & (mom.loc[d] > 0) & (px.loc[d] >= 0.75 * hi52.loc[d])
             elig = elig.fillna(False)
+            if gate is not None:
+                elig = elig & gate.loc[d]
             if mode == "random_all":  # unfiltered random picks among every name with a price today
                 elig = px.loc[d].notna() & (mom.loc[d].notna())
             if start is not None and d < pd.Timestamp(start):
