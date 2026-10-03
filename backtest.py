@@ -32,7 +32,8 @@ def apply_end_policy(px, policy="zero"):
 
 def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
              mode="momentum", lookback=252, skip=21, ma=200, seed=0, end_policy="zero", start=None,
-             regime_series=None, score=None, dd_breaker=None, cash_rate=0.0, gate=None):
+             regime_series=None, score=None, dd_breaker=None, cash_rate=0.0, gate=None,
+             keep_winners=False, exit_ma_break=True):
     """Monthly rebalance. Signals at close of day t are executed at close of t+1 (no look-ahead).
     Trailing stop breaches seen at close t are also executed at close t+1."""
     rng = np.random.default_rng(seed)
@@ -81,6 +82,8 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
             pending_exit = set()
         if pending_target is not None:
             tw = pending_target; pending_target = None
+            if tw.isna().any():  # keep_winners: NaN = keep today's drifted weight (no trade)
+                tw = tw.copy(); km = tw.isna(); tw[km] = w[km]
             cost += (tw - w).abs().sum() * cost_bps / 1e4
             for t in px.columns:
                 if w[t] > 0 and tw[t] == 0:
@@ -117,13 +120,23 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
                 elig = elig & False  # warm-up: no trading before TUNE_START
             cand = list(elig[elig].index)
             if mode == "momentum":
-                cand = list(rank.loc[d, cand].sort_values(ascending=False).index)[:top_n]
+                cand = list(rank.loc[d, cand].sort_values(ascending=False).index)
             else:  # random baseline ("random" = same filters, "random_all" = no filters)
-                rng.shuffle(cand); cand = cand[:top_n]
+                rng.shuffle(cand)
+            cand_all = cand; cand = cand[:top_n]
             tw = pd.Series(0.0, index=px.columns)
             cool = False
             if ((not regime) or bool(b_ok.loc[d])) and not cool:
-                if cand:
+                if keep_winners:  # hold winners: keep existing names until stop/trend break; fill free slots with best-ranked new names
+                    held_now = [t for t in w[w > 0].index if t not in pending_exit]
+                    if exit_ma_break:
+                        held_now = [t for t in held_now if px.at[d, t] > ma_.at[d, t]]
+                    free = max(0, top_n - len(held_now)); fresh = [t for t in cand_all if t not in held_now][:free]
+                    tw[held_now] = np.nan
+                    kept_sum = float(w[held_now].sum()) if held_now else 0.0
+                    if fresh:
+                        tw[fresh] = min(1.0 / top_n, max(0.0, 1.0 - kept_sum) / len(fresh))
+                elif cand:
                     tw[cand] = 1.0 / top_n  # unfilled slots stay in cash
             pending_target = tw
 
