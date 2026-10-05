@@ -1,0 +1,683 @@
+{
+ "ticker": "VICR",
+ "company": "Vicor Corporation",
+ "market": "US",
+ "version": 4,
+ "status": "watchlist",
+ "research_level": 4,
+ "as_of": "2026-10-05",
+ "created_at": "2026-10-05T06:41:30+00:00",
+ "price": 308.9,
+ "price_ts": "2026-10-02",
+ "currency": "USD",
+ "why_now": "Over the last year the one-year backlog has gone from USD 155 million (Jun 2025) to USD 177 million (Dec 2025) and USD 380 million (Jun 2026), quarterly revenue to USD 143 million (+49% y/y), a new two-year licence added USD 15 million of Q2 royalties, the SynQor judgment was paid and a second ITC case was opened, a USD 150 million buyback replaced the old one, the company set a USD 2.5 billion revenue objective needing a second fab, and a news-wire copy of a Sept 2026 release says Q3 growth guidance was raised to more than 20% sequentially. The evidence suggests the inflection is real in filings; the price has also risen about 6x in twelve months, which changes the question from 'is it improving' to 'how much is already paid for'.",
+ "thesis": "Vicor is a US power-module maker whose Advanced Products (vertical power delivery, factorized power) serve AI accelerators, plus an IP licensing franchise it enforces at the ITC. Evidence from the Q2 2026 filings is consistent with a genuine step-up: backlog +145% y/y, gross margin 58%, royalty revenue tripled. The asymmetric-opportunity test, however, is the price: about USD 14.2 billion market cap against USD 474 million TTM revenue. The evidence suggests the stock already discounts a large part of management's own USD 2.5 billion objective, while capacity (first fab about USD 1 billion of revenue, second fab late 2027-2028) and licence timing cap what the 12-24 month window can deliver. It is a high-quality, high-volatility AI-power name in my read, interesting for monitoring, not yet an asymmetric entry candidate.",
+ "multibagger_mechanism": "A plausible path to a further 2-3x within 24 months is a chain: (1) second-gen VPD wins production ramps at a hyperscaler and several OEMs (e16), (2) the second fab is committed early and funded from USD 454 million of cash (e8, e17), pushing product revenue past USD 1 billion, (3) additional ITC exclusion orders convert unlicensed hyperscalers into licensees, taking royalties from about USD 40 million a year toward the 'hundreds of millions' CEO expects (e12, e14, e17), and (4) the market continues paying 60x-plus earnings. Each link has a stated management intention but no committed date; links 1-3 mostly land in 2027-2028, so even if they happen the largest effect on earnings falls late in or after the horizon (e32). I could not construct a chain that reaches 3x inside 12-24 months without also assuming a rising earnings multiple.",
+ "expectations_gap": "The price (about 29x EV/TTM sales; 161x TTM operating income) seems to assume roughly USD 1.35 billion of revenue at 30% net margin held at 35x earnings, about 2.2x the guided 2026 figure (e30, e31). Management's USD 2.5 billion objective at 40% operating margin would be about USD 790 million of net income, which the current market cap already equals about 18x (e31). The evidence suggests the market is paying today for a substantial share of that outcome; a surprise on the upside needs licensing or second-gen VPD volumes to arrive earlier and larger than management has committed. On the downside, the guide itself rests on lumpy royalties.",
+ "time_horizon_months": 24,
+ "bull_case": {
+  "name": "bull",
+  "description": "Model estimate: second fab committed quickly, 2nd Gen VPD ramps with a hyperscaler and OEMs in H2 2027, further ITC-driven licences lift royalties to a few hundred million dollars a year, revenue run-rate toward USD 1.2 billion by 2027 and about USD 2 billion by 2028 at 35-40% operating margin, with a 60-70x earnings multiple retained. Probability reflects that the multiple, not just the earnings, must hold.",
+  "multiple_low": 1.6,
+  "multiple_high": 2.8,
+  "probability": 0.1,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "base_case": {
+  "name": "base",
+  "description": "Model estimate: guided 2026 revenue (more than USD 600 million) is met, 2027 revenue about USD 0.85-1.0 billion at 30-33% operating margin with royalties around USD 40-100 million, second fab proceeds on schedule; EPS about USD 5 and a 40-60x multiple gives roughly 0.7-1.4x of today's price. Probability is highest because most disclosed inputs (backlog, guidance, capacity limit) point to growth but the price already includes much of it.",
+  "multiple_low": 0.7,
+  "multiple_high": 1.4,
+  "probability": 0.52,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "bear_case": {
+  "name": "bear",
+  "description": "Model estimate: AI accelerator build-out digests or the lead customer pauses, backlog stops growing, royalties step down without replacement before the 2027 ITC outcome, and the multiple compresses toward 25-40x lower earnings; the stock already showed a 50% drawdown in two months in 2026. Probability reflects that history and the concentration disclosed.",
+  "multiple_low": 0.3,
+  "multiple_high": 0.65,
+  "probability": 0.38,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "catalysts": [
+  {
+   "description": "Q3 2026 results and Q4 outlook: tests the 'more than 20% sequential' Q3 growth (company guidance raised from nearly 10%), backlog vs USD 379.7 million, and the USD 5 million Q3 royalty step-down.",
+   "window": "late Oct 2026 (date not confirmed; Q3 2025 results were filed 21 Oct 2025)",
+   "status": "pending",
+   "evidence_ids": [
+    "e14",
+    "e15",
+    "e20"
+   ]
+  },
+  {
+   "description": "Second ChiP fab: site decision and funding commitment (management guided 'next few weeks' on 21 Jul 2026, 2x-3x first-fab capacity, capex of the order of USD 20-90 million).",
+   "window": "Q4 2026; build/ramp late 2027-2028",
+   "status": "pending",
+   "evidence_ids": [
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "description": "2nd Gen VPD (3 to 5 A/mm2) development systems with a hyperscaler and a couple of OEMs; production ramps guided around late Q3/Q4 2027.",
+   "window": "H2 2026 sampling; ramps H2 2027",
+   "status": "pending",
+   "evidence_ids": [
+    "e16",
+    "e17"
+   ]
+  },
+  {
+   "description": "Second ITC investigation reaches final determination, which management ties to new licence deals (and possible further exclusion orders).",
+   "window": "2027 (company wording; exact date not disclosed)",
+   "status": "pending",
+   "evidence_ids": [
+    "e12",
+    "e14"
+   ]
+  },
+  {
+   "description": "Renewal or replacement of the two-year all-inclusive licences as their terms expire.",
+   "window": "from late 2027 (analyst/CEO discussion on the Q2 call)",
+   "status": "pending",
+   "evidence_ids": [
+    "e15"
+   ]
+  }
+ ],
+ "risks": [
+  "Valuation: about 29x EV/TTM sales and about 161x TTM operating income at USD 308.9 after a 6x rise in a year; reverse arithmetic suggests the price already assumes roughly USD 1.35 billion of revenue at a 30% net margin and 35x earnings (e30, e31). Little room is left for execution slips.",
+  "Volatility: the stock fell about 50% from late June to early September 2026 inside a rising-fundamentals period (e19); a similar swing can recur on any guidance, customer or macro headline.",
+  "Customer concentration and opacity: Advanced Products are concentrated in AI data centre and hyperscaler customers; one customer was 11.1% of 2025 revenue; management declined to name or size its lead wafer-scale customer or licensees (e4, e18). Concentration in the Q2 10-Q was not found in the text searched.",
+  "Licensing income is lumpy and partly accounting-driven: Q2 2026 royalties of USD 30.4 million included a USD 15 million termination-clause recognition; the same deal is guided to USD 5 million in Q3. New deals are tied to a 2027 ITC outcome that is not within the company's control (e14, e15, e34).",
+  "Capacity ceiling: first fab revenue capacity is 'slightly above USD 1 billion' and is 'approaching' full use; the second fab is dated late 2027-2028, so growth above that level in the 12-24 month window is constrained and the build carries execution, cost and depreciation risk (e16, e17, e32).",
+  "Competition: large IDMs with far broader portfolios can price aggressively; competing vertical-power and integrated voltage regulator approaches exist; Vicor's performance claims (current density, current gain) are management statements not independently verified here (e5, e16).",
+  "Insider supply: the founder is selling 20,000 shares a day under a plan adopted 26 Feb 2026 and holds a further 1,000,000-share plan from USD 404 to USD 800 starting Sep 2026; dual-class control (Class B 10 votes) limits outside influence (e5, e9, e10).",
+  "Legal and governance: a securities class action (In re Vicor Securities Litigation) was dismissed with leave to amend in June 2025; its current status in the Q2 10-Q text read is not stated beyond that. SynQor judgment (USD 28.6 million) was paid in March 2026. Not verified: the full 10-K risk-factor text beyond sections searched.",
+  "Not verified: I did not read the proxy statement (DEF 14A), the annual-meeting presentation, the Q3 2025 call, or any sell-side estimates; consensus expectations are therefore unknown to this thesis. The company IR site (host not resolvable / 503) was not reachable, so call transcripts came from a third-party host.",
+  "Reviewer: product business earns little before royalties. Q2 2026 product gross margin is about 47% and operating income before royalties about USD 4.5 million (about 4% of product revenue) if royalties carry no cost (e40, e41); the headline 58% gross margin and the 49% growth are royalty-aided, and USD 15 million of the Q2 royalty was a one-time termination-clause recognition (e15).",
+  "Reviewer: stale/uncorroborated guidance. The thesis quotes Q3 growth of 'more than 20%'; a further raise to 'more than 30%' was released on 2026-09-30 (e43). None of the 17, 21 or 30 Sep guidance items appears as an 8-K in EDGAR submissions pulled 2026-10-05 (e20, e43), the licensee and royalty dollars are undisclosed, and the Q3 uplift of about USD 29 million is attributed to one licence (e44).",
+  "Reviewer: insider supply is larger than stated. The founder's Form 144 notices total about 1.4 million shares and about USD 331 million since March 2026, with about 8.35 million shares held after July, plus Form 4 sales by several officers (e42); a further 1,000,000-share plan is armed from USD 404 (e9).",
+  "Reviewer: price already moved on the catalyst. +68% from 16 Sep to 2 Oct, about USD 5.8 billion of market value for about USD 29 million of extra quarterly revenue (e45, e46); about 76x 2026E consensus EPS per one aggregator (e46).",
+  "Reviewer: governance. An 8-K of 10 Sep 2026 amended the by-law on removal of directors; text not read; dual-class control (Class B 10 votes) means outside holders have limited influence (e48, e5).",
+  "Reviewer: data quality. Customer concentration: the 10-K says the majority of Advanced Products revenue came from one or a limited number of customers (e47) while the thesis relied on the 11.1% single-customer figure; call transcripts (e14-e18) were read via a third-party host, not the company webcast.",
+  "Reviewer: the base-case upper bound (1.4x) is not reproducible from its own inputs: EPS of about USD 5 at 40-60x gives USD 200-300 a share, i.e. about 0.65-0.97x of USD 308.9; 1.4x would need about 86x (e52). The bear/base/bull ranges should be read with that in mind."
+ ],
+ "valuation": {
+  "price_usd": 308.9,
+  "market_cap_usd_million": 14242.4,
+  "cash_usd_million": 453.6,
+  "enterprise_value_usd_million_approx": 13789,
+  "ttm_revenue_usd_million_to_jun2026": 474.0,
+  "ev_to_ttm_sales_x": 29.1,
+  "ev_to_q2_2026_annualised_sales_x": 24.0,
+  "ev_to_guided_2026_sales_x_max": 23.0,
+  "ttm_operating_income_usd_million": 88.4,
+  "market_cap_to_ttm_operating_income_x": 161,
+  "pe_ttm_aggregator_gaap_x": 96.8,
+  "note": "Derived from filings and an aggregator price; GAAP net income includes tax benefits"
+ },
+ "scores": [
+  {
+   "name": "growth_acceleration",
+   "value": 0.85,
+   "weight": 1.0,
+   "basis": "Q2 revenue +49% y/y, backlog +145% y/y (e6, e7)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "earnings_inflection",
+   "value": 0.75,
+   "weight": 1.0,
+   "basis": "Operating income USD 34.9m in Q2 vs TTM USD 88.4m; royalty-aided (e6, e30)",
+   "data_quality": "partial"
+  },
+  {
+   "name": "competitive_advantage",
+   "value": 0.65,
+   "weight": 1.0,
+   "basis": "Patent estate and vertical-power performance claims are management statements; ITC wins are filings-supported (e12, e13)",
+   "data_quality": "partial"
+  },
+  {
+   "name": "catalyst_strength",
+   "value": 0.6,
+   "weight": 1.0,
+   "basis": "Dated catalysts exist but the big ones fall in 2027-2028 (e16)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "valuation_asymmetry",
+   "value": 0.15,
+   "weight": 1.5,
+   "basis": "About 29x EV/TTM sales; price already implies about USD 1.35bn revenue at 35x (e30, e31)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "market_confirmation",
+   "value": 0.9,
+   "weight": 0.5,
+   "basis": "Price 6.2x in twelve months (e19); momentum is not an independent business signal",
+   "data_quality": "ok"
+  },
+  {
+   "name": "thesis_robustness",
+   "value": 0.4,
+   "weight": 1.0,
+   "basis": "Heavy dependence on undisclosed customers and lumpy licensing (e15, e18)",
+   "data_quality": "partial"
+  }
+ ],
+ "overall_score": null,
+ "confidence": "low",
+ "entry": {
+  "state": "unknown",
+  "ideal_zone": null,
+  "acceptable_zone": null,
+  "chase_zone": null,
+  "add_zone": null,
+  "invalidation_price": null,
+  "rationale": ""
+ },
+ "exit_rules": [
+  {
+   "type": "thesis_invalidation",
+   "condition": "Reported quarterly revenue misses the company's most recent quarterly guidance by more than 5% (Q3 2026 guide: more than 20% sequential growth from USD 143.4 million, i.e. above about USD 172 million), or one-year backlog falls sequentially for two consecutive quarters from the USD 379.7 million of 30 Jun 2026.",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "GAAP gross margin below 52% for two consecutive quarters (Q1 2026 55.2%, Q2 2026 58.0%), or operating margin ex-royalty below 10% while revenue is above USD 150 million per quarter.",
+   "status": "armed"
+  },
+  {
+   "type": "catalyst_failure",
+   "condition": "No filed second-fab commitment (site purchase, lease or construction contract disclosed in an 8-K/10-Q) by the FY2026 10-K (expected about Mar 2027), or no hyperscaler/OEM 2nd Gen VPD production ramp referenced in results by the Q3 2027 report.",
+   "status": "armed"
+  },
+  {
+   "type": "valuation_excess",
+   "condition": "EV/annualised latest-quarter sales above 40x (about USD 27 billion enterprise value at USD 170 million quarterly revenue) without a raised multi-year revenue or licensing commitment.",
+   "status": "armed"
+  },
+  {
+   "type": "narrative_saturation",
+   "condition": "Founder 10b5-1 sales reach the USD 404-800 tranche plan (1,000,000 shares) while backlog growth slows below 10% q/q, signalling the narrative is being sold into strength.",
+   "status": "armed"
+  },
+  {
+   "type": "technical",
+   "condition": "A weekly close below USD 200 (about 35% under the 2026-10-02 price, near the early-Sept 2026 low of about USD 172-182) triggers an emergency thesis review rather than an automatic exit.",
+   "status": "armed"
+  }
+ ],
+ "adversarial": {
+  "done": true,
+  "reviewer": "devils_advocate",
+  "verdict": "downgraded",
+  "strongest_bear_case": "Vicor is a roughly USD 110 million-a-quarter product business earning about 47% product gross margin and 2-4% operating margin before royalties (e41); the profit step-up is licence income, partly one-time accounting (USD 15 million in Q2, e15) and partly a USD 29 million Q3 lift disclosed only by press release (e43, e44). Capacity is capped near USD 1 billion until an unbuilt second fab (late 2027-2028), most Advanced Products revenue comes from one or a few customers (e47), the founder has sold about USD 330 million of stock (e42), and after a 68% move in twelve sessions the price (about 29x EV/sales, about 76x 2026E EPS) needs management's USD 2.5 billion objective on time. If an ITC outcome, a design-around or lower licence renewals disappoint, the multiple has far to fall.",
+  "questions": {
+   "what_evidence_would_make_it_wrong": "A Q3 2026 revenue print below the more than 30% guide (about USD 186 million, e44), a second consecutive fall in the USD 379.7 million one-year backlog (e7), no second-fab commitment filed by the FY2026 10-K, slippage of 2nd Gen VPD ramps past late 2027 (e16), or licence renewals at lower fees when the two-year terms end from late 2027 (e15). Some contrary evidence has already appeared: before royalties the product business earned only about 2-4% operating margin in Q1-Q2 2026 (e41), the Q2 royalty included USD 15 million of one-time recognition that falls to USD 5 million in Q3 (e15), and the stock fell about 50% in two months this year (e19).",
+   "what_is_missing": "No corroboration by a filing of the 17, 21 and 30 Sep 2026 guidance items (tagged news only, e20, e43); the royalty dollars and licensee identities; consensus beyond 2026 (2027+ estimates were paywalled, e46); short interest and the holder base; the lead wafer-scale customer's share (management declined, e18); the text of the 10 Sep by-law amendment (e48); and the cost and timing of the second fab beyond a Feb 2026 remark of USD 20-90 million (e17). The thesis also omitted the ex-royalty margin (e41) and the cumulative size of founder sales (e42).",
+   "is_catalyst_priced_in": "Largely yes. The stock closed USD 183.91 on 16 Sep, before the first licence release, and USD 308.90 on 2 Oct (+68%, about USD 5.8 billion of market value, e45); the extra Q3 revenue the three guidance steps imply is only about USD 29 million (e44). The price now equals about 76x 2026E consensus EPS from one aggregator (e46), so the market is already capitalising a licensing franchise (four licensees per the CEO, e20) rather than Q3 itself.",
+   "does_valuation_fit_growth": "Not on the evidence in hand. EV is about 29x TTM sales and the equity about 161x TTM operating income (e30), growth is 49% y/y in Q2 but royalty-aided (e6, e41), and capacity is near the ceiling until a second fab arrives in late 2027-2028 (e16, e17). The multiple therefore rests on the USD 2.5 billion / 70% gross margin objective, versus a product gross margin near 47% today (e41); durability of licence income is limited by two-year fixed-fee terms (e15).",
+   "great_company_vs_great_stock": "The filings are consistent with a better company than a year ago: backlog +145% y/y, litigation payments cleared, USD 453.6 million of cash and no borrowings (e7, e8). At USD 309 the stock looks more like a good company already priced for its 2028+ objective: six-fold in twelve months and +68% in twelve sessions (e19, e45). My read is great company, not yet a great stock for an asymmetric entry.",
+   "merely_an_ai_narrative": "Not merely: reported revenue (+49%), backlog and gross profit exist in filings and sales are 'concentrated in the data center and hyperscaler segments' (e6, e7). But the profit step-up is mostly royalty (e41), and the latest 68% leg came on press-release headlines about licences that no filing corroborates (e43). So revenue evidence is real while the multiple depends on the AI-power narrative and on litigation-driven licensing.",
+   "is_it_crowded": "Partly, on price and headlines: 6.2x in a year, heavy volume around releases (1.5-2.0 million shares on several days in Sep-Oct), repeated news-wire and retail-finance coverage, and many Form 144/Form 4 insider sales (e42, e45). Sell-side coverage appears thin (3-4 analysts per two aggregators, mean target about USD 386-394, e46), and short interest and institutional ownership could not be obtained (cannot answer those two parts: I would need the latest 13F/13G holder lists and exchange short-interest data).",
+   "strongest_bear_argument": "A bear would say Vicor is a roughly USD 110 million-a-quarter product business earning about a 47% product gross margin and 2-4% operating margin before royalties (e41), whose profit inflection is licence income from patent leverage: USD 15 million of Q2 royalty was termination-clause accounting, the Q3 lift of about USD 29 million is one licence disclosed only by press release (e15, e43, e44), and the franchise depends on a 2027 ITC outcome outside management's control. Capacity is capped near USD 1 billion until a fab not yet built (e16, e17), the majority of Advanced Products revenue comes from one or a few customers (e47), the founder has sold about USD 330 million of stock and has a plan to sell more from USD 404 (e9, e42), and at about 29x sales the price needs the USD 2.5 billion objective on time. If a hyperscaler designs around the IP or a licence renews lower, the multiple has far to fall.",
+   "what_happened_in_similar_setups": "Vicor's own price fell about 49% from USD 67.72 (Aug 2023) to USD 34.47 (Jun 2024) as revenue slipped from USD 405 million to USD 359 million, and about 68% from Oct 2021 to Nov 2022 (e49). Sampled prices also show AAOI falling from about USD 97 to USD 15 (2017-18), SMCI from about USD 91 to USD 31 (2024) and NVTS roughly halving twice (2025, 2026); AAOI later rose far above its 2017 peak, so a run alone does not prove a top (e49, e50). Caveat: price-only, few analogues, causes not researched.",
+   "what_must_happen_for_5x": "The price would need to reach about USD 1,545, roughly USD 71 billion (e51). That needs both the second fab and 2nd Gen VPD ramps at hyperscalers, licensing in the hundreds of millions, 70% gross margin and 40% operating margin on USD 2.5 billion of revenue or more, and an earnings multiple of 60x-90x on top of that (e16, e31, e51). The founder's sale plan tops out at USD 800 (about 2.6x) through 2028 (e9).",
+   "is_5x_plausible_in_1_2_years": "Not plausible on this evidence: the second fab is dated late 2027-2028, first-fab capacity is about USD 1 billion of revenue, and royalties are fixed-fee for two years (e15, e16, e17). A more realistic 24-month range from the thesis is about 0.3x-1.4x (bear to base) with a bull of 1.6x-2.8x; my model estimate for 5x or more within 24 months is below about 2%.",
+   "probability_market_already_right": "Model estimate: about 60-70% that the price is already roughly fair for the central outcomes (within about +/-30%), because the stock rose 68% in twelve sessions on guidance headlines worth about USD 29 million of one-quarter revenue (e44, e45), sits near 76x 2026E EPS (e46), and the product margin before royalties is thin (e41). The remaining 30-40% reflects genuine upside optionality if licensing broadens and the second fab is pulled forward."
+  },
+  "reviewed_at": "2026-10-05T06:40:12+00:00"
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "Last price 308.9 USD on 2026-10-02 (market data snapshot).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Price snapshot only; says nothing about business quality."
+  },
+  {
+   "id": "e2",
+   "claim": "Quantitative discovery output for VICR: rank 1. Model output, not a verified business fact.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Momentum rank is the only selector validated in this lab, and only modestly; it is a reason to spend research time, not a thesis."
+  },
+  {
+   "id": "e3",
+   "claim": "Vicor FY2025 (10-K): product revenue USD 350.317 million plus royalty revenue USD 57.384 million = total net revenues USD 407.701 million (FY2024 USD 359.058 million; FY2023 USD 405.059 million), plus a one-off USD 45.0 million patent litigation settlement; income from operations USD 81.8 million including the settlement; net income attributable USD 118.556 million including a USD 24.0 million tax benefit; operating cash flow USD 139.5 million; capex USD 20.3 million.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526085102/vicr-20251231.htm",
+   "source_date": "2026-03-02",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Settlement and tax benefit are non-recurring; do not annualise FY2025 net income."
+  },
+  {
+   "id": "e4",
+   "claim": "10-K: order backlog (shipments scheduled within 12 months) USD 176.938 million at 31 Dec 2025 vs USD 155.505 million a year earlier; quoted lead times 22-28 weeks; 'turns' volume averaged about 34% of 2025 revenue; one customer was about 11.1% of 2025 revenue (12.1% in 2024); China incl. Hong Kong 11.9%.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526085102/vicr-20251231.htm",
+   "source_date": "2026-03-02",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e5",
+   "claim": "10-K: Advanced Products (incl. royalty) were 61.0% of 2025 revenue (55.0% in 2024). In computing, Advanced Products 'most often compete' with large IDMs that have far broader portfolios, greater manufacturing and support resources and can price aggressively; Advanced-product life cycles are generally under three years with relatively extended, highly competitive design cycles. Vicor is dual-class (Class B has 10 votes per share).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526085102/vicr-20251231.htm",
+   "source_date": "2026-03-02",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Competitors are not named in the 10-K text read; no market-share figure is disclosed."
+  },
+  {
+   "id": "e6",
+   "claim": "Q2 2026 10-Q: total net revenues USD 143.352 million (+49.3% y/y, +26.9% q/q); Advanced Products incl. royalty USD 94.161 million vs USD 60.566 million; Brick USD 49.191 million; royalty revenue USD 30.426 million vs USD 10.353 million (higher royalty 'due to a new license agreement entered into during the quarter'); gross margin 58.0%; operating income USD 34.878 million; net income USD 49.772 million after a USD 10.863 million tax benefit; H1 2026 revenue USD 256.321 million (+34.9%).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526322462/vicr-20260630.htm",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e7",
+   "claim": "Q2 2026 earnings release: one-year backlog USD 380 million (USD 379.736 million), +26% q/q, +145% y/y; Q1 2026 backlog USD 301 million (+70% q/q vs USD 177 million at Q4 2025); Q2 cash USD 453.6 million; operating cash flow USD 34.0 million; capex USD 11.2 million. CEO statement: demand across high-performance compute, automatic test equipment and industrial/aerospace/defence is 'absorbing increased capacity within our first ChiP fab' and a second fab for 2nd Gen VPD is being pursued.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526309538/d115827dex991.htm",
+   "source_date": "2026-07-21",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e8",
+   "claim": "10-Q liquidity: cash and equivalents USD 453.582 million; total liabilities USD 59.568 million (no borrowings shown); capex commitments about USD 22.745 million; USD 64.327 million left on the old buyback authorisation; H1 2026 operating cash flow USD 30.2 million net of a USD 28.557 million SynQor judgment payment; USD 44.2 million received from option exercises and ESPP.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526322462/vicr-20260630.htm",
+   "source_date": "2026-07-29",
+   "period": "H1 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e9",
+   "claim": "10-Q Item 5: on 8 Jun 2026 CEO/Chairman Patrizio Vinciarelli adopted a Rule 10b5-1 plan to sell up to 1,000,000 shares in 10,000-share tranches at USD 4 increments from USD 404 to USD 800 per share, running from about 7 Sep 2026 to 31 Dec 2028 (cap 20,000 shares a day).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526322462/vicr-20260630.htm",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e10",
+   "claim": "Form 144 filings: Vinciarelli (founder shares) notified sales of 20,000 shares on 1 Oct 2026 (aggregate market value about USD 5.78 million) and 20,000 shares on 2 Oct 2026 (about USD 6.17 million), plan adoption date 26 Feb 2026; Philip Davies (officer) 9,217 shares from option exercise on 1 Oct 2026.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000195004726010005/primary_doc.xml",
+   "source_date": "2026-10-02",
+   "period": "Oct 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Second filing (1 Oct): https://www.sec.gov/Archives/edgar/data/751978/000195004726009983/primary_doc.xml"
+  },
+  {
+   "id": "e11",
+   "claim": "8-K: on 25 Aug 2026 the board approved a new share repurchase authorisation of up to USD 150 million that supersedes the prior programme; no expiry; may be suspended.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526370420/d161606d8k.htm",
+   "source_date": "2026-08-27",
+   "period": "Aug 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e12",
+   "claim": "Q4/FY2025 release: Q4 2025 royalty revenue USD 14.5 million vs USD 21.7 million in Q3 2025 (Q3 contained a catch-up amount); Q4 backlog USD 176.9 million; CEO: the U.S. International Trade Commission had instituted a second investigation into importation of power modules and computing systems infringing Vicor IP (non-isolated bus converters) and 'IP licensing practice is set to achieve record revenues in 2026'; a second ChiP fab is being planned.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526059563/d240534dex991.htm",
+   "source_date": "2026-02-19",
+   "period": "Q4 2025",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e13",
+   "claim": "Q1 2026 release: revenue USD 113.0 million (+20.2% y/y, +5.3% q/q); gross margin 55.2%; net income USD 20.7 million; operating cash flow USD (3.9) million after a USD 28.6 million litigation payment; backlog USD 301 million (+70% q/q); CEO: 'Precluding unlawful importation of computing systems infringing Vicor IP is having an effect.'",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526165105/d139425dex991.htm",
+   "source_date": "2026-04-21",
+   "period": "Q1 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e14",
+   "claim": "Q2 2026 call (CFO): guidance 'a nearly 10% increase in Q3 revenue and over USD 600 million in 2026 revenue', with double-digit sequential increases in Advanced-product revenue planned; guidance rests on 'conservative assumptions about our licensing practice' (no new licence agreements assumed before the second ITC case reaches a final determination in 2027). CFO also said a USD 14.3 million CHIPS Act investment tax credit refund was received on 13 Jul 2026.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.marketbeat.com/earnings/reports/2026-7-21-vicor-co-stock/",
+   "source_date": "2026-07-21",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Call transcript read as text from a third-party transcript host (MarketBeat); company IR webcast was not accessed (ir host unreachable / 503)."
+  },
+  {
+   "id": "e15",
+   "claim": "Q2 2026 call (CFO): the new licence pays USD 5 million a quarter in year 1 and USD 10 million a quarter in year 2 (total USD 60 million); USD 15 million was recognised in Q2 because of termination-clause accounting, falling to USD 5 million in Q3 and USD 10 million a quarter for the following four quarters; it carries no sourcing relationship for the first couple of years. CEO declined to identify the licensee: 'a multiplicity of OEM licensees, one hyperscaler as of now'. CEO said the two-year all-inclusive licences have short terms because licensee volumes are hard to predict, so renewals fall due as the terms expire (an analyst noted late 2027).",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.marketbeat.com/earnings/reports/2026-7-21-vicor-co-stock/",
+   "source_date": "2026-07-21",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Call transcript read as text from a third-party transcript host (MarketBeat); company IR webcast was not accessed (ir host unreachable / 503)."
+  },
+  {
+   "id": "e16",
+   "claim": "Q2 2026 call: first fab 'not sold out, but approaching capacity utilization'; the USD 2.5 billion revenue / 70% gross margin / 40% operating income objective (superseding the 2023 USD 1 billion / 65% target) cannot be met with the existing fab ('a definitely no'); second fab to give 2x to potentially 3x first-fab capacity, 'down selecting two sites', decision 'in the next few weeks', phased build; sales head expects 2nd Gen VPD programmes with a hyperscaler and a couple of OEMs to reach production ramps around late Q3/Q4 of 2027 and the second fab to come up 'late 2027, 2028'; management declined to commit to dates for design wins.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.marketbeat.com/earnings/reports/2026-7-21-vicor-co-stock/",
+   "source_date": "2026-07-21",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Call transcript read as text from a third-party transcript host (MarketBeat); company IR webcast was not accessed (ir host unreachable / 503)."
+  },
+  {
+   "id": "e17",
+   "claim": "Q4 2025 call (Feb 2026): first ChiP fab capacity is 'slightly above USD 1 billion' of revenue a year, with around 80% utilisation the practical target; a second facility is 'of the order of USD 20 million, USD 50 million, USD 90 million'; CEO expects 'hundreds of millions of dollars' of licensing revenue over time (timing not committed); management said its lead computing customer was ramping a wafer-scale-engine system and 2nd Gen VPD transition would start in H2 2026.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.marketbeat.com/earnings/reports/2026-2-19-vicor-co-stock/",
+   "source_date": "2026-02-19",
+   "period": "Q4 2025",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Call transcript read as text from a third-party transcript host (MarketBeat); company IR webcast was not accessed (ir host unreachable / 503)."
+  },
+  {
+   "id": "e18",
+   "claim": "Q2 2026 call, items not answered: management declined to identify licensees, declined to confirm or deny an analyst's claim that one named wafer-scale customer would be 25-30% of next year's business, did not say whether any customer was a 10% customer in Q2 ('we'll disclose that in the Q'), and declined to predict the royalty share of revenue at the USD 2.5 billion objective. The text of the Q2 10-Q that I searched shows no customer-concentration percentage.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.marketbeat.com/earnings/reports/2026-7-21-vicor-co-stock/",
+   "source_date": "2026-07-21",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Call transcript read as text from a third-party transcript host (MarketBeat); company IR webcast was not accessed (ir host unreachable / 503)."
+  },
+  {
+   "id": "e19",
+   "claim": "Market data (INDmoney, daily candles): VICR closed USD 49.97 on 2025-10-06 and USD 308.90 on 2026-10-02 (6.2x); 52-week range USD 48.53 to 382.65; sampled closes of USD 366.79 (2026-06-29) and USD 181.59 (2026-09-02) show a drawdown of about 50% within two months; market cap about USD 14.24 billion.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "TTM to Oct-2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Aggregator price data; prices only."
+  },
+  {
+   "id": "e20",
+   "claim": "News-wire copies (finviz) of Vicor press releases dated 2026-09-17 and 2026-09-21: a non-exclusive licence of Vertical Power Delivery IP to an unnamed leading AI OEM (letting it buy VPD modules from other suppliers); Q3 sequential growth guidance raised 'from nearly 10% to more than 20%' on royalties from that licence; CEO said four leading companies have taken licences. Read through a summarising fetch, so wording is not verified verbatim.",
+   "kind": "FACT",
+   "source_type": "news",
+   "source_url": "https://finviz.com/news/393951/vicor-corporation-raises-q3-2026-revenue-guidance",
+   "source_date": "2026-09-21",
+   "period": "Q3 2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Secondary, uncorroborated by a filing: EDGAR submissions re-pulled 2026-10-05 list no 8-K after 2026-09-10. SUPERSEDED by e43 (further raise on 2026-09-30 to more than 30%); the thesis text that quotes 'more than 20%' and the USD 172 million threshold in the exit rules is stale. Reviewer correction."
+  },
+  {
+   "id": "e30",
+   "claim": "Valuation arithmetic at USD 308.9: market cap about USD 14.24 billion less USD 453.6 million cash = enterprise value about USD 13.8 billion. TTM revenue to Jun-2026 = 407.701 + 256.321 - 190.014 = USD 474.0 million (no settlement in the window); TTM operating income USD 88.4 million (18.6% margin). EV/TTM sales about 29x; EV / (Q2 revenue x4 = USD 573 million) about 24x; EV / guided FY2026 'over USD 600 million' below 23x; market cap / TTM operating income about 161x.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "TTM to Jun-2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Derived from e3, e6, e7, e19. Cash-flow from option exercises and a USD 14.3m tax refund not adjusted."
+  },
+  {
+   "id": "e31",
+   "claim": "Reverse arithmetic: holding a 35x earnings multiple and a 30% net margin, a USD 14.2 billion market cap implies about USD 407 million of net income, i.e. roughly USD 1.35 billion of revenue (about 2.8x TTM, 2.2x guided 2026). Management's USD 2.5 billion at 40% operating margin would give about USD 790 million of net income (about USD 16 EPS on 48.5 million diluted shares); the current market cap is about 18x that figure. Reaching 3x the price (USD 42.7 billion) would need that outcome plus a premium multiple, in a window where the second fab is guided for late 2027-2028.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e14, e16, e17, e30. All inputs are my assumptions where marked; tax 21%."
+  },
+  {
+   "id": "e32",
+   "claim": "Capacity arithmetic: first fab revenue capacity is 'slightly above USD 1 billion' with about 80% a sensible utilisation (e17); product revenue is already guided toward USD 500 million-plus for 2026 (e14). Revenue above roughly USD 0.8-1.0 billion product plus royalties therefore needs the second fab, which management dates to late 2027-2028 (e16). A 12-24 month price multiple of 3x would need either licensing income well beyond the one-year USD 40 million run-rate of the disclosed licence or earnings multiples far above today's.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e14, e15, e16, e17."
+  },
+  {
+   "id": "e33",
+   "claim": "AI-slowdown sensitivity: sales are 'currently concentrated in the data center and hyperscaler segments' for Advanced Products (e5, e6), which the CFO put at 65.7% of Q2 revenue incl. royalty (call, e15), backlog is USD 380 million, and one lead computing customer is a major but undisclosed share (e18). If AI accelerator spending slowed, the plausible first effects are lower bookings from the lead customer and OEMs and a slower VPD ramp; capex commitments are modest (USD 22.7 million, e8) and cash is USD 453.6 million, so balance-sheet stress looks low, but the earnings multiple would be exposed. The disclosed licences are fixed-fee for two years, which cushions royalties until renewals fall due.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e5, e6, e8, e15, e18."
+  },
+  {
+   "id": "e34",
+   "claim": "Why the licensing leg is uncertain: royalties jumped from USD 10.4 million (Q2 2025) to USD 30.4 million (Q2 2026) on one agreement, but the same agreement is guided to USD 5 million in Q3 and USD 10 million a quarter after; CEO expects further deals mainly after additional ITC exclusion orders (2027). The size and timing of future deals is not disclosed.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e6, e14, e15."
+  },
+  {
+   "id": "e35",
+   "claim": "A plausible upside not evidenced by any document: licensees that currently only pay royalties could become Vicor module customers, or a hyperscaler could commit to second-gen VPD volumes large enough to fill the second fab early. Management says licences carry incentives to buy modules, but gave no quantified commitment.",
+   "kind": "SPECULATION",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Speculation; not relied on for scenario weights beyond the bull case."
+  },
+  {
+   "id": "e40",
+   "claim": "Q2 2026 10-Q income statement (USD thousand): total net revenues 143,352 of which royalty revenue 30,426; cost of product revenues 60,232; gross margin 83,120; operating expenses 48,242; income from operations 34,878. H1 2026: revenues 256,321 (royalty 45,391), cost of product revenues 110,835, income from operations 51,762. Q1 2026 therefore: revenues 112,969, royalty 14,965, cost of product revenues 50,603, gross margin 62,366, income from operations 16,884 (Q1 values derived as H1 minus Q2).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526322462/vicr-20260630.htm",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026 / H1 2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Reviewer re-derivation from the 10-Q statement of operations; Q1 values are subtraction, not read directly."
+  },
+  {
+   "id": "e41",
+   "claim": "Ex-royalty economics, if royalty revenue carries no cost of revenue (the cost line is 'cost of product revenues'): product revenue USD 112.9 million in Q2 2026 (143.352 minus 30.426) with product gross margin of about 46.7% (Q1 2026: USD 98.0 million, about 48.4%), and operating income before royalties of about USD 4.5 million (about 3.9% of product revenue) in Q2 and about USD 1.9 million (about 2.0%) in Q1. The headline 58.0% gross margin and USD 34.9 million operating income are therefore mostly royalty, of which USD 15 million in Q2 was a termination-clause recognition (e15).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q1-Q2 2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Cites e40, e6, e15. Assumption: no cost of revenue is attributed to royalties; if some is, product margins are higher by a small amount. The thesis' management objective is 70% gross margin / 40% operating margin (e16) versus about 47% product gross margin today. The thesis exit rule 'operating margin ex-royalty below 10% while revenue above USD 150 million' would already be met on the Q2 baseline if revenue were higher."
+  },
+  {
+   "id": "e42",
+   "claim": "Form 144 notices (aggregate market value as filed) show the founder/CEO Patrizio Vinciarelli proposed to sell about 1,398,600 shares worth about USD 331.5 million between 4 Mar and 2 Oct 2026: about 857,900 shares (about USD 157.3 million) under a plan adopted 3 Nov 2025 (Mar-Apr 2026) and about 540,700 shares (about USD 174.3 million) under the plan adopted 26 Feb 2026 (28 May to 6 Jul, then 1-2 Oct 2026). Form 4s executed through 7 Jul 2026 show about 8.35 million directly held shares afterwards. Form 4s also show 'S' (sale) transaction codes for officers Davies, Lavie, Schmidt, D'Amico and Anderson between 24 Jun and 3 Sep 2026 (amounts not tallied).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526297059/ownership.xml",
+   "source_date": "2026-07-07",
+   "period": "Mar-Oct 2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Reviewer tally of 83 Form 144 filings on EDGAR since 1 Mar 2026 (e.g. https://www.sec.gov/Archives/edgar/data/751978/000195004726010005/primary_doc.xml). Form 144 is a notice of proposed sale at the market value on the filing date, not a trade ledger; Form 4 confirms executed sales through 7 Jul. The thesis (e9, e10) mentioned only the 20,000-shares-a-day plan and the future 1,000,000-share plan, not the size already sold."
+  },
+  {
+   "id": "e43",
+   "claim": "News-wire copies (finviz, GlobeNewswire) of a Vicor release dated 2026-09-30: Q3 2026 sequential revenue growth guidance raised from 'more than 20%' to 'more than 30%' on increased royalties from the previously announced first non-exclusive VPD licence; no dollar royalty amount given. A trade-press summary says shares rose about 11% after hours that day.",
+   "kind": "FACT",
+   "source_type": "news",
+   "source_url": "https://finviz.com/news/397273/vicor-corporation-raises-q3-2026-revenue-guidance",
+   "source_date": "2026-09-30",
+   "period": "Q3 2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Secondary only; read through a summarising fetch. EDGAR submissions pulled 2026-10-05 show no 8-K for 17, 21 or 30 Sep 2026, so none of the three guidance items is corroborated by a filing I could read. Not in thesis v002."
+  },
+  {
+   "id": "e44",
+   "claim": "Implied Q3 2026 revenue path from Q2 revenue of USD 143.352 million (e6): 'nearly 10%' is about USD 157.7 million (Q2 call, e14), 'more than 20%' about USD 172.0 million (e20), 'more than 30%' at least about USD 186.4 million (e43). The increase of about USD 28.7 million within ten weeks is attributed by the company to royalties on one licence, so Q3 revenue and operating income would again be largely licence-driven.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q3 2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Cites e6, e14, e20, e43. Arithmetic on news-sourced guidance; the royalty dollars and whether they recur are not disclosed."
+  },
+  {
+   "id": "e45",
+   "claim": "Price path (INDmoney daily candles): VICR closed USD 183.91 on 2026-09-16 (day before the first licence release), USD 216.39 on 09-17, USD 223.90 on 09-21, USD 268.34 on 09-22, USD 288.94 on 09-30, USD 308.59 on 10-01 (opened about USD 330) and USD 308.90 on 10-02: +68% from 16 Sep to 2 Oct on about 46.1 million shares (common 34,389,014 plus Class B 11,717,718 at 22 Jul 2026 per the Q2 10-Q cover), i.e. about USD 5.8 billion of market value added. The close of USD 366.79 on 2026-06-29 was followed by USD 181.59 on 2026-09-02.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "Sep-Oct 2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Aggregator price data; share count from the 10-Q cover (verified in the filing)."
+  },
+  {
+   "id": "e46",
+   "claim": "Catalyst pricing: the extra Q3 revenue implied by the three guidance steps is about USD 29 million (e44), against about USD 5.8 billion of market value added since 16 Sep (e45); the market is capitalising expected future licence deals and a larger licensing franchise, not the current quarter. Aggregator consensus 2026 EPS USD 4.07 (stockanalysis, 4 analysts, 2026-10-01) puts the price at about 76x 2026E; analyst mean target USD 386-394 (3-4 analysts).",
+   "kind": "INFERENCE",
+   "source_type": "analyst",
+   "source_url": "https://stockanalysis.com/stocks/vicr/forecast/",
+   "source_date": "2026-10-01",
+   "period": "2026E",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Cites e43, e44, e45. Consensus read from an aggregator only and not cross-checked; 2027+ estimates were behind a paywall. Another aggregator snippet showing 2027 revenue of USD 236 million looks stale or wrong and was not used. Mean target via INDmoney: USD 393.75 (3 analysts)."
+  },
+  {
+   "id": "e47",
+   "claim": "FY2025 10-K risk text: 'Since the introduction of our Advanced Products, the Company has derived the majority of its revenue from Advanced Products in any given year from either one customer or a limited number of customers, whether through sales directly to the customer(s), indirectly to the customers' contract manufacturers, or through royalties.' The Q2 10-Q adds that the company expects 'over time a greater concentration of sales, including from intellectual property licensing, among relatively fewer customers.'",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526085102/vicr-20251231.htm",
+   "source_date": "2026-03-02",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Confirms customer concentration at the level of the majority of Advanced Products revenue; the thesis had only the 11.1% single-customer figure (e4). Q2 10-Q wording: https://www.sec.gov/Archives/edgar/data/751978/000119312526322462/vicr-20260630.htm"
+  },
+  {
+   "id": "e48",
+   "claim": "8-K filed 2026-09-10 (Item 5.03): effective 9 Sep 2026 the board amended the By-laws 'to clarify provisions relating to the removal of directors' (Article II, Section 6). The text of the amendment was not read.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/751978/000119312526387927/d539177d8k.htm",
+   "source_date": "2026-09-10",
+   "period": "Sep 2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Not in thesis v002. Significance unknown: with Class B at 10 votes per share (e5) it may bear on control; flagged as a governance item to read, not as a conclusion."
+  },
+  {
+   "id": "e49",
+   "claim": "Sampled price history (INDmoney, evenly sampled daily closes, so peaks are approximate): VICR USD 151.04 (2021-10-28) to USD 48.52 (2022-11-02); USD 67.72 (2023-08-28) to USD 34.47 (2024-06-20) while revenue went from USD 405.059 million (FY2023) to USD 359.058 million (FY2024). Analogue AI/optical/power names: AAOI USD 23.26 (2016-10-05) to USD 96.64 (2017-07-28) to USD 15.03 (2018-12-28), and USD 2.21 (2023-03-31) to USD 150.57 (2026-04-21) to USD 96.74 (2026-09-16); SMCI USD 33.45 (2023-07-28) to USD 90.85 (2024-04-10) to USD 31.24 (2024-12-19); NVTS USD 1.73 (2025-04-16) to USD 15.16 (2025-10-15) to USD 7.72 (2025-11-19), and USD 24.38 (2026-05-21) to USD 11.60 (2026-09-09).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "2016-2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Price points only; I did not read the analogue companies' filings, so causes of their moves are not attributed. Revenue figures for Vicor are from e3."
+  },
+  {
+   "id": "e50",
+   "claim": "Analogues: after large AI/optical/power-narrative runs the sampled prices show drawdowns of roughly 50-85% from the peak in VICR (twice), AAOI 2017-18, SMCI 2024 and NVTS 2025-26, but also that AAOI later rose far above its 2017 peak, so a run is not by itself proof of a top. In the Vicor 2023 case revenue fell 11% the year after the stock peaked.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "2016-2026",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Cites e49 and e3. Few analogues, price-only, selected by me: low weight."
+  },
+  {
+   "id": "e51",
+   "claim": "5x arithmetic: 5x USD 308.9 is about USD 1,545 a share, about USD 71 billion on 46.1 million shares (e45). Management's USD 2.5 billion revenue / 40% operating margin objective gives about USD 790 million of net income (e31), so USD 71 billion is about 90x that outcome; at 60x it needs about USD 1.2 billion of net income (about 1.5x the objective) and at 40x about USD 1.8 billion. The founder's own sale plan (e9) tops out at USD 800 a share, about 2.6x today's price, running to Dec 2028.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "24-month horizon",
+   "retrieved_at": "2026-10-05T06:40:12+00:00",
+   "note": "Cites e9, e31, e45. A sale plan price ladder is not a forecast; it is a data point on where the insider is willing to sell."
+  },
+  {
+   "id": "e52",
+   "claim": "Internal-consistency check of the thesis base case: 2027 EPS of about USD 5 at a 40-60x multiple gives USD 200-300 a share, about 0.65-0.97x of USD 308.9, not the stated 0.7-1.4x; the 1.4x upper end would need about 86x. Aggregator consensus 2026E EPS is USD 4.07 (e46), so about USD 5 for 2027 is not demanding, but the multiple is the swing factor.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "2027E",
+   "retrieved_at": "2026-10-05T06:41:30+00:00",
+   "note": "Cites e46 and the thesis base_case text, which is left unchanged; this item records that its upper end is not reproducible."
+  }
+ ],
+ "next_review": "2026-10-26",
+ "change_log": [
+  "reviewer: base-case arithmetic check",
+  "new evidence: e52"
+ ],
+ "parent_version": 3,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}
