@@ -1,0 +1,650 @@
+{
+ "ticker": "VIAV",
+ "company": "Viavi Solutions",
+ "market": "US",
+ "version": 3,
+ "status": "watchlist",
+ "research_level": 4,
+ "as_of": "2026-10-05",
+ "created_at": "2026-10-05T06:44:08+00:00",
+ "price": 47.1,
+ "price_ts": "2026-10-02",
+ "currency": "USD",
+ "why_now": "Evidence suggests four things changed in the last 6-12 months. (1) Growth stepped up: quarterly revenue rose from USD 299.1M in Q1 FY26 to USD 443.1M in Q4 FY26 (+25.6% to +52.5% year on year), with the company attributing it to data center ecosystem lab/production and field test demand, aerospace and defense, and the Spirent high-speed Ethernet/channel-emulation business bought in October 2025 (USD 145.0M of FY26 revenue). A rough ex-Spirent calculation still gives about +36% year on year in Q4 (inference). (2) NSE segment profitability inflected: non-GAAP operating margin 20.0% in Q4 FY26 versus 4.6% a year earlier. (3) The balance sheet was de-risked: a USD 575M equity raise at USD 45 in May 2026 repaid the USD 450M term loan, leaving debt principal of USD 650M against USD 656.7M of cash, i.e. roughly net-debt neutral. (4) Management guided Q1 FY27 to USD 450-460M revenue and a 27.1% non-GAAP operating margin. The quant screen also ranks the stock 6th on 12-1 month momentum (+170%). The counterpoint is that much of this is now visible and priced: the shares sit at 28.7x annualised Q1 FY27 guided non-GAAP EPS.",
+ "thesis": "Viavi is a test-and-measurement and optical-coatings company whose Network and Service Enablement (NSE) segment (about 78% of FY26 revenue) sells lab, production and field test gear to semiconductor, optical-module, networking-equipment and hyperscale customers as AI data centers move to 800G and 1.6T optics, plus aerospace/defense and positioning-navigation-timing products. The evidence is consistent with a real, filing-visible AI-adjacent demand upswing and a genuine margin inflection, so this is a good business in a favourable phase. It is a second-order AI picks-and-shovels name: its customers' R&D and capacity spend drives its orders, not AI end demand directly. The central question for the 12-24 month asymmetric-opportunity goal is not business quality but price: after a roughly 170% 12-1 month run, a diluted equity value of about USD 12.6B and an EV near USD 12.6B, the market already capitalises the guided run-rate at about 6.9x EV/sales and about 29x non-GAAP EPS, while GAAP earnings remain thin (FY26 GAAP net loss USD 30.4M, free cash flow USD 82.8M). A plausible path to a several-fold outcome would need roughly USD 3.5B+ of revenue at a ~30% margin and a premium multiple, which is about twice the current guided run-rate; the evidence read does not support that within 24 months. The more probable range, on the sourced numbers, is roughly flat to +2x with a sizeable drawdown tail if AI test spending pauses. Research read: interesting business, not an asymmetric entry at this price; keep on a watchlist and revisit on evidence of a second leg (revenue run-rate toward USD 2.2B+ with margins holding) or a materially lower price.",
+ "multibagger_mechanism": "Testable chain a 3x outcome (about USD 141) would require, as model arithmetic: price = non-GAAP EPS x multiple. At a 40x multiple, EPS of about USD 3.5 is needed (versus about USD 1.64 annualised from the Q1 FY27 guide). With roughly 268M diluted shares, an 11% tax rate and about USD 10M other expense, that implies about USD 1.0B of non-GAAP operating income, i.e. about USD 3.6B revenue at a 30% margin, about 2x the guided run-rate of about USD 1.8B and 2.4x FY26. Links and their evidence: (a) AI optics/Ethernet test demand keeps compounding through the 1.6T cycle (e3, e4, e17); (b) Spirent adds scale and mix (e5, e7); (c) NSE margin moves from the 23% Q1 guide toward the high-20s (e8); (d) the market keeps a 35-45x multiple. Each link is individually plausible, but the combination within 24 months is a low-probability tail by my model estimate (well under 10%); there is no filing evidence of orders or backlog on that scale (remaining performance obligations were USD 610.1M, 92% due within 12 months, e14). The nearer-term, more realistic upside is 1.3-2.2x in the bull case, below the several-fold bar.",
+ "expectations_gap": "Reverse arithmetic: at USD 47.10 the diluted equity value is about USD 12.6B (268M diluted shares guided for Q1 FY27) and EV about USD 12.6B. That is 8.3x FY26 revenue (USD 1,518.3M), about 6.9x annualised Q1 FY27 guided revenue, and 47x FY26 non-GAAP EPS (USD 1.00) or about 28.7x annualised Q1 FY27 guided EPS (USD 0.40-0.42, which includes about 2 cents of tariff refund benefit and a 14-week quarter). To normalise to a 20x multiple on non-GAAP EPS the company would need about USD 2.35 EPS, about 43% above the current annualised guided rate; that requires roughly USD 2.4-2.5B of revenue at 28-29% margin (my arithmetic), which is the 'bull' scenario. Evidence read suggests the market already assumes the Spirent-plus-data-center step change persists and keeps growing. What the evidence suggests the market may under-weight: (1) the Q1 FY27 revenue guide midpoint is only +2.7% above Q4 despite a 14-week quarter, i.e. flat-to-lower revenue per week (inference; the business is book-and-ship so weeks do not scale linearly, and management beat its Q4 guide); (2) the company itself says visibility is limited and much of revenue is booked and shipped in-quarter; (3) wireless/service-provider spend is weak, so there is little non-AI offset; (4) GAAP profitability and cash conversion lag the non-GAAP story (FY26 operating cash flow USD 113.9M on USD 1.5B revenue; 5.5% free cash flow margin); (5) the company sold new equity at USD 45 only five months ago, roughly the current price. What the market may be right about: demand for 1.6T/800G test and the A&D unit looks genuinely strong in the filings. Sell-side consensus and price history could not be verified from a primary or opened source in this session, so the gap versus consensus is not measured.",
+ "time_horizon_months": 24,
+ "bull_case": {
+  "name": "bull",
+  "description": "Model-estimate scenario. AI optics and Ethernet test demand compounds through the 1.6T cycle and into CPO/OCS; revenue reaches about USD 2.4B annual run-rate (about USD 600M per quarter) within 24 months, above the secondary-reported 'USD 500M+ per quarter in calendar 2027' remark (unverified), NSE margin reaches the high-20s so company non-GAAP operating margin is about 29%, non-GAAP EPS about USD 2.2-2.3 on about 272M shares, and the market pays 35-45x. Implies roughly USD 79-101 per share. Probability 25%: requires the AI test cycle to extend beyond what the company's own guide implies while valuation holds.",
+  "multiple_low": 1.65,
+  "multiple_high": 2.15,
+  "probability": 0.25,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "base_case": {
+  "name": "base",
+  "description": "Model-estimate scenario. Growth slows toward the guided run-rate: revenue about USD 1.9-2.1B, non-GAAP operating margin 25-27%, non-GAAP EPS about USD 1.5-1.85, with the multiple compressing to 22-26x as growth normalises and AI-optics comparisons get harder. Implies roughly USD 34-48 per share, i.e. broadly flat to somewhat down from USD 47.10 over 24 months. Probability 45%: closest to the guided Q1 FY27 numbers plus a decelerating year-on-year growth rate.",
+  "multiple_low": 0.72,
+  "multiple_high": 1.02,
+  "probability": 0.45,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "bear_case": {
+  "name": "bear",
+  "description": "Model-estimate scenario. Hyperscaler or optics-supplier capex digestion cuts lab/production test orders (book-and-ship, limited visibility), revenue falls 15-25% from the run-rate to about USD 1.4-1.5B, non-GAAP operating margin about 18-21%, EPS about USD 0.85-0.90, and the multiple compresses to 17-21x. Implies roughly USD 15-19 per share (0.3-0.5x allowing for a premium to trough). Probability 30%: the stock has 76% annualised volatility, an equity raise at USD 45 may mark a local cap, and test equipment orders historically cut fast when customers pause (evidence limited; no cycle history was read).",
+  "multiple_low": 0.3,
+  "multiple_high": 0.5,
+  "probability": 0.3,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "catalysts": [
+  {
+   "description": "Q1 FY27 results (quarter ending 3 Oct 2026, a 14-week quarter): test of guidance of USD 450-460M revenue, 27.1% non-GAAP operating margin and USD 0.40-0.42 EPS (which includes a net one-off tariff-refund benefit of about 100 bps / 2 cents), and of the sequential trend after +10.2% and +8.9% in Q3 and Q4 FY26.",
+   "window": "likely early to mid Nov 2026 (not announced as of 5 Oct 2026; the 14-week quarter ends 3 Oct and VIAV has reported 32-39 days after quarter end)",
+   "status": "pending",
+   "evidence_ids": [
+    "e8",
+    "e9",
+    "e22",
+    "e24",
+    "e36"
+   ]
+  },
+  {
+   "description": "Q2 FY27 results and Q3 guide: whether data center ecosystem demand (1.6T ramp) and Spirent cross-selling keep revenue climbing toward the secondary-reported USD 500M quarterly mark in calendar 2027; also the NSE margin path versus 23.1% guided for Q1.",
+   "window": "late Jan 2027 (date not confirmed; Q2 FY26 was reported 28 Jan 2026)",
+   "status": "pending",
+   "evidence_ids": [
+    "e8",
+    "e18"
+   ]
+  },
+  {
+   "description": "Settlement of the USD 250M 0.625% 2031 convertible notes, which were convertible by holders from 1 Jul to 30 Sep 2026 because the share price exceeded 130% of the USD 13.79 conversion price; the notes' principal is settled in cash and the excess in shares, so cash use and dilution should be visible in the Q1 FY27 10-Q.",
+   "window": "Q1 FY27 10-Q (Nov 2026)",
+   "status": "pending",
+   "evidence_ids": [
+    "e11",
+    "e13"
+   ]
+  }
+ ],
+ "risks": [
+  "AI-capex dependence and cyclicality: much of FY26 growth is attributed to the data center ecosystem; lab and production test is driven by customers' R&D and capacity spend, and the company states it has limited visibility with a significant in-quarter book-and-ship component (e16). A pause in optics/semiconductor capex could hit orders quickly. AI share of revenue is not disclosed in the filings read (e17).",
+  "Valuation and crowding: about 28.7x annualised guided non-GAAP EPS and about 6.9x EV/sales after a roughly +170% 12-1 month move; the stock is 28% above its 200-day average with 76% annualised volatility (e21). Little room for a guidance miss.",
+  "Quality-of-earnings gap: FY26 GAAP operating margin 6.9% and GAAP net loss USD 30.4M versus 20.6% non-GAAP operating margin; stock-based compensation USD 55.4M and large acquisition amortisation are excluded from non-GAAP; the company also changed its non-GAAP definition in Q4 FY26 (e10).",
+  "Cash conversion: operating cash flow USD 113.9M and free cash flow USD 82.8M on USD 1,518.3M revenue (about 5.5% FCF margin), a thin base for a roughly USD 12.6B EV (e10).",
+  "Acquisition-driven growth and dilution: Spirent contributed USD 145.0M and Inertial Labs USD 86.1M of FY26 revenue; Spirent's purchase-price allocation was still preliminary at year end; diluted shares rose from 227.0M (Q4 FY25) to 261.0M (Q4 FY26) with 268M guided for Q1 FY27; new equity was sold at USD 45 in May 2026 (e5, e12, e13).",
+  "Weak non-AI offsets: the 10-K notes a decline in wireless spend and the secondary call summaries describe service-provider demand as 'anemic' (unverified); so there is little cushion if data center demand cools (e17, e18).",
+  "Competition and pricing: the 10-K cites pricing pressure from Asia-based competitors and a concentrated customer base; named NSE competitors include Keysight, Anritsu, EXFO, NetScout, Rohde & Schwarz and VeEX; market share is not disclosed (e15).",
+  "Customer concentration: one OSP customer (not named in the note; the 10-K describes a strategic alliance with SICPA) was USD 174.7M or about 11.5% of FY26 revenue; Americas 45.0% and Asia-Pacific 30.9% of FY26 revenue (e14).",
+  "Not verified: no earnings-call transcript (Q3 or Q4 FY26) was obtained; call commentary (data center about 50% of NSE, 1.6T peak in 2027, USD 500M+ quarterly revenue in calendar 2027) comes only from AI-generated secondary summaries and is not used as a FACT (e18). Sell-side consensus, price history and any hyperscaler capex data were not verified in this session.",
+  "Policy and supply: tariffs (Viavi paid about USD 22.4M of IEEPA tariffs and received refunds only partly), US-China trade actions and component supply are listed as risks in the filings (e10).",
+  "Price path and volatility: the stock fell about 42% from its 1 May close to 29 Jul (and was 33.63 on 3 Sep) before rebounding about 40% in a month to 47.10; closes were below the USD 45 offering price on all but one day (17 Aug, 46.26) from 2 Jul to 1 Oct. The July move coincided with a roughly 17% fall in the Philadelphia Semiconductor Index, so the stock behaves as a high-beta AI-capex proxy (e26, e32).",
+  "Non-GAAP flatter: the Q1 FY27 guide embeds a non-GAAP tax of USD 12.0M (about 10% of pre-tax); at a 21% rate and after stock compensation the annualised EPS is about USD 1.26-1.42 and the P/E about 33-37x rather than 28.7x (e28, e29).",
+  "Debt-like items outside the thesis' net-debt statement: Inertial Labs earn-out liability USD 76.9M (USD 58.5M current) and FY26 earn-out payments of USD 43.7M in financing; free cash flow after those payments was about USD 39M on USD 1.5B revenue (e10, e27).",
+  "One-off in the guide: about USD 11.0M of IEEPA tariff refunds were received after year end and flow into Q1 FY27; the guide's net benefit is about 100 bps / 2 cents after an extra week of variable costs, so the underlying run-rate is lower than the guided EPS (e10, e8).",
+  "Insider selling into strength: CEO sold about USD 22M in early May at USD 51-55, a director sold about half of her holding at USD 46, the CFO sold most of his directly held shares at USD 36 on 31 Aug; whether sales were pre-planned is not verified (e30).",
+  "Acquired revenue and flat-to-lower acquired run-rate: about 47% of FY26 revenue growth (USD 205.9M of USD 434.0M) came from Spirent and the incremental Inertial Labs contribution; Spirent's derived Q4 revenue (about USD 47.7M) was below Q3 (USD 54.3M); ex-acquisitions FY26 growth was about +21% (e5, e6, e7, e27).",
+  "Cyclical history: revenue fell 23% from FY22 (USD 1,292M) to FY24 (USD 1,000M) after the previous upcycle and the stock fell about 59% from Jan 2022 to Jul 2024; the current cycle is larger but the company still describes limited visibility and in-quarter book-and-ship (e16, e33, e34).",
+  "Data quality: the 52-week-high gap in e21 is on a closing basis; sell-side consensus, institutional ownership, short interest and the earnings date are not verified; call commentary remains unverified (no transcript retrievable; WebFetch could not render the third-party transcript pages)."
+ ],
+ "valuation": {
+  "market_cap": 11621916522.29,
+  "market_cap_diluted_usd_m": 12622.8,
+  "ev_usd_m": 12616.1,
+  "ev_to_fy26_sales": 8.31,
+  "ev_to_annualised_q1fy27_guide_sales": 6.93,
+  "pe_fy26_nongaap_eps": 47.1,
+  "pe_annualised_q1fy27_guide_nongaap_eps": 28.7,
+  "fcf_yield_on_ev_pct": 0.66,
+  "gaap_net_income_fy26_usd_m": -30.4,
+  "notes": "Price USD 47.10 (2 Oct 2026). Diluted shares 268.0M from the Q1 FY27 guide; debt principal USD 650M (USD 250M 0.625% convert due 2031, USD 400M 3.75% notes due 2029); cash USD 656.7M at 27 Jun 2026. EV treats the convert as debt and uses guided diluted shares, which already include in-the-money convert shares. Annualised guide = Q1 FY27 midpoint x4 (14-week quarter flatters this). Non-GAAP figures are company-defined."
+ },
+ "scores": [
+  {
+   "name": "business_quality",
+   "value": 0.6,
+   "weight": 1.0,
+   "basis": "Non-GAAP gross margin 61.7% FY26 and OSP segment operating margin about 37%; but GAAP operating margin 6.9% and FCF margin about 5.5%",
+   "data_quality": "ok"
+  },
+  {
+   "name": "growth_acceleration",
+   "value": 0.8,
+   "weight": 1.0,
+   "basis": "Revenue +40.0% FY26 (about +27% ex-Spirent, inference) after +8.4% FY25; quarterly yoy +25.6% to +52.5%; part acquired",
+   "data_quality": "ok"
+  },
+  {
+   "name": "earnings_inflection",
+   "value": 0.8,
+   "weight": 1.0,
+   "basis": "Non-GAAP operating margin 14.3% to 20.6% FY26 and 24.0% in Q4; NSE segment 4.6% to 20.0% yoy in Q4",
+   "data_quality": "ok"
+  },
+  {
+   "name": "competitive_advantage",
+   "value": 0.55,
+   "weight": 1.0,
+   "basis": "Broad portfolio and Spirent layers 0-7 coverage per 10-K; named competitors include larger Keysight; market share not disclosed",
+   "data_quality": "partial"
+  },
+  {
+   "name": "catalyst_strength",
+   "value": 0.45,
+   "weight": 1.0,
+   "basis": "Dated results windows exist but largely test an already-guided path; no sourced order or backlog catalyst on a multi-x scale",
+   "data_quality": "partial"
+  },
+  {
+   "name": "valuation_asymmetry",
+   "value": 0.2,
+   "weight": 1.0,
+   "basis": "About 28.7x annualised guided non-GAAP EPS, 6.9x EV/sales; model scenarios are skewed to 0.3-2.2x, no scenario reaches 3x",
+   "data_quality": "partial"
+  },
+  {
+   "name": "market_confirmation",
+   "value": 0.9,
+   "weight": 1.0,
+   "basis": "12-1 month momentum +170%, rank 6 in the lab's discovery run; 14.9% below 52-week high (model output)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "thesis_robustness",
+   "value": 0.35,
+   "weight": 1.0,
+   "basis": "AI revenue share undisclosed; no transcripts read; short history of the current growth regime",
+   "data_quality": "partial"
+  }
+ ],
+ "overall_score": null,
+ "confidence": "low",
+ "entry": {
+  "state": "unknown",
+  "ideal_zone": null,
+  "acceptable_zone": null,
+  "chase_zone": null,
+  "add_zone": null,
+  "invalidation_price": null,
+  "rationale": ""
+ },
+ "exit_rules": [
+  {
+   "type": "thesis_invalidation",
+   "condition": "A quarterly non-GAAP operating margin below 22% (Q1 FY27 guide 27.1%; Q3 and Q4 FY26 were 21.2% and 24.0%) or NSE non-GAAP operating margin below 18%, checkable in the quarterly 8-K release.",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "Quarterly revenue below the low end of the company's own guidance (USD 450M for Q1 FY27) or a guided next-quarter revenue midpoint below the prior quarter's actual revenue, checkable in the earnings release.",
+   "status": "armed"
+  },
+  {
+   "type": "catalyst_failure",
+   "condition": "Q1 FY27 or Q2 FY27 non-GAAP EPS below USD 0.34 (the Q4 FY26 level) despite guidance of USD 0.40-0.42, or NSE revenue falling sequentially for two consecutive quarters.",
+   "status": "armed"
+  },
+  {
+   "type": "valuation_excess",
+   "condition": "Price above about USD 100 (about 2.1x the 2 Oct 2026 price) unless trailing-four-quarter non-GAAP EPS has reached at least USD 2.5 (a P/E above 40x on trailing EPS).",
+   "status": "armed"
+  },
+  {
+   "type": "narrative_saturation",
+   "condition": "Two or more large hyperscalers or optics suppliers lower calendar-2027 data center capex guidance by 10% or more in their 10-Q or earnings releases (to be checked each quarter; not verified in this session).",
+   "status": "armed"
+  }
+ ],
+ "adversarial": {
+  "done": true,
+  "reviewer": "devils_advocate",
+  "verdict": "downgraded",
+  "strongest_bear_case": "A USD 12.6B valuation on a test vendor whose revenue was flat from FY19 to FY25, now lifted by acquisitions (about 47% of the FY26 increase) and by a book-and-ship AI lab/production test upcycle that can reverse within a quarter. Non-GAAP EPS flatters through a ~10% tax rate and USD 274M of exclusions (burdened P/E 33-37x), free cash flow after earn-out payments is about USD 39M, the guide contains a one-off tariff refund and implies lower revenue per week, insiders and the company itself sold stock at USD 45-55, and the stock already fell 42% in July when semis fell 17%. A capex digestion would put EPS near USD 0.85-0.90 at 17-21x, i.e. USD 15-19.",
+  "questions": {
+   "what_evidence_would_make_it_wrong": "The thesis' stance (a good business whose price already assumes the step change, no asymmetric entry) would be wrong on the cautious side if Q1 FY27 revenue prints well above USD 460M with margin above 27% and a Q2 guide above about USD 480M: the company beat its Q4 segment guides (e28), Keysight's orders were up 56% (e31) and the guide implies only +2.7% sequentially. The thesis would be wrong on the other side (too optimistic about the business) if sequential revenue falls, NSE margin slips below the guided 23.1%, or the convert settlement and earn-out drain cash. Evidence that has already appeared against the thesis: the stock fell 42% in about three months to 29 Jul on AI-capex doubts (e26, e32), Spirent's derived Q4 revenue fell sequentially (e7) and the guide implies lower revenue per week (e9). None of these breaks the business read; they weaken the 'stable priced-in' premise.",
+   "what_is_missing": "Missing or unverified: a call transcript (third-party pages could not be read; management remarks stay INFERENCE, e18), the AI/data-center share of revenue (not disclosed, e17), sell-side consensus and the size of the gap versus it (only mean target 61.43 seen, e35), institutional ownership and short interest, whether insider sales were pre-planned (e30), NSE customer concentration (only one OSP customer above 10% is disclosed, e14), the confirmed Q1 FY27 report date (e36) and the conversion outcome of the USD 250M 2031 notes from the Jul-Sep window. The thesis also omitted the USD 76.9M earn-out (e27), the roughly 10% non-GAAP tax rate (e28), the July-September drawdown (e26) and the 2022-24 revenue decline (e33).",
+   "is_catalyst_priced_in": "Largely priced for the guide, open for the beat. The Q4 print and Q1 guide were public on 5 Aug when the stock closed at 38.90; it is now 47.10 (+21%), up about 29% since 22 Sep and 40% from the 3 Sep low with no company filing in between (the only filings were the proxy and Form 4s), so the recent move looks sector/momentum driven (e26, e31). Consensus EPS could not be verified, so the beat/miss threshold is unknown; the 6 analysts are all Buy with a mean target about 30% above the price (e35). Because the company has beaten its own guides (e28), the market probably expects another beat, so a result merely in line with the guide is likely to be treated as a miss.",
+   "does_valuation_fit_growth": "Only partly. On the company's non-GAAP basis the multiple is 28.7x annualised guided EPS (arithmetic checks, e19), but that rises to about 30.9x after removing the extra week and to about 33-37x with a normal tax rate and stock compensation (e29). Growth is +40% for FY26 but about 47% of the increment was acquired and organic FY26 growth was about +21% (e5, e27); the revenue history shows a 23% decline in FY23-24 (e33), so durability is unproven. A roughly 33x burdened P/E for 20-35% growth in a book-and-ship test business is not obviously cheap or expensive; it fits if growth persists for two or more years, which the company's own limited-visibility language does not support (e16).",
+   "great_company_vs_great_stock": "Evidence suggests a good company in a very good phase (NSE segment margin 4.6% to 20.0% year on year, Q4 revenue +52.5%, FY26 non-GAAP EPS USD 1.00 versus 0.47) but at this price a stock whose multi-fold gain is already behind it: from the USD 9.19 close of 27 May 2025 the shares are up about 5.1x and from the 52-week low about 3.9x (e26, feed). The risk/reward at USD 47.10 is better described as a high-variance stock around a good business than as a mispriced great stock.",
+   "merely_an_ai_narrative": "Not merely a narrative: revenue (+40% FY26, Q4 +52.5%), margin and cash are in the filings (e3, e4, e10) and Keysight's results independently show data-center test demand (e31). But the AI share of revenue is not disclosed (e17), the 'about 50% of NSE' figure is only from an unverified summary (e18), roughly half of the FY26 increase was acquired, and the stock moved with optical/semiconductor names in July (e26, e32). The evidence suggests revenue carries part of the valuation and AI sentiment carries the rest, with no way to split them from primary documents.",
+   "is_it_crowded": "The available evidence points to a crowded momentum trade: momentum rank 6 in the lab universe and +170% 12-1 month (e21), average daily value about USD 207M, a 10.1M-share day on 2 Oct, 76% annualised volatility, all six covering analysts at Buy (e35) and a USD 575M primary raise absorbed in May (e12). Insiders sold into strength (e30). Institutional ownership, short interest and options positioning were not verified, so the degree of crowding versus peers cannot be measured here.",
+   "strongest_bear_argument": "As its best advocate would put it: Viavi is a USD 12.6B company whose revenue went from USD 1.13B in FY19 to USD 1.08B in FY25 (including acquisitions) and whose FY26 jump is part acquired (about 47%) and part a book-and-ship lab/production test upcycle that customers can cut within a quarter (e16, e33). Earnings quality is thin: GAAP net loss USD 30.4M, free cash flow of about USD 39M after earn-out payments, non-GAAP tax near 10% and about USD 274M of exclusions (e10, e27, e29); on a normal tax rate and including stock compensation the P/E is 33-37x. The guide implies flat-to-lower revenue per week (e9) and includes a one-off tariff refund (e10). The company sold USD 575M of stock at USD 45 five months ago, the CEO sold about USD 22M at USD 51-55, and the stock fell 42% in July when semiconductors fell 17% (e26, e30, e32). If capex digestion arrives, 17-21x on USD 0.85-0.90 EPS gives USD 15-19.",
+   "what_happened_in_similar_setups": "Three same-sector analogues from the sources I could open, with outcomes: (1) VIAV itself after the 2021-22 test upcycle: revenue peaked at USD 1,292M in FY22, fell to USD 1,000M by FY24 (-23%) and the stock went from about 17 to about 7 (-59%) (e33, e34); (2) FORM after its FY21 peak: revenue USD 770M to USD 663M (FY23, -14%) and the stock from about 44-45 to about 19.7 (-56%) (e34); (3) FORM in 2024: HBM/AI enthusiasm took it from about 39 to 61.7 and then to 23.2 (-62%) with FY25 revenue +2.8% (e34). I did not find or read a cross-company study of multi-fold small-cap runs, so these are anecdotes, not a base rate. The counter-example is the current cycle, which is larger and corroborated by peers (e31).",
+   "what_must_happen_for_5x": "A 5x outcome is USD 235.50 per share, about USD 63B of equity value. With the multiple unchanged at 6.9x EV/annualised sales, revenue must reach about USD 9.1B (5x the guided run-rate and 6x FY26); with a 35x multiple, non-GAAP EPS must reach about USD 6.73 (4.1x the annualised guide), roughly USD 2.0B non-GAAP operating income versus USD 312.9M in FY26 (e37). Operationally that needs the AI lab/production test cycle to compound for several more years, large share gains against Keysight, Anritsu and others, margins holding in the high 20s and a premium multiple surviving the digestion that followed previous upcycles (e33).",
+   "is_5x_plausible_in_1_2_years": "No, on the evidence. The required revenue (about USD 9B) would exceed Keysight's entire annualised revenue (about USD 7.4B from the USD 1.85B quarter, e31) and the RPO is USD 610.1M (e14). I put the probability of 5x within 24 months at roughly 1-2% (model estimate), consistent with the author's 'well under 10%' for 3x. A more realistic range is the author's: about 0.3-0.5x in a digestion case, 0.7-1.0x base and 1.65-2.15x bull, though the bear tail looks at least as likely as the author's 30% given a 42% fall in 11 weeks (e26), and the base range depends on a multiple compression that the last 10 weeks did not show.",
+   "probability_market_already_right": "Model estimate: about 55-65% that the price is about right in the sense that no edge from this analysis exists at the 12-24 month horizon. Reasons: the stock has moved between USD 32 and USD 47 within ten weeks on essentially unchanged filings, which suggests price discovery is dominated by sector sentiment; the company beats its own guides and peers' data (e31) are strong, which supports the bull case; against that the author's scenario expected value is about 1.0x, the equity raise at USD 45 and the burdened P/E of 33-37x leave little room, and consensus could not be checked (e35). I would not call it mispriced in either direction on this evidence."
+  },
+  "reviewed_at": "2026-10-05T06:44:08+00:00"
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "Last price 47.1 USD on 2026-10-02 (market data snapshot).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Price snapshot only; says nothing about business quality."
+  },
+  {
+   "id": "e2",
+   "claim": "Quantitative discovery output for VIAV: rank 6. Model output, not a verified business fact.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Momentum rank is the only selector validated in this lab, and only modestly; it is a reason to spend research time, not a thesis."
+  },
+  {
+   "id": "e3",
+   "claim": "FY26 (year ended 27 Jun 2026) net revenue was USD 1,518.3M versus USD 1,084.3M in FY25 and USD 1,000.4M in FY24; product revenue USD 1,324.6M and service revenue USD 193.7M.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Form 10-K, income statement and MD&A."
+  },
+  {
+   "id": "e4",
+   "claim": "Q4 FY26 net revenue was USD 443.1M, up 52.5% year on year (NSE USD 353.9M, +69.2%; OSP USD 89.2M, +9.6%); non-GAAP operating margin 24.0% versus 14.4%; GAAP operating margin 13.8%; non-GAAP EPS USD 0.34 versus USD 0.13.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026053381/viavq4fy268-kex991.htm",
+   "source_date": "2026-08-05",
+   "period": "Q4 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "8-K Exhibit 99.1 earnings release; figures are labelled preliminary in the release and the 10-K followed on 13 Aug 2026."
+  },
+  {
+   "id": "e5",
+   "claim": "Viavi acquired Spirent's high-speed Ethernet, network security and channel emulation testing business from Keysight on 16 Oct 2025 for USD 399.3M cash; it contributed USD 145.0M of FY26 net revenue, and Inertial Labs contributed USD 86.1M; the 10-K attributes NSE growth to data center ecosystem lab/production and field demand, Spirent and aerospace/defense demand, partly offset by lower wireless spend.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "10-K MD&A and Note 5 (purchase price allocation preliminary; to be finalised by end of Q1 FY27)."
+  },
+  {
+   "id": "e6",
+   "claim": "Spirent's business contributed USD 54.3M of revenue in Q3 FY26 and USD 97.3M in the nine months to 28 Mar 2026; Inertial Labs contributed USD 22.6M in Q3 FY26.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026028926/viav-20260328.htm",
+   "source_date": "2026-04-30",
+   "period": "Q3 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Form 10-Q MD&A."
+  },
+  {
+   "id": "e7",
+   "claim": "Rough organic read: Spirent revenue in Q4 FY26 = 145.0 minus 97.3 = about USD 47.7M, so Q4 revenue ex-Spirent was about USD 395.4M (about +36% year on year, about +12% sequentially versus Q3 ex-Spirent of about USD 352.5M); FY26 ex-Spirent growth about +26.7%. These figures still include Inertial Labs (acquired Jan 2025) and are not a company-reported organic measure.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q4 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Derived from e3, e4, e5, e6; arithmetic, not a disclosed number."
+  },
+  {
+   "id": "e8",
+   "claim": "Q1 FY27 outlook (quarter ending 3 Oct 2026, 14 weeks): revenue USD 450-460M (NSE USD 360-368M, OSP USD 90-92M), non-GAAP operating margin 27.1% (+/-40 bps), non-GAAP EPS USD 0.40-0.42, non-GAAP share count 268.0M; includes a net benefit of about 100 bps and about 2 cents from tariff refunds offset by an extra week of variable costs. Q4 revenue was above the high end of guidance.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://s201.q4cdn.com/299643651/files/doc_financials/2026/q4/FQ426EarningsSlides.pdf",
+   "source_date": "2026-08-05",
+   "period": "Q1 FY27 guidance",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Company IR earnings slides (supplementary), consistent with the 8-K release guide."
+  },
+  {
+   "id": "e9",
+   "claim": "The Q1 FY27 revenue guidance midpoint (USD 455M) is only about +2.7% above Q4 FY26 revenue of USD 443.1M despite one extra week, i.e. about USD 32.5M per week versus about USD 34.1M per week in Q4; Q3 and Q4 FY26 had grown +10.2% and +8.9% sequentially. Because revenue is largely booked and shipped within the quarter, weeks do not scale linearly and management has beaten its guide, so this is a caution flag rather than a deterioration signal.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q1 FY27 guidance",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Derived from e4 and e8 and the Q3 release growth rates (e24)."
+  },
+  {
+   "id": "e10",
+   "claim": "FY26 non-GAAP operating margin was 20.6% (FY25 14.3%) and GAAP operating margin 6.9%; GAAP net loss USD 30.4M; operating cash flow USD 113.9M, capex USD 31.1M, free cash flow USD 82.8M; stock-based compensation USD 55.4M; Viavi paid about USD 22.4M of IEEPA tariffs and had recognised about USD 1.5M of refunds at year end, and after year end (subsequent to 27 Jun 2026) received about USD 11.0M of additional refunds (tariff refunds plus statutory interest) that were not recognised at the balance sheet date; from Q4 FY26 the company excludes employer payroll tax on stock compensation from non-GAAP.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "10-K MD&A (tariff paragraph). CORRECTED by adversarial review: original omitted the USD 11.0M of post-year-end refunds, which is the one-off behind the ~100 bps / ~2 cent net benefit in the Q1 FY27 guide (e8). Free cash flow of USD 82.8M also appears in the Q4 IR slides."
+  },
+  {
+   "id": "e11",
+   "claim": "At 27 Jun 2026 Viavi had cash, short-term investments and restricted cash of USD 656.7M and debt of USD 250.0M 0.625% senior convertible notes due Mar 2031 (conversion price USD 13.79, about 18.1M underlying shares, par settled in cash) and USD 400.0M 3.75% senior notes due Oct 2029; the 2031 notes were convertible by holders from 1 Jul to 30 Sep 2026.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "10-K liquidity section; conversion price and shares from the Q4 IR slides (e8 source) and 8-K release for cash."
+  },
+  {
+   "id": "e12",
+   "claim": "On 19 May 2026 Viavi sold 11,111,111 shares at USD 45.00 in a public offering (underwriters exercised the 1,666,666-share option in full on 20 May), net proceeds about USD 557.2M, intended to repay the USD 450M term loan.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000114036126022337/ef20074430_8k.htm",
+   "source_date": "2026-05-21",
+   "period": "Q4 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "8-K Item 8.01 underwriting agreement."
+  },
+  {
+   "id": "e13",
+   "claim": "Viavi had 246,749,828 common shares outstanding on 25 Jul 2026; Q4 FY26 diluted weighted shares were 261.0M versus 227.0M a year earlier; the company guided a 268.0M non-GAAP share count for Q1 FY27.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "10-K cover page; diluted weighted shares from the 8-K release (e4 source) and the guide from e8."
+  },
+  {
+   "id": "e14",
+   "claim": "FY26 revenue by region: Americas 45.0%, Asia-Pacific 30.9%, EMEA 24.1%; one OSP customer generated USD 174.7M (more than 10% of revenue); remaining performance obligations were USD 610.1M at 27 Jun 2026, about 92% expected within 12 months.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "10-K Note 19 and revenue note; regional percentages also in the Q4 release."
+  },
+  {
+   "id": "e15",
+   "claim": "The 10-K lists NSE competitors as Anritsu, EXFO, Keysight, NetScout, Riverbed, Rohde & Schwarz and VeEX, states that Viavi has one of the broadest portfolios, and lists pricing pressure from Asia-based competitors and a highly concentrated customer base among risk factors; market share figures are not disclosed.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "10-K Item 1 Competition and Item 1A."
+  },
+  {
+   "id": "e16",
+   "claim": "The earnings release lists among its forward-looking risks continuing general limited visibility across many product lines, notable seasonality and a significant level of in-quarter book-and-ship business, and continued decline of average selling prices.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026053381/viavq4fy268-kex991.htm",
+   "source_date": "2026-08-05",
+   "period": "Q4 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "8-K Exhibit 99.1 forward-looking statements paragraph."
+  },
+  {
+   "id": "e17",
+   "claim": "In the sections read, the 10-K and Q4 release describe AI/HPC data center build-out as a driver of NSE demand (higher-speed optical transceivers, DCI, multi-fiber connectivity) but do not give a revenue figure for data center or AI-linked sales; the share of revenue linked to AI spend is therefore not disclosed in the primary documents read.",
+   "kind": "INFERENCE",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Based on reading 10-K Item 1 and MD&A (data center text) and e4/e5; absence-of-disclosure inference."
+  },
+  {
+   "id": "e18",
+   "claim": "Two AI-generated secondary call summaries (not the transcript) report that management said the data center ecosystem is about 50% of NSE revenue, that organic data center business more than doubled year on year, that 1.6T demand peaks in 2027, that USD 500M+ quarterly revenue is expected during calendar 2027, and that service-provider demand is weak. These points are unverified and not used as FACTs.",
+   "kind": "INFERENCE",
+   "source_type": "news",
+   "source_url": "https://allmind.ai/earnings/event/2943040",
+   "source_date": "2026-08-05",
+   "period": "Q4 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Secondary summaries from allmind.ai and stocktaper.com (https://www.stocktaper.com/earningsCallSummary/VIAV/2026/Q4); the two differ in detail; the roic.ai transcript page returned HTTP 403 and the IR page showed no transcript link."
+  },
+  {
+   "id": "e19",
+   "claim": "Valuation arithmetic: at USD 47.10 and 268.0M diluted shares the equity value is about USD 12.6B; EV about USD 12.6B (principal debt USD 650M minus cash USD 656.7M); EV/FY26 sales 8.3x; EV/annualised Q1 FY27 guide midpoint sales 6.9x; P/E 47x on FY26 non-GAAP EPS USD 1.00 and 28.7x on annualised Q1 FY27 guided EPS midpoint USD 0.41; FCF yield on EV about 0.7%.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "TTM to Jun-2026 and Q1 FY27 guide",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Derived from e1, e3, e8, e10, e11, e13. Annualising a 14-week quarter flatters the multiple slightly."
+  },
+  {
+   "id": "e20",
+   "claim": "A 3x outcome (about USD 141) needs EPS of about USD 3.5 at 40x, i.e. about USD 1.0B non-GAAP operating income, about USD 3.6B revenue at a 30% margin: about 2x the guided run-rate; scenario arithmetic for bull/base/bear is in the scenario descriptions (model estimates, 268-272M shares, 11% tax, USD 10M other expense).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "24-month horizon",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Derived from e8, e19; assumptions are mine, not company guidance."
+  },
+  {
+   "id": "e21",
+   "claim": "Lab discovery run (2 Oct 2026): VIAV 12-1 month momentum +169.7% (rank 6), annualised volatility 76.4%, 14.9% below its 52-week closing high and 28.0% above its 200-day average.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "12-1 month to Sep-2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Momentum is the only selector validated in this lab and only modestly; it is not evidence of business quality. CORRECTED by adversarial review: the 14.9% is on a closing-price basis (close high 55.33 on 1 May 2026); the intraday 52-week high was 60.43 on 30 Apr 2026, i.e. the stock is about 22% below it (INDmoney feed). Not a material conflict but the basis was not stated."
+  },
+  {
+   "id": "e22",
+   "claim": "Q1 FY26 net revenue was USD 299.1M, up 25.6% year on year (prior-year Q1 FY25 USD 238.2M); non-GAAP EPS USD 0.15.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000091209325000151/viavq1fy268-kex991.htm",
+   "source_date": "2025-10-29",
+   "period": "Q1 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "8-K Exhibit 99.1."
+  },
+  {
+   "id": "e23",
+   "claim": "Q2 FY26 net revenue was USD 369.3M, up 36.4% year on year (Q2 FY25 USD 270.8M); non-GAAP operating margin 19.3% versus 14.9%.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026003845/viavq2fy268-kex991.htm",
+   "source_date": "2026-01-28",
+   "period": "Q2 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "8-K Exhibit 99.1."
+  },
+  {
+   "id": "e24",
+   "claim": "Q3 FY26 net revenue was USD 406.8M, up 42.8% year on year (Q3 FY25 USD 284.8M) and up 10.2% on Q2; non-GAAP operating margin 21.0% (recast 21.2% under the new methodology); non-GAAP EPS USD 0.27.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026028392/viavq3fy268-kex991.htm",
+   "source_date": "2026-04-29",
+   "period": "Q3 FY26",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "8-K Exhibit 99.1."
+  },
+  {
+   "id": "e25",
+   "claim": "AI value-chain position: Viavi sits in the networking/optics test layer (second-order): it sells test and measurement tools used to design, qualify and build high-speed optical modules, Ethernet/network equipment and AI data center fabrics, plus field fiber test, so revenue follows customers' R&D and capacity spend. If AI spend slows, lab and production test orders are likely to be among the first cut (in-quarter book-and-ship, limited visibility per e16), while aerospace/defense positioning-navigation-timing and OSP anti-counterfeiting (about USD 335M, 22% of FY26 revenue) are less AI-sensitive; the 10-K shows weak wireless spend, so non-AI offsets are limited. The exact AI-linked share of revenue is not disclosed in the filings read (e17).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:29:23+00:00",
+   "note": "Reasoning from e3, e5, e16, e17; OSP revenue USD 335.4M from the Q4 release segment table (e4 source)."
+  },
+  {
+   "id": "e26",
+   "claim": "VIAV closing prices (USD): 55.33 on 1 May 2026 (post-Q3 print high close), 47.07 on 1 Jul, 32.23 on 29 Jul (-42% from the May close), 38.90 on 5 Aug (day of the Q4 release), 33.63 on 3 Sep, 36.40 on 22 Sep, 44.78 on 1 Oct and 47.10 on 2 Oct 2026 (volume about 10.1M shares on 2 Oct versus roughly 3-7M on typical days). The stock closed below the USD 45.00 May offering price on every trading day from 2 Jul to 1 Oct 2026 except 17 Aug (46.26) and is up about 40% from its 3 Sep close in one month.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "Jun-Oct 2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "INDmoney market-data feed (secondary aggregator), read 2026-10-05; the 2 Oct close of 47.10 matches the lab's own candidates_US.json. The thesis cites a +170% 12-1 month move and the USD 45 raise but not the July-September drawdown."
+  },
+  {
+   "id": "e27",
+   "claim": "At 27 Jun 2026 the fair value of the Inertial Labs contingent consideration liability was USD 76.9M (USD 58.5M current, USD 18.4M non-current); FY26 payments of acquisition-related contingent consideration were USD 43.7M (reported in financing, so outside the USD 82.8M free cash flow); the FY26 change in fair value (USD 33.0M charge) is excluded from non-GAAP.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/912093/000162828026056765/viav-20260627.htm",
+   "source_date": "2026-08-13",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "10-K liquidity section (Contingent Consideration), cash-flow statement and non-GAAP reconciliation. Debt-like item not in the thesis EV or its net-debt statement."
+  },
+  {
+   "id": "e28",
+   "claim": "Q1 FY27 outlook items besides revenue and EPS: non-GAAP tax USD 12.0M (+/- 0.5M), non-GAAP other (income) and expense USD 2.5M, non-GAAP share count 268.0M, a 14-week quarter, NSE non-GAAP operating margin 23.1% (+/- 50 bps) and OSP 43.2%; Q4 FY26 NSE revenue of USD 353.9M and OSP of USD 89.2M were above or at the high end of the guided USD 340-348M and USD 87-89M ranges.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://s201.q4cdn.com/299643651/files/doc_financials/2026/q4/FQ426EarningsSlides.pdf",
+   "source_date": "2026-08-05",
+   "period": "Q1 FY27 guidance",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Company IR slides (Fiscal Q1 2027 Business Outlook page and segment pages)."
+  },
+  {
+   "id": "e29",
+   "claim": "Burdened EPS arithmetic on the Q1 FY27 guide: operating income at the 27.1% margin on USD 455M revenue is about USD 123.3M; less USD 2.5M other gives pre-tax of about USD 120.8M; the guided USD 12.0M tax is about a 9.9% rate, which reproduces about USD 0.41 on 268.0M shares. At a 21% tax rate EPS would be about USD 0.36 (annualised USD 1.42, P/E about 33x at USD 47.10); also deducting stock-based compensation at the Q4 level of USD 14.2M gives about USD 0.31 (annualised USD 1.26, P/E about 37x). Removing the 14th week by scaling 14/13 puts the thesis' 28.7x at about 30.9x before the one-off refund benefit.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q1 FY27 guide",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Derived from e8, e28 and the Q4 FY26 SBC line (USD 14.2M, 8-K reconciliation). Model arithmetic with my assumptions (21% statutory tax, Q4 SBC held flat); not company guidance. The thesis' 28.7x on the company non-GAAP basis is arithmetically correct (47.10 / (0.41 x 4))."
+  },
+  {
+   "id": "e30",
+   "claim": "Form 4 filings (SEC): CEO Oleg Khaykin sold about 418,700 shares for roughly USD 22M on 5-8 May 2026 at USD 51-55; director Laura Black sold 71,000 shares at USD 46.12 on 17 Aug (71,497 held afterwards); director Joanne Solomon sold 10,000 at USD 42.92 on 14 Aug; CFO Ilan Daskal sold 56,290 shares at USD 36.29 on 31 Aug leaving 10,132 directly held after the sale; other officers sold smaller blocks in Aug-Sep. Most other Form 4 lines are RSU vests and tax withholding (code M/F). No Rule 10b5-1 footnote was found in the Forms checked (CEO May, Black, 31 Aug batch), so it is not verified whether the sales were pre-planned.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000912093&type=4&dateb=&owner=include&count=40",
+   "source_date": "2026-09-23",
+   "period": "May-Sep 2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "EDGAR Form 4 list for CIK 912093, parsed from the primary XML of each filing. Sales in itself are not proof of weakness; they are a data point on insider view of price."
+  },
+  {
+   "id": "e31",
+   "claim": "Keysight Technologies Q3 FY26 (quarter ended 31 Jul 2026) 8-K release: revenue USD 1.85B (+36% year on year), orders USD 2,091M versus USD 1,340M, commercial communications revenue +56%. Keysight is the seller of the Spirent business to Viavi and a named NSE competitor, so its data-center test strength both corroborates the demand backdrop and shows Viavi is not alone in capturing it.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000029/exhibit991-q326pressrelease.htm",
+   "source_date": "2026-08-18",
+   "period": "Q3 FY26 (Keysight)",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Peer evidence opened in the SEC exhibit; it supports the demand side of the thesis and weakens any claim that VIAV demand is idiosyncratic."
+  },
+  {
+   "id": "e32",
+   "claim": "News reports (gvwire 17 Jul 2026, Leverage Shares 28 Jul 2026) say the Philadelphia Semiconductor Index fell about 17% in July 2026 and the MSCI World Semiconductor Index about 13% (worst month since 2022), with the Kospi down 11% on 28 Jul and SK hynix and Samsung down over 13% that day, on AI-spending valuation concerns, 'circular funding' worries and Chinese lithography competition; VIAV fell about 42% from 1 May to 29 Jul and FORM about 43% from 1 Jul to 29 Jul (feed prices, e26).",
+   "kind": "INFERENCE",
+   "source_type": "news",
+   "source_url": "https://leverageshares.com/en-eu/insights/chip-stocks-lead-global-market-selloff/",
+   "source_date": "2026-07-28",
+   "period": "Jul 2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Secondary news, used only as context for the price moves that the thesis does not mention; the stock price moves themselves come from the price feed."
+  },
+  {
+   "id": "e33",
+   "claim": "Viavi annual net revenue from XBRL company facts (USD M, fiscal years ended late June/early July): FY2016 906.3, FY2017 805.0, FY2018 875.7, FY2019 1,130.3, FY2020 1,136.3, FY2021 1,198.9, FY2022 1,292.4, FY2023 1,106.1, FY2024 1,000.4, FY2025 1,084.3, FY2026 1,518.3.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000912093.json",
+   "source_date": "2026-08-13",
+   "period": "FY2016-FY2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "SEC XBRL companyfacts API (RevenueFromContractWithCustomerExcludingAssessedTax). FY2022 to FY2024 fell 23% peak to trough after the earlier upcycle."
+  },
+  {
+   "id": "e34",
+   "claim": "Analogue price/revenue outcomes (feed prices, evenly sampled series so approximate): VIAV traded about 17 in Jan 2022 and about 7.07 in Jul 2024 (-59%) while revenue fell from USD 1,292M (FY22) to USD 1,000M (FY24); FORM traded about 44-45 in Dec 2021/Jan 2022 and about 19.7 in Nov 2022 (-56%) with revenue falling from USD 770M (FY21) to USD 663M (FY23); FORM ran from about 39 (Jan 2024) to 61.7 (10 Jul 2024) on HBM/AI enthusiasm and then fell to 23.2 (8 Apr 2025) (-62%) while FY25 revenue grew only 2.8%. These are same-sector, same-company analogues; no cross-company base-rate study was read.",
+   "kind": "INFERENCE",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "2021-2025",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Derived from the INDmoney 5y price series (sampled), e33 and the FORM revenue series (FORM thesis e27). Peaks and troughs are approximate because the series is sampled."
+  },
+  {
+   "id": "e35",
+   "claim": "Analyst feed: 6 analysts, all Buy, mean target USD 61.43 (about 30% above USD 47.10) for VIAV. Sell-side consensus EPS/revenue estimates were not available, so the size of the expectations gap versus consensus is still not measured.",
+   "kind": "INFERENCE",
+   "source_type": "analyst",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Oct 2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "INDmoney analyst segment (aggregator); treat as context, not a primary source."
+  },
+  {
+   "id": "e36",
+   "claim": "Timing check: neither VIAV's IR home page nor its Events page listed a Q1 FY27 earnings date on 5 Oct 2026. Q1 FY27 ends 3 Oct 2026 (14 weeks); VIAV reported Q1 FY26 32 days after its 27 Sep 2025 quarter end (29 Oct 2025), Q3 FY26 32 days after 28 Mar 2026 (29 Apr 2026) and Q4 FY26 39 days after 27 Jun 2026 (5 Aug 2026), which points to roughly 4-11 Nov 2026 rather than 'late October'.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Derived from e22, e24, e4 dates and the IR pages (no date found). The researcher's 'assumed from prior-year timing' note is confirmed as an assumption and the window is shifted for the longer quarter."
+  },
+  {
+   "id": "e37",
+   "claim": "Five-times arithmetic: 5x of USD 47.10 is USD 235.50, about USD 63B diluted equity value on 268M shares. At today's 6.9x EV to annualised guided sales that needs about USD 9.1B annual revenue (5x the USD 1.82B run-rate and 6x FY26); at 35x non-GAAP EPS it needs about USD 6.73 EPS (4.1x the annualised guide), roughly USD 1.8B non-GAAP net income and about USD 2.0B non-GAAP operating income, 6.5x FY26's USD 312.9M. For scale, Keysight's whole quarterly revenue is USD 1.85B (e31).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "24-month horizon",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Derived from e1, e8, e19, e28, e31; complements e20 which sized only a 3x outcome."
+  }
+ ],
+ "next_review": "2026-11-05",
+ "change_log": [
+  "adversarial review: devil's advocate and source audit (downgraded)",
+  "research_level: '3' -> '4'",
+  "adversarial verdict: none -> downgraded",
+  "new evidence: e26, e27, e28, e29, e30, e31, e32, e33, e34, e35, e36, e37"
+ ],
+ "parent_version": 2,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}
