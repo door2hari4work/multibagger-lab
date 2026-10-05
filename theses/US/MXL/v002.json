@@ -1,0 +1,492 @@
+{
+ "ticker": "MXL",
+ "company": "MaxLinear, Inc.",
+ "market": "US",
+ "version": 2,
+ "status": "watchlist",
+ "research_level": 3,
+ "as_of": "2026-10-05",
+ "created_at": "2026-10-05T06:30:24+00:00",
+ "price": 105.93,
+ "price_ts": "2026-10-02",
+ "currency": "USD",
+ "why_now": "Over the last two quarters the company stepped up its 2026 optical data-centre outlook three times (Keystone USD 100-130 million in Jan, optical USD 150-170 million in Apr, USD 210-230 million in Jul), Q2 revenue was USD 168.8 million (+55% y/y) with infrastructure +145%, Q3 is guided to USD 210-220 million (about +27% q/q at the midpoint), GAAP profit returned in Q2 and gross margin guidance reached about 60% non-GAAP. The revolver was extended to 2028. The stock moved from about USD 17 in April to USD 106, so the question now is how much of a multi-year optical ramp is already in the price.",
+ "thesis": "MaxLinear is a fabless mixed-signal company that, per its filings, has pivoted from cable broadband toward AI data-centre optical interconnect (Keystone 5 nm PAM4 DSP at 800G, next Rushmore at 1.6T). Q2 2026 filings are consistent with a real inflection: infrastructure revenue up 145% y/y, a guided Q3 step to USD 210-220 million, and non-GAAP operating margin of 22% rising toward about 28% on guidance arithmetic. The asymmetric-opportunity test is price and durability: about USD 10.5 billion of equity value, about 12x annualised Q3 sales, with the optical growth concentrated in a handful of customers, a 2023-24 history of a 48% revenue fall, and Rushmore timing that has moved out by 2-3 quarters. The evidence suggests it is a high-quality-looking AI-supply-chain second-order beneficiary whose upside is real but already partly priced; interesting for monitoring, not yet an asymmetric entry candidate.",
+ "multibagger_mechanism": "A plausible path to a further 2-3x in 24 months is: (1) Keystone 800G keeps taking share at module makers serving US and Asian hyperscalers, lifting optical to well above the USD 210-230 million 2026 outlook (e10, e11), (2) Rushmore 1.6T plus Washington and Annapurna add revenue from H2 2027 with higher ASPs (e10), (3) gross margin moves from about 60% to the 65% goal (e10), and (4) operating leverage on opex of about USD 70 million a quarter lifts non-GAAP EPS toward USD 4-5, with the market still paying 45-60x. Reverse arithmetic says 3x needs about USD 3.4 billion of revenue at a constant multiple (e31), so a plausible chain reaches 2-3x only if revenue approaches roughly USD 1.4-1.5 billion at about 62% gross margin and the multiple holds, which depends on links management has not committed to dates (Rushmore revenue 2027 H2, e34).",
+ "expectations_gap": "At USD 105.93 the market cap is about USD 10.5 billion (e30). At a 35x non-GAAP multiple and a 26% net margin that is consistent with roughly USD 1.15 billion of revenue, about 1.35x the Q3-guided run-rate (e31): the price seems to assume the optical ramp continues into 2027 and the 2027 Rushmore ramp starts on schedule, but not yet a multi-billion-dollar business. On GAAP the multiple is about 136x annualised, and non-GAAP excludes stock compensation of about 17% of revenue. Evidence suggests the gap to a 3x outcome is large; the evidence is more consistent with a 1-2x range if the ramp executes, and a deep drawdown if hyperscaler orders pause.",
+ "time_horizon_months": 24,
+ "bull_case": {
+  "name": "bull",
+  "description": "Model estimate: Keystone share gains continue, Rushmore ramps from H2 2027 and Washington/Annapurna add content, revenue run-rate near USD 1.4-1.5 billion by 2027 exit at about 62% gross margin and about 38% non-GAAP operating margin, EPS about USD 4.5-5, with a 45-60x multiple retained. Probability is modest because both earnings and multiple have to stay elevated.",
+  "multiple_low": 1.8,
+  "multiple_high": 3.0,
+  "probability": 0.12,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "base_case": {
+  "name": "base",
+  "description": "Model estimate: guided Q3 is met, 2027 revenue about USD 1.0-1.1 billion with gross margin about 60-61%, non-GAAP EPS about USD 3, Rushmore starts H2 2027, and a 30-40x multiple gives roughly 0.8-1.5x of today's price. Highest probability because filings and guidance point to growth that the price already largely discounts.",
+  "multiple_low": 0.8,
+  "multiple_high": 1.5,
+  "probability": 0.5,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "bear_case": {
+  "name": "bear",
+  "description": "Model estimate: an AI optical digestion, a customer concentration shock or a Rushmore delay pushes revenue back toward USD 600-650 million, gross margin to about 57%, non-GAAP EPS under USD 1.2 and the multiple to 25-35x; inventory and purchase obligations then pressure cash. The stock has already fallen about 48% in four weeks (July 2026) and was USD 17 in April.",
+  "multiple_low": 0.25,
+  "multiple_high": 0.6,
+  "probability": 0.38,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "catalysts": [
+  {
+   "description": "Q3 2026 results against guidance of USD 210-220 million revenue and 58.5-61.5% non-GAAP gross margin; update to the USD 210-230 million optical outlook.",
+   "window": "late Oct 2026 (date not confirmed; Q3 2025 results were filed 23 Oct 2025)",
+   "status": "pending",
+   "evidence_ids": [
+    "e9",
+    "e10"
+   ]
+  },
+  {
+   "description": "Q4 2026 results and the first view of 2027: size of optical run-rate, customer concentration, wafer prepayment/inventory trajectory.",
+   "window": "late Jan 2027 (company reported Q4 2025 on 29 Jan 2026)",
+   "status": "pending",
+   "evidence_ids": [
+    "e10",
+    "e7"
+   ]
+  },
+  {
+   "description": "Rushmore 1.6T first production revenue (one or two ramps) with Washington TIA and Annapurna retimer initial revenue.",
+   "window": "2027, with ramps from H2 2027 and more meaningful volumes in 2028",
+   "status": "pending",
+   "evidence_ids": [
+    "e10",
+    "e11",
+    "e34"
+   ]
+  },
+  {
+   "description": "First XGS-PON hyperscale data-centre control-plane design win ramps (qualification complete).",
+   "window": "2027",
+   "status": "pending",
+   "evidence_ids": [
+    "e10",
+    "e11"
+   ]
+  },
+  {
+   "description": "Silicon Motion arbitration and related litigation developments (an adverse outcome is a downside catalyst).",
+   "window": "undated",
+   "status": "pending",
+   "evidence_ids": [
+    "e13"
+   ]
+  }
+ ],
+ "risks": [
+  "Valuation: about 12x EV/annualised Q3 guided sales and about 47x annualised non-GAAP EPS (136x on GAAP) at USD 105.93 after a 6.4x rise in twelve months and 8.3x from the 52-week low (e16, e30); a 3x from here needs about USD 3.4 billion of revenue at a constant 35x non-GAAP multiple (e31).",
+  "Cyclicality: revenue fell from USD 693 million in FY2023 to USD 361 million in FY2024 (about -48%) in the last downturn; the company itself says revenue will fluctuate 'consistent with the cyclical nature of our industry' (e3, 10-Q) and customers buy on purchase orders (e6).",
+  "AI/optical concentration: the 2026 optical outlook of USD 210-230 million is roughly 29% of my approximate 2026 revenue and nearly all of infrastructure's growth; ramps depend on a handful of module makers and hyperscalers whom management declines to name (e10, e32).",
+  "Competition in PAM4 DSP: Broadcom, Marvell, Credo, MACOM, Semtech and vertically integrated module makers are named competitors and are larger or better resourced; the optical share is not disclosed so the 'share gain' claim cannot be checked against filings (e4, e10).",
+  "Working capital and supply: inventory USD 105.5 million, 123 days, purchase obligations USD 221 million (USD 165 million due H2 2026) and rising wafer prepayments; operating cash flow was negative in H1 2026 (USD -4.1 million) despite rising profit, and foundry/OSAT costs are rising (e7, e10).",
+  "Legal overhang: Silicon Motion SIAC arbitration (damages claimed not disclosed), new California fraud complaint filed 14 May 2026, Ninth Circuit appeal; an adverse result could strain liquidity against an USD 80 million minimum-liquidity covenant (e8, e13).",
+  "Quality of earnings: GAAP operating margin was still negative in Q2 (-2.5%) because stock-based compensation (USD 27.5 million) and performance equity (USD 9.2 million) are excluded from non-GAAP; stock-based pay rose sharply with the share price, so dilution is a real cost (diluted count 97.3 million in Q2, 99 million guided) (e9).",
+  "Governance signals: auditor dismissed in May 2026 (no disagreements reported, e14); the CEO is also Chairman; insider sales (Form 4/144 filings in Aug 2026 exist) were not analysed. Not verified: proxy statement, replacement auditor, executive ownership.",
+  "Not verified: no sell-side consensus read (expectations gap relies on reverse arithmetic only); competitor financials (Marvell, Broadcom, Credo) not read; MaxLinear IR site and webcast not accessed so transcripts came from a third-party host."
+ ],
+ "valuation": {
+  "price_usd": 105.93,
+  "market_cap_usd_million_diluted_99m_shares": 10487,
+  "market_cap_usd_million_basic_90m_shares": 9538,
+  "enterprise_value_usd_million_approx": 10547,
+  "ttm_revenue_usd_million_to_jun2026": 568.9,
+  "ev_to_ttm_sales_x": 18.5,
+  "ev_to_q3_2026_guided_annualised_sales_x": 12.3,
+  "non_gaap_pe_annualised_q3_guide_x": 47,
+  "gaap_pe_annualised_q3_guide_x": 136,
+  "net_debt_usd_million_approx": 60,
+  "note": "Own arithmetic from filings, guidance midpoints and an aggregator price; the aggregator market cap shows different share counts"
+ },
+ "scores": [
+  {
+   "name": "growth_acceleration",
+   "value": 0.85,
+   "weight": 1.0,
+   "basis": "Q2 revenue +55% y/y, Q3 guided about +27% q/q, infrastructure +145% (e5, e9)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "earnings_inflection",
+   "value": 0.75,
+   "weight": 1.0,
+   "basis": "Non-GAAP op margin 7% to 22% y/y; GAAP breakeven in Q2 but still negative operating margin (e9)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "tam_expansion",
+   "value": 0.7,
+   "weight": 1.0,
+   "basis": "1.6T/200G-per-lane optical, TIAs and retimers add content; company claims, not independently sized (e10)",
+   "data_quality": "partial"
+  },
+  {
+   "name": "competitive_advantage",
+   "value": 0.5,
+   "weight": 1.0,
+   "basis": "Power-efficiency claim ('almost 40% lower') is management's; larger competitors named in the 10-K (e4, e10)",
+   "data_quality": "partial"
+  },
+  {
+   "name": "catalyst_strength",
+   "value": 0.6,
+   "weight": 1.0,
+   "basis": "Dated results and 2027 Rushmore ramp; timing has drifted (e34)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "valuation_asymmetry",
+   "value": 0.2,
+   "weight": 1.5,
+   "basis": "About 12x annualised guided sales, 47x non-GAAP EPS, 136x GAAP; reverse arithmetic shows 3x needs about USD 3.4bn revenue (e30, e31)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "market_confirmation",
+   "value": 0.9,
+   "weight": 0.5,
+   "basis": "Price 6.4x in twelve months (e16); momentum is not independent business evidence",
+   "data_quality": "ok"
+  },
+  {
+   "name": "thesis_robustness",
+   "value": 0.4,
+   "weight": 1.0,
+   "basis": "Dependent on a handful of unnamed customers and a 2023-24 cyclical precedent (e3, e10)",
+   "data_quality": "partial"
+  }
+ ],
+ "overall_score": null,
+ "confidence": "medium",
+ "entry": {
+  "state": "unknown",
+  "ideal_zone": null,
+  "acceptable_zone": null,
+  "chase_zone": null,
+  "add_zone": null,
+  "invalidation_price": null,
+  "rationale": ""
+ },
+ "exit_rules": [
+  {
+   "type": "thesis_invalidation",
+   "condition": "The 2026 optical data-centre revenue outlook is cut below the USD 210 million low end, or Q4 2026 revenue is guided below the Q3 2026 actual, or infrastructure revenue falls sequentially in any quarter from the USD 85.0 million of Q2 2026.",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "Non-GAAP gross margin below 56% in any quarter (guided 58.5-61.5% for Q3) or non-GAAP operating margin below 15% with revenue above USD 200 million per quarter.",
+   "status": "armed"
+  },
+  {
+   "type": "catalyst_failure",
+   "condition": "No Rushmore (1.6T) production revenue recognised by the Q4 2027 report (expected about Jan 2028), or a further slip in management's timing statements beyond H2 2027.",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "Days of inventory above 140 (123 in Q2 2026) together with a sequential revenue decline, or inventory purchase obligations above USD 250 million while revenue guidance is flat or lower.",
+   "status": "armed"
+  },
+  {
+   "type": "valuation_excess",
+   "condition": "EV above 20x annualised latest-quarter revenue (about USD 17 billion at USD 215 million a quarter) without an optical outlook raise.",
+   "status": "armed"
+  },
+  {
+   "type": "thesis_invalidation",
+   "condition": "A Silicon Motion arbitration award or accrual that exceeds USD 100 million, or any covenant breach / waiver disclosed (net leverage above 3.5x or liquidity below USD 80 million).",
+   "status": "armed"
+  },
+  {
+   "type": "technical",
+   "condition": "A weekly close below USD 70 (about 34% under the 2026-10-02 price, near the Aug-Sept 2026 sampled range of USD 57-75) triggers an emergency thesis review rather than an automatic exit.",
+   "status": "armed"
+  }
+ ],
+ "adversarial": {
+  "done": false,
+  "reviewer": "",
+  "verdict": "",
+  "strongest_bear_case": "",
+  "questions": {},
+  "reviewed_at": ""
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "Last price 105.93 USD on 2026-10-02 (market data snapshot).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Price snapshot only; says nothing about business quality."
+  },
+  {
+   "id": "e2",
+   "claim": "Quantitative discovery output for MXL: rank 2. Model output, not a verified business fact.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Momentum rank is the only selector validated in this lab, and only modestly; it is a reason to spend research time, not a thesis."
+  },
+  {
+   "id": "e3",
+   "claim": "MaxLinear FY2025 (10-K): net revenue USD 467.641 million (FY2024 USD 360.528 million; FY2023 USD 693.263 million); gross profit USD 265.814 million (56.8%); GAAP loss from operations USD (126.9) million and net loss USD (136.7) million; restructuring charges USD 24.5 million. FY2025 infrastructure revenue rose USD 34.3 million and broadband USD 87.6 million, industrial/multi-market fell USD 37.0 million.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000011/mxl-20251231.htm",
+   "source_date": "2026-01-29",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "FY2023 to FY2024 revenue fell about 48%, evidence of the company's cyclicality."
+  },
+  {
+   "id": "e4",
+   "claim": "10-K: the fabless company names its primary merchant competitors as Broadcom, Qualcomm, Realtek, Skyworks, Credo, MediaTek, Marvell, MACOM, Texas Instruments, Analog Devices, Renesas, Microchip and Semtech, and notes that some optical-module customers are vertically integrated so it competes with internally supplied components. Market share in optical DSPs is not disclosed in the text read.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000011/mxl-20251231.htm",
+   "source_date": "2026-01-29",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e5",
+   "claim": "Q2 2026 10-Q revenue by category: Infrastructure USD 85.016 million (+145% y/y; 50% of revenue), Broadband USD 44.882 million (flat y/y), Connectivity USD 23.968 million (+16%), Industrial and multi-market USD 14.981 million (+158%); total USD 168.847 million (+55% y/y); H1 2026 USD 306.035 million (+49%). Infrastructure growth 'driven by increases in the volume of shipments of optical, high-performance analog, and wireless backhaul products'.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000051/mxl-20260630.htm",
+   "source_date": "2026-07-23",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e6",
+   "claim": "10-Q: no customer was 10% or more of Q2 2026 revenue; one customer was 11% of H1 2026 revenue and the ten largest customers were 55% of H1 revenue; Asia was 81% of H1 shipments (Hong Kong 48%, mainland China 12%, Vietnam 10%); no long-term purchase commitments from customers (purchase-order basis).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000051/mxl-20260630.htm",
+   "source_date": "2026-07-23",
+   "period": "H1 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e7",
+   "claim": "10-Q liquidity at 30 Jun 2026: cash USD 64.8 million plus restricted cash USD 28.9 million; USD 125.0 million senior secured term loan due 23 Jun 2028; USD 130.0 million revolver undrawn; working capital USD 130.5 million; H1 operating cash flow USD (4.1) million; inventory USD 105.5 million; inventory purchase obligations USD 221.3 million (USD 165.1 million due in H2 2026) and total purchase and other obligations USD 305.9 million vs USD 209.6 million at Dec 2025.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000051/mxl-20260630.htm",
+   "source_date": "2026-07-23",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e8",
+   "claim": "8-K (22 Apr 2026): credit agreement amendment extended the revolver maturity from 23 Jun 2026 to 23 Mar 2028, added USD 30 million of commitments (to USD 130 million), raised the margin to 2.25% over Term SOFR, and set covenants of total net leverage no more than 3.50x and unrestricted cash plus undrawn revolver of at least USD 80 million.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000027/mxl-20260422.htm",
+   "source_date": "2026-04-23",
+   "period": "Apr 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e9",
+   "claim": "Q2 2026 release: Q3 2026 outlook revenue USD 210-220 million, GAAP gross margin 57-60%, non-GAAP gross margin 58.5-61.5%, non-GAAP operating expenses USD 66-71 million, GAAP operating expenses USD 98-104 million, about 99 million diluted shares. Q2 non-GAAP operating margin 22.3% vs GAAP operating margin (2.5)%; GAAP net income USD 1.76 million (EPS USD 0.02); stock-based compensation USD 27.5 million in the quarter plus USD 9.2 million of performance-based equity excluded from non-GAAP; Q2 diluted shares 97.3 million.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000050/a06302026exhibit991.htm",
+   "source_date": "2026-07-23",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e10",
+   "claim": "Q2 2026 call (CEO/CFO): 2026 optical data centre revenue outlook raised to USD 210-230 million, 'all driven by' the Keystone 5 nm PAM4 DSP family, with growth driven by 800G; order visibility 'on or about six months'; 1.6T Rushmore DSP expected to 'start generating revenue' in 2027 with ramps at 'one or two opportunities' from H2 2027; Washington TIA and Annapurna retimer initial revenue in 2027 and more meaningful ramps in 2028; no 10% customer but 'more concentration' expected, driven by 'a handful of customers' over about six quarters; long-term gross margin goal of 65% unchanged; wafer prepayments continuing, with wafer and packaging cost increases being partly passed on.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.marketbeat.com/earnings/reports/2026-7-23-maxlinear-inc-stock/",
+   "source_date": "2026-07-23",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Call transcript read as text from a third-party transcript host (MarketBeat); company IR webcast was not accessed."
+  },
+  {
+   "id": "e11",
+   "claim": "Q1 2026 call (CEO): 2026 optical data centre revenue expectation raised to USD 150-170 million; 'production ramps' for Rushmore expected to begin late 2026; first XGS-PON hyperscale data centre design win. Q4 2025 call (CEO, Jan 2026): Keystone expected to generate about USD 100-130 million in 2026 and Rushmore production revenue ramp to start 'at the end of 2026'.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.marketbeat.com/earnings/reports/2026-4-23-maxlinear-inc-stock/",
+   "source_date": "2026-04-23",
+   "period": "Q1 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Call transcript read as text from a third-party transcript host (MarketBeat); company IR webcast was not accessed. The Jan-2026 statement is from the Q4 2025 call transcript at https://www.marketbeat.com/earnings/reports/2026-1-29-maxlinear-inc-stock/ (dated 2026-01-29)."
+  },
+  {
+   "id": "e12",
+   "claim": "Q1 2026 release: revenue USD 137.2 million (+43% y/y); infrastructure up 136% y/y and 'now our largest' category; Q2 guide USD 160-170 million (Q2 actual USD 168.8 million); credit-agreement amendment announced.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000027/a03312026exhibit991.htm",
+   "source_date": "2026-04-23",
+   "period": "Q1 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e13",
+   "claim": "10-Q Note 14: Silicon Motion has a confidential SIAC arbitration seeking the termination fee, additional damages, fees and costs over MaxLinear's 2023 termination of the merger; on 14 May 2026 HBK funds filed a new California state-court fraud complaint against the company and three officers; a securities class action appeal is pending at the Ninth Circuit; the amount of damages claimed is not disclosed in the text I read.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000051/mxl-20260630.htm",
+   "source_date": "2026-07-23",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": ""
+  },
+  {
+   "id": "e14",
+   "claim": "8-K: on 28 May 2026 MaxLinear dismissed Grant Thornton LLP as its auditor (no disagreements or adverse opinions reported for FY2024-FY2025).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846926000045/mxl-20260528.htm",
+   "source_date": "2026-06-01",
+   "period": "May 2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Name of replacement auditor not read."
+  },
+  {
+   "id": "e15",
+   "claim": "Nov 2025 release: board authorised a USD 75 million share repurchase running to 20 Nov 2028; the Jan 2026 call says USD 20 million was repurchased in Q4 2025.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1288469/000128846925000102/a20251120ex991pressrelease.htm",
+   "source_date": "2025-11-24",
+   "period": "Nov 2025",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "The USD 20 million Q4 repurchase comes from the Q4 2025 call transcript: https://www.marketbeat.com/earnings/reports/2026-1-29-maxlinear-inc-stock/"
+  },
+  {
+   "id": "e16",
+   "claim": "Market data (INDmoney, daily candles): MXL closed USD 16.52 on 2025-10-06 and USD 105.93 on 2026-10-02 (6.4x; 8.3x from the 52-week low of USD 12.77); 52-week high USD 128.30; moved from USD 23.35 (2026-04-16) to USD 60.32 (2026-04-24) around Q1 results; sampled closes USD 112.39 (2026-07-01) and USD 58.94 (2026-07-28) show a fall of about 48%; +15% on 2026-10-02.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "TTM to Oct-2026",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Aggregator price data; prices only."
+  },
+  {
+   "id": "e30",
+   "claim": "Valuation arithmetic at USD 105.93: about 99 million diluted shares gives a market cap of about USD 10.49 billion (about USD 9.54 billion on 90.0 million basic shares); plus USD 125 million term loan less USD 64.8 million cash gives enterprise value of about USD 10.5 billion. TTM revenue to Jun-2026 = 467.641 + 306.035 - 204.746 = USD 568.9 million (EV/TTM sales about 18.5x); EV / (Q3 guide midpoint USD 215 million x4 = USD 860 million) about 12.3x. Model using Q3 guidance midpoints: non-GAAP operating income about USD 60.5 million (28% margin), non-GAAP EPS about USD 0.56 a quarter or USD 2.25 annualised, about 47x; GAAP EPS about USD 0.19 a quarter, about 136x annualised.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e5, e7, e9, e16; share count and all midpoints are my arithmetic."
+  },
+  {
+   "id": "e31",
+   "claim": "Reverse arithmetic: at a 35x earnings multiple and a non-GAAP net margin of about 26% (Q3 guide arithmetic), a USD 10.5 billion value implies about USD 300 million of non-GAAP net income and roughly USD 1.15 billion of revenue, about 1.35x the Q3 guided annualised run-rate. A 3x price (about USD 31 billion at 99 million shares) at the same multiple would need roughly USD 3.4 billion of revenue, far beyond anything management has described; a 2x price would need about USD 2.3 billion.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e9, e30. Excludes stock-based compensation, which is about 17% of Q2 revenue in non-GAAP exclusions (e9)."
+  },
+  {
+   "id": "e32",
+   "claim": "Concentration of the AI link: the 2026 optical data-centre outlook of USD 210-230 million is about 29% of a rough 2026 revenue of about USD 750 million (H1 USD 306 million + Q3 guide USD 215 million + an assumed Q4 near USD 230 million) and is the main driver of infrastructure's rise, with management saying the Q3 sequential growth is mostly infrastructure (e10). Broadband (about 27% of Q2 revenue) was flat y/y, so the group's growth rate is currently carried by a segment that did not exist at scale two years ago.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e5, e9, e10. The Q4 figure is my assumption, not company guidance."
+  },
+  {
+   "id": "e33",
+   "claim": "If AI optical spend slowed: the filings suggest the first strain would be inventory and purchase commitments (inventory USD 105.5 million, purchase obligations USD 221.3 million, wafer prepayments rising, e7, e10) rather than debt (USD 125 million term loan to 2028, USD 130 million undrawn revolver; but an USD 80 million minimum-liquidity covenant, e8). The company has no long-term customer purchase commitments (e6) and its FY2023-FY2024 history shows a roughly 48% revenue drop in a downturn (e3). With 6 months of visibility and an optical hyperscaler base of 'a handful of customers', a pause would show up quickly.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e3, e6, e7, e8, e10."
+  },
+  {
+   "id": "e34",
+   "claim": "Management tone/timing: Rushmore (1.6T) 'production revenue ramp' was guided to start at the end of 2026 in Jan 2026 (e11), 'late 2026' in April (e11) and by July 'to start generating revenue in 2027' with one or two ramps in H2 2027 (e10). Customer names were not given in any of the three calls read, and the CFO said customer concentration will rise.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Cites e10, e11. A drift of roughly 2-3 quarters for Rushmore, consistent with a longer qualification cycle."
+  },
+  {
+   "id": "e35",
+   "claim": "A possible but unevidenced upside: Keystone share gains at hyperscale module makers could continue and Rushmore could be designed in across the same customers, taking infrastructure well past USD 1 billion a year before 2028; no document quantifies market share or Rushmore customer commitments.",
+   "kind": "SPECULATION",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Model",
+   "retrieved_at": "2026-10-05T06:30:24+00:00",
+   "note": "Speculation; informs only the bull case."
+  }
+ ],
+ "next_review": "2026-10-26",
+ "change_log": [
+  "level 3 deep dive from FY25 10-K, Q2 2026 10-Q, 2026 8-Ks and Q4/Q1/Q2 call transcripts",
+  "status: 'research_required' -> 'watchlist'",
+  "research_level: '1' -> '3'",
+  "confidence: 'low' -> 'medium'",
+  "why_now: 'Flagged by the quantitative discovery screen; no qualitative research has been d' -> 'Over the last two quarters the company stepped up its 2026 optical data-centre o'",
+  "thesis: '' -> 'MaxLinear is a fabless mixed-signal company that, per its filings, has pivoted f'",
+  "new evidence: e10, e11, e12, e13, e14, e15, e16, e3, e30, e31, e32, e33, e34, e35, e4, e5, e6, e7, e8, e9"
+ ],
+ "parent_version": 1,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}
