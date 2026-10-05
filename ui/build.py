@@ -39,6 +39,48 @@ def paper_status_from_md(path: Path = PAPER_STATUS) -> Optional[dict]:
     return {"books": rows, "note": first} if rows else None
 
 
+def portfolio_summary_from_private() -> Optional[dict]:
+    """Aggregate-only portfolio summary from the gitignored private/ analytics. Percentages only: no holding names, no rupee values."""
+    import json
+    f = store.ROOT / "private" / "portfolio_analytics.json"
+    if not f.exists(): return None
+    try: a = json.loads(f.read_text())
+    except Exception: return None
+    if a.get("empty"): return None
+    notes = []
+    th = a.get("by_theme", {})
+    for k, label in (("ai", "AI-related"), ("semiconductors", "Semiconductor")):
+        if k in th:
+            v = th[k]; notes.append(f"{label} exposure: about {v['direct_pct']:.0f}% direct, {v['estimated_pct']:.0f}% estimated including funds ({v['multiple_of_direct']:.1f}x direct; fund look-through is partial).")
+    c = a.get("by_country", {})
+    if c: notes.append("Geography: " + ", ".join(f"{k} {v:.0f}%" for k, v in sorted(c.items(), key=lambda kv: -kv[1])[:3]) + ".")
+    sec = a.get("by_sector", {})
+    if sec:
+        k, v = max(sec.items(), key=lambda kv: kv[1]); notes.append(f"Largest sector: {k} at {v:.0f}%.")
+    notes.append(f"Largest single position: {a.get('concentration', {}).get('top1_pct', 0):.0f}% of the portfolio; top 3 = {a.get('concentration', {}).get('top3_pct', 0):.0f}%.")
+    lt = a.get("look_through_quality", {}).get("label")
+    if lt: notes.append(f"Look-through quality: {lt}.")
+    return {"currency": "", "value": None, "n_holdings": a.get("n_holdings"), "cash_pct": None, "notes": notes, "as_of": date.today().isoformat()}
+
+
+def discoveries_from_candidates(theses: list, limit: int = 10) -> list:
+    """Candidates from the latest discovery run that do not have a thesis yet (anything with a Level-1 snapshot is already a ranked card)."""
+    import json
+    have = {(t.market.upper(), t.ticker.upper().replace(".NS", "")) for t in theses}
+    out = []
+    for m in ("IN", "US"):
+        f = store.ROOT / "research" / f"candidates_{m}.json"
+        if not f.exists(): continue
+        d = json.loads(f.read_text()); rows = d if isinstance(d, list) else (d.get("candidates") or d.get("rows") or d.get("results") or [])
+        for r in rows:
+            tk = str(r.get("ticker", "")).upper().replace(".NS", "")
+            if (m, tk) in have: continue
+            out.append({"ticker": r.get("ticker"), "market": m, "name": r.get("name"), "score": None,
+                        "note": f"Momentum rank {r.get('rank')} in the {m} mid/small-cap screen (12-1 month return {r.get('mom_12_1', 0):+.0%}). Discovery screen only: no business research yet."})
+            if len(out) >= limit * 2: break
+    return out[:limit]
+
+
 def link_for(t: Thesis) -> str:
     return f"opportunity/{t.market.upper()}_{re.sub(r'[^A-Za-z0-9_.-]', '_', t.ticker.upper())}.html"
 
@@ -51,7 +93,7 @@ def build(out_dir: Path = OUT, force_fixtures: bool = False, as_of: Optional[str
         theses, alerts, cands = fx.sample_theses(), fx.sample_alerts(), fx.sample_candidates()
         pf, ps, as_of = fx.sample_portfolio_summary(), fx.sample_paper_status(), as_of or fx.SAMPLE_AS_OF
     else:
-        alerts, cands, pf, ps, as_of = [], [], None, paper_status_from_md(), as_of or date.today().isoformat()
+        alerts, cands, pf, ps, as_of = [], discoveries_from_candidates(theses), portfolio_summary_from_private(), paper_status_from_md(), as_of or date.today().isoformat()
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "opportunity").mkdir(exist_ok=True)
     for t in theses:

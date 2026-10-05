@@ -1,0 +1,86 @@
+{
+ "ticker": "PTEN",
+ "company": "Patterson-UTI Energy, Inc.",
+ "market": "US",
+ "version": 1,
+ "status": "research_required",
+ "research_level": 1,
+ "as_of": "2026-10-02",
+ "created_at": "2026-10-05T06:20:13+00:00",
+ "price": 11.210000038146973,
+ "price_ts": "2026-10-02",
+ "currency": "USD",
+ "why_now": "Flagged by the quantitative discovery screen; no qualitative research has been done yet.",
+ "thesis": "",
+ "multibagger_mechanism": "",
+ "expectations_gap": "",
+ "time_horizon_months": null,
+ "bull_case": null,
+ "base_case": null,
+ "bear_case": null,
+ "catalysts": [],
+ "risks": [
+  "Not yet researched: business quality, financials, valuation, catalysts and adversarial review are all unassessed."
+ ],
+ "valuation": {
+  "market_cap": 4275324452.0886784
+ },
+ "scores": [],
+ "overall_score": null,
+ "confidence": "low",
+ "entry": {
+  "state": "unknown",
+  "ideal_zone": null,
+  "acceptable_zone": null,
+  "chase_zone": null,
+  "add_zone": null,
+  "invalidation_price": null,
+  "rationale": ""
+ },
+ "exit_rules": [],
+ "adversarial": {
+  "done": false,
+  "reviewer": "",
+  "verdict": "",
+  "strongest_bear_case": "",
+  "questions": {},
+  "reviewed_at": ""
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "Last price 11.21 USD on 2026-10-02 (market data snapshot).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Price snapshot only; says nothing about business quality."
+  },
+  {
+   "id": "e2",
+   "claim": "Quantitative discovery output for PTEN: rank 9. Model output, not a verified business fact.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Momentum rank is the only selector validated in this lab, and only modestly; it is a reason to spend research time, not a thesis."
+  }
+ ],
+ "next_review": "2026-10-19",
+ "change_log": [
+  "level-1 discovery snapshot (automatic, no LLM)",
+  "initial version"
+ ],
+ "parent_version": null,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}
