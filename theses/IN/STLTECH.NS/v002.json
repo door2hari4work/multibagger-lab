@@ -1,0 +1,495 @@
+{
+ "ticker": "STLTECH.NS",
+ "company": "Sterlite Technologies Ltd.",
+ "market": "IN",
+ "version": 2,
+ "status": "watchlist",
+ "research_level": 3,
+ "as_of": "2026-10-05",
+ "created_at": "2026-10-05T06:31:21+00:00",
+ "price": 969.9,
+ "price_ts": "2026-10-05",
+ "currency": "INR",
+ "why_now": "What changed in the last 6-12 months (evidence, not narrative): (1) revenue went from Rs 1,019 crore (Q1 FY26) to Rs 1,910 crore (Q1 FY27) and EBITDA from Rs 140 crore to Rs 397 crore, margin 13.7% to 20.8% (e3); (2) data centre mix rose from 1% of FY26 revenue to 21% of Q1 and management expects data centre plus enterprise at about 50% in FY27 (e6); (3) order intake of Rs 13,100 crore in Q1 vs Rs 7,687 crore for all of FY26, including a US$1.11 billion hyperscaler award letter (e5); (4) a Rs 1,500 crore QIP cleared net debt (e8) and CRISIL/ICRA outlooks improved; (5) on 3 Sep 2026 management set a FY29 target of Rs 20,000 crore revenue at 27%+ EBITDA margin (e7). The stock rose about 9x in 12 months (e15), from Rs 104.6 to Rs 969.9, so the evidence suggests most of the visible improvement and a large part of the FY29 plan are already in the price: at about 14x target-year PAT the market is capitalising delivery (i1).",
+ "thesis": "Evidence suggests STL has moved from a loss-making, tariff-hit fibre maker (FY26 PAT Rs 56 crore, ROCE 9.4%) to a capacity-constrained supplier of high-density cable and connectivity to hyperscalers, with a genuine earnings inflection visible in audited-review numbers and a record order book. This is a real fundamental change, not only a narrative. The open questions are durability and price: the margin gain rests on mix, tariff relief and tight fibre/preform supply that industry capacity additions (Corning, Prysmian, Chinese makers) may erode; one customer now dominates the order book; free cash flow is still small after capex; and the equity trades at 31x Q1 annualised EBITDA. As a 12-24 month multibagger candidate it looks stretched: the plausible upside to the company's own FY29 plan is already largely discounted, while a slowdown in AI spend or an input-cost or tariff shock would hit earnings and the multiple together. Good business momentum, weak asymmetry at this price.",
+ "multibagger_mechanism": "A plausible path to a 3x+ price would need all of: revenue annualising above Rs 12,000-14,000 crore by FY28 with 25%+ margin (about Rs 3,000-3,500 crore EBITDA, 2x+ Q1 annualised), the market holding a 25-30x earnings multiple on FY29 numbers that exceed management's Lakshya plan, and no supply-driven price normalisation (i4, i1). Math check: a 3x price implies about 43x Lakshya target-year PAT or about 28x target-year EBITDA, so the chain requires both an upgrade of the plan and multiple expansion. The evidence suggests this is a tail outcome (model estimate roughly 3-5% in 24 months), not the base case. A 1.5-2.5x outcome via on-plan execution and a steady multiple is more consistent with the evidence.",
+ "expectations_gap": "The price (about Rs 50,100 crore market cap) already assumes: Q1 FY27 margin and revenue sustained or exceeded (31x Q1 annualised EBITDA), plus most of the FY29 Lakshya plan (about 14x target-year PAT if met exactly; i1). Management's own risk slide lists AI capex continuity, supply chain, pricing and tariffs as assumptions. The gap that could still favour the stock: if the FY27 EBITDA margin lands near the 23% guidance and revenue run-rate exceeds Rs 8,000 crore, trailing multiples compress quickly through earnings growth even at a flat price; if only the base case happens, the stock has to grow into the multiple and offers limited upside. Reverse arithmetic: to bring EV/EBITDA to 15x at today's EV needs EBITDA of about Rs 3,300 crore, roughly 2.1x the Q1 annualised level.",
+ "time_horizon_months": 24,
+ "bull_case": {
+  "name": "bull",
+  "description": "Model estimate. Lakshya delivered on or ahead of schedule: FY27 EBITDA margin at or above 23%, revenue annualising above Rs 10,000 crore by early FY28, attach rate 25%+, a second large hyperscaler award, supply stays tight and the market pays 25-30x forward PAT. Price 1.5-3.0x; the 3x end is the tail (about 3-5% model estimate) and needs plan upgrades.",
+  "multiple_low": 1.5,
+  "multiple_high": 3.0,
+  "probability": 0.2,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "base_case": {
+  "name": "base",
+  "description": "Model estimate. Partial delivery: margin settles in the high teens to about 20%, revenue grows to Rs 9,000-11,000 crore annualised by FY28, concentration and capacity limits slow conversion, and the multiple compresses toward 15-20x forward EBITDA as earnings grow into the price. Price roughly 0.8-1.4x of today's level.",
+  "multiple_low": 0.8,
+  "multiple_high": 1.4,
+  "probability": 0.45,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "bear_case": {
+  "name": "bear",
+  "description": "Model estimate. AI/hyperscaler capex pause, input-cost or tariff shock, supply catching up so contract prices reset, or a Prysmian/execution surprise; margin falls toward 13-15% and the multiple de-rates from 30-50x trailing EBITDA to 10-12x. Price 0.35-0.65x.",
+  "multiple_low": 0.35,
+  "multiple_high": 0.65,
+  "probability": 0.35,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "catalysts": [
+  {
+   "description": "Q2 FY27 results: first test of the 23% FY27 EBITDA margin guidance, attach rate above 20%, data centre plus enterprise mix toward 50%, and Rs 2,228 crore of executable Q2 order book.",
+   "window": "Q2 FY27 results, expected late Oct-Nov 2026 (date not announced in sources read)",
+   "status": "pending",
+   "evidence_ids": [
+    "e5",
+    "e6"
+   ]
+  },
+  {
+   "description": "Attach-rate and mix milestones: optical connectivity attach rate 25%+ and data centre plus enterprise about 50% of revenue by Q4 FY27.",
+   "window": "Q4 FY27 results, about May 2027",
+   "status": "pending",
+   "evidence_ids": [
+    "e6"
+   ]
+  },
+  {
+   "description": "Lakshya capacity build (about Rs 1,000 crore a year, +50% preform/fibre/cable) and the planned US connectivity investment update; delays or cost overruns would test the FY29 target.",
+   "window": "FY27-FY29; US plant update promised by next quarter on the 24 Jul call",
+   "status": "pending",
+   "evidence_ids": [
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "description": "Outcome of the Prysmian appeal at the US Fourth Circuit (award US$101.25 million; bond US$41.53 million; Rs 391 crore restricted cash) and any US tariff refund (above Rs 100 crore) are binary cash items.",
+   "window": "Appeal and refund timing not disclosed",
+   "status": "pending",
+   "evidence_ids": [
+    "e9",
+    "e11"
+   ]
+  },
+  {
+   "description": "Further long-term hyperscaler or telecom awards (management says it is in conversations and is capacity-constrained), and conversion of the award letter into shipments.",
+   "window": "Through FY27; each quarterly order-book disclosure",
+   "status": "pending",
+   "evidence_ids": [
+    "e5",
+    "e6"
+   ]
+  }
+ ],
+ "risks": [
+  "Valuation: about 31x Q1 FY27 annualised EBITDA, about 64x annualised PAT and about 56x trailing EBITDA after a roughly 9x rise in 12 months; today's market cap already equals about 14x PAT if the FY29 Lakshya target is delivered (i1). Delivery is likely required just to hold the price.",
+  "Customer concentration: one hyperscaler award letter is more than half the order book and roughly 40-45% of run-rate revenue; the award letter's firm volume and cancellation terms are not disclosed (e5, i2).",
+  "AI and hyperscaler capex cyclicality: data-centre mix went from 1% to 21% in a year; a capex pause or architecture change (copper/optical mix, hollow-core or co-packaged optics shifts) would hit the highest-margin revenue first (i5).",
+  "Execution and capacity: capacity and utilisation are undisclosed, management admits it must pick orders by capacity, capex intent doubled in six weeks (Rs 500 crore to Rs 1,000 crore a year), and the FY29 plan needs revenue to grow about 4x with margin to 27% (e6, e7).",
+  "Input costs and supply: germanium, helium and polymer shortages and West Asia-related cost inflation are already pressuring gross margin; STL says supply is improving but gives no volumes (e6, e11).",
+  "Trade policy: 54% of Q1 revenue is North America; tariffs on Indian-origin goods moved from about 50% to a temporary 10-15% regime, and the Lakshya risk slide names tariff continuity as an assumption (e6, e7, e11).",
+  "Legal and cash: US$101.25 million Prysmian award under appeal against Rs 391 crore of restricted cash and a US$41.53 million bond; a loss beyond that is a cash call on the QIP (e8, e9).",
+  "Earnings quality: reported net debt-free status is driven by the equity raise; FY26 free cash flow after interest was small (i3); ROCE only 9.4% in FY26 and PAT of Rs 56 crore in FY26 shows the earnings history is short and volatile (e4, e10).",
+  "Dilution and governance: QIP of about 5% of shares at Rs 583.01 plus warrants at Rs 110 (diluted EPS Rs 3.71 vs basic Rs 4.03); about Rs 11 crore of FY26 managerial remuneration was paid or provided without the Schedule V approvals and is to be put to the next AGM (results note 8).",
+  "Source gaps (not verified): STL's total capacity and utilisation; Q1 FY27 cash flow and working capital; the hyperscaler customer name and contract terms; CRISIL/ICRA rating rationales; latest shareholding pattern; the Q2 FY27 results date."
+ ],
+ "valuation": {
+  "market_cap_inr_crore": 50123,
+  "ev_inr_crore_approx": 49640,
+  "ev_ebitda_q1fy27_annualised": 31.3,
+  "ev_ebitda_ttm": 56.1,
+  "pe_q1fy27_annualised": 63.6,
+  "pe_ttm": 206,
+  "net_worth_jun2026_inr_crore": 2166,
+  "price_to_book_on_jun2026_net_worth": 23.1,
+  "fy29_target_ebitda_inr_crore": 5400,
+  "implied_pe_on_fy29_target_pat_approx": 14.3,
+  "note": "TTM = Q2 FY26 to Q1 FY27 consolidated continuing operations; market cap from the Level-1 snapshot; EV uses reported net cash of Rs 483 crore (includes restricted cash and QIP); FY29 PAT is a model estimate."
+ },
+ "scores": [
+  {
+   "name": "business_quality",
+   "value": 0.55,
+   "weight": 1.0,
+   "basis": "Integrated glass-to-gigabit, 785+ patents, 9% ex-China OFC share; but FY26 ROCE 9.4% and thin FY26 PAT",
+   "data_quality": "ok"
+  },
+  {
+   "name": "growth_acceleration",
+   "value": 0.9,
+   "weight": 1.0,
+   "basis": "Revenue +87% YoY and order book 2.4x in one quarter (e3, e5)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "earnings_inflection",
+   "value": 0.9,
+   "weight": 1.0,
+   "basis": "EBITDA Rs 140 crore to Rs 397 crore, PAT Rs 10 crore to Rs 197 crore YoY (e3)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "tam_expansion",
+   "value": 0.7,
+   "weight": 1.0,
+   "basis": "Data-centre fibre intensity and CRU demand outlook as cited by management and CRU (e14); not independently verified",
+   "data_quality": "partial"
+  },
+  {
+   "name": "competitive_advantage",
+   "value": 0.5,
+   "weight": 1.0,
+   "basis": "Technology and vertical integration vs larger Corning/Prysmian and Chinese cost leaders; capacity undisclosed",
+   "data_quality": "partial"
+  },
+  {
+   "name": "catalyst_strength",
+   "value": 0.5,
+   "weight": 1.0,
+   "basis": "Dated quarterly milestones exist but are mostly company targets (e6, e7)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "valuation_asymmetry",
+   "value": 0.2,
+   "weight": 1.0,
+   "basis": "31x Q1 annualised EBITDA, about 14x target-year PAT; bull needs plan upgrade (i1)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "market_confirmation",
+   "value": 0.95,
+   "weight": 1.0,
+   "basis": "Price about 9.3x in 12 months (e15)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "risk",
+   "value": 0.35,
+   "weight": 1.0,
+   "basis": "Inverse scale: customer concentration, input costs, tariffs, legal claim, valuation",
+   "data_quality": "ok"
+  },
+  {
+   "name": "thesis_robustness",
+   "value": 0.4,
+   "weight": 1.0,
+   "basis": "Depends on one customer and AI capex continuity",
+   "data_quality": "partial"
+  }
+ ],
+ "overall_score": null,
+ "confidence": "medium",
+ "entry": {
+  "state": "unknown",
+  "ideal_zone": null,
+  "acceptable_zone": null,
+  "chase_zone": null,
+  "add_zone": null,
+  "invalidation_price": null,
+  "rationale": ""
+ },
+ "exit_rules": [
+  {
+   "type": "thesis_invalidation",
+   "condition": "Consolidated EBITDA margin below 18% in any quarter of FY27 or Q1 FY28 (Q1 FY27 was 20.8%; FY27 guidance 23%; FY26 13.2%).",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "Quarterly consolidated revenue below Rs 1,500 crore (about 20% under Q1 FY27's Rs 1,910 crore) for two consecutive quarters, or open order book below Rs 15,000 crore without a new award of at least US$300 million.",
+   "status": "armed"
+  },
+  {
+   "type": "catalyst_failure",
+   "condition": "Optical connectivity attach rate below 20% in the Q2 FY27 presentation, or below 25% / data centre plus enterprise mix below 40% at Q4 FY27 results.",
+   "status": "armed"
+  },
+  {
+   "type": "thesis_invalidation",
+   "condition": "Cancellation, deferral or disclosed volume cut of the US$1.11 billion hyperscaler award letter, or two or more of the four largest US hyperscalers cutting annual capex guidance by 15% or more.",
+   "status": "armed"
+  },
+  {
+   "type": "valuation_excess",
+   "condition": "Price above about Rs 1,700 (market cap about Rs 88,000 crore, roughly 25x the Rs 3,500 crore FY29 target-year PAT) without a Lakshya target upgrade or trailing-four-quarter EBITDA above Rs 2,500 crore.",
+   "status": "armed"
+  },
+  {
+   "type": "technical",
+   "condition": "Weekly close below Rs 700 (about 28% under the 2026-10-05 price) triggers an emergency thesis review, not an automatic exit.",
+   "status": "armed"
+  },
+  {
+   "type": "catalyst_failure",
+   "condition": "Adverse final ruling or settlement above the Rs 391 crore of restricted cash in the Prysmian matter, or an additional equity raise before Q4 FY27 results.",
+   "status": "armed"
+  }
+ ],
+ "adversarial": {
+  "done": false,
+  "reviewer": "",
+  "verdict": "",
+  "strongest_bear_case": "",
+  "questions": {},
+  "reviewed_at": ""
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "Last price 969.9 INR on 2026-10-05 (market data snapshot).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Price snapshot only; says nothing about business quality."
+  },
+  {
+   "id": "e2",
+   "claim": "Quantitative discovery output for STLTECH.NS: rank 2. Model output, not a verified business fact.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Momentum rank is the only selector validated in this lab, and only modestly; it is a reason to spend research time, not a thesis."
+  },
+  {
+   "id": "e3",
+   "claim": "STL Q1 FY27 consolidated (continuing ops, Rs crore): revenue 1,910 (Q1 FY26 1,019; Q4 FY26 1,441), EBITDA 397 (140; 218), PAT 197 (10; 59); EBITDA margin 20.8% vs 13.7% a year earlier; finance cost 55, depreciation 85, tax 60; diluted EPS Rs 3.71 vs basic Rs 4.03.",
+   "kind": "FACT",
+   "source_type": "exchange",
+   "source_url": "https://nsearchives.nseindia.com/corporate/STLTECH_24072026144505_NSE_Results_Outcome-signed.pdf",
+   "source_date": "2026-07-24",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Unaudited consolidated results with limited review; same NSE bundle contains the press release and investor presentation."
+  },
+  {
+   "id": "e4",
+   "claim": "Segment data Q1 FY27 (Rs crore): Optical networking revenue 1,842 and segment EBITDA 401 (FY26: 4,486 and 606); Digital and technology solutions revenue 72, EBITDA 2. FY26 consolidated revenue 4,745 and EBITDA 628 (13.2% margin), FY25 revenue 3,996 and EBITDA 452 (Q4 FY26 deck).",
+   "kind": "FACT",
+   "source_type": "exchange",
+   "source_url": "https://nsearchives.nseindia.com/corporate/STLTECH_24072026144505_NSE_Results_Outcome-signed.pdf",
+   "source_date": "2026-07-24",
+   "period": "Q1 FY27 / FY26",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "FY26 comparatives also in the Q4 FY26 deck (e11)."
+  },
+  {
+   "id": "e5",
+   "claim": "Open order book Rs 18,618 crore at end Q1 FY27 vs Rs 7,687 crore at FY26 end per the Q1 deck; Q2 FY27 executable Rs 2,228 crore and Rs 16,390 crore for Q3 FY27 and beyond. Q1 order intake Rs 13,100 crore vs Rs 7,687 crore for all of FY26. Includes a US$1.11 billion (Rs 10,000+ crore) hyperscaler Product Award Letter for FY27-FY29 and multiple hyperscaler Neuralis orders of US$100 million+.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://nsearchives.nseindia.com/corporate/STLTECH_24072026144505_NSE_Results_Outcome-signed.pdf",
+   "source_date": "2026-07-24",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "The Q4 FY26 deck showed the FY26-end open order book as Rs 7,309 crore, not Rs 7,687 crore (restated or different definition; not reconciled). 'Product Award Letter' is not described as a take-or-pay purchase commitment. Management uses Rs 7,687 crore both for FY26 order intake (Q1 call) and for the FY26-end order book (Q1 deck, AGM)."
+  },
+  {
+   "id": "e6",
+   "claim": "On the Q1 FY27 call management said: data centre segment was 21% of Q1 revenue vs 1% in FY26; North America 54% of revenue (39% in FY26), Europe 25%, rest of world 22%; data centre plus enterprise expected to reach 50% of FY27 revenue (guidance was 30% on the prior call); FY27 EBITDA margin guidance raised to 23% from 20%; optical connectivity attach rate 16% (15% in FY26) targeted above 20% from Q2 and 25%+ by Q4 FY27; global ex-China OFC share 9%; capex about Rs 500 crore a year for 3 years; gross margin under input-cost pressure (helium, germanium, polymers).",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://stl.tech/wp-content/uploads/2026/07/Transcript-July-24-2026.pdf",
+   "source_date": "2026-07-24",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "CFO: 'we have to pick and choose the orders basis the capacity availability'. Management does not disclose capacity or utilisation numbers and gives no revenue guidance."
+  },
+  {
+   "id": "e7",
+   "claim": "STL 'Lakshya' growth roadmap (3 Sep 2026 investor event): target revenue about Rs 20,000 crore in FY29 vs about Rs 4,750 crore in FY26, with EBITDA margin of 27%+ vs 13.2% in FY26; open order book stated as more than US$2 billion; capex of about Rs 1,000 crore a year for three years to expand preform, fibre and cable capacity by 50%, plus a greenfield pre-terminated connectivity plant in India; about 2% of revenue to R&D. The deck's risk slide lists AI infrastructure momentum, supply chain, pricing discipline, tariff/trade policy and execution as assumptions.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://stl.tech/wp-content/uploads/2026/09/STL_Lakshya_Transcript.pdf",
+   "source_date": "2026-09-03",
+   "period": "FY27-FY29",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Deck: https://stl.tech/wp-content/uploads/2026/09/STL_SterliteTech_Lakshya29_InvestorDeck.pdf. Capex intent is about double the Rs 500 crore a year stated on the 24 Jul call."
+  },
+  {
+   "id": "e8",
+   "claim": "Balance sheet: reported net cash Rs 483 crore at 30 Jun 2026 includes about Rs 391 crore restricted cash for a US legal matter and about Rs 1,500 crore of QIP money pending allocation (Q1 deck footnote). QIP of Rs 1,500 crore: 25,728,500 shares at Rs 583.01; promoter holding fell from 44.44% to 42.29%; 75% of proceeds to repay debt. Warrants issued 30 Mar 2026 at Rs 110 per warrant (Rs 124.57 crore received = 25%). Debt/equity 0.39 (0.71 at Mar 2026); net worth Rs 2,166 crore at 30 Jun 2026; FY26-end net debt Rs 1,128 crore.",
+   "kind": "FACT",
+   "source_type": "exchange",
+   "source_url": "https://nsearchives.nseindia.com/corporate/STLTECH_24072026144505_NSE_Results_Outcome-signed.pdf",
+   "source_date": "2026-07-24",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Net debt FY26 from Q4 deck (e11). Shares in issue before QIP 488,167,635 (note 3)."
+  },
+  {
+   "id": "e9",
+   "claim": "Prysmian Cables and Systems USA litigation against STL's US subsidiary: jury verdict US$96.5 million (Aug 2024), confirmed on 29 Aug 2025 with total award US$101.25 million including fees; appeal filed in the US Fourth Circuit; bond of US$41.53 million deposited; 'ultimate financial implications cannot be ascertained'. STL is not a party. Management on the Q4 call: two further appeal stages exist.",
+   "kind": "FACT",
+   "source_type": "exchange",
+   "source_url": "https://nsearchives.nseindia.com/corporate/STLTECH_24072026144505_NSE_Results_Outcome-signed.pdf",
+   "source_date": "2026-07-24",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Note 6 of the results; Q4 call Apr 2026 (e11) for appeal stages."
+  },
+  {
+   "id": "e10",
+   "claim": "FY26 consolidated cash flow (Rs crore): cash generated from operations 579 (FY25 404), about 520 after taxes paid (FY25 348); purchase of property, plant and equipment 193; earmarked investments (non-current) 372 for the legal matter; ROCE 9.4% (3.3% in FY25); net debt/EBITDA 1.80; no single customer above 10% of group revenue in FY26 or FY25; outside-India revenue Rs 3,969 crore of Rs 4,745 crore.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://stl.tech/wp-content/uploads/2026/07/Annual-Report-FY2026_Final.pdf",
+   "source_date": "2026-04-29",
+   "period": "FY26",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Audited consolidated statements; the net operating cash line label did not extract from the PDF, 520 is 579 less 59 tax paid as printed."
+  },
+  {
+   "id": "e11",
+   "claim": "Q4 FY26 call and deck: STL sells under long-term contracts with selected customers and does not sell in the spot market; US tariffs fell from a peak of about 50% to about 18% and then a temporary 10-15% regime; tariff paid is 'broadly north of Rs 100 crore' with a US refund process started but no timeline; West Asia conflict raised helium and polymer jacketing costs; FY27 target net debt/EBITDA below 1.2x; FY26 net debt Rs 1,128 crore.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://stl.tech/wp-content/uploads/2026/05/Sterlite-Technologies-Limited-Q4FY26-Earnings-call-transcript.pdf",
+   "source_date": "2026-04-29",
+   "period": "Q4 FY26",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Deck: https://stl.tech/wp-content/uploads/2026/05/Investor-Earnings-Presentation.pdf. On this call analysts asked why STL's hyperscaler volumes lagged peers; management denied quality or approval problems."
+  },
+  {
+   "id": "e12",
+   "claim": "Corning Q2 2026 (8-K Ex. 99, 28 Jul 2026): Optical Communications sales +32% to US$2.07 billion, Enterprise Networks +65%, segment net income 21% of sales; multi-year multibillion-dollar Amazon supply agreement; NVIDIA partnership to expand US optical connectivity capacity 10x and US fibre capacity by more than 50%.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000253/glw-20260728xex99xq22026.htm",
+   "source_date": "2026-07-28",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Competitor context: Corning is the largest global peer and is adding capacity."
+  },
+  {
+   "id": "e13",
+   "claim": "Prysmian Q2 2026 press release (30 Jul 2026): Digital Solutions organic growth +18.0% with adjusted EBITDA margin 23.8% (16.8% a year earlier); group Q2 revenue EUR 6,021 million, organic growth 9.4%; Prysmian describes itself as the front-running cable player for data centres.",
+   "kind": "FACT",
+   "source_type": "other",
+   "source_url": "https://www.prysmian.com/en/media/press-releases/prysmian-raises-guidance-after-its-best-quarter-yet",
+   "source_date": "2026-07-30",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Read through a summarising fetch tool, not the full release text; figures not cross-checked against the PDF."
+  },
+  {
+   "id": "e14",
+   "claim": "CRU (26 Feb 2026): Chinese bare fibre prices (labelled G.562.D in the article) rose more than 80% between Nov 2025 and Jan 2026 and exceeded European and Indian prices; glass preform called a critical bottleneck; hyperscale and AI data centre deployments pushing hyperscalers to secure large cable volumes; durability of the move questioned. STL's July deck cites CRU (May 2026) for optical cable demand growth of about 8.2% in 2026, data-centre optical cable demand +63% in 2026 and North America demand CAGR of 18.6% to 2030.",
+   "kind": "FACT",
+   "source_type": "other",
+   "source_url": "https://www.crugroup.com/en/communities/thought-leadership/2026/optical-fibre-prices-rise-as-preform-availability-tightens/",
+   "source_date": "2026-02-26",
+   "period": "CY2026",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Industry research, context only. STL's CRU citations are as presented by STL, not verified at source."
+  },
+  {
+   "id": "e15",
+   "claim": "STL month-end close Rs 104.6 (Oct 2025), Rs 106.3 (Dec 2025), Rs 294.8 (Mar 2026), Rs 557.0 (Jun 2026), Rs 909.9 (Aug 2026); Rs 969.9 on 2026-10-05, about 9.3x the Oct 2025 close. QIP priced Rs 583.01 in July 2026; warrants issued at Rs 110 in March 2026.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/STLTECH.NS?range=2y&interval=1mo",
+   "source_date": "2026-10-05",
+   "period": "Oct 2025 - Oct 2026",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Aggregator price series (Yahoo chart API), used only for price context."
+  },
+  {
+   "id": "i1",
+   "claim": "Valuation arithmetic (model): market cap about Rs 50,123 crore (Level-1 snapshot) and EV about Rs 49,600 crore using reported net cash. EV/EBITDA is about 31x on Q1 FY27 annualised EBITDA (397 x 4 = 1,588), about 56x on trailing four quarters (141+129+218+397 = 885) and about 79x on FY26 (628). P/E is about 64x on Q1 annualised PAT (197 x 4 = 788) and about 206x on trailing PAT (4-17+59+197 = 243). If the FY29 Lakshya target is met exactly (revenue 20,000, EBITDA 27% = 5,400) and depreciation is about 650, interest about 100 and tax 25%, PAT is about Rs 3,500 crore, so today's market cap is about 14x that PAT and today's EV about 9x that EBITDA. A 3x price (market cap about Rs 150,000 crore) would be about 43x target-year PAT or about 28x target-year EBITDA.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY27-FY29",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Derived from e3, e7, e8, e15; depreciation, interest and tax are my assumptions. Trailing figures use FY26 quarterly numbers from the Q4 deck (e4, e11)."
+  },
+  {
+   "id": "i2",
+   "claim": "Concentration (model): the US$1.11 billion award is spread over FY27-FY29 (about Rs 3,300 crore a year on a Rs 10,000+ crore value), which is roughly 40-45% of the Q1 FY27 annualised revenue of about Rs 7,640 crore and more than half of the Rs 18,618 crore order book. FY26 had no customer above 10% of revenue (e10). The evidence suggests customer concentration is rising from low to high within a year, and the award letter's volume commitments are not disclosed.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY27-FY29",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Derived from e5, e10, e3."
+  },
+  {
+   "id": "i3",
+   "claim": "Earnings quality (model): FY26 operating cash flow of about Rs 520 crore less capex of Rs 193 crore less finance costs of Rs 224 crore leaves little free cash; the reported 'net debt-free' status at Q1 FY27 is mostly the Rs 1,500 crore QIP. Excluding the QIP money and the Rs 391 crore restricted cash, net cash of Rs 483 crore implies net debt of roughly Rs 1,400 crore before the raise, so the balance sheet repair is equity-funded, not yet cash-flow-funded. Q1 FY27 cash flow is not disclosed in the sources read.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY26-Q1 FY27",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Derived from e8, e10, and the Q1 FY27 results (e3)."
+  },
+  {
+   "id": "i4",
+   "claim": "Mechanism chain (model): (a) hyperscaler/data-centre mix rising from 1% to 21% of revenue lifts EBITDA margin from 13.2% (FY26) to 20.8% (Q1 FY27); (b) the order book (e5) and attach-rate and capacity plans (e6, e7) support revenue of Rs 7,600 crore+ annualised; (c) management targets Rs 20,000 crore and 27% margin by FY29 (e7). Each link is stated by management, none is independently verified, and the market cap already capitalises most of (c) at about 14x target-year PAT (i1). A several-fold outcome would need targets above management's own plan, a higher multiple, or both.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY27-FY29",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Derived from e3, e5, e6, e7, i1."
+  },
+  {
+   "id": "i5",
+   "claim": "If AI or data-centre capex slows (model scenario): a reversal of most of the margin gain would take EBITDA margin toward the FY26 level of about 13-14%; on Q1 annualised revenue of about Rs 7,600 crore that is about Rs 1,000-1,100 crore of EBITDA vs Rs 1,588 crore annualised, a drop of about a third, while about Rs 1,000 crore a year of planned capex and a customer base concentrating into a few hyperscalers raise fixed-cost and renewal risk. Industry capacity is also rising (Corning US fibre +50%, Prysmian capacity increase). With a 30-50x trailing multiple, a de-rating plus lower earnings is consistent with a drawdown well above 50%. Telecom and BharatNet/BEAD demand (about 80% of FY26 revenue) is the cushion, but it carried a 13% margin.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY27-FY28",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "Derived from e4, e6, e7, e12, e13. Percentages are model estimates, not forecasts."
+  },
+  {
+   "id": "s1",
+   "claim": "SPECULATION: spot-linked fibre prices (CRU, e14) and management commentary that spot is 15-20% above long contracts could normalise if Chinese and Western capacity additions arrive in 2027-2028, compressing the pricing that supports today's margins. Timing is unknown.",
+   "kind": "SPECULATION",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "CY2027-2028",
+   "retrieved_at": "2026-10-05T06:31:21+00:00",
+   "note": "No source supports a date; carries no weight in the thesis."
+  }
+ ],
+ "next_review": "2026-11-16",
+ "change_log": [
+  "level 3 deep dive from Q1 FY27 results/call, Lakshya event, FY26 annual report, Q4 FY26 call; status watchlist, adversarial review pending",
+  "status: 'research_required' -> 'watchlist'",
+  "research_level: '1' -> '3'",
+  "confidence: 'low' -> 'medium'",
+  "why_now: 'Flagged by the quantitative discovery screen; no qualitative research has been d' -> 'What changed in the last 6-12 months (evidence, not narrative): (1) revenue went'",
+  "thesis: '' -> 'Evidence suggests STL has moved from a loss-making, tariff-hit fibre maker (FY26'",
+  "new evidence: e10, e11, e12, e13, e14, e15, e3, e4, e5, e6, e7, e8, e9, i1, i2, i3, i4, i5, s1"
+ ],
+ "parent_version": 1,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}
