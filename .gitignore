@@ -5,3 +5,5 @@ data/raw/*
 data/pit/*
 !data/raw/.gitkeep
 !data/pit/.gitkeep
+
+private/
