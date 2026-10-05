@@ -1,0 +1,524 @@
+{
+ "ticker": "TDPOWERSYS.NS",
+ "company": "TD Power Systems Ltd.",
+ "market": "IN",
+ "version": 2,
+ "status": "watchlist",
+ "research_level": 3,
+ "as_of": "2026-10-05",
+ "created_at": "2026-10-05T06:32:54+00:00",
+ "price": 823.0,
+ "price_ts": "2026-10-05",
+ "currency": "INR",
+ "why_now": "What changed in the last 6-12 months (all from company documents): FY26 was a record year (consolidated total income Rs 1,877.5 crore, +44%; PAT Rs 238.8 crore); order inflow rose to Rs 2,238.5 crore in FY26 and Rs 734.1 crore in Q1 FY27 (+87% YoY, 93% export); FY27 revenue guidance was lifted from Rs 2,400 crore-plus (May) to Rs 2,600 crore (Aug); a 10-year build-to-print framework with Siemens Energy was signed on 13-Aug-2026; the board approved a Rs 600 crore QIP and a Rs 75 crore promoter preferential issue; and a new CEO with large-generator experience (ex L&T-MHI) joined as number two. The stock has risen about 159% in 12 months and closed at a 2-year high on 2026-10-05, so most of this news is in the price; the question for a 12-24 month holder is what is not yet priced.",
+ "thesis": "TD Power Systems makes generators and motors in Bengaluru and sells mainly to a few global engine and turbine makers (84% of revenue from ten customers; 79% of FY26 orders and 93% of Q1 FY27 orders from exports). The evidence suggests a genuine step-change: revenue has grown about 3x from FY21 to FY26, EBITDA margin rose from 11.3% to 18.3%, the order book is Rs 2,207 crore and the company's own presentation cites repeat US data-centre gas-engine and gas-turbine generator orders. It is a build-to-spec supplier with limited pricing power (management says it cannot price like the turbine makers) whose growth is capped by factory capacity (about Rs 3,200 crore revenue in FY28 after small capex). The research view is that this is a high-quality, capacity-constrained riser with real but indirect AI exposure that the market already values at about 94x trailing earnings; the evidence is more consistent with a roughly 1.5-2.2x outcome in a good case than with a 3-5x. It stays on the watchlist pending price, the capacity plan and cash conversion.",
+ "multibagger_mechanism": "The only testable chain is revenue x margin x multiple: revenue Rs 2,124 crore trailing -> Rs 2,600 crore (FY27 guide) -> Rs 3,200 crore (FY28 capacity) -> Rs 4,000 crore-plus (FY29-30 plan) at about 19% EBITDA and 13-14% PAT margin gives FY28 PAT of roughly Rs 430 crore and FY29-30 PAT of roughly Rs 550-600 crore (model estimates, t05, t16). At the current Rs 25,867 crore market capitalisation that is already 60x FY28 earnings. A 3x needs a Rs 77,600 crore valuation (about 140x FY29 PAT or Rs 1,550 crore of profit at 50x), which no sourced capacity or order plan supports within 24 months (t17). A plausible upside path is 1.5-2.2x: orders hold at or above Rs 700 crore a quarter, FY27-FY28 delivery meets guidance, Siemens Energy purchase orders and the large-generator ramp become visible, and the multiple stays at 70-100x forward. A 3-5x outcome is not supported by the evidence; the status is therefore watchlist, not an entry candidate.",
+ "expectations_gap": "What the price seems to assume: sustained 30-45% revenue growth for several years at 19% EBITDA margins, a successful large-generator and Siemens Energy ramp, and no cyclical slowdown in US data-centre gas power. What the evidence shows: guided FY27 revenue Rs 2,600 crore and FY28 capacity of Rs 3,200 crore (about +23% in FY28 on guidance), margins that management itself describes as 18-19% with limited pricing power, operating cash flow of only about 0.5x profit in FY26, 84% customer concentration and an equity raise. At about 94x trailing and 60-74x forward earnings, the gap is that the market pays for the AI/data-centre cycle and a successful large-generator entry before either is visible in disclosed revenue; the company declines to give the data-centre share of orders. On balance the expectations gap looks unfavourable for a new buyer at this price, even though the business momentum is strong (model view, not a prediction).",
+ "time_horizon_months": 24,
+ "bull_case": {
+  "name": "bull",
+  "description": "Model estimate. Orders stay at or above Rs 700 crore a quarter, FY27 revenue meets or beats Rs 2,600 crore, FY28 reaches about Rs 3,200 crore-plus at about 19% EBITDA, Siemens Energy purchase orders and the large-generator capacity plan (due on the Q2 FY27 call) are credible, the QIP is absorbed without stress and the market pays 70-100x forward earnings on FY29 PAT of about Rs 560 crore (market cap about Rs 39,000-57,000 crore). Probability 0.20 reflects that this needs execution, continued AI-related demand and no multiple compression at once.",
+  "multiple_low": 1.5,
+  "multiple_high": 2.2,
+  "probability": 0.2,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "base_case": {
+  "name": "base",
+  "description": "Model estimate. FY27 is delivered near guidance and FY28 near Rs 3,000-3,200 crore with EBITDA margin 17-19%, but cash conversion stays weak and the market derates to 45-70x forward earnings on FY28 PAT of about Rs 400-430 crore (market cap about Rs 18,000-30,000 crore). Good execution is largely offset by multiple compression from an already high base. Probability 0.45.",
+  "multiple_low": 0.7,
+  "multiple_high": 1.2,
+  "probability": 0.45,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "bear_case": {
+  "name": "bear",
+  "description": "Model estimate. US data-centre gas-power capex slows or OEM slot reservations convert more slowly, one or two OEM customers cut orders, margins fall below 16% on commodity or execution problems, and the multiple falls to 30-40x on FY28 PAT of about Rs 300-350 crore (market cap about Rs 9,000-14,000 crore). Concentration and a large working-capital build make an earnings miss painful for a stock at a 2-year high. Probability 0.35.",
+  "multiple_low": 0.35,
+  "multiple_high": 0.55,
+  "probability": 0.35,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "catalysts": [
+  {
+   "description": "Q2 FY27 results and earnings call: management committed to detail the capacity plan for FY29-FY30 (Rs 4,000 crore-plus) and large-generator investments 'in the next earnings call'; also the first read on whether order inflow holds at about Rs 700 crore a quarter.",
+   "window": "Late Oct to mid-Nov 2026 (results date not verified; Q2 FY26 board met on 30-Oct-2025)",
+   "status": "pending",
+   "evidence_ids": [
+    "t05",
+    "t11"
+   ]
+  },
+  {
+   "description": "Execution of the Rs 600 crore QIP and Rs 75 crore promoter preferential issue approved on 14-Aug-2026 (EGM 10-Sep-2026); pricing and investor demand are a read on how institutions value the stock, and the use of proceeds is not stated in the filing.",
+   "window": "Q4 CY2026 (launch status not verified)",
+   "status": "pending",
+   "evidence_ids": [
+    "t12"
+   ]
+  },
+  {
+   "description": "First visible purchase orders or volumes under the 10-year Siemens Energy build-to-print framework; no volume or value is committed in the agreement.",
+   "window": "FY27-FY28 (undated)",
+   "status": "pending",
+   "evidence_ids": [
+    "t13"
+   ]
+  },
+  {
+   "description": "Q3 FY27 and Q4 FY27 results: delivery against the Rs 2,600 crore FY27 guidance and the margin and cash-conversion trend.",
+   "window": "Jan-Feb 2027 and May 2027 (dates not verified)",
+   "status": "pending",
+   "evidence_ids": [
+    "t05",
+    "t09"
+   ]
+  },
+  {
+   "description": "Large-generator capacity: machine tools take 15-16 months, full capacity earliest calendar 2027 and the big ramp in calendar 2028 (FY29).",
+   "window": "CY2027-CY2028",
+   "status": "pending",
+   "evidence_ids": [
+    "t11"
+   ]
+  }
+ ],
+ "risks": [
+  "Customer concentration: ten customers made up 84% of consolidated FY26 revenue; one engine/turbine OEM cutting orders would move earnings materially (t07).",
+  "Cyclicality and AI/data-centre dependence: the data-centre link is in the order book via US OEMs, unquantified (management declines to give the share) and could reverse if hyperscaler or behind-the-meter power capex slows; OEM slot reservations are not the same as firm orders (t04, t05, t18).",
+  "Valuation: about 94x trailing earnings, 22x book and 12x trailing revenue after a +159% 12-month run to a 2-year high; a 3x would need a valuation not supported by any sourced capacity plan (t15, t16, t17).",
+  "Cash conversion and working capital: FY26 operating cash flow about 0.5x profit, receivables Rs 785 crore at Jun-2026, customer advances not quantified; a QIP of up to Rs 600 crore dilutes about 2-3% at the current market cap and the use of proceeds is not stated (t09, t10, t12, t20).",
+  "Execution and capacity: factory 'running very full', a single-site India base, machine-tool lead times of 15-16 months for large generators, headcount rising from about 1,750 to 2,600 and employee cost up 48% YoY; management itself flags breakdown risk (t02, t11).",
+  "Margin and pricing power: management says it cannot price like the turbine makers; Q4 FY26 gross margin fell to 31.4% after a one-off Turkey penalty; copper and other commodity costs are rising and hedges are rolling off (t02, t11).",
+  "Large-generator entry: dominated by Siemens, Baker Hughes (Brush), Mitsubishi, Fuji and Toshiba; the Siemens Energy agreement is build-to-print with no committed volume, and meaningful revenue is not expected before FY29 (t11, t13, t14).",
+  "Governance and disclosure: top management changes (new CEO), a going-concern emphasis in an immaterial subsidiary, auditors relied on other auditors for overseas subsidiaries, and the company often declines to quantify key drivers (t01, t05).",
+  "Not verified in this thesis: the Q1 FY27 order-book reconciliation (about Rs 140 crore unexplained, t21), the QIP launch or pricing after the 10-Sep-2026 EGM, the Siemens Energy volumes, and promoter pledge and shareholding detail (the shareholding chart in the presentation was not parsed reliably). BSE and NSE web portals were not used; the BSE announcements API returned 403 and NSE pages redirected, so documents were read from the company website and NSE's static archive."
+ ],
+ "valuation": {
+  "price_inr": 823.0,
+  "market_cap_inr_crore": 25867.0,
+  "ttm_consolidated_pat_inr_crore_model": 275.0,
+  "pe_ttm_model": 94.0,
+  "pb_model": 22.3,
+  "market_cap_to_ttm_revenue_model": 12.2,
+  "pe_on_fy27_guidance_model": 74.0,
+  "pe_on_fy28_capacity_model": 60.0,
+  "fy27_revenue_guidance_inr_crore": 2600.0,
+  "fy28_capacity_revenue_inr_crore": 3200.0,
+  "order_book_inr_crore_jun2026": 2207.3,
+  "net_borrowings_inr_crore_jun2026": -216.1,
+  "price_change_12m_pct": 159.0
+ },
+ "scores": [
+  {
+   "name": "business_quality",
+   "value": 0.65,
+   "weight": 1.0,
+   "basis": "EBITDA margin 11.3% -> 18.3% over FY21-26, near-zero debt, long OEM relationships; but build-to-spec with 84% concentration and weak cash conversion",
+   "data_quality": "ok"
+  },
+  {
+   "name": "growth_acceleration",
+   "value": 0.85,
+   "weight": 1.0,
+   "basis": "Q1 FY27 revenue +72% YoY, order inflow +87%, FY27 guidance raised twice",
+   "data_quality": "ok"
+  },
+  {
+   "name": "earnings_inflection",
+   "value": 0.7,
+   "weight": 1.0,
+   "basis": "PAT +72% YoY in Q1 FY27 with margin 19.0%; but margin flat YoY and Q4 FY26 gross margin dip",
+   "data_quality": "ok"
+  },
+  {
+   "name": "catalyst_strength",
+   "value": 0.55,
+   "weight": 1.0,
+   "basis": "Dated catalysts exist (capacity plan, QIP, Siemens POs) but Siemens volume undisclosed and the large-generator ramp is CY2028",
+   "data_quality": "partial"
+  },
+  {
+   "name": "valuation_asymmetry",
+   "value": 0.15,
+   "weight": 1.0,
+   "basis": "94x trailing, 60-74x forward earnings at a 2-year high; reverse arithmetic shows no sourced 3x chain",
+   "data_quality": "ok"
+  },
+  {
+   "name": "market_confirmation",
+   "value": 0.9,
+   "weight": 1.0,
+   "basis": "+159% in 12 months, 2-year closing high on 2026-10-05",
+   "data_quality": "ok"
+  },
+  {
+   "name": "risk",
+   "value": 0.4,
+   "weight": 1.0,
+   "basis": "Higher value = lower risk. Concentration, cyclicality, valuation, working capital and equity raise",
+   "data_quality": "ok"
+  },
+  {
+   "name": "thesis_robustness",
+   "value": 0.4,
+   "weight": 1.0,
+   "basis": "Primary documents read, but AI share of orders undisclosed and key Q2 items (capacity plan, QIP) pending",
+   "data_quality": "partial"
+  }
+ ],
+ "overall_score": null,
+ "confidence": "medium",
+ "entry": {
+  "state": "unknown",
+  "ideal_zone": null,
+  "acceptable_zone": null,
+  "chase_zone": null,
+  "add_zone": null,
+  "invalidation_price": null,
+  "rationale": ""
+ },
+ "exit_rules": [
+  {
+   "type": "thesis_invalidation",
+   "condition": "Quarterly order inflow below Rs 500 crore in Q2 FY27 or Q3 FY27, or the reported order book below Rs 1,900 crore at any quarter end (vs Rs 2,207 crore at 30-Jun-2026 and management's Rs 700 crore-a-quarter inflow expectation).",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "Consolidated EBITDA margin below 16.5% in two consecutive quarters, or consolidated gross margin below 32% for a full quarter excluding disclosed one-offs (Q1 FY27: 19.0% and 34.7%).",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "FY27 operating cash flow below 0.5x consolidated profit after tax, or Q4 FY27 trade receivables above Rs 900 crore without a matching rise in customer advances (FY26: about 0.5x; Jun-2026 receivables Rs 785 crore).",
+   "status": "armed"
+  },
+  {
+   "type": "catalyst_failure",
+   "condition": "The Q2 FY27 earnings call fails to give the promised capex and revenue plan for FY29-FY30, or no Siemens Energy purchase order is mentioned in the exchange filings or calls by the Q4 FY27 results (May 2027), or the QIP is not completed by 31-Dec-2026.",
+   "status": "armed"
+  },
+  {
+   "type": "valuation_excess",
+   "condition": "Price above about 110x trailing consolidated EPS without an upward revision to FY28 revenue expectations beyond Rs 3,200 crore (Oct-2026: about 94x).",
+   "status": "armed"
+  },
+  {
+   "type": "narrative_saturation",
+   "condition": "A major customer OEM (for example INNIO, a leading gas-turbine OEM) discloses order cancellations or slot-reservation withdrawals, or hyperscaler capex guidance is cut by 20% or more, in filings read by the monitor.",
+   "status": "armed"
+  },
+  {
+   "type": "technical",
+   "condition": "Closing price more than 35% below the 2026-10-05 closing high of about Rs 821 without a company-specific negative event: trigger an emergency thesis review rather than an automatic exit.",
+   "status": "armed"
+  }
+ ],
+ "adversarial": {
+  "done": false,
+  "reviewer": "",
+  "verdict": "",
+  "strongest_bear_case": "",
+  "questions": {},
+  "reviewed_at": ""
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "Last price 823 INR on 2026-10-05 (market data snapshot).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Price snapshot only; says nothing about business quality."
+  },
+  {
+   "id": "e2",
+   "claim": "Quantitative discovery output for TDPOWERSYS.NS: rank 10. Model output, not a verified business fact.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Momentum rank is the only selector validated in this lab, and only modestly; it is a reason to spend research time, not a thesis."
+  },
+  {
+   "id": "t01",
+   "claim": "TD Power Systems consolidated Q1 FY27 (quarter to 30-Jun-2026): revenue from operations Rs 640.05 crore vs Rs 371.90 crore in Q1 FY26 (+72%); profit before tax Rs 116.89 crore vs Rs 67.39 crore; profit after tax Rs 86.29 crore vs Rs 50.07 crore (+72%). Standalone revenue Rs 627.84 crore vs Rs 357.96 crore. Unaudited, limited-review report attached; the auditor's emphasis-of-matter relates to a going-concern uncertainty at one non-material Indian subsidiary (DF Power Systems).",
+   "kind": "FACT",
+   "source_type": "exchange",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_17c65280430c46c59dea88873857db9a.pdf",
+   "source_date": "2026-08-11",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Outcome of board meeting and unaudited results filed 11-Aug-2026; units converted from Rs lakh."
+  },
+  {
+   "id": "t02",
+   "claim": "Q1 FY27 consolidated EBITDA Rs 121.68 crore (19.0% margin) vs Rs 70.79 crore (18.9%) in Q1 FY26 and 17.4% in Q4 FY26; gross margin 34.7% vs 35.3% in Q1 FY26 and 31.4% in Q4 FY26; employee cost Rs 54.52 crore vs Rs 36.83 crore (+48% YoY).",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_504b8b6c44ea4c4c9055740a01ae30b2.pdf",
+   "source_date": "2026-08-11",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Company-defined EBITDA including other operating income; the Q4 FY26 gross margin was hit by a Turkey penalty described by management as one-off."
+  },
+  {
+   "id": "t03",
+   "claim": "Q1 FY27 order inflow Rs 734.1 crore vs Rs 391.8 crore (+87%), of which exports including deemed exports Rs 683.6 crore (93%) vs Rs 257.3 crore. Order book at 30-Jun-2026 Rs 2,207.3 crore, of which exports including deemed exports Rs 1,533.2 crore (69.5%).",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_504b8b6c44ea4c4c9055740a01ae30b2.pdf",
+   "source_date": "2026-08-11",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Order book is the manufacturing order book as defined by the company."
+  },
+  {
+   "id": "t04",
+   "claim": "Company's own Q1 FY27 order highlights name data centres: 'large-volume repeat orders from leading global OEMs across multiple ratings for US data-centre applications' (gas engine generators); 'significant volume orders from a major global gas-turbine OEM' in the 14-18 MW range with 'demand supported by data-centre expansion' alongside oil and gas and industrial applications; an expected large-order pipeline from a second major global OEM in the 12-19 MW range. Customers are not named and values are not disclosed.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_504b8b6c44ea4c4c9055740a01ae30b2.pdf",
+   "source_date": "2026-08-11",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "This is the primary evidence that the AI/data-centre link is in the order book, via engine/turbine OEMs rather than end customers."
+  },
+  {
+   "id": "t05",
+   "claim": "Q1 FY27 call (12-Aug-2026): management raised FY27 revenue guidance to Rs 2,600 crore ('a small chance' of exceeding); expects order inflow of about Rs 700 crore a quarter (Rs 2,800 crore-plus for the year); says capacity is about Rs 3,200 crore for FY28 after about Rs 50 crore of debottlenecking capex in FY27 and that a further capacity round to Rs 4,000 crore-plus for FY29-FY30 will be detailed on the next earnings call (about three months later). Asked for the data-centre share of the order book, the managing director said the company does not give a split by application. Guidance excludes large turbine generators (18-20 months to build). Order book at that date by management: generators and motors Rs 1,929 crore, railway Rs 211 crore, spares and aftermarket Rs 22 crore, Turkey Rs 46 crore.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://nsearchives.nseindia.com/corporate/TDPOWERSYS_18082026131351_Transcript_-_sg.pdf",
+   "source_date": "2026-08-12",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Transcript filed with exchanges 18-Aug-2026."
+  },
+  {
+   "id": "t06",
+   "claim": "On the Q1 FY27 call the managing director said Indian demand is 'fairly subdued' at 10-12% growth and that the company does not 'see any meaningful AI' hyperscaler demand in India (gas and water constraints); the data-centre demand it cites is US-based, with products going 'straight from factory gate on to ships and going to the U.S.' via multiple OEM customers. He also said the OEM customers have taken non-refundable advances from their own customers (a management assertion not verified here), and that a power plant is under 5% of total data-centre project cost.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://nsearchives.nseindia.com/corporate/TDPOWERSYS_18082026131351_Transcript_-_sg.pdf",
+   "source_date": "2026-08-12",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Management statements, not independently verified."
+  },
+  {
+   "id": "t07",
+   "claim": "FY26 annual report: order inflow Rs 2,238.5 crore (+51%) with exports including deemed exports 79%; pending order book at 1-Apr-2026 Rs 1,972.9 crore (including traction Rs 247.6 crore) vs Rs 1,368.0 crore a year earlier; top 10 customers contributed 84% of consolidated revenue in FY26 (84% in FY25); consolidated total income Rs 1,877.5 crore (+44%), consolidated EBITDA including other income Rs 351.0 crore, consolidated profit after tax including exceptional item Rs 238.8 crore vs Rs 174.6 crore.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_c1b9ced188b745cd8fb044c493a4bbb5.pdf",
+   "source_date": "2026-05-14",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Audit reports dated 14-May-2026; Management Discussion and Analysis section."
+  },
+  {
+   "id": "t08",
+   "claim": "Six-year consolidated history (investor presentation): total income Rs 594.8 crore in FY21 rising to Rs 1,869.5 crore in FY26; EBITDA margin 11.3% (FY21) to 18.3% (FY26) after 18.8% in FY25; gross margin 35.6% (FY25) to 33.6% (FY26); PAT margin 7.6% to 12.8%; FY26 EBITDA Rs 342.9 crore, PAT Rs 238.8 crore.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_504b8b6c44ea4c4c9055740a01ae30b2.pdf",
+   "source_date": "2026-08-11",
+   "period": "FY21-FY26",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Presentation EBITDA includes other operating income and differs slightly from the annual-report figure, which includes other income."
+  },
+  {
+   "id": "t09",
+   "claim": "FY26 annual report cash flows: consolidated net cash from operating activities Rs 129.1 crore (FY25 Rs 39.5 crore) against consolidated profit after tax of Rs 238.8 crore; standalone operating cash flow Rs 114.8 crore (FY25 Rs 6.3 crore) against standalone PAT Rs 216.4 crore; standalone trade receivables Rs 708.7 crore vs Rs 484.3 crore a year earlier (sales +36%).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_c1b9ced188b745cd8fb044c493a4bbb5.pdf",
+   "source_date": "2026-05-14",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Cash flow statements and balance sheet in the FY26 annual report."
+  },
+  {
+   "id": "t10",
+   "claim": "Consolidated balance sheet at 30-Jun-2026: trade receivables Rs 785.3 crore, inventories Rs 568.6 crore, cash and cash equivalents Rs 119.6 crore plus other bank balances Rs 120.3 crore, current borrowings Rs 23.8 crore, other current liabilities Rs 289.6 crore (up from Rs 190.3 crore at 31-Mar-2026), total equity Rs 1,157.9 crore. Management said on the call that other current liabilities rose on customer advances and tax provisions and that 'all our retained earnings are basically going into working capital' (Q4 FY26 call).",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_504b8b6c44ea4c4c9055740a01ae30b2.pdf",
+   "source_date": "2026-08-11",
+   "period": "30-Jun-2026",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Balance sheet from the Q1 FY27 presentation; working-capital quote from the Q4 FY26 call (see t11)."
+  },
+  {
+   "id": "t11",
+   "claim": "Q4 FY26 call (15-May-2026): the Q4 gross margin fell about 3 points because of a Turkey contract penalty on delayed shipments (described as one-off); management said price-variation clauses and hedges protect margins but 'it is difficult for us to get better pricing' than currently, and that it does 'not make the same kind of money that the turbine guys make'; large-generator (to about 200 MW) expansion requires rotor-side investment, machine tools take 15-16 months to buy and install, full capacity earliest in calendar 2027 and a big ramp in calendar 2028 (FY29); a capacity-commitment agreement with INNIO runs to 2030; customers 'on an average' plan to double capacity by 2030; a new CEO (ex L&T-MHI) joined; 'all our retained earnings are basically going into working capital'.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://nsearchives.nseindia.com/corporate/TDPOWERSYS_19052026162407_Disclosure_Reg30_Earning_Call_Transcript.pdf",
+   "source_date": "2026-05-15",
+   "period": "Q4 FY26",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Transcript filed 19-May-2026."
+  },
+  {
+   "id": "t12",
+   "claim": "Board outcome 14-Aug-2026: approved a preferential issue of 12,50,000 post-split equity shares (face value Re 1) at Rs 600 each to two promoters, Nikhil Kumar and Mohib Nomanbhai Khericha (about Rs 75 crore), a QIP of up to Rs 600 crore, and an EGM on 10-Sep-2026; 1:2 share split with record date 24-Aug-2026. Nikhil Kumar's pre-issue holding is 8.30% (2,59,30,640 post-split shares). The outcome does not state the use of proceeds.",
+   "kind": "FACT",
+   "source_type": "exchange",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_373be10953434075a84720b32a48126f.pdf",
+   "source_date": "2026-08-14",
+   "period": "Aug-2026",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Subject to shareholder and regulatory approvals as stated in the filing; whether the QIP has launched is not verified."
+  },
+  {
+   "id": "t13",
+   "claim": "Siemens Energy, Inc. Build-to-Print Manufacturing Framework Agreement dated 13-Aug-2026: TD Power will manufacture and supply 2-pole generators to Siemens Energy's designs; term 10 years (extendable by 24 months by mutual agreement); the total business 'shall be based on individual purchase orders'; no volume, value or minimum commitment is disclosed.",
+   "kind": "FACT",
+   "source_type": "exchange",
+   "source_url": "https://www.tdps.co.in/_files/ugd/6c2f9d_98da6f80e36041c186cc907ce21126db.pdf",
+   "source_date": "2026-08-14",
+   "period": "Aug-2026",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Disclosure under Regulation 30 describes it as a 'strategically significant landmark agreement'; economics are not disclosed."
+  },
+  {
+   "id": "t14",
+   "claim": "Q4 FY26 call: management named Siemens (global leader), Baker Hughes (after acquiring Brush) and, on the Japanese side, Mitsubishi, Fuji Electric and Toshiba as the large-generator players; steam turbine generators are about 25% of TD Power's revenue; management said there is 'no possibility for new entrants' among prime-mover makers and that the market is determined by prime-mover capacity; Nuclear (NPCIL) motors face domestic competition including BHEL and Crompton.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://nsearchives.nseindia.com/corporate/TDPOWERSYS_19052026162407_Disclosure_Reg30_Earning_Call_Transcript.pdf",
+   "source_date": "2026-05-15",
+   "period": "Q4 FY26",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Competitor names come from management, not from a market-share dataset; management said it has no market-share number."
+  },
+  {
+   "id": "t15",
+   "claim": "Market data: TDPOWERSYS.NS closed at about Rs 317.6 on 2025-10-06 and Rs 821.45 on 2026-10-05, which is also the highest close in the two-year data window (about +159% in 12 months, split-adjusted); market capitalisation Rs 25,867 crore in the lab's 2026-10-05 snapshot.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "12 months to 2026-10-05",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Price history from the lab's market-data library (Yahoo-sourced, may be adjusted); shows what the market has already paid, not business quality."
+  },
+  {
+   "id": "t16",
+   "claim": "Model arithmetic (INFERENCE): trailing consolidated profit after tax is about Rs 275 crore (FY26 Rs 238.8 crore plus Q1 FY27 Rs 86.3 crore minus Q1 FY26 Rs 50.1 crore, presentation basis), so the Rs 25,867 crore market capitalisation is about 94x trailing earnings, about 22x book (equity Rs 1,158 crore) and about 12x trailing revenue (Rs 2,124 crore). On FY27 guidance of Rs 2,600 crore revenue at a 13.4% PAT margin the multiple is about 74x; on FY28 capacity of Rs 3,200 crore it is about 60x.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "TTM to Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: t01, t05, t08, t10, t15. Margin and FY27/FY28 revenue are model assumptions; a 2:1 split does not change market capitalisation."
+  },
+  {
+   "id": "t17",
+   "claim": "Reverse arithmetic (INFERENCE): a 3x outcome needs a market capitalisation of about Rs 77,600 crore. At 50x earnings that is about Rs 1,550 crore of profit, about 3.6x the FY28 capacity-based Rs 430 crore estimate and roughly Rs 11,500 crore of revenue at a 13.5% margin, against stated capacity plans of Rs 3,200 crore (FY28) and Rs 4,000 crore-plus (FY29-FY30). A 3x in 12-24 months would therefore need either a multiple of roughly 140-180x forward earnings or a step-change in the business that management has not guided to. The evidence is consistent with a strong business at a price that already discounts several years of the guided growth.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY28-FY30 model",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: t05, t11, t15, t16; arithmetic by the researcher, model estimate."
+  },
+  {
+   "id": "t18",
+   "claim": "AI/data-centre link (INFERENCE): it is real in the order book but indirect and unquantified. Company documents show repeat US data-centre gas-engine generator orders and gas-turbine generator volume orders from global OEMs (t04), 93% of Q1 inflow was export (t03) and 84% of revenue comes from ten customers (t07); management declines to split the order book by application (t05) and says it sees no meaningful Indian hyperscaler demand (t06). The exposure is therefore to US data-centre behind-the-meter gas power via a few OEMs, not to Indian AI capex.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY26-Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: t03, t04, t05, t06, t07."
+  },
+  {
+   "id": "t19",
+   "claim": "If AI/data-centre spending slows (INFERENCE): the order book of Rs 2,207 crore is about 3.4 quarters of Q1 revenue (about 10 months of visibility), so a slowdown would reach revenue within 2-4 quarters; mitigants are a light balance-sheet (Rs 23.8 crore borrowings), low capex (about Rs 50 crore) and non-data-centre lines (steam turbines about 25% of revenue, hydro, railways, motors); aggravators are 84% customer concentration, an employee base scaling from about 1,750 to 2,600, receivables of Rs 785 crore and a Rs 600 crore equity raise taken at the top of the cycle. Customers' slot-reservation versus firm-order mix was raised on the call and not answered with figures.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Forward",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: t03, t07, t10, t05, t06."
+  },
+  {
+   "id": "t20",
+   "claim": "Cash conversion (INFERENCE): FY26 operating cash flow was about 0.5x consolidated profit (Rs 129.1 crore vs Rs 238.8 crore) and FY25 about 0.2x; receivables rose faster than sales and management says retained earnings are going into working capital. Cash conversion is therefore weak in the growth phase and the equity raise is consistent with a funding need, although the filing does not state the purpose.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: t09, t10, t11, t12."
+  },
+  {
+   "id": "t21",
+   "claim": "Unverified reconciliation point: the 1-Apr-2026 order book (Rs 1,972.9 crore) plus Q1 inflow (Rs 734.1 crore) less Q1 revenue (Rs 640.1 crore) is about Rs 2,067 crore, versus a reported 30-Jun-2026 order book of Rs 2,207.3 crore; the Rs 140 crore difference could reflect definitions, currency or spares but it was not explained in the documents read.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: t03, t05, t07."
+  },
+  {
+   "id": "t22",
+   "claim": "SPECULATION: the Siemens Energy framework could become a material share of FY29+ revenue if purchase orders follow, but no volume, value or minimum commitment is disclosed, so it carries no weight in the base or bear scenarios.",
+   "kind": "SPECULATION",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY29+",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Fact: t13."
+  },
+  {
+   "id": "t23",
+   "claim": "SPECULATION: a rotor-side and large-machining capacity build for generators up to about 200 MW might allow TD Power to address the combined-cycle steam-turbine and larger gas-turbine market over time, but management has given no revenue target and says the earliest meaningful ramp is calendar 2028.",
+   "kind": "SPECULATION",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "CY2028+",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Fact: t11."
+  }
+ ],
+ "next_review": "2026-11-09",
+ "change_log": [
+  "level 3 deep dive from FY26 annual report, Q1 FY27 results/presentation/call, Q4 FY26 call, Aug-2026 board and Siemens Energy filings",
+  "status: 'research_required' -> 'watchlist'",
+  "research_level: '1' -> '3'",
+  "confidence: 'low' -> 'medium'",
+  "why_now: 'Flagged by the quantitative discovery screen; no qualitative research has been d' -> 'What changed in the last 6-12 months (all from company documents): FY26 was a re'",
+  "thesis: '' -> 'TD Power Systems makes generators and motors in Bengaluru and sells mainly to a '",
+  "new evidence: t01, t02, t03, t04, t05, t06, t07, t08, t09, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23"
+ ],
+ "parent_version": 1,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}
