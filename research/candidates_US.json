@@ -1,0 +1,3545 @@
+{
+ "meta": {
+  "market": "US",
+  "generated_at": "2026-10-05T06:19:10+00:00",
+  "data_as_of": "2026-10-02",
+  "regime": {
+   "index": "^GSPC",
+   "close": 7722.72021484375,
+   "ma200": 7225.8184106445315,
+   "regime_on": true,
+   "as_of": "2026-10-02"
+  },
+  "screen": "liquidity floor -> data-reliability exclusion -> trend filters (close>200dMA, 12-1 mom>0, close>=75% of 52w high) -> rank by 12-1 momentum percentile (tie: mom/vol percentile) -> top N. Fundamentals do not affect the ranking.",
+  "ranking": "12-1 momentum percentile (the only lab-validated price signal); fundamentals are evidence, not a filter",
+  "liquidity_floor": 5000000.0,
+  "liquidity_floor_unit": "USD per day (median 20d Close*Volume)",
+  "universe_size": 1001,
+  "with_price_data": 1000,
+  "excluded_counts": {
+   "short_history": 6,
+   "illiquid": 4,
+   "stale": 2,
+   "no_data": 1
+  },
+  "excluded_price_jump": [],
+  "confirmed_jump_names_in_pool": 17,
+  "pool_size": 988,
+  "pass_trend_filters": 394,
+  "top_n": 40,
+  "fundamentals_coverage_pct_of_pool": {
+   "any_period": 91.0,
+   "revenue_yoy": 90.1,
+   "growth_acceleration": 88.9,
+   "margin_delta": 90.1,
+   "ttm_revenue": 91.0
+  },
+  "market_cap_coverage_pct_of_top": 100.0,
+  "survivor_bias": "current index members only",
+  "limitations": [
+   "Survivor bias: universe is current index members; delisted/merged/dropped names are absent.",
+   "Yahoo prices are unaudited; unadjusted corporate actions and stale series are flagged, not repaired.",
+   "Momentum rank is the only price signal validated by the lab (India strong, US weak, micro ~none); validated on survivors in a tune window only.",
+   "Fundamental sub-scores are evidence/flags: the one fundamentals gate tested (US) did not improve results; mappings are declared heuristics.",
+   "India fundamentals: latest ~5-6 quarters from Yahoo, no filing dates, latest-only, never backtestable; US: annual SEC 10-K only.",
+   "Valuation uses market cap (not EV) vs a single-period growth rate: always marked partial.",
+   "No overall buy score is produced here; combination is left to mblab/scoring.py."
+  ]
+ },
+ "candidates": [
+  {
+   "rank": 1,
+   "ticker": "VICR",
+   "name": "Vicor Corporation",
+   "sector": "Industrials",
+   "segment": "mid",
+   "market": "US",
+   "price": 308.8999938964844,
+   "price_date": "2026-10-02",
+   "mom_12_1": 2.6826199813543234,
+   "mom_rank": 1.0,
+   "momvol_rank": 0.9888663967611336,
+   "vol_ann": 0.9705580748236761,
+   "dd_from_52w_high": -0.18663438072209615,
+   "ext_above_200dma": 0.42722588849200593,
+   "adv": 194782091.93115234,
+   "adv_floor": 5000000.0,
+   "market_cap": 14242369233.38684,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-03-02",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9983,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 1.0,
+      "momvol_rank": 0.9889,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.6355,
+     "basis": "latest fiscal year revenue YoY +13.5% vs previous fiscal year YoY -11.4% (change +24.9pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1355,
+      "rev_yoy1": -0.1136,
+      "rev_accel": 0.249,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 25.2% (+20.3pp YoY); EBITDA growth minus revenue growth +479.0pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2517,
+      "margin_delta": 0.2035,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 4.926,
+      "op_leverage": 4.7905,
+      "ocf_ebitda": 1.3599
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 34.9x / growth 14% = 2.58 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 14242369233.3868,
+      "ttm_revenue": 407701000.0,
+      "growth_used": 0.1355,
+      "ps": 34.9334,
+      "ps_to_growth": 2.5786,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct"
+   ]
+  },
+  {
+   "rank": 2,
+   "ticker": "MXL",
+   "name": "MaxLinear, Inc.",
+   "sector": "Information Technology",
+   "segment": "small",
+   "market": "US",
+   "price": 105.93000030517578,
+   "price_date": "2026-10-02",
+   "mom_12_1": 2.67359390170766,
+   "mom_rank": 0.9989878542510121,
+   "momvol_rank": 0.9463562753036437,
+   "vol_ann": 1.2523249383380415,
+   "dd_from_52w_high": -0.172615782901146,
+   "ext_above_200dma": 0.9757549031589396,
+   "adv": 205421730.5656433,
+   "adv_floor": 5000000.0,
+   "market_cap": 9607129750.307365,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-01-29",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9915,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.999,
+      "momvol_rank": 0.9464,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.7971,
+     "basis": "latest fiscal year revenue YoY +29.7% vs previous fiscal year YoY -48.0% (change +77.7pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.2971,
+      "rev_yoy1": -0.48,
+      "rev_accel": 0.7771,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.6,
+     "basis": "ebitda margin -17.7% (+29.2pp YoY); EBITDA not positive; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": -0.1773,
+      "margin_delta": 0.2921,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0142,
+     "basis": "P/S 20.5x / growth 30% = 0.69 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 9607129750.3074,
+      "ttm_revenue": 467641000.0,
+      "growth_used": 0.2971,
+      "ps": 20.5438,
+      "ps_to_growth": 0.6915,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "extended_gt_60pct_above_200dma",
+    "data:price_jump"
+   ]
+  },
+  {
+   "rank": 3,
+   "ticker": "DOCN",
+   "name": "DigitalOcean",
+   "sector": "Information Technology",
+   "segment": "mid",
+   "market": "US",
+   "price": 140.07000732421875,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.9236132107426216,
+   "mom_rank": 0.9969635627530364,
+   "momvol_rank": 0.9564777327935222,
+   "vol_ann": 0.8587501078266722,
+   "dd_from_52w_high": -0.22737044232141324,
+   "ext_above_200dma": 0.3288050776582605,
+   "adv": 283611048.43063354,
+   "adv_floor": 5000000.0,
+   "market_cap": 16469368429.678345,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-24",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9923,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.997,
+      "momvol_rank": 0.9565,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.44,
+     "basis": "latest fiscal year revenue YoY +15.5% vs previous fiscal year YoY +12.7% (change +2.8pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1548,
+      "rev_yoy1": 0.1266,
+      "rev_accel": 0.0281,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.8788,
+     "basis": "ebitda margin 32.7% (+4.3pp YoY); EBITDA growth minus revenue growth +17.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3266,
+      "margin_delta": 0.0434,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.3319,
+      "op_leverage": 0.1772,
+      "ocf_ebitda": 1.0515
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 18.3x / growth 15% = 1.18 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 16469368429.6783,
+      "ttm_revenue": 901427000.0,
+      "growth_used": 0.1548,
+      "ps": 18.2703,
+      "ps_to_growth": 1.1805,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "drawdown_from_52w_high_gt_20pct"
+   ]
+  },
+  {
+   "rank": 4,
+   "ticker": "VSXY",
+   "name": "Victoria's Secret",
+   "sector": "Consumer Discretionary",
+   "segment": "small",
+   "market": "US",
+   "price": 91.7300033569336,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.889608056432564,
+   "mom_rank": 0.9959514170040485,
+   "momvol_rank": 0.9757085020242915,
+   "vol_ann": 0.7513556819758992,
+   "dd_from_52w_high": -0.08242470504304733,
+   "ext_above_200dma": 0.3808011510091156,
+   "adv": 134951743.04962158,
+   "adv_floor": 5000000.0,
+   "market_cap": 7316755565.232582,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2026-01-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-03-20",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 247,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9947,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.996,
+      "momvol_rank": 0.9757,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3569,
+     "basis": "latest fiscal year revenue YoY +5.2% vs previous fiscal year YoY +0.8% (change +4.4pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0518,
+      "rev_yoy1": 0.0078,
+      "rev_accel": 0.0441,
+      "freq": "A",
+      "latest_period": "2026-01-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.3152,
+     "basis": "ebitda margin 7.8% (-1.3pp YoY); EBITDA growth minus revenue growth -15.6pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0777,
+      "margin_delta": -0.0135,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.1039,
+      "op_leverage": -0.1557,
+      "ocf_ebitda": 0.9804
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.8077,
+     "basis": "P/S 1.1x / growth 5% = 0.22 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 7316755565.2326,
+      "ttm_revenue": 6553000000.0,
+      "growth_used": 0.0518,
+      "ps": 1.1166,
+      "ps_to_growth": 0.2154,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "data:price_jump"
+   ]
+  },
+  {
+   "rank": 5,
+   "ticker": "IRDM",
+   "name": "Iridium Communications",
+   "sector": "Communication Services",
+   "segment": "small",
+   "market": "US",
+   "price": 48.959999084472656,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.7090764328046775,
+   "mom_rank": 0.9949392712550608,
+   "momvol_rank": 0.9878542510121457,
+   "vol_ann": 0.6229097716423694,
+   "dd_from_52w_high": -0.1184575216568966,
+   "ext_above_200dma": 0.33101776119101345,
+   "adv": 41758603.864860535,
+   "adv_floor": 5000000.0,
+   "market_cap": 5188856688.890991,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-12",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9962,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9949,
+      "momvol_rank": 0.9879,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2978,
+     "basis": "latest fiscal year revenue YoY +4.9% vs previous fiscal year YoY +5.1% (change -0.1pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0493,
+      "rev_yoy1": 0.0505,
+      "rev_accel": -0.0012,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.6944,
+     "basis": "ebitda margin 51.2% (+2.6pp YoY); EBITDA growth minus revenue growth +5.6pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.5119,
+      "margin_delta": 0.0261,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.1058,
+      "op_leverage": 0.0564,
+      "ocf_ebitda": 0.8966
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 6.0x / growth 5% = 1.21 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 5188856688.891,
+      "ttm_revenue": 871659000.0,
+      "growth_used": 0.0493,
+      "ps": 5.9529,
+      "ps_to_growth": 1.2068,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct"
+   ]
+  },
+  {
+   "rank": 6,
+   "ticker": "VIAV",
+   "name": "Viavi Solutions",
+   "sector": "Information Technology",
+   "segment": "mid",
+   "market": "US",
+   "price": 47.099998474121094,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.6974198673102738,
+   "mom_rank": 0.9939271255060729,
+   "momvol_rank": 0.9544534412955465,
+   "vol_ann": 0.7638859427134598,
+   "dd_from_52w_high": -0.14874395598364853,
+   "ext_above_200dma": 0.2803905450922388,
+   "adv": 207473118.81523132,
+   "adv_floor": 5000000.0,
+   "market_cap": 11621916522.289642,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2026-06-27",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-08-13",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 100,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9907,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9939,
+      "momvol_rank": 0.9545,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.9003,
+     "basis": "latest fiscal year revenue YoY +40.0% vs previous fiscal year YoY +8.4% (change +31.6pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.4003,
+      "rev_yoy1": 0.0839,
+      "rev_accel": 0.3164,
+      "freq": "A",
+      "latest_period": "2026-06-27"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.7854,
+     "basis": "ebitda margin 11.1% (+1.8pp YoY); EBITDA growth minus revenue growth +26.8pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1107,
+      "margin_delta": 0.0178,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.6683,
+      "op_leverage": 0.2681,
+      "ocf_ebitda": 0.678
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.8479,
+     "basis": "P/S 7.7x / growth 40% = 0.19 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 11621916522.2896,
+      "ttm_revenue": 1518300000.0,
+      "growth_used": 0.4003,
+      "ps": 7.6546,
+      "ps_to_growth": 0.1912,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct"
+   ]
+  },
+  {
+   "rank": 7,
+   "ticker": "RNG",
+   "name": "RingCentral, Inc.",
+   "sector": "Information Technology",
+   "segment": "small",
+   "market": "US",
+   "price": 78.27999877929688,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.5958510123476937,
+   "mom_rank": 0.9919028340080972,
+   "momvol_rank": 0.9605263157894737,
+   "vol_ann": 0.6993368486045358,
+   "dd_from_52w_high": -0.019293421716552572,
+   "ext_above_200dma": 0.7759111038337154,
+   "adv": 108724010.31608582,
+   "adv_floor": 5000000.0,
+   "market_cap": 6536862259.423767,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-27",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9908,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9919,
+      "momvol_rank": 0.9605,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2452,
+     "basis": "latest fiscal year revenue YoY +4.8% vs previous fiscal year YoY +9.0% (change -4.2pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0478,
+      "rev_yoy1": 0.0899,
+      "rev_accel": -0.0421,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.9555,
+     "basis": "ebitda margin 13.6% (+4.3pp YoY); EBITDA growth minus revenue growth +47.5pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1364,
+      "margin_delta": 0.0426,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.5232,
+      "op_leverage": 0.4754,
+      "ocf_ebitda": 1.7993
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.2605,
+     "basis": "P/S 2.6x / growth 5% = 0.54 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 6536862259.4238,
+      "ttm_revenue": 2515142000.0,
+      "growth_used": 0.0478,
+      "ps": 2.599,
+      "ps_to_growth": 0.5437,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "extended_gt_60pct_above_200dma"
+   ]
+  },
+  {
+   "rank": 8,
+   "ticker": "PBF",
+   "name": "PBF Energy",
+   "sector": "Energy",
+   "segment": "mid",
+   "market": "US",
+   "price": 80.77999877929688,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.585784687678689,
+   "mom_rank": 0.9908906882591093,
+   "momvol_rank": 0.9726720647773279,
+   "vol_ann": 0.6571523321267909,
+   "dd_from_52w_high": -0.018945805537713856,
+   "ext_above_200dma": 0.6852037615217701,
+   "adv": 267856384.51652527,
+   "adv_floor": 5000000.0,
+   "market_cap": 9575406517.521698,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-12",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9923,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9909,
+      "momvol_rank": 0.9727,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2771,
+     "basis": "latest fiscal year revenue YoY -11.4% vs previous fiscal year YoY -13.6% (change +2.2pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.1142,
+      "rev_yoy1": -0.1359,
+      "rev_accel": 0.0217,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.8266,
+     "basis": "ebitda margin 1.1% (+2.1pp YoY); EBITDA turned positive vs year-ago; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0108,
+      "margin_delta": 0.0211,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": -0.2458
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 0.3x with non-positive growth (-11.4%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 9575406517.5217,
+      "ttm_revenue": 29332300000.0,
+      "growth_used": -0.1142,
+      "ps": 0.3264,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "extended_gt_60pct_above_200dma"
+   ]
+  },
+  {
+   "rank": 9,
+   "ticker": "PTEN",
+   "name": "Patterson-UTI Energy, Inc.",
+   "sector": "Energy",
+   "segment": "small",
+   "market": "US",
+   "price": 11.210000038146973,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.5553337791511628,
+   "mom_rank": 0.9898785425101214,
+   "momvol_rank": 0.9939271255060729,
+   "vol_ann": 0.5224671972900644,
+   "dd_from_52w_high": -0.14752848947992037,
+   "ext_above_200dma": 0.13416016053634605,
+   "adv": 95018170.44115067,
+   "adv_floor": 5000000.0,
+   "market_cap": 4275324452.0886784,
+   "fundamentals": {
+    "freq": null,
+    "latest_period": null,
+    "source": null,
+    "filed_date": null,
+    "retrieved_at": null,
+    "backtestable": null,
+    "staleness_days": null,
+    "latest_only": null
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.995,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9899,
+      "momvol_rank": 0.9939,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": null,
+     "basis": "no YoY revenue growth computable (history too short or non-positive base)",
+     "data_quality": "missing",
+     "raw": {
+      "rev_yoy0": null,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": null,
+      "latest_period": null
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": null,
+     "basis": "no year-ago margin comparison available",
+     "data_quality": "missing",
+     "raw": {
+      "margin0": null,
+      "margin_delta": null,
+      "margin_basis": null,
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": 4275324452.0887,
+      "ttm_revenue": null,
+      "growth_used": null,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "fundamentals_missing"
+   ]
+  },
+  {
+   "rank": 10,
+   "ticker": "FORM",
+   "name": "FormFactor, Inc.",
+   "sector": "Information Technology",
+   "segment": "small",
+   "market": "US",
+   "price": 149.14999389648438,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.4949626482888454,
+   "mom_rank": 0.9888663967611336,
+   "momvol_rank": 0.9119433198380567,
+   "vol_ann": 0.8582779001760324,
+   "dd_from_52w_high": -0.06740448491828965,
+   "ext_above_200dma": 0.37414899355164644,
+   "adv": 140312583.57658386,
+   "adv_floor": 5000000.0,
+   "market_cap": 11651705656.938934,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-27",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-20",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 282,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9823,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9889,
+      "momvol_rank": 0.9119,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.1236,
+     "basis": "latest fiscal year revenue YoY +2.8% vs previous fiscal year YoY +15.2% (change -12.4pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.028,
+      "rev_yoy1": 0.1516,
+      "rev_accel": -0.1235,
+      "freq": "A",
+      "latest_period": "2025-12-27"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.4523,
+     "basis": "ebitda margin 12.4% (-0.4pp YoY); EBITDA growth minus revenue growth -3.4pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1237,
+      "margin_delta": -0.0042,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.0057,
+      "op_leverage": -0.0338,
+      "ocf_ebitda": 1.1882
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 14.8x / growth 3% = 5.30 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 11651705656.9389,
+      "ttm_revenue": 784993000.0,
+      "growth_used": 0.028,
+      "ps": 14.8431,
+      "ps_to_growth": 5.2978,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct"
+   ]
+  },
+  {
+   "rank": 11,
+   "ticker": "VSTS",
+   "name": "Vestis",
+   "sector": "Industrials",
+   "segment": "small",
+   "market": "US",
+   "price": 14.029999732971191,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.4685599391582849,
+   "mom_rank": 0.9878542510121457,
+   "momvol_rank": 0.9807692307692307,
+   "vol_ann": 0.5703182685657823,
+   "dd_from_52w_high": -0.14969698588053382,
+   "ext_above_200dma": 0.3154748529052587,
+   "adv": 20683792.358398438,
+   "adv_floor": 5000000.0,
+   "market_cap": 1854206237.8594446,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-10-03",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2025-12-02",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 367,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9923,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9879,
+      "momvol_rank": 0.9808,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.227,
+     "basis": "latest fiscal year revenue YoY -2.5% vs previous fiscal year YoY -0.7% (change -1.8pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.0253,
+      "rev_yoy1": -0.0069,
+      "rev_accel": -0.0184,
+      "freq": "A",
+      "latest_period": "2025-10-03"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.1295,
+     "basis": "ebitda margin 7.6% (-3.1pp YoY); EBITDA growth minus revenue growth -28.0pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0759,
+      "margin_delta": -0.0306,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.3056,
+      "op_leverage": -0.2803,
+      "ocf_ebitda": 0.3096
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 0.7x with non-positive growth (-2.5%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 1854206237.8594,
+      "ttm_revenue": 2734839000.0,
+      "growth_used": -0.0253,
+      "ps": 0.678,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 12,
+   "ticker": "INSW",
+   "name": "International Seaways, Inc.",
+   "sector": "Energy",
+   "segment": "small",
+   "market": "US",
+   "price": 115.80999755859375,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.4340160476230142,
+   "mom_rank": 0.9858299595141701,
+   "momvol_rank": 0.9989878542510121,
+   "vol_ann": 0.3879115935787139,
+   "dd_from_52w_high": 0.0,
+   "ext_above_200dma": 0.5811743692005664,
+   "adv": 82170574.61242676,
+   "adv_floor": 5000000.0,
+   "market_cap": 5736221005.983948,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-26",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9942,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9858,
+      "momvol_rank": 0.999,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2479,
+     "basis": "latest fiscal year revenue YoY -11.4% vs previous fiscal year YoY -11.2% (change -0.2pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.1138,
+      "rev_yoy1": -0.1121,
+      "rev_accel": -0.0017,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.2792,
+     "basis": "ebitda margin 60.4% (-3.2pp YoY); EBITDA growth minus revenue growth -4.4pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.6035,
+      "margin_delta": -0.0319,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.1583,
+      "op_leverage": -0.0444,
+      "ocf_ebitda": 0.7467
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 6.8x with non-positive growth (-11.4%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 5736221005.9839,
+      "ttm_revenue": 843302000.0,
+      "growth_used": -0.1138,
+      "ps": 6.8021,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 13,
+   "ticker": "ATI",
+   "name": "ATI Inc.",
+   "sector": "Industrials",
+   "segment": "mid",
+   "market": "US",
+   "price": 192.4199981689453,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.4297072310684453,
+   "mom_rank": 0.9848178137651822,
+   "momvol_rank": 0.9979757085020243,
+   "vol_ann": 0.41400590039575563,
+   "dd_from_52w_high": -0.16981620854968826,
+   "ext_above_200dma": 0.15184172912437788,
+   "adv": 279264756.6246033,
+   "adv_floor": 5000000.0,
+   "market_cap": 26201904847.524582,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-28",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-20",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 281,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9936,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9848,
+      "momvol_rank": 0.998,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3098,
+     "basis": "latest fiscal year revenue YoY +5.2% vs previous fiscal year YoY +4.5% (change +0.7pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0516,
+      "rev_yoy1": 0.0451,
+      "rev_accel": 0.0065,
+      "freq": "A",
+      "latest_period": "2025-12-28"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.5204,
+     "basis": "ebitda margin 17.6% (+0.2pp YoY); EBITDA growth minus revenue growth +1.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1764,
+      "margin_delta": 0.002,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.0639,
+      "op_leverage": 0.0123,
+      "ocf_ebitda": 0.7593
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 5.7x / growth 5% = 1.11 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 26201904847.5246,
+      "ttm_revenue": 4587400000.0,
+      "growth_used": 0.0516,
+      "ps": 5.7117,
+      "ps_to_growth": 1.1059,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 14,
+   "ticker": "VSAT",
+   "name": "Viasat, Inc.",
+   "sector": "Information Technology",
+   "segment": "small",
+   "market": "US",
+   "price": 72.0,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.3847202897920936,
+   "mom_rank": 0.9838056680161943,
+   "momvol_rank": 0.9078947368421053,
+   "vol_ann": 0.8055339762389175,
+   "dd_from_52w_high": -0.19830751634275645,
+   "ext_above_200dma": 0.18318010875557067,
+   "adv": 109684730.45043945,
+   "adv_floor": 5000000.0,
+   "market_cap": 9918418320.0,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2026-03-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-05-29",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 188,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9797,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9838,
+      "momvol_rank": 0.9079,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2413,
+     "basis": "latest fiscal year revenue YoY +2.7% vs previous fiscal year YoY +5.5% (change -2.8pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0267,
+      "rev_yoy1": 0.055,
+      "rev_accel": -0.0283,
+      "freq": "A",
+      "latest_period": "2026-03-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.8014,
+     "basis": "ebitda margin 31.5% (+3.6pp YoY); EBITDA growth minus revenue growth +13.1pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3152,
+      "margin_delta": 0.0357,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.1577,
+      "op_leverage": 0.131,
+      "ocf_ebitda": 1.087
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 2.1x / growth 3% = 0.80 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 9918418320.0,
+      "ttm_revenue": 4640280000.0,
+      "growth_used": 0.0267,
+      "ps": 2.1375,
+      "ps_to_growth": 0.8003,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct"
+   ]
+  },
+  {
+   "rank": 15,
+   "ticker": "ECPG",
+   "name": "Encore Capital Group, Inc.",
+   "sector": "Financials",
+   "segment": "small",
+   "market": "US",
+   "price": 95.91999816894531,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.3780789822763144,
+   "mom_rank": 0.9827935222672065,
+   "momvol_rank": 1.0,
+   "vol_ann": 0.35557316948220186,
+   "dd_from_52w_high": -0.07538075820180157,
+   "ext_above_200dma": 0.21982621840572736,
+   "adv": 29704877.04963684,
+   "adv_floor": 5000000.0,
+   "market_cap": 2034402347.884491,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-25",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9931,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9828,
+      "momvol_rank": 1.0,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3209,
+     "basis": "latest fiscal year revenue YoY +4.3% vs previous fiscal year YoY +2.0% (change +2.3pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1); financial company: revenue definition differs",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.0425,
+      "rev_yoy1": 0.0198,
+      "rev_accel": 0.0227,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": null,
+     "basis": "financial company: EBITDA/operating margin not meaningful",
+     "data_quality": "missing",
+     "raw": {
+      "margin0": 7.4151,
+      "margin_delta": 5.1769,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 2.4538,
+      "op_leverage": 2.4113,
+      "ocf_ebitda": 0.2337
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 23.0x / growth 4% = 5.41 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 2034402347.8845,
+      "ttm_revenue": 88388000.0,
+      "growth_used": 0.0425,
+      "ps": 23.0167,
+      "ps_to_growth": 5.4131,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "financial_sector_ebitda_not_meaningful"
+   ]
+  },
+  {
+   "rank": 16,
+   "ticker": "LFST",
+   "name": "Lifestance Health",
+   "sector": "Health Care",
+   "segment": "small",
+   "market": "US",
+   "price": 11.829999923706055,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.3651377604471526,
+   "mom_rank": 0.9817813765182186,
+   "momvol_rank": 0.9817813765182186,
+   "vol_ann": 0.5290150502052988,
+   "dd_from_52w_high": -0.11584455736005272,
+   "ext_above_200dma": 0.3447078344371475,
+   "adv": 58953615.28558731,
+   "adv_floor": 5000000.0,
+   "market_cap": 4497223530.00654,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-25",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.99,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9818,
+      "momvol_rank": 0.9818,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3305,
+     "basis": "latest fiscal year revenue YoY +13.9% vs previous fiscal year YoY +18.5% (change -4.6pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1385,
+      "rev_yoy1": 0.185,
+      "rev_accel": -0.0465,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.9336,
+     "basis": "ebitda margin 4.6% (+3.9pp YoY); EBITDA growth minus revenue growth +611.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0462,
+      "margin_delta": 0.0389,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 6.2558,
+      "op_leverage": 6.1173,
+      "ocf_ebitda": 2.2223
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.7868,
+     "basis": "P/S 3.2x / growth 14% = 0.23 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 4497223530.0065,
+      "ttm_revenue": 1424285000.0,
+      "growth_used": 0.1385,
+      "ps": 3.1575,
+      "ps_to_growth": 0.2279,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 17,
+   "ticker": "PARR",
+   "name": "Par Pacific Holdings, Inc.",
+   "sector": "Energy",
+   "segment": "small",
+   "market": "US",
+   "price": 84.0,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.2961903183179664,
+   "mom_rank": 0.9807692307692307,
+   "momvol_rank": 0.9554655870445344,
+   "vol_ann": 0.5805842855957232,
+   "dd_from_52w_high": -0.028789431440286672,
+   "ext_above_200dma": 0.40911344485986323,
+   "adv": 78423879.32167053,
+   "adv_floor": 5000000.0,
+   "market_cap": 4208368668.0,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-25",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9856,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9808,
+      "momvol_rank": 0.9555,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2092,
+     "basis": "latest fiscal year revenue YoY -6.4% vs previous fiscal year YoY -3.1% (change -3.3pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.0639,
+      "rev_yoy1": -0.0313,
+      "rev_accel": -0.0326,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 9.2% (+6.9pp YoY); EBITDA growth minus revenue growth +287.5pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0915,
+      "margin_delta": 0.069,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 2.8115,
+      "op_leverage": 2.8754,
+      "ocf_ebitda": 0.652
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 0.6x with non-positive growth (-6.4%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 4208368668.0,
+      "ttm_revenue": 7464650000.0,
+      "growth_used": -0.0639,
+      "ps": 0.5638,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 18,
+   "ticker": "PTGX",
+   "name": "Protagonist Therapeutics, Inc.",
+   "sector": "Health Care",
+   "segment": "small",
+   "market": "US",
+   "price": 140.05999755859375,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.2825000286102295,
+   "mom_rank": 0.979757085020243,
+   "momvol_rank": 0.979757085020243,
+   "vol_ann": 0.5007961807001801,
+   "dd_from_52w_high": -0.11700919259820763,
+   "ext_above_200dma": 0.2591629258860617,
+   "adv": 96795045.90911865,
+   "adv_floor": 5000000.0,
+   "market_cap": 9063042239.120789,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-25",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9889,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9798,
+      "momvol_rank": 0.9798,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.0,
+     "basis": "latest fiscal year revenue YoY -89.4% vs previous fiscal year YoY +624.1% (change -713.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.8941,
+      "rev_yoy1": 6.2405,
+      "rev_accel": -7.1346,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0,
+     "basis": "ebitda margin -340.9% (-399.2pp YoY); EBITDA not positive; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": -3.4085,
+      "margin_delta": -3.9924,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -1.6183,
+      "op_leverage": -0.7242,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 197.0x with non-positive growth (-89.4%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 9063042239.1208,
+      "ttm_revenue": 46016000.0,
+      "growth_used": -0.8941,
+      "ps": 196.9542,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 19,
+   "ticker": "XNCR",
+   "name": "Xencor Inc",
+   "sector": "Health Care",
+   "segment": "small",
+   "market": "US",
+   "price": 24.84000015258789,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.2738799486063859,
+   "mom_rank": 0.978744939271255,
+   "momvol_rank": 0.9352226720647774,
+   "vol_ann": 0.658818733277278,
+   "dd_from_52w_high": -0.1522184027510608,
+   "ext_above_200dma": 0.563948600253382,
+   "adv": 29280978.251361847,
+   "adv_floor": 5000000.0,
+   "market_cap": 1846938392.825428,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-25",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9818,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9787,
+      "momvol_rank": 0.9352,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.6365,
+     "basis": "latest fiscal year revenue YoY +13.7% vs previous fiscal year YoY -34.4% (change +48.0pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1365,
+      "rev_yoy1": -0.3436,
+      "rev_accel": 0.4801,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.6,
+     "basis": "ebitda margin -133.0% (+17.5pp YoY); EBITDA not positive; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": -1.3298,
+      "margin_delta": 0.1753,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 14.7x / growth 14% = 1.08 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 1846938392.8254,
+      "ttm_revenue": 125576000.0,
+      "growth_used": 0.1365,
+      "ps": 14.7077,
+      "ps_to_growth": 1.0774,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct"
+   ]
+  },
+  {
+   "rank": 20,
+   "ticker": "COHU",
+   "name": "Cohu, Inc.",
+   "sector": "Information Technology",
+   "segment": "small",
+   "market": "US",
+   "price": 73.4800033569336,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.2404505303167088,
+   "mom_rank": 0.9767206477732794,
+   "momvol_rank": 0.9200404858299596,
+   "vol_ann": 0.6849761054555179,
+   "dd_from_52w_high": -0.005817890459613451,
+   "ext_above_200dma": 0.6772159137856877,
+   "adv": 58482803.425216675,
+   "adv_floor": 5000000.0,
+   "market_cap": 3478428215.751976,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-27",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-17",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 282,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9787,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9767,
+      "momvol_rank": 0.92,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.6274,
+     "basis": "latest fiscal year revenue YoY +12.7% vs previous fiscal year YoY -36.9% (change +49.6pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1274,
+      "rev_yoy1": -0.3686,
+      "rev_accel": 0.496,
+      "freq": "A",
+      "latest_period": "2025-12-27"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.3336,
+     "basis": "ebitda margin -4.2% (+0.6pp YoY); EBITDA not positive; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": -0.0421,
+      "margin_delta": 0.0056,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1618,
+     "basis": "P/S 7.7x / growth 13% = 0.60 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 3478428215.752,
+      "ttm_revenue": 452956000.0,
+      "growth_used": 0.1274,
+      "ps": 7.6794,
+      "ps_to_growth": 0.6029,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "extended_gt_60pct_above_200dma"
+   ]
+  },
+  {
+   "rank": 21,
+   "ticker": "MATX",
+   "name": "Matson, Inc.",
+   "sector": "Industrials",
+   "segment": "small",
+   "market": "US",
+   "price": 231.11000061035156,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.2294820027688047,
+   "mom_rank": 0.9757085020242915,
+   "momvol_rank": 0.9969635627530364,
+   "vol_ann": 0.3594003299246099,
+   "dd_from_52w_high": -0.03139147234520423,
+   "ext_above_200dma": 0.26911470281332983,
+   "adv": 62520637.58392334,
+   "adv_floor": 5000000.0,
+   "market_cap": 6910988196.631622,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-27",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9898,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9757,
+      "momvol_rank": 0.997,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.0896,
+     "basis": "latest fiscal year revenue YoY -2.3% vs previous fiscal year YoY +10.6% (change -12.8pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.0226,
+      "rev_yoy1": 0.1057,
+      "rev_accel": -0.1283,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.436,
+     "basis": "ebitda margin 19.7% (-0.7pp YoY); EBITDA growth minus revenue growth -3.3pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1975,
+      "margin_delta": -0.007,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.0559,
+      "op_leverage": -0.0333,
+      "ocf_ebitda": 0.8284
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 2.1x with non-positive growth (-2.3%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 6910988196.6316,
+      "ttm_revenue": 3344500000.0,
+      "growth_used": -0.0226,
+      "ps": 2.0664,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 22,
+   "ticker": "TWLO",
+   "name": "Twilio",
+   "sector": "Information Technology",
+   "segment": "mid",
+   "market": "US",
+   "price": 294.5799865722656,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.2078871152671544,
+   "mom_rank": 0.9736842105263158,
+   "momvol_rank": 0.9311740890688259,
+   "vol_ann": 0.6302889168485944,
+   "dd_from_52w_high": -0.02220600353625879,
+   "ext_above_200dma": 0.672705433414013,
+   "adv": 778344633.9019775,
+   "adv_floor": 5000000.0,
+   "market_cap": 45240186245.43274,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-24",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9791,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9737,
+      "momvol_rank": 0.9312,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.466,
+     "basis": "latest fiscal year revenue YoY +13.7% vs previous fiscal year YoY +7.3% (change +6.3pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1366,
+      "rev_yoy1": 0.0732,
+      "rev_accel": 0.0634,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.9133,
+     "basis": "ebitda margin 7.0% (+3.6pp YoY); EBITDA growth minus revenue growth +118.3pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0697,
+      "margin_delta": 0.0356,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 1.3198,
+      "op_leverage": 1.1831,
+      "ocf_ebitda": 2.8401
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0777,
+     "basis": "P/S 8.9x / growth 14% = 0.65 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 45240186245.4327,
+      "ttm_revenue": 5067220000.0,
+      "growth_used": 0.1366,
+      "ps": 8.928,
+      "ps_to_growth": 0.6534,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "extended_gt_60pct_above_200dma"
+   ]
+  },
+  {
+   "rank": 23,
+   "ticker": "ROIV",
+   "name": "Roivant Sciences",
+   "sector": "Health Care",
+   "segment": "mid",
+   "market": "US",
+   "price": 35.720001220703125,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.1701587495349703,
+   "mom_rank": 0.97165991902834,
+   "momvol_rank": 0.9767206477732794,
+   "vol_ann": 0.46285314675701655,
+   "dd_from_52w_high": -0.1456589321347952,
+   "ext_above_200dma": 0.18361335862564276,
+   "adv": 251185131.46133423,
+   "adv_floor": 5000000.0,
+   "market_cap": 25801378977.54196,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2026-03-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-05-20",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 188,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9852,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9717,
+      "momvol_rank": 0.9767,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3144,
+     "basis": "latest fiscal year revenue YoY -71.6% vs previous fiscal year YoY -76.7% (change +5.2pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.7157,
+      "rev_yoy1": -0.7672,
+      "rev_accel": 0.0515,
+      "freq": "A",
+      "latest_period": "2026-03-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0,
+     "basis": "ebitda margin -6195.2% (-2790.3pp YoY); EBITDA not positive; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": -61.9516,
+      "margin_delta": -27.9027,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 3123.7x with non-positive growth (-71.6%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 25801378977.542,
+      "ttm_revenue": 8260000.0,
+      "growth_used": -0.7157,
+      "ps": 3123.6536,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 24,
+   "ticker": "GKOS",
+   "name": "Glaukos Corp.",
+   "sector": "Health Care",
+   "segment": "small",
+   "market": "US",
+   "price": 163.75,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.1580718056324906,
+   "mom_rank": 0.9706477732793523,
+   "momvol_rank": 0.9524291497975709,
+   "vol_ann": 0.5231949794027755,
+   "dd_from_52w_high": -0.13611185774928725,
+   "ext_above_200dma": 0.21267596472538797,
+   "adv": 130062670.05462646,
+   "adv_floor": 5000000.0,
+   "market_cap": 9658619683.75,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-23",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9811,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9706,
+      "momvol_rank": 0.9524,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.7042,
+     "basis": "latest fiscal year revenue YoY +32.3% vs previous fiscal year YoY +21.9% (change +10.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.3233,
+      "rev_yoy1": 0.2185,
+      "rev_accel": 0.1047,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0,
+     "basis": "ebitda margin -31.8% (-9.2pp YoY); EBITDA not positive; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": -0.3183,
+      "margin_delta": -0.0921,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1853,
+     "basis": "P/S 19.0x / growth 32% = 0.59 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 9658619683.75,
+      "ttm_revenue": 507442000.0,
+      "growth_used": 0.3233,
+      "ps": 19.0339,
+      "ps_to_growth": 0.5888,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 25,
+   "ticker": "DAR",
+   "name": "Darling Ingredients",
+   "sector": "Consumer Staples",
+   "segment": "mid",
+   "market": "US",
+   "price": 62.939998626708984,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.156937860407513,
+   "mom_rank": 0.9696356275303644,
+   "momvol_rank": 0.9959514170040485,
+   "vol_ann": 0.3446704734683725,
+   "dd_from_52w_high": -0.07901665204198516,
+   "ext_above_200dma": 0.11981921239107929,
+   "adv": 130916895.26424408,
+   "adv_floor": 5000000.0,
+   "market_cap": 9932115316.330673,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2026-01-03",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-03-03",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 275,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9872,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9696,
+      "momvol_rank": 0.996,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.5736,
+     "basis": "latest fiscal year revenue YoY +7.4% vs previous fiscal year YoY -15.8% (change +23.2pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0736,
+      "rev_yoy1": -0.1581,
+      "rev_accel": 0.2317,
+      "freq": "A",
+      "latest_period": "2026-01-03"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0647,
+     "basis": "ebitda margin 12.7% (-4.3pp YoY); EBITDA growth minus revenue growth -26.9pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1274,
+      "margin_delta": -0.0426,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.1956,
+      "op_leverage": -0.2692,
+      "ocf_ebitda": 1.3552
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.8002,
+     "basis": "P/S 1.6x / growth 7% = 0.22 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 9932115316.3307,
+      "ttm_revenue": 6135877000.0,
+      "growth_used": 0.0736,
+      "ps": 1.6187,
+      "ps_to_growth": 0.2199,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 26,
+   "ticker": "KALU",
+   "name": "Kaiser Aluminum Corporation",
+   "sector": "Materials",
+   "segment": "small",
+   "market": "US",
+   "price": 152.02999877929688,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.1240344242944693,
+   "mom_rank": 0.9686234817813765,
+   "momvol_rank": 0.9473684210526315,
+   "vol_ann": 0.5241391309412404,
+   "dd_from_52w_high": -0.2195421562264881,
+   "ext_above_200dma": 0.009678225796325268,
+   "adv": 27241745.726013184,
+   "adv_floor": 5000000.0,
+   "market_cap": 2485552436.8026123,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-19",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9796,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9686,
+      "momvol_rank": 0.9474,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.5352,
+     "basis": "latest fiscal year revenue YoY +11.5% vs previous fiscal year YoY -2.0% (change +13.6pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1154,
+      "rev_yoy1": -0.0204,
+      "rev_accel": 0.1358,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.8488,
+     "basis": "ebitda margin 9.2% (+2.5pp YoY); EBITDA growth minus revenue growth +41.0pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0923,
+      "margin_delta": 0.0248,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.5252,
+      "op_leverage": 0.4098,
+      "ocf_ebitda": 0.3579
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 1.0,
+     "basis": "P/S 0.7x / growth 12% = 0.06 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 2485552436.8026,
+      "ttm_revenue": 3373000000.0,
+      "growth_used": 0.1154,
+      "ps": 0.7369,
+      "ps_to_growth": 0.0639,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "drawdown_from_52w_high_gt_20pct"
+   ]
+  },
+  {
+   "rank": 27,
+   "ticker": "HP",
+   "name": "Helmerich & Payne, Inc.",
+   "sector": "Energy",
+   "segment": "small",
+   "market": "US",
+   "price": 38.560001373291016,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.1214360930571665,
+   "mom_rank": 0.9676113360323887,
+   "momvol_rank": 0.9777327935222672,
+   "vol_ann": 0.44027370986865566,
+   "dd_from_52w_high": -0.19059609850310766,
+   "ext_above_200dma": 0.0709465099044444,
+   "adv": 40518343.05686951,
+   "adv_floor": 5000000.0,
+   "market_cap": 3853645856.4452553,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-09-30",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2025-11-21",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 370,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9837,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9676,
+      "momvol_rank": 0.9777,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.8396,
+     "basis": "latest fiscal year revenue YoY +34.0% vs previous fiscal year YoY -4.1% (change +38.0pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.3396,
+      "rev_yoy1": -0.0407,
+      "rev_accel": 0.3803,
+      "freq": "A",
+      "latest_period": "2025-09-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0,
+     "basis": "ebitda margin 17.1% (-13.8pp YoY); EBITDA growth minus revenue growth -60.0pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1708,
+      "margin_delta": -0.1384,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.26,
+      "op_leverage": -0.5996,
+      "ocf_ebitda": 0.864
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 1.0,
+     "basis": "P/S 1.0x / growth 34% = 0.03 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 3853645856.4453,
+      "ttm_revenue": 3678660000.0,
+      "growth_used": 0.3396,
+      "ps": 1.0476,
+      "ps_to_growth": 0.0308,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 28,
+   "ticker": "HAE",
+   "name": "Haemonetics",
+   "sector": "Health Care",
+   "segment": "mid",
+   "market": "US",
+   "price": 104.68000030517578,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.1085842096546927,
+   "mom_rank": 0.9665991902834008,
+   "momvol_rank": 0.958502024291498,
+   "vol_ann": 0.48883407962266046,
+   "dd_from_52w_high": -0.03786767124098411,
+   "ext_above_200dma": 0.3953268347677892,
+   "adv": 50907120.46775818,
+   "adv_floor": 5000000.0,
+   "market_cap": 4762631312.564598,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2026-03-28",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-05-20",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 191,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9804,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9666,
+      "momvol_rank": 0.9585,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.176,
+     "basis": "latest fiscal year revenue YoY -2.0% vs previous fiscal year YoY +4.0% (change -5.9pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.0197,
+      "rev_yoy1": 0.0395,
+      "rev_accel": -0.0592,
+      "freq": "A",
+      "latest_period": "2026-03-28"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0966,
+     "basis": "ebitda margin 20.1% (-4.7pp YoY); EBITDA growth minus revenue growth -18.5pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2012,
+      "margin_delta": -0.0467,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.2044,
+      "op_leverage": -0.1847,
+      "ocf_ebitda": 1.0923
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 3.6x with non-positive growth (-2.0%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 4762631312.5646,
+      "ttm_revenue": 1334027000.0,
+      "growth_used": -0.0197,
+      "ps": 3.5701,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 29,
+   "ticker": "DINO",
+   "name": "HF Sinclair",
+   "sector": "Energy",
+   "segment": "mid",
+   "market": "US",
+   "price": 113.36000061035156,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.1065533048756993,
+   "mom_rank": 0.9655870445344129,
+   "momvol_rank": 0.9908906882591093,
+   "vol_ann": 0.39200944165469065,
+   "dd_from_52w_high": -0.027954056417873074,
+   "ext_above_200dma": 0.6082434199402471,
+   "adv": 274925540.6730652,
+   "adv_floor": 5000000.0,
+   "market_cap": 20153577231.15065,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-27",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9849,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9656,
+      "momvol_rank": 0.9909,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3075,
+     "basis": "latest fiscal year revenue YoY -6.0% vs previous fiscal year YoY -10.6% (change +4.6pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.0599,
+      "rev_yoy1": -0.1059,
+      "rev_accel": 0.046,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.8805,
+     "basis": "ebitda margin 6.8% (+3.0pp YoY); EBITDA growth minus revenue growth +74.0pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0683,
+      "margin_delta": 0.0301,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.6798,
+      "op_leverage": 0.7396,
+      "ocf_ebitda": 0.7162
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 0.8x with non-positive growth (-6.0%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 20153577231.1507,
+      "ttm_revenue": 26869000000.0,
+      "growth_used": -0.0599,
+      "ps": 0.7501,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "extended_gt_60pct_above_200dma"
+   ]
+  },
+  {
+   "rank": 30,
+   "ticker": "CHEF",
+   "name": "Chefs' Warehouse, Inc.",
+   "sector": "Consumer Staples",
+   "segment": "small",
+   "market": "US",
+   "price": 116.41999816894531,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0774725911199154,
+   "mom_rank": 0.9645748987854251,
+   "momvol_rank": 0.992914979757085,
+   "vol_ann": 0.37501686987353766,
+   "dd_from_52w_high": 0.0,
+   "ext_above_200dma": 0.41524713533879676,
+   "adv": 63993814.29748535,
+   "adv_floor": 5000000.0,
+   "market_cap": 4749479908.160141,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-26",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-24",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 283,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9848,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9646,
+      "momvol_rank": 0.9929,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3295,
+     "basis": "latest fiscal year revenue YoY +9.4% vs previous fiscal year YoY +10.5% (change -1.1pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0936,
+      "rev_yoy1": 0.105,
+      "rev_accel": -0.0113,
+      "freq": "A",
+      "latest_period": "2025-12-26"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.5765,
+     "basis": "ebitda margin 4.8% (+0.3pp YoY); EBITDA growth minus revenue growth +8.4pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0479,
+      "margin_delta": 0.0034,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.1777,
+      "op_leverage": 0.084,
+      "ocf_ebitda": 0.6501
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.963,
+     "basis": "P/S 1.1x / growth 9% = 0.12 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 4749479908.1601,
+      "ttm_revenue": 4149537000.0,
+      "growth_used": 0.0936,
+      "ps": 1.1446,
+      "ps_to_growth": 0.1222,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 31,
+   "ticker": "KRYS",
+   "name": "Krystal Biotech",
+   "sector": "Health Care",
+   "segment": "mid",
+   "market": "US",
+   "price": 322.2799987792969,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.055731917663877,
+   "mom_rank": 0.9635627530364372,
+   "momvol_rank": 0.9898785425101214,
+   "vol_ann": 0.37720971781575097,
+   "dd_from_52w_high": -0.1477455930687691,
+   "ext_above_200dma": 0.06936558451784736,
+   "adv": 81076957.7835083,
+   "adv_floor": 5000000.0,
+   "market_cap": 9539112829.948608,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2022-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2024-02-26",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 1374,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9839,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9636,
+      "momvol_rank": 0.9899,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": null,
+     "basis": "no YoY revenue growth computable (history too short or non-positive base)",
+     "data_quality": "missing",
+     "raw": {
+      "rev_yoy0": null,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "A",
+      "latest_period": "2022-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": null,
+     "basis": "no year-ago margin comparison available",
+     "data_quality": "missing",
+     "raw": {
+      "margin0": null,
+      "margin_delta": null,
+      "margin_basis": null,
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": 9539112829.9486,
+      "ttm_revenue": 0.0,
+      "growth_used": null,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "fundamentals_stale"
+   ]
+  },
+  {
+   "rank": 32,
+   "ticker": "OII",
+   "name": "Oceaneering International, Inc.",
+   "sector": "Energy",
+   "segment": "small",
+   "market": "US",
+   "price": 44.31999969482422,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0471848720779353,
+   "mom_rank": 0.9625506072874493,
+   "momvol_rank": 0.9574898785425101,
+   "vol_ann": 0.4630150595550918,
+   "dd_from_52w_high": -0.18092775466822775,
+   "ext_above_200dma": 0.1496682831395939,
+   "adv": 41686627.01797485,
+   "adv_floor": 5000000.0,
+   "market_cap": 4411153836.025963,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-20",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9786,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9626,
+      "momvol_rank": 0.9575,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2277,
+     "basis": "latest fiscal year revenue YoY +4.1% vs previous fiscal year YoY +9.1% (change -5.0pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0406,
+      "rev_yoy1": 0.0909,
+      "rev_accel": -0.0503,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.6792,
+     "basis": "ebitda margin 15.4% (+1.6pp YoY); EBITDA growth minus revenue growth +12.3pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1539,
+      "margin_delta": 0.0162,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.1633,
+      "op_leverage": 0.1227,
+      "ocf_ebitda": 0.7838
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.4811,
+     "basis": "P/S 1.7x / growth 4% = 0.41 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 4411153836.026,
+      "ttm_revenue": 2643062000.0,
+      "growth_used": 0.0406,
+      "ps": 1.669,
+      "ps_to_growth": 0.4114,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 33,
+   "ticker": "NEOG",
+   "name": "Neogen",
+   "sector": "Health Care",
+   "segment": "small",
+   "market": "US",
+   "price": 12.149999618530273,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0362069019381126,
+   "mom_rank": 0.9615384615384616,
+   "momvol_rank": 0.902834008097166,
+   "vol_ann": 0.607031039999743,
+   "dd_from_52w_high": -0.13090128638253995,
+   "ext_above_200dma": 0.21594231842538125,
+   "adv": 47927541.80231094,
+   "adv_floor": 5000000.0,
+   "market_cap": 2649987877.549162,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2026-05-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-07-30",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 127,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.97,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9615,
+      "momvol_rank": 0.9028,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2561,
+     "basis": "latest fiscal year revenue YoY -2.7% vs previous fiscal year YoY -3.2% (change +0.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.0271,
+      "rev_yoy1": -0.032,
+      "rev_accel": 0.0049,
+      "freq": "A",
+      "latest_period": "2026-05-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 10.9% (+116.1pp YoY); EBITDA turned positive vs year-ago; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1088,
+      "margin_delta": 1.1612,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": 0.8786
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 3.0x with non-positive growth (-2.7%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 2649987877.5492,
+      "ttm_revenue": 870400000.0,
+      "growth_used": -0.0271,
+      "ps": 3.0446,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct"
+   ]
+  },
+  {
+   "rank": 34,
+   "ticker": "MTSI",
+   "name": "MACOM Technology Solutions",
+   "sector": "Information Technology",
+   "segment": "mid",
+   "market": "US",
+   "price": 321.6000061035156,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0350821944299633,
+   "mom_rank": 0.9605263157894737,
+   "momvol_rank": 0.895748987854251,
+   "vol_ann": 0.6218393041312799,
+   "dd_from_52w_high": -0.21499704195213576,
+   "ext_above_200dma": 0.1768466661348933,
+   "adv": 350641663.7023926,
+   "adv_floor": 5000000.0,
+   "market_cap": 24560891875.73117,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-10-03",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2025-11-14",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 367,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9686,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9605,
+      "momvol_rank": 0.8957,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.8258,
+     "basis": "latest fiscal year revenue YoY +32.6% vs previous fiscal year YoY +12.5% (change +20.1pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.3258,
+      "rev_yoy1": 0.1252,
+      "rev_accel": 0.2006,
+      "freq": "A",
+      "latest_period": "2025-10-03"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.567,
+     "basis": "ebitda margin 19.9% (+0.6pp YoY); EBITDA growth minus revenue growth +4.3pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1995,
+      "margin_delta": 0.0063,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.3692,
+      "op_leverage": 0.0435,
+      "ocf_ebitda": 1.2199
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.0,
+     "basis": "P/S 25.4x / growth 33% = 0.78 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 24560891875.7312,
+      "ttm_revenue": 967258000.0,
+      "growth_used": 0.3258,
+      "ps": 25.3923,
+      "ps_to_growth": 0.7794,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "drawdown_from_52w_high_gt_20pct"
+   ]
+  },
+  {
+   "rank": 35,
+   "ticker": "CAKE",
+   "name": "The Cheesecake Factory, Inc.",
+   "sector": "Consumer Discretionary",
+   "segment": "small",
+   "market": "US",
+   "price": 109.6500015258789,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0221702131590034,
+   "mom_rank": 0.9595141700404858,
+   "momvol_rank": 0.9838056680161943,
+   "vol_ann": 0.3925571602145465,
+   "dd_from_52w_high": -0.06513768718572,
+   "ext_above_200dma": 0.49025383202150263,
+   "adv": 136252742.37976074,
+   "adv_floor": 5000000.0,
+   "market_cap": 5456253594.028702,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-30",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-23",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 279,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9814,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9595,
+      "momvol_rank": 0.9838,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3052,
+     "basis": "latest fiscal year revenue YoY +4.7% vs previous fiscal year YoY +4.1% (change +0.6pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0475,
+      "rev_yoy1": 0.0413,
+      "rev_accel": 0.0062,
+      "freq": "A",
+      "latest_period": "2025-12-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.513,
+     "basis": "ebitda margin 7.9% (+0.1pp YoY); EBITDA growth minus revenue growth +1.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.079,
+      "margin_delta": 0.0009,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.0592,
+      "op_leverage": 0.0117,
+      "ocf_ebitda": 1.0168
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.6563,
+     "basis": "P/S 1.5x / growth 5% = 0.31 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 5456253594.0287,
+      "ttm_revenue": 3751806000.0,
+      "growth_used": 0.0475,
+      "ps": 1.4543,
+      "ps_to_growth": 0.3062,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 36,
+   "ticker": "BTSG",
+   "name": "BrightSpring Health Services",
+   "sector": "Health Care",
+   "segment": "mid",
+   "market": "US",
+   "price": 60.25,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0191018663508546,
+   "mom_rank": 0.9574898785425101,
+   "momvol_rank": 0.9635627530364372,
+   "vol_ann": 0.44147588522392356,
+   "dd_from_52w_high": -0.17363877419044293,
+   "ext_above_200dma": 0.15225495200286754,
+   "adv": 129405193.0562973,
+   "adv_floor": 5000000.0,
+   "market_cap": 11921320520.25,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-27",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9775,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9575,
+      "momvol_rank": 0.9636,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2327,
+     "basis": "latest fiscal year revenue YoY +14.6% vs previous fiscal year YoY +27.6% (change -13.1pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1459,
+      "rev_yoy1": 0.2765,
+      "rev_accel": -0.1306,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.4764,
+     "basis": "ebitda margin 3.6% (-0.1pp YoY); EBITDA growth minus revenue growth -2.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0356,
+      "margin_delta": -0.0009,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.1185,
+      "op_leverage": -0.0275,
+      "ocf_ebitda": 1.0667
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 1.0,
+     "basis": "P/S 0.9x / growth 15% = 0.06 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 11921320520.25,
+      "ttm_revenue": 12910564000.0,
+      "growth_used": 0.1459,
+      "ps": 0.9234,
+      "ps_to_growth": 0.0633,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 37,
+   "ticker": "VIR",
+   "name": "Vir Biotechnology, Inc.",
+   "sector": "Health Care",
+   "segment": "small",
+   "market": "US",
+   "price": 11.170000076293945,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0175439271606956,
+   "mom_rank": 0.9564777327935222,
+   "momvol_rank": 0.8846153846153846,
+   "vol_ann": 0.6488626736316027,
+   "dd_from_52w_high": -0.03955288337235641,
+   "ext_above_200dma": 0.23797834345207636,
+   "adv": 19726410.995340347,
+   "adv_floor": 5000000.0,
+   "market_cap": 1890142263.770153,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-23",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9653,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9565,
+      "momvol_rank": 0.8846,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3285,
+     "basis": "latest fiscal year revenue YoY -7.6% vs previous fiscal year YoY -13.9% (change +6.3pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.0761,
+      "rev_yoy1": -0.139,
+      "rev_accel": 0.0628,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.6,
+     "basis": "ebitda margin -682.1% (+89.5pp YoY); EBITDA not positive; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": -6.8214,
+      "margin_delta": 0.8951,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 27.6x with non-positive growth (-7.6%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 1890142263.7702,
+      "ttm_revenue": 68556000.0,
+      "growth_used": -0.0761,
+      "ps": 27.5708,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct"
+   ]
+  },
+  {
+   "rank": 38,
+   "ticker": "HZO",
+   "name": "MarineMax, Inc.",
+   "sector": "Consumer Discretionary",
+   "segment": "small",
+   "market": "US",
+   "price": 52.349998474121094,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0166408785850072,
+   "mom_rank": 0.9554655870445344,
+   "momvol_rank": 0.8805668016194332,
+   "vol_ann": 0.665547962321537,
+   "dd_from_52w_high": -0.003995488844805051,
+   "ext_above_200dma": 0.5102493152662888,
+   "adv": 40014618.85795593,
+   "adv_floor": 5000000.0,
+   "market_cap": 1156240543.548317,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-09-30",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2025-11-17",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 370,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9643,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9555,
+      "momvol_rank": 0.8806,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.1685,
+     "basis": "latest fiscal year revenue YoY -5.0% vs previous fiscal year YoY +1.5% (change -6.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": -0.0501,
+      "rev_yoy1": 0.0152,
+      "rev_accel": -0.0652,
+      "freq": "A",
+      "latest_period": "2025-09-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0903,
+     "basis": "ebitda margin 3.6% (-3.5pp YoY); EBITDA growth minus revenue growth -46.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0361,
+      "margin_delta": -0.035,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.5175,
+      "op_leverage": -0.4674,
+      "ocf_ebitda": 0.8736
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.1,
+     "basis": "P/S 0.5x with non-positive growth (-5.0%): nothing growing to pay for",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 1156240543.5483,
+      "ttm_revenue": 2309288000.0,
+      "growth_used": -0.0501,
+      "ps": 0.5007,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "data:price_jump"
+   ]
+  },
+  {
+   "rank": 39,
+   "ticker": "FTI",
+   "name": "TechnipFMC",
+   "sector": "Energy",
+   "segment": "mid",
+   "market": "US",
+   "price": 68.81999969482422,
+   "price_date": "2026-10-02",
+   "mom_12_1": 1.0103225697153668,
+   "mom_rank": 0.9534412955465587,
+   "momvol_rank": 0.9949392712550608,
+   "vol_ann": 0.3224128792970751,
+   "dd_from_52w_high": -0.1406094140705163,
+   "ext_above_200dma": 0.028872241557420075,
+   "adv": 192802553.95202637,
+   "adv_floor": 5000000.0,
+   "market_cap": 26988753062.480927,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-19",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9806,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9534,
+      "momvol_rank": 0.9949,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2592,
+     "basis": "latest fiscal year revenue YoY +9.4% vs previous fiscal year YoY +16.1% (change -6.7pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0935,
+      "rev_yoy1": 0.1609,
+      "rev_accel": -0.0674,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.6892,
+     "basis": "ebitda margin 18.9% (+1.8pp YoY); EBITDA growth minus revenue growth +11.8pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1891,
+      "margin_delta": 0.0184,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.2115,
+      "op_leverage": 0.118,
+      "ocf_ebitda": 0.9397
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.6823,
+     "basis": "P/S 2.7x / growth 9% = 0.29 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 26988753062.4809,
+      "ttm_revenue": 9932600000.0,
+      "growth_used": 0.0935,
+      "ps": 2.7172,
+      "ps_to_growth": 0.2906,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  },
+  {
+   "rank": 40,
+   "ticker": "NEO",
+   "name": "NeoGenomics Laboratories, Inc.",
+   "sector": "Health Care",
+   "segment": "small",
+   "market": "US",
+   "price": 18.469999313354492,
+   "price_date": "2026-10-02",
+   "mom_12_1": 0.995412739185503,
+   "mom_rank": 0.9524291497975709,
+   "momvol_rank": 0.9321862348178138,
+   "vol_ann": 0.519151930004933,
+   "dd_from_52w_high": -0.07232549196853899,
+   "ext_above_200dma": 0.498586145008594,
+   "adv": 39475070.31059265,
+   "adv_floor": 5000000.0,
+   "market_cap": 2372941288.5829163,
+   "fundamentals": {
+    "freq": "A",
+    "latest_period": "2025-12-31",
+    "source": "sec_xbrl_10K",
+    "filed_date": "2026-02-17",
+    "retrieved_at": "2026-10-05T06:17:05.863669+00:00",
+    "backtestable": true,
+    "staleness_days": 278,
+    "latest_only": false
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.9708,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9524,
+      "momvol_rank": 0.9322,
+      "trend_passed": 3.0,
+      "regime_on": true
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3318,
+     "basis": "latest fiscal year revenue YoY +10.1% vs previous fiscal year YoY +11.6% (change -1.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1011,
+      "rev_yoy1": 0.1165,
+      "rev_accel": -0.0154,
+      "freq": "A",
+      "latest_period": "2025-12-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0812,
+     "basis": "ebitda margin -6.6% (-3.6pp YoY); EBITDA not positive; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": -0.0661,
+      "margin_delta": -0.0365,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": 0.6287,
+     "basis": "P/S 3.3x / growth 10% = 0.32 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
+     "raw": {
+      "mcap": 2372941288.5829,
+      "ttm_revenue": 727332000.0,
+      "growth_used": 0.1011,
+      "ps": 3.2625,
+      "ps_to_growth": 0.3228,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": []
+  }
+ ]
+}

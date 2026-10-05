@@ -16,7 +16,9 @@ WHAT IS VALIDATED AND WHAT IS NOT (read before trusting any number here)
 SCREEN (explicit, in this order)
   1. liquidity: median 20d traded value (Close*Volume) >= floor (IN Rs 5 cr, US $5M; configurable)
   2. data reliability: not stale (>7d behind the market), >= 273 daily observations, no single-day move > 45% in the
-     last ~13 months (likely unadjusted corporate action) -- excluded names are listed in meta, not silently dropped
+     last ~13 months WITHOUT a volume spike (>= 3x the prior-20-session median; likely an unadjusted corporate action).
+     Jumps WITH a volume spike are treated as real events: kept and flagged 'data:price_jump'.  Exclusions are listed
+     in meta, not silently dropped
   3. trend filters: close > 200d MA, 12-1 momentum > 0, close >= 75% of 52-week high
   4. rank by 12-1 momentum percentile among step-2 survivors (ties: momentum/volatility percentile); keep top N (40)
 The regime flag is reported, not applied (a regime-OFF market still shows candidates; the lab's rule says cash).
@@ -262,7 +264,8 @@ def build_candidates(pd_: P.PriceData, uni: pd.DataFrame, market: str, regime: d
     liq = P.liquidity_table(pd_.close, pd_.volume, min_adv=floor)
     sig = price_signals(pd_)
     recent = pd_.close.tail(P.MIN_HISTORY + 7)
-    rel_recent = P.reliability_check(recent, tickers=list(uni.index), min_history=P.MIN_HISTORY, as_of=pd_.close.index.max() if len(pd_.close) else None)
+    rel_recent = P.reliability_check(recent, tickers=list(uni.index), min_history=P.MIN_HISTORY, as_of=pd_.close.index.max() if len(pd_.close) else None,
+                                     volume=pd_.volume.reindex_like(recent))
     tf = trend_filters(sig)
 
     n_uni = len(uni)
@@ -275,7 +278,7 @@ def build_candidates(pd_: P.PriceData, uni: pd.DataFrame, market: str, regime: d
         elif "stale" in fl: reasons[t] = "stale"
         elif "short_history" in fl: reasons[t] = "short_history"
         elif not bool(liq["passes_liquidity"].get(t, False)): reasons[t] = "illiquid"
-        elif exclude_flagged and "price_jump" in fl: reasons[t] = "price_jump_gt45pct"
+        elif exclude_flagged and "jump_unconfirmed" in fl: reasons[t] = "jump_gt45pct_unconfirmed_by_volume"
         else: pool_mask[t] = True
     pool = list(pool_mask[pool_mask].index)
     s = sig.loc[pool]
@@ -326,7 +329,7 @@ def build_candidates(pd_: P.PriceData, uni: pd.DataFrame, market: str, regime: d
     exc = pd.Series(reasons).value_counts().to_dict()
     jump_list = []
     for t, why in reasons.items():
-        if why == "price_jump_gt45pct":
+        if why.startswith("jump_gt45pct"):
             jump_list.append(dict(ticker=t, max_abs_move=_f(rel_recent.at[t, "max_abs_move"]), date=str(rel_recent.at[t, "max_move_date"].date())))
     meta = dict(
         market=market, generated_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -334,6 +337,7 @@ def build_candidates(pd_: P.PriceData, uni: pd.DataFrame, market: str, regime: d
         screen=SCREEN_DOC, ranking="12-1 momentum percentile (the only lab-validated price signal); fundamentals are evidence, not a filter",
         liquidity_floor=floor, liquidity_floor_unit="INR per day (median 20d Close*Volume)" if market == "IN" else "USD per day (median 20d Close*Volume)",
         universe_size=n_uni, with_price_data=len(have), excluded_counts=exc, excluded_price_jump=jump_list,
+        confirmed_jump_names_in_pool=int(sum(1 for t in pool if "price_jump" in rel_recent.at[t, "flags"])),
         pool_size=len(pool), pass_trend_filters=len(passers), top_n=len(top),
         fundamentals_coverage_pct_of_pool=dict(any_period=round(100 * len(metrics) / len(pool), 1) if pool else None,
                                               revenue_yoy=cov("rev_yoy0"), growth_acceleration=cov("rev_accel"),

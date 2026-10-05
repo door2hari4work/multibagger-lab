@@ -152,20 +152,24 @@ def get_ohlcv(tickers, start=None, max_age_hours: float = 12.0, refresh: bool = 
         cols[f] = cols[f].sort_index()
         idx = pd.DatetimeIndex(pd.to_datetime(cols[f].index))
         cols[f].index = idx.tz_localize(None) if idx.tz is not None else idx
-    meta = reliability_check(cols["Close"], stale_days=stale_days, max_move=max_move, tickers=tickers)
+    meta = reliability_check(cols["Close"], stale_days=stale_days, max_move=max_move, tickers=tickers, volume=cols["Volume"])
     meta["fetched_at"] = pd.Series(fetched)
     return PriceData(cols["Close"], cols["High"], cols["Low"], cols["Volume"], meta)
 
 
 def reliability_check(close: pd.DataFrame, stale_days: int = STALE_DAYS, max_move: float = MAX_DAILY_MOVE,
-                      min_history: int = MIN_HISTORY, tickers=None, as_of=None) -> pd.DataFrame:
+                      min_history: int = MIN_HISTORY, tickers=None, as_of=None, volume: Optional[pd.DataFrame] = None,
+                      vol_confirm: float = 3.0) -> pd.DataFrame:
     """Per-ticker data-reliability table.
 
     Columns: last_date, staleness_days (vs the latest date in the panel / `as_of`), n_obs, max_abs_move,
     max_move_date, n_jumps, flags (list of str).  Flags:
       no_data          ticker requested but no series
       stale            last observation more than `stale_days` calendar days before the panel's last date
-      price_jump       a single-day |return| > max_move (likely unadjusted split/reverse split/bad tick; also real shocks)
+      price_jump       a single-day |return| > max_move (unadjusted split/reverse split/bad tick, OR a real earnings/news shock)
+      jump_unconfirmed a price_jump day whose volume was < vol_confirm x the median of the prior 20 sessions (or volume
+                       unavailable).  Real shocks come with a volume spike; an unadjusted split does not.  This is the
+                       flag that makes momentum untrustworthy; 'price_jump' alone is information.
       short_history    fewer than min_history observations (12-1 momentum not computable)
     The check flags; it never repairs or drops data.
     """
@@ -183,11 +187,25 @@ def reliability_check(close: pd.DataFrame, stale_days: int = STALE_DAYS, max_mov
         r = s.pct_change(fill_method=None).dropna()
         mx = float(r.abs().max()) if len(r) else 0.0
         mxd = r.abs().idxmax() if len(r) else pd.NaT
-        nj = int((r.abs() > max_move).sum())
+        jumps = r.index[r.abs() > max_move]
+        nj = len(jumps)
+        unconf = False
+        for jd in jumps:
+            if volume is None or t not in volume.columns:
+                unconf = True; break
+            v = volume[t].dropna()
+            if jd not in v.index:
+                unconf = True; break
+            prior = v[v.index < jd].tail(20)
+            med = prior.median() if len(prior) else np.nan
+            if not (pd.notna(med) and med > 0 and v.loc[jd] >= vol_confirm * med):
+                unconf = True; break
         if pd.notna(stale) and stale > stale_days:
             flags.append("stale")
         if nj:
             flags.append("price_jump")
+        if unconf:
+            flags.append("jump_unconfirmed")
         if len(s) < min_history:
             flags.append("short_history")
         rows[t] = dict(last_date=last, staleness_days=stale, n_obs=len(s), max_abs_move=mx, max_move_date=mxd, n_jumps=nj, flags=flags)
