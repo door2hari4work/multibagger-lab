@@ -1,0 +1,95 @@
+{
+ "holdings": {
+  "MF": {
+   "result": "{\"holdings\": [{\"investment_code\": \"9001\", \"investment\": \"Zeta Global Tech Index Fund Direct Growth\", \"asset_type\": \"MF\", \"assetclass_l2\": \"equity\", \"invested_amount\": 180000.0, \"market_value\": 200000, \"total_units\": 1000, \"unit_price\": 200.0}, {\"investment_code\": \"9002\", \"investment\": \"Omega India Flexi Fund Direct Growth\", \"asset_type\": \"MF\", \"assetclass_l2\": \"equity\", \"invested_amount\": 90000.0, \"market_value\": 100000, \"total_units\": 1000, \"unit_price\": 100.0}, {\"investment_code\": \"9003\", \"investment\": \"Sigma Nifty Index Fund A Direct Growth\", \"asset_type\": \"MF\", \"assetclass_l2\": \"equity\", \"invested_amount\": 45000.0, \"market_value\": 50000, \"total_units\": 1000, \"unit_price\": 50.0}, {\"investment_code\": \"9004\", \"investment\": \"Sigma Nifty Index Fund B Direct Growth\", \"asset_type\": \"MF\", \"assetclass_l2\": \"equity\", \"invested_amount\": 45000.0, \"market_value\": 50000, \"total_units\": 1000, \"unit_price\": 50.0}, {\"investment_code\": \"9005\", \"investment\": \"Theta Gold and Silver Passive FOF Direct Growth\", \"asset_type\": \"MF\", \"assetclass_l2\": \"gold\", \"invested_amount\": 18000.0, \"market_value\": 20000, \"total_units\": 1000, \"unit_price\": 20.0}, {\"investment_code\": \"9999\", \"investment\": \"Unknown Plan Fund Direct Growth\", \"asset_type\": \"MF\", \"assetclass_l2\": \"equity\", \"invested_amount\": 9000.0, \"market_value\": 10000, \"total_units\": 1000, \"unit_price\": 10.0}]}"
+  },
+  "US_STOCK": {
+   "holdings": [
+    {
+     "investment_code": "ALPH",
+     "investment": "Alpha Semiconductor Corp",
+     "asset_type": "US_STOCK",
+     "assetclass_l2": "global_equity",
+     "invested_amount": 80000,
+     "market_value": 100000,
+     "total_units": 5,
+     "unit_price": 20000.0,
+     "market_cap": "large",
+     "invested_value_usd": 1000,
+     "current_value_usd": 1250
+    },
+    {
+     "investment_code": "BETA",
+     "investment": "Beta Software Inc.",
+     "asset_type": "US_STOCK",
+     "assetclass_l2": "global_equity",
+     "invested_amount": 80000,
+     "market_value": 100000,
+     "total_units": 2,
+     "unit_price": 50000.0,
+     "market_cap": "large",
+     "invested_value_usd": 1000,
+     "current_value_usd": 1250
+    }
+   ]
+  },
+  "IND_STOCK": {
+   "holdings": [],
+   "derivative_positions": null
+  }
+ },
+ "esops_rsus": {
+  "asset": "esops_rsus",
+  "family_asset_holdings": [
+   {
+    "name": "Test Person",
+    "is_you": true,
+    "holdings": [
+     {
+      "name": "acme-widgets-corp",
+      "current_value": 30000,
+      "invested_amount": 0,
+      "quantity": 10,
+      "unit_price": 3000,
+      "investment_type": "esops_rsus"
+     }
+    ]
+   }
+  ]
+ },
+ "snapshot": {
+  "total_networth": 685000,
+  "investments": [
+   {
+    "asset_type": "MF",
+    "current_value": 430000
+   },
+   {
+    "asset_type": "US_STOCK",
+    "current_value": 200000
+   },
+   {
+    "asset_type": "ESOPS_RSUS",
+    "current_value": 30000
+   },
+   {
+    "asset_type": "SA",
+    "current_value": 25000
+   },
+   {
+    "asset_type": "CRYPTO",
+    "current_value": 0
+   }
+  ]
+ },
+ "us_details": {
+  "ALPH": {
+   "sector": "Technology",
+   "market_cap": "Mega Cap"
+  },
+  "BETA": {
+   "sector": "Technology",
+   "market_cap": "Mega Cap"
+  }
+ }
+}

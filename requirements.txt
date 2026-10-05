@@ -4,3 +4,8 @@ scipy
 pyarrow
 matplotlib
 pytest
+openpyxl
+yfinance
+requests
+lxml
+html5lib

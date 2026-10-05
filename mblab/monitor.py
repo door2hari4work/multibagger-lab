@@ -21,7 +21,7 @@ from .schema import Thesis, EvidenceKind, Status
 
 SEVERITIES = ["info", "low", "medium", "high", "critical"]
 SEV_RANK = {s: i for i, s in enumerate(SEVERITIES)}
-COOLDOWN_DAYS = {"info": 14, "low": 14, "medium": 7, "high": 3, "critical": 1}
+COOLDOWN_DAYS = {"info": 14, "low": 14, "medium": 7, "high": 3, "critical": 2}
 MAX_EVIDENCE_AGE_DAYS = 120
 VALUATION_KEYS = ("pe", "ev", "ps", "pb", "p_e", "p_s", "p_b")
 VAL_WARN, VAL_HIGH = 1.5, 2.0       # current multiple / thesis-time multiple

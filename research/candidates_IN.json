@@ -1,7 +1,7 @@
 {
  "meta": {
   "market": "IN",
-  "generated_at": "2026-10-05T06:10:07+00:00",
+  "generated_at": "2026-10-05T06:12:04+00:00",
   "data_as_of": "2026-10-05",
   "regime": {
    "index": "^CRSLDX",
@@ -37,9 +37,9 @@
    "revenue_yoy": 99.7,
    "growth_acceleration": 63.0,
    "margin_delta": 88.4,
-   "ttm_revenue": 36.7
+   "ttm_revenue": 100.0
   },
-  "market_cap_coverage_pct_of_top": 0.0,
+  "market_cap_coverage_pct_of_top": 92.5,
   "survivor_bias": "current index members only",
   "limitations": [
    "Survivor bias: universe is current index members; delisted/merged/dropped names are absent.",
@@ -75,7 +75,7 @@
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:53.442116+00:00",
+    "retrieved_at": "2026-10-05T06:10:55.750503+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -158,13 +158,13 @@
    "ext_above_200dma": 1.3495662911315907,
    "adv": 1332374342.8678284,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 501231693771.53485,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:01.562747+00:00",
+    "retrieved_at": "2026-10-05T06:11:51.436289+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -211,17 +211,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.5326,
+     "basis": "P/S 9.0x / growth 87% = 0.10; P/E 206x -> PEG-like 2.36 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 501231693771.5349,
+      "ttm_revenue": 55540000000.0,
       "growth_used": 0.8744,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 9.0247,
+      "ps_to_growth": 0.1032,
+      "pe": 206.2682,
+      "peg": 2.359
      }
     }
    },
@@ -248,13 +248,13 @@
    "ext_above_200dma": 0.40215886611873364,
    "adv": 673273163.0,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 236695052745.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:58.125350+00:00",
+    "retrieved_at": "2026-10-05T06:11:45.530349+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -301,17 +301,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.58,
+     "basis": "P/S 22.2x / growth 100% = 0.22; P/E 177x -> PEG-like 1.77 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 236695052745.0,
+      "ttm_revenue": 10668830000.0,
       "growth_used": 1.3049,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 22.1857,
+      "ps_to_growth": 0.2219,
+      "pe": 177.3741,
+      "peg": 1.7737
      }
     }
    },
@@ -337,13 +337,13 @@
    "ext_above_200dma": 0.7907338961661787,
    "adv": 4423993997.929321,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 654987829242.5684,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:03.740652+00:00",
+    "retrieved_at": "2026-10-05T06:11:55.437572+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -390,17 +390,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.5142,
+     "basis": "P/S 3.9x / growth 15% = 0.26; P/E 28x -> PEG-like 1.90 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 654987829242.5684,
+      "ttm_revenue": 167388500000.0,
       "growth_used": 0.1491,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 3.913,
+      "ps_to_growth": 0.2624,
+      "pe": 28.3653,
+      "peg": 1.9021
      }
     }
    },
@@ -432,7 +432,7 @@
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:55.475334+00:00",
+    "retrieved_at": "2026-10-05T06:10:55.822970+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -484,7 +484,7 @@
      "data_quality": "missing",
      "raw": {
       "mcap": null,
-      "ttm_revenue": null,
+      "ttm_revenue": 59722200000.0,
       "growth_used": 1.1985,
       "ps": null,
       "ps_to_growth": null,
@@ -515,13 +515,13 @@
    "ext_above_200dma": 0.5268524673703616,
    "adv": 842198461.2121582,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 489220185109.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:49.913598+00:00",
+    "retrieved_at": "2026-10-05T06:11:28.718495+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -568,17 +568,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.8288,
+     "basis": "P/S 10.0x / growth 90% = 0.11; P/E 103x -> PEG-like 1.15 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 489220185109.0,
       "ttm_revenue": 48831940000.0,
       "growth_used": 0.8951,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 10.0184,
+      "ps_to_growth": 0.1119,
+      "pe": 102.5011,
+      "peg": 1.1452
      }
     }
    },
@@ -593,23 +593,23 @@
    "sector": "Automobile and Auto Components",
    "segment": "small",
    "market": "IN",
-   "price": 1395.5,
+   "price": 1394.5,
    "price_date": "2026-10-05",
    "mom_12_1": 1.7910422178878114,
    "mom_rank": 0.9830508474576272,
    "momvol_rank": 0.9774011299435028,
-   "vol_ann": 0.4797115118708074,
-   "dd_from_52w_high": -0.1912957697358857,
-   "ext_above_200dma": 0.37091032522805056,
+   "vol_ann": 0.47972904619696327,
+   "dd_from_52w_high": -0.19187527832081164,
+   "ext_above_200dma": 0.3699346748967898,
    "adv": 5100223224.545532,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 553223391844.5,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:50.920234+00:00",
+    "retrieved_at": "2026-10-05T06:11:31.163378+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -656,15 +656,15 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.922,
+     "basis": "P/S 13.0x / growth 89% = 0.15 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 553223391844.5,
       "ttm_revenue": 42440800000.0,
       "growth_used": 0.8879,
-      "ps": null,
-      "ps_to_growth": null,
+      "ps": 13.0352,
+      "ps_to_growth": 0.1468,
       "pe": null,
       "peg": null
      }
@@ -691,13 +691,13 @@
    "ext_above_200dma": 0.5258310797535735,
    "adv": 1168458138.881836,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 266392739004.81592,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-03-31",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:01.162912+00:00",
+    "retrieved_at": "2026-10-05T06:11:50.910691+00:00",
     "backtestable": false,
     "staleness_days": 188,
     "latest_only": true
@@ -744,17 +744,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.3548,
+     "basis": "P/S 7.6x / growth 28% = 0.27; P/E 82x -> PEG-like 2.96 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 266392739004.8159,
       "ttm_revenue": 34979170000.0,
       "growth_used": 0.2777,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 7.6158,
+      "ps_to_growth": 0.2742,
+      "pe": 82.1979,
+      "peg": 2.9596
      }
     }
    },
@@ -779,13 +779,13 @@
    "ext_above_200dma": 0.28970586001262033,
    "adv": 854636658.9761963,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 329809386609.0742,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:57.766624+00:00",
+    "retrieved_at": "2026-10-05T06:11:44.804263+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -832,17 +832,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.3267,
+     "basis": "P/S 4.2x / growth 13% = 0.31; P/E 60x -> PEG-like 4.48 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 329809386609.0742,
       "ttm_revenue": 79367400000.0,
       "growth_used": 0.1349,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 4.1555,
+      "ps_to_growth": 0.3079,
+      "pe": 60.3881,
+      "peg": 4.4751
      }
     }
    },
@@ -867,13 +867,13 @@
    "ext_above_200dma": 0.5057275508429397,
    "adv": 1544460564.288391,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 258666987583.57056,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:02.420245+00:00",
+    "retrieved_at": "2026-10-05T06:11:52.754900+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -920,17 +920,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.7399,
+     "basis": "P/S 12.3x / growth 72% = 0.17; P/E 94x -> PEG-like 1.30 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 258666987583.5706,
+      "ttm_revenue": 21006724000.0,
       "growth_used": 0.721,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 12.3135,
+      "ps_to_growth": 0.1708,
+      "pe": 94.0627,
+      "peg": 1.3045
      }
     }
    },
@@ -955,13 +955,13 @@
    "ext_above_200dma": 0.1643187973403586,
    "adv": 985308434.5091553,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 257370067114.42676,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:49.493376+00:00",
+    "retrieved_at": "2026-10-05T06:11:28.553948+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1008,17 +1008,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.6762,
+     "basis": "P/S 17.7x / growth 59% = 0.30; P/E 67x -> PEG-like 1.13 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 257370067114.4268,
+      "ttm_revenue": 14514058000.0,
       "growth_used": 0.5908,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 17.7325,
+      "ps_to_growth": 0.3001,
+      "pe": 66.6379,
+      "peg": 1.1279
      }
     }
    },
@@ -1043,13 +1043,13 @@
    "ext_above_200dma": 0.3341440279662007,
    "adv": 258719004.30737305,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 219651313930.9259,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:50.022865+00:00",
+    "retrieved_at": "2026-10-05T06:11:29.362918+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1096,17 +1096,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.0345,
+     "basis": "P/S 17.9x / growth 27% = 0.66; P/E 93x -> PEG-like 3.43 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 219651313930.9259,
       "ttm_revenue": 12239000000.0,
       "growth_used": 0.2725,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 17.9468,
+      "ps_to_growth": 0.6586,
+      "pe": 93.3923,
+      "peg": 3.4274
      }
     }
    },
@@ -1131,13 +1131,13 @@
    "ext_above_200dma": 0.4159942454855572,
    "adv": 2012987485.4863281,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 752278406542.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:39.859055+00:00",
+    "retrieved_at": "2026-10-05T06:11:11.284063+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1184,17 +1184,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.5739,
+     "basis": "P/S 3.1x / growth 29% = 0.11; P/E 64x -> PEG-like 2.18 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 752278406542.0,
+      "ttm_revenue": 242926500000.0,
       "growth_used": 0.2916,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 3.0967,
+      "ps_to_growth": 0.1062,
+      "pe": 63.6731,
+      "peg": 2.1838
      }
     }
    },
@@ -1219,13 +1219,13 @@
    "ext_above_200dma": 0.4395665986593531,
    "adv": 2930048046.6776123,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 1063280426993.4163,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:44.618050+00:00",
+    "retrieved_at": "2026-10-05T06:11:20.246407+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1272,17 +1272,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.1591,
+     "basis": "P/S 14.8x / growth 29% = 0.51; P/E 97x -> PEG-like 3.34 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 1063280426993.4163,
+      "ttm_revenue": 71779700000.0,
       "growth_used": 0.291,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 14.8131,
+      "ps_to_growth": 0.509,
+      "pe": 97.248,
+      "peg": 3.3419
      }
     }
    },
@@ -1307,13 +1307,13 @@
    "ext_above_200dma": 0.338825865755481,
    "adv": 794136531.109375,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 296540018531.72974,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:00.227222+00:00",
+    "retrieved_at": "2026-10-05T06:11:49.225153+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1360,17 +1360,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.8987,
+     "basis": "P/S 2.8x / growth 54% = 0.05; P/E 49x -> PEG-like 0.91 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 296540018531.7297,
+      "ttm_revenue": 106966018000.0,
       "growth_used": 0.539,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 2.7723,
+      "ps_to_growth": 0.0514,
+      "pe": 48.7956,
+      "peg": 0.9053
      }
     }
    },
@@ -1395,13 +1395,13 @@
    "ext_above_200dma": 0.27960265943066487,
    "adv": 1873166926.75,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 203174717795.53223,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:52.804241+00:00",
+    "retrieved_at": "2026-10-05T06:11:34.768947+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1448,17 +1448,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 1.0,
+     "basis": "P/S 0.3x / growth 85% = 0.00; P/E 5x -> PEG-like 0.06 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 203174717795.5322,
+      "ttm_revenue": 761077900000.0,
       "growth_used": 0.8477,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 0.267,
+      "ps_to_growth": 0.0031,
+      "pe": 4.8675,
+      "peg": 0.0574
      }
     }
    },
@@ -1489,7 +1489,7 @@
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:45.714087+00:00",
+    "retrieved_at": "2026-10-05T06:11:21.800156+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1541,7 +1541,7 @@
      "data_quality": "missing",
      "raw": {
       "mcap": null,
-      "ttm_revenue": null,
+      "ttm_revenue": 24465000000.0,
       "growth_used": 0.881,
       "ps": null,
       "ps_to_growth": null,
@@ -1572,13 +1572,13 @@
    "ext_above_200dma": 0.28849983580695016,
    "adv": 1837919213.5,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 496182097080.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:01.718740+00:00",
+    "retrieved_at": "2026-10-05T06:11:51.585489+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1625,17 +1625,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.7021,
+     "basis": "P/S 10.4x / growth 52% = 0.20; P/E 71x -> PEG-like 1.36 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 496182097080.0,
+      "ttm_revenue": 47556670000.0,
       "growth_used": 0.5238,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 10.4335,
+      "ps_to_growth": 0.1992,
+      "pe": 71.2978,
+      "peg": 1.3611
      }
     }
    },
@@ -1660,13 +1660,13 @@
    "ext_above_200dma": 0.162536162097352,
    "adv": 827023801.25,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 420341723945.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:58.914685+00:00",
+    "retrieved_at": "2026-10-05T06:11:46.668156+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1713,17 +1713,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.6845,
+     "basis": "P/S 11.7x / growth 44% = 0.27; P/E 53x -> PEG-like 1.21 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 420341723945.0,
+      "ttm_revenue": 35819100000.0,
       "growth_used": 0.4407,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 11.7351,
+      "ps_to_growth": 0.2663,
+      "pe": 53.228,
+      "peg": 1.2078
      }
     }
    },
@@ -1748,13 +1748,13 @@
    "ext_above_200dma": 0.3470010372464678,
    "adv": 465453282.6690674,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 192200977200.9536,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:55.799417+00:00",
+    "retrieved_at": "2026-10-05T06:11:41.050370+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1801,17 +1801,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.0,
+     "basis": "P/S 12.1x / growth 9% = 1.32; P/E 75x -> PEG-like 8.22 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 192200977200.9536,
+      "ttm_revenue": 15829902000.0,
       "growth_used": 0.0918,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 12.1416,
+      "ps_to_growth": 1.3231,
+      "pe": 75.4195,
+      "peg": 8.2187
      }
     }
    },
@@ -1836,13 +1836,13 @@
    "ext_above_200dma": 0.5349173302571528,
    "adv": 2474882291.0217285,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 330024382499.61646,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:02.189724+00:00",
+    "retrieved_at": "2026-10-05T06:11:52.552951+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1889,17 +1889,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.7968,
+     "basis": "P/S 6.0x / growth 68% = 0.09; P/E 90x -> PEG-like 1.31 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 330024382499.6165,
       "ttm_revenue": 54636970000.0,
       "growth_used": 0.6829,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 6.0403,
+      "ps_to_growth": 0.0885,
+      "pe": 89.6528,
+      "peg": 1.3128
      }
     }
    },
@@ -1924,13 +1924,13 @@
    "ext_above_200dma": 0.22720781682803715,
    "adv": 2776706728.7892303,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 1489974888351.6719,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:40.412994+00:00",
+    "retrieved_at": "2026-10-05T06:11:12.288460+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -1977,17 +1977,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.7391,
+     "basis": "P/S 4.3x / growth 40% = 0.11; P/E 61x -> PEG-like 1.52 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 1489974888351.6719,
+      "ttm_revenue": 345706400000.0,
       "growth_used": 0.4029,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 4.3099,
+      "ps_to_growth": 0.107,
+      "pe": 61.2536,
+      "peg": 1.5202
      }
     }
    },
@@ -2012,13 +2012,13 @@
    "ext_above_200dma": 0.06498615314728018,
    "adv": 1755414174.9581451,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 802099225970.1581,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:41.870886+00:00",
+    "retrieved_at": "2026-10-05T06:11:14.375647+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2065,15 +2065,15 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.6932,
+     "basis": "P/S 4.7x / growth 17% = 0.28 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 802099225970.1581,
+      "ttm_revenue": 169274002000.0,
       "growth_used": 0.1668,
-      "ps": null,
-      "ps_to_growth": null,
+      "ps": 4.7385,
+      "ps_to_growth": 0.2841,
       "pe": null,
       "peg": null
      }
@@ -2091,23 +2091,23 @@
    "sector": "Healthcare",
    "segment": "small",
    "market": "IN",
-   "price": 1507.199951171875,
+   "price": 1510.300048828125,
    "price_date": "2026-10-05",
    "mom_12_1": 0.7751225897426266,
    "mom_rank": 0.9293785310734464,
    "momvol_rank": 0.940677966101695,
-   "vol_ann": 0.33290902289475127,
-   "dd_from_52w_high": -0.1003939780298213,
-   "ext_above_200dma": 0.30662458758609223,
+   "vol_ann": 0.3327671466906985,
+   "dd_from_52w_high": -0.0985436153635475,
+   "ext_above_200dma": 0.3092945360945165,
    "adv": 703649966.8414307,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 320730269524.3916,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:01.034266+00:00",
+    "retrieved_at": "2026-10-05T06:11:50.517270+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2154,17 +2154,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.0,
+     "basis": "P/S 14.6x / growth 12% = 1.25; P/E 89x -> PEG-like 7.61 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 320730269524.3916,
+      "ttm_revenue": 21946920000.0,
       "growth_used": 0.1166,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 14.6139,
+      "ps_to_growth": 1.2537,
+      "pe": 88.6632,
+      "peg": 7.6062
      }
     }
    },
@@ -2189,13 +2189,13 @@
    "ext_above_200dma": 0.11808914630899925,
    "adv": 1663353522.1611328,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 236201969075.08447,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:53.619456+00:00",
+    "retrieved_at": "2026-10-05T06:11:36.207561+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2242,17 +2242,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.0,
+     "basis": "P/S 25.1x / growth 17% = 1.49; P/E 88x -> PEG-like 5.24 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 236201969075.0845,
       "ttm_revenue": 9414700000.0,
       "growth_used": 0.1681,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 25.0886,
+      "ps_to_growth": 1.4922,
+      "pe": 88.1581,
+      "peg": 5.2436
      }
     }
    },
@@ -2277,13 +2277,13 @@
    "ext_above_200dma": 0.5448844263550783,
    "adv": 756507637.7878876,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 218547044975.34756,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:03.831386+00:00",
+    "retrieved_at": "2026-10-05T06:11:55.494251+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2330,17 +2330,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.5,
+     "basis": "P/S 2.2x / growth 24% = 0.09; P/E 79x -> PEG-like 3.33 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 218547044975.3476,
       "ttm_revenue": 99339900000.0,
       "growth_used": 0.2366,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 2.2,
+      "ps_to_growth": 0.093,
+      "pe": 78.7217,
+      "peg": 3.327
      }
     }
    },
@@ -2365,13 +2365,13 @@
    "ext_above_200dma": 0.38414865061473846,
    "adv": 1129166669.0170898,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 184600447884.38916,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:51.335180+00:00",
+    "retrieved_at": "2026-10-05T06:11:31.366219+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2418,17 +2418,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.0,
+     "basis": "P/S 29.3x / growth 26% = 1.13; P/E 133x -> PEG-like 5.13 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 184600447884.3892,
+      "ttm_revenue": 6300200000.0,
       "growth_used": 0.259,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 29.3007,
+      "ps_to_growth": 1.1313,
+      "pe": 132.8969,
+      "peg": 5.1311
      }
     }
    },
@@ -2453,13 +2453,13 @@
    "ext_above_200dma": 0.20619851281749857,
    "adv": 279999210.7036133,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 203844472304.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:10:01.124302+00:00",
+    "retrieved_at": "2026-10-05T06:11:50.327242+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2506,17 +2506,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.9545,
+     "basis": "P/S 4.1x / growth 53% = 0.08; P/E 36x -> PEG-like 0.68 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 203844472304.0,
+      "ttm_revenue": 49197060000.0,
       "growth_used": 0.5306,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 4.1434,
+      "ps_to_growth": 0.0781,
+      "pe": 36.1937,
+      "peg": 0.6822
      }
     }
    },
@@ -2541,13 +2541,13 @@
    "ext_above_200dma": 0.4737456759331842,
    "adv": 839268188.9291992,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 481572000000.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:49.954716+00:00",
+    "retrieved_at": "2026-10-05T06:11:28.940684+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2594,17 +2594,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.8281,
+     "basis": "P/S 5.4x / growth 37% = 0.14; P/E 38x -> PEG-like 1.04 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 481572000000.0,
       "ttm_revenue": 89706600000.0,
       "growth_used": 0.3707,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 5.3683,
+      "ps_to_growth": 0.1448,
+      "pe": 38.4867,
+      "peg": 1.0381
      }
     }
    },
@@ -2629,13 +2629,13 @@
    "ext_above_200dma": 0.06760219360071384,
    "adv": 448720718.00668335,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 310928514419.13135,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:57.554344+00:00",
+    "retrieved_at": "2026-10-05T06:11:44.178413+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2682,15 +2682,15 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.8486,
+     "basis": "P/S 4.2x / growth 22% = 0.19 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 310928514419.1313,
+      "ttm_revenue": 73608100000.0,
       "growth_used": 0.2214,
-      "ps": null,
-      "ps_to_growth": null,
+      "ps": 4.2241,
+      "ps_to_growth": 0.1908,
       "pe": null,
       "peg": null
      }
@@ -2718,13 +2718,13 @@
    "ext_above_200dma": 0.1810773976724076,
    "adv": 500487457.5,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 269573740931.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:53.268033+00:00",
+    "retrieved_at": "2026-10-05T06:11:35.700593+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2771,17 +2771,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.7257,
+     "basis": "P/S 3.1x / growth 36% = 0.09; P/E 58x -> PEG-like 1.60 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 269573740931.0,
       "ttm_revenue": 87168500000.0,
       "growth_used": 0.363,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 3.0926,
+      "ps_to_growth": 0.0852,
+      "pe": 57.9803,
+      "peg": 1.5973
      }
     }
    },
@@ -2806,13 +2806,13 @@
    "ext_above_200dma": 0.05353321013169321,
    "adv": 1177570997.006775,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 223547032747.4829,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:59.987277+00:00",
+    "retrieved_at": "2026-10-05T06:11:49.140744+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2859,17 +2859,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.4494,
+     "basis": "P/S 4.6x / growth 29% = 0.16; P/E 193x -> PEG-like 6.77 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 223547032747.4829,
       "ttm_revenue": 48665865000.0,
       "growth_used": 0.2859,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 4.5935,
+      "ps_to_growth": 0.1607,
+      "pe": 193.4163,
+      "peg": 6.7654
      }
     }
    },
@@ -2894,13 +2894,13 @@
    "ext_above_200dma": 0.12225352066760742,
    "adv": 745377948.2813721,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 221197168373.96375,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:54.898170+00:00",
+    "retrieved_at": "2026-10-05T06:11:39.567320+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -2947,17 +2947,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.6589,
+     "basis": "P/S 4.0x / growth 21% = 0.19; P/E 33x -> PEG-like 1.58 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 221197168373.9637,
       "ttm_revenue": 55950980000.0,
       "growth_used": 0.2119,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 3.9534,
+      "ps_to_growth": 0.1865,
+      "pe": 33.3959,
+      "peg": 1.5758
      }
     }
    },
@@ -2982,13 +2982,13 @@
    "ext_above_200dma": 0.07115384064691299,
    "adv": 1038711398.8531723,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 615862802499.2238,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:40.219980+00:00",
+    "retrieved_at": "2026-10-05T06:11:11.757678+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -3035,15 +3035,15 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.7907,
+     "basis": "P/S 3.7x / growth 17% = 0.23 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 615862802499.2238,
+      "ttm_revenue": 164838824000.0,
       "growth_used": 0.1656,
-      "ps": null,
-      "ps_to_growth": null,
+      "ps": 3.7362,
+      "ps_to_growth": 0.2256,
       "pe": null,
       "peg": null
      }
@@ -3071,13 +3071,13 @@
    "ext_above_200dma": 0.20893788292397808,
    "adv": 980578718.5932617,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 573607187265.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:47.216663+00:00",
+    "retrieved_at": "2026-10-05T06:11:24.509701+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -3124,17 +3124,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.0,
+     "basis": "P/S 9.3x / growth 12% = 0.79; P/E 82x -> PEG-like 6.91 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 573607187265.0,
+      "ttm_revenue": 61812773000.0,
       "growth_used": 0.118,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 9.2798,
+      "ps_to_growth": 0.7867,
+      "pe": 81.5294,
+      "peg": 6.9117
      }
     }
    },
@@ -3159,13 +3159,13 @@
    "ext_above_200dma": 0.23340414070379234,
    "adv": 731818436.0247803,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 140775811505.82275,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:51.397155+00:00",
+    "retrieved_at": "2026-10-05T06:11:32.013904+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -3212,17 +3212,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.2826,
+     "basis": "P/S 2.2x / growth 6% = 0.36; P/E 38x -> PEG-like 6.19 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 140775811505.8228,
       "ttm_revenue": 63656650000.0,
       "growth_used": 0.0613,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 2.2115,
+      "ps_to_growth": 0.3609,
+      "pe": 37.9412,
+      "peg": 6.1909
      }
     }
    },
@@ -3247,13 +3247,13 @@
    "ext_above_200dma": 0.4662213937402999,
    "adv": 1138094166.75,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 225203185512.5,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:54.398015+00:00",
+    "retrieved_at": "2026-10-05T06:11:38.237320+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -3300,17 +3300,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.966,
+     "basis": "P/S 3.2x / growth 44% = 0.07; P/E 28x -> PEG-like 0.64 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 225203185512.5,
       "ttm_revenue": 69386400000.0,
       "growth_used": 0.4426,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 3.2456,
+      "ps_to_growth": 0.0733,
+      "pe": 28.1455,
+      "peg": 0.6359
      }
     }
    },
@@ -3335,13 +3335,13 @@
    "ext_above_200dma": 0.19607025343954065,
    "adv": 437703069.195282,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 175026990303.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:57.028417+00:00",
+    "retrieved_at": "2026-10-05T06:11:43.292036+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -3388,17 +3388,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.4915,
+     "basis": "P/S 1.0x / growth 9% = 0.11; P/E 27x -> PEG-like 2.98 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 175026990303.0,
+      "ttm_revenue": 176440077000.0,
       "growth_used": 0.09,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 0.992,
+      "ps_to_growth": 0.1102,
+      "pe": 26.7837,
+      "peg": 2.9759
      }
     }
    },
@@ -3423,13 +3423,13 @@
    "ext_above_200dma": 0.19362066028937153,
    "adv": 359842325.0,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 326687642710.0,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:59.697623+00:00",
+    "retrieved_at": "2026-10-05T06:11:48.125709+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -3476,17 +3476,17 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.1827,
+     "basis": "P/S 46.8x / growth 97% = 0.48; P/E 260x -> PEG-like 2.67 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
+      "mcap": 326687642710.0,
       "ttm_revenue": 6974279000.0,
       "growth_used": 0.9743,
-      "ps": null,
-      "ps_to_growth": null,
-      "pe": null,
-      "peg": null
+      "ps": 46.8418,
+      "ps_to_growth": 0.4808,
+      "pe": 260.1103,
+      "peg": 2.6697
      }
     }
    },
@@ -3511,13 +3511,13 @@
    "ext_above_200dma": 0.16809741336709672,
    "adv": 601631289.5,
    "adv_floor": 50000000.0,
-   "market_cap": null,
+   "market_cap": 351442964063.7676,
    "fundamentals": {
     "freq": "Q",
     "latest_period": "2026-06-30",
     "source": "yfinance_quarterly",
     "filed_date": null,
-    "retrieved_at": "2026-10-05T06:09:50.446338+00:00",
+    "retrieved_at": "2026-10-05T06:11:30.057794+00:00",
     "backtestable": false,
     "staleness_days": 97,
     "latest_only": true
@@ -3564,15 +3564,15 @@
     },
     "valuation_asymmetry": {
      "name": "valuation_asymmetry",
-     "value": null,
-     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
-     "data_quality": "missing",
+     "value": 0.0,
+     "basis": "P/S 29.4x / growth 18% = 1.68 (market cap not EV; single-period growth; lower is better)",
+     "data_quality": "partial",
      "raw": {
-      "mcap": null,
-      "ttm_revenue": null,
+      "mcap": 351442964063.7676,
+      "ttm_revenue": 11967935000.0,
       "growth_used": 0.1751,
-      "ps": null,
-      "ps_to_growth": null,
+      "ps": 29.3654,
+      "ps_to_growth": 1.6775,
       "pe": null,
       "peg": null
      }

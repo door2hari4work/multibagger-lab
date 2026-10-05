@@ -150,7 +150,7 @@ def main():
     out = []
     out.append("# Entry-state validation (tune window only)\n")
     out.append("Script: `analysis/timing/state_validation.py` (re-runnable; reads `prices_tune.parquet` and `us_prices_tune.parquet` only; no SEALED file is opened). "
-               "Thresholds in `mblab/timing.py` (`TH`) were declared before this run from common practice and were NOT tuned to these results; this is the only run reported.\n")
+               "Thresholds in `mblab/timing.py` (`TH`) were declared before this run from common practice and were NOT tuned to these results (one reachability fix after run 1 is disclosed under Run history).\n")
     headline = []
     for mkt, (df, n_stk, n_bad) in allv.items():
         d12 = df.dropna(subset=["r12m"])
@@ -192,10 +192,21 @@ def main():
         hl.append(f"- **{mkt}**: (attractive + confirmation) minus (overextended + breakout), 12m same-date excess mean = {v['pt'][0]:+.1%}, {sig(v)}; median-return difference {v['pt'][1]:+.1%}, 10th-percentile difference {v['pt'][3]:+.1%}. "
                   f"attractive vs overextended alone: {v_ao['pt'][0]:+.1%} ({sig(v_ao)}). confirmation vs overextended: {v_co['pt'][0]:+.1%} ({sig(v_co)}).")
     out.insert(2, "\n".join(hl) + "\n")
+    out.append("\n## Reading of this run (author's summary of the tables; negative results included)\n")
+    out.append("- **No evidence that 'overextended' is a worse place to be than 'attractive_entry' or 'confirmation_entry' in this window.** India: overextended names had the BEST 12m excess return (+7% vs same-date average) and hit rate, "
+               "and attractive_entry trailed overextended by about 5 points with a significantly worse hit rate and 10th percentile. US: the states are nearly indistinguishable on return (attractive +1.6 pts vs overextended, confirmation -0.7 pts, both small). "
+               "The ATR-extension buckets show the same thing: no monotonic penalty for stretch; in India more extension looks better, which is the 12-1 momentum effect the lab already found (names far above the 50d MA are the strongest-momentum names).\n"
+               "- **The label 'overextended' therefore describes entry price risk (a larger give-back if the trend pauses), not an expectation of underperformance.** The product should not present it as a sell/avoid signal, and should not present attractive_entry as an edge. "
+               "The rationale text in `mblab/timing.py` says this.\n"
+               "- **What the states do show is consistent with the lab's earlier finding that trend filters protect more than they select.** confirmation_entry (within 10% of the 52w high, rising 50d MA) has the lowest share of >20% losses among the well-populated states in both markets "
+               "(India about 12% vs 18% base; US about 3% vs 5% base) and the best 10th percentile in the US, without a return advantage. too_early (below the 200d MA) has the worst downside in India (P(loss>20%) about 21%) but NOT in the US, where it did not underperform (survivor bias: below-trend names that recovered are the ones still in the index).\n"
+               "- **attractive_entry has fatter tails than confirmation_entry** in both markets (higher P(loss>20%), worse 10th percentile): buying a pullback inside a trend carries more dispersion than buying strength. Its median is below the base in India (10.5% vs 12.5%) and slightly above it in the US (18.1% vs 16.8%).\n"
+               "- **breakout_entry** is exploratory: price-only, volume untested, a small and heterogeneous sample; the contrasts against it are wide and inconclusive.\n"
+               "- **Net**: use the states as a disciplined description and for sizing/risk (confirmation = lower tail risk in this sample), not as a return predictor. Selection edge, where it exists, comes from the momentum rank, not from these entry states.\n")
     out.append("\n## Run history (disclosure)\n")
     out.append("- **Run 1** (thresholds as first declared: a fresh breakout was classified AFTER the 2.5-ATR wait_for_pullback gate). `breakout_entry` was almost unreachable: 5 of 31,299 India observations and 24 of 48,173 US observations, "
                "because a genuine breakout is itself a >2.5 ATR extension from the 50d MA. That is a state-definition defect (the state could not be validated), found from state COUNTS. "
-               "Run-1 headline for the other states was identical to what is shown here (they are unchanged by the fix).\n"
+               "attractive_entry, confirmation_entry and overextended counts were unchanged by the fix; the breakout names moved out of wait_for_pullback.\n"
                "- **Run 2** (this report): the breakout check now precedes the wait_for_pullback gate and is bounded by the 4-ATR overextension limit. No other threshold changed; the change was made on reachability, not on returns. "
                "It is still one data-informed adjustment, so treat the breakout row as exploratory.\n")
     out.append("\n## Caveats that bind every number above\n")

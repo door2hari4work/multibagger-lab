@@ -221,11 +221,18 @@ def get_market_caps(tickers, max_age_days: float = 3.0, workers: int = 8) -> pd.
     need = [t for t in tickers if t not in cache or now - cache[t][1] > max_age_days * 86400]
 
     def one(t):
-        try:
-            v = yf.Ticker(t).fast_info["marketCap"]
-            return t, (float(v) if v else None)
-        except Exception:
-            return t, None
+        for attempt in range(3):
+            try:
+                fi = yf.Ticker(t).fast_info
+                v = fi["marketCap"]
+                if not v and fi["shares"] and fi["lastPrice"]:   # fallback: shares * last price
+                    v = fi["shares"] * fi["lastPrice"]
+                if v:
+                    return t, float(v)
+            except Exception:
+                pass
+            time.sleep(1.0 + attempt)
+        return t, None
     if need:
         with ThreadPoolExecutor(workers) as ex:
             for t, v in ex.map(one, need):
