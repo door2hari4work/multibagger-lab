@@ -1,0 +1,3587 @@
+{
+ "meta": {
+  "market": "IN",
+  "generated_at": "2026-10-05T06:10:07+00:00",
+  "data_as_of": "2026-10-05",
+  "regime": {
+   "index": "^CRSLDX",
+   "close": 21892.05078125,
+   "ma200": 22949.59080078125,
+   "regime_on": false,
+   "as_of": "2026-10-05"
+  },
+  "screen": "liquidity floor -> data-reliability exclusion -> trend filters (close>200dMA, 12-1 mom>0, close>=75% of 52w high) -> rank by 12-1 momentum percentile (tie: mom/vol percentile) -> top N. Fundamentals do not affect the ranking.",
+  "ranking": "12-1 momentum percentile (the only lab-validated price signal); fundamentals are evidence, not a filter",
+  "liquidity_floor": 50000000.0,
+  "liquidity_floor_unit": "INR per day (median 20d Close*Volume)",
+  "universe_size": 401,
+  "with_price_data": 399,
+  "excluded_counts": {
+   "illiquid": 23,
+   "short_history": 21,
+   "no_data": 2,
+   "price_jump_gt45pct": 1
+  },
+  "excluded_price_jump": [
+   {
+    "ticker": "HEGAM.NS",
+    "max_abs_move": 0.6262272403610968,
+    "date": "2026-09-07"
+   }
+  ],
+  "pool_size": 354,
+  "pass_trend_filters": 116,
+  "top_n": 40,
+  "fundamentals_coverage_pct_of_pool": {
+   "any_period": 100.0,
+   "revenue_yoy": 99.7,
+   "growth_acceleration": 63.0,
+   "margin_delta": 88.4,
+   "ttm_revenue": 36.7
+  },
+  "market_cap_coverage_pct_of_top": 0.0,
+  "survivor_bias": "current index members only",
+  "limitations": [
+   "Survivor bias: universe is current index members; delisted/merged/dropped names are absent.",
+   "Yahoo prices are unaudited; unadjusted corporate actions and stale series are flagged, not repaired.",
+   "Momentum rank is the only price signal validated by the lab (India strong, US weak, micro ~none); validated on survivors in a tune window only.",
+   "Fundamental sub-scores are evidence/flags: the one fundamentals gate tested (US) did not improve results; mappings are declared heuristics.",
+   "India fundamentals: latest ~5-6 quarters from Yahoo, no filing dates, latest-only, never backtestable; US: annual SEC 10-K only.",
+   "Valuation uses market cap (not EV) vs a single-period growth rate: always marked partial.",
+   "No overall buy score is produced here; combination is left to mblab/scoring.py."
+  ]
+ },
+ "candidates": [
+  {
+   "rank": 1,
+   "ticker": "CUPID.NS",
+   "name": "Cupid Ltd.",
+   "sector": "Fast Moving Consumer Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 311.70001220703125,
+   "price_date": "2026-10-05",
+   "mom_12_1": 5.441555869867735,
+   "mom_rank": 1.0,
+   "momvol_rank": 1.0,
+   "vol_ann": 0.5862873692044073,
+   "dd_from_52w_high": -0.0025599609374999943,
+   "ext_above_200dma": 0.9846747256330817,
+   "adv": 3576703552.5968323,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:53.442116+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.85,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 1.0,
+      "momvol_rank": 1.0,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "level only: latest quarter revenue YoY +158.7%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 1.587,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.9685,
+     "basis": "ebitda margin 40.3% (+4.5pp YoY); EBITDA growth minus revenue growth +32.3pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.4028,
+      "margin_delta": 0.0447,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 1.9102,
+      "op_leverage": 0.3232,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 4526189000.0,
+      "growth_used": 1.587,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "extended_gt_60pct_above_200dma",
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 2,
+   "ticker": "STLTECH.NS",
+   "name": "Sterlite Technologies Ltd.",
+   "sector": "Telecommunication",
+   "segment": "small",
+   "market": "IN",
+   "price": 969.9000244140625,
+   "price_date": "2026-10-05",
+   "mom_12_1": 4.866990226128678,
+   "mom_rank": 0.9971751412429378,
+   "momvol_rank": 0.9971751412429378,
+   "vol_ann": 0.6128351255719184,
+   "dd_from_52w_high": 0.0,
+   "ext_above_200dma": 1.3495662911315907,
+   "adv": 1332374342.8678284,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:01.562747+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8484,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9972,
+      "momvol_rank": 0.9972,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "latest quarter revenue YoY +87.4% vs previous quarter YoY +37.0% (change +50.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.8744,
+      "rev_yoy1": 0.3698,
+      "rev_accel": 0.5046,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 20.8% (+7.0pp YoY); EBITDA growth minus revenue growth +96.1pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2079,
+      "margin_delta": 0.0705,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 1.8357,
+      "op_leverage": 0.9613,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.8744,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "extended_gt_60pct_above_200dma",
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 3,
+   "ticker": "MTARTECH.NS",
+   "name": "MTAR Technologies Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 7650.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 2.592120556040375,
+   "mom_rank": 0.9943502824858758,
+   "momvol_rank": 0.9915254237288136,
+   "vol_ann": 0.6104874286451616,
+   "dd_from_52w_high": -0.08651262761955936,
+   "ext_above_200dma": 0.40215886611873364,
+   "adv": 673273163.0,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:58.125350+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8465,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9944,
+      "momvol_rank": 0.9915,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "latest quarter revenue YoY +130.5% vs previous quarter YoY +69.0% (change +61.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 1.3049,
+      "rev_yoy1": 0.6897,
+      "rev_accel": 0.6151,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 26.1% (+7.3pp YoY); EBITDA growth minus revenue growth +90.1pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2611,
+      "margin_delta": 0.0734,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 2.2055,
+      "op_leverage": 0.9007,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 1.3049,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "high_volatility_gt_60pct",
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 4,
+   "ticker": "WELCORP.NS",
+   "name": "Welspun Corp Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 2478.199951171875,
+   "price_date": "2026-10-05",
+   "mom_12_1": 2.098581259944837,
+   "mom_rank": 0.9915254237288136,
+   "momvol_rank": 0.9943502824858758,
+   "vol_ann": 0.4327763818001633,
+   "dd_from_52w_high": -0.12800846193811577,
+   "ext_above_200dma": 0.7907338961661787,
+   "adv": 4423993997.929321,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:03.740652+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8458,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9915,
+      "momvol_rank": 0.9944,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.4621,
+     "basis": "latest quarter revenue YoY +14.9% vs previous quarter YoY +9.9% (change +5.0pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1491,
+      "rev_yoy1": 0.0987,
+      "rev_accel": 0.0504,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 33.7% (+16.6pp YoY); EBITDA growth minus revenue growth +111.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3374,
+      "margin_delta": 0.1659,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 1.2609,
+      "op_leverage": 1.1117,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.1491,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "extended_gt_60pct_above_200dma",
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 5,
+   "ticker": "HFCL.NS",
+   "name": "HFCL Ltd.",
+   "sector": "Telecommunication",
+   "segment": "small",
+   "market": "IN",
+   "price": 237.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 2.0021793521646085,
+   "mom_rank": 0.9887005649717514,
+   "momvol_rank": 0.980225988700565,
+   "vol_ann": 0.5059181875883934,
+   "dd_from_52w_high": -0.0566613045718064,
+   "ext_above_200dma": 0.6459931035698949,
+   "adv": 1218894454.4584656,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:55.475334+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8425,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9887,
+      "momvol_rank": 0.9802,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.6506,
+     "basis": "latest quarter revenue YoY +119.9% vs previous quarter YoY +127.8% (change -8.0pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 1.1985,
+      "rev_yoy1": 1.2781,
+      "rev_accel": -0.0796,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 23.3% (+18.3pp YoY); EBITDA growth minus revenue growth +812.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2325,
+      "margin_delta": 0.183,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 9.3258,
+      "op_leverage": 8.1273,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 1.1985,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "extended_gt_60pct_above_200dma",
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 6,
+   "ticker": "CPPLUS.NS",
+   "name": "Aditya Infotech Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 3989.5,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.820746412642698,
+   "mom_rank": 0.9858757062146892,
+   "momvol_rank": 0.9887005649717514,
+   "vol_ann": 0.4370396866440492,
+   "dd_from_52w_high": 0.0,
+   "ext_above_200dma": 0.5268524673703616,
+   "adv": 842198461.2121582,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:49.913598+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8427,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9859,
+      "momvol_rank": 0.9887,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "level only: latest quarter revenue YoY +89.5%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.8951,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 14.8% (+6.0pp YoY); EBITDA growth minus revenue growth +130.5pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1482,
+      "margin_delta": 0.0604,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 2.2003,
+      "op_leverage": 1.3052,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 48831940000.0,
+      "growth_used": 0.8951,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 7,
+   "ticker": "ATHERENERG.NS",
+   "name": "Ather Energy Ltd.",
+   "sector": "Automobile and Auto Components",
+   "segment": "small",
+   "market": "IN",
+   "price": 1395.5,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.7910422178878114,
+   "mom_rank": 0.9830508474576272,
+   "momvol_rank": 0.9774011299435028,
+   "vol_ann": 0.4797115118708074,
+   "dd_from_52w_high": -0.1912957697358857,
+   "ext_above_200dma": 0.37091032522805056,
+   "adv": 5100223224.545532,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:50.920234+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8398,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9831,
+      "momvol_rank": 0.9774,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "level only: latest quarter revenue YoY +88.8%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.8879,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 0.8% (+17.2pp YoY); EBITDA turned positive vs year-ago; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0078,
+      "margin_delta": 0.1722,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 42440800000.0,
+      "growth_used": 0.8879,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 8,
+   "ticker": "SANSERA.NS",
+   "name": "Sansera Engineering Ltd.",
+   "sector": "Automobile and Auto Components",
+   "segment": "small",
+   "market": "IN",
+   "price": 4258.39990234375,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.702417404005256,
+   "mom_rank": 0.980225988700565,
+   "momvol_rank": 0.9830508474576272,
+   "vol_ann": 0.42063592913053094,
+   "dd_from_52w_high": -0.08665065383964865,
+   "ext_above_200dma": 0.5258310797535735,
+   "adv": 1168458138.881836,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-03-31",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:01.162912+00:00",
+    "backtestable": false,
+    "staleness_days": 188,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8395,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9802,
+      "momvol_rank": 0.9831,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.5555,
+     "basis": "level only: latest quarter revenue YoY +27.8%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.2777,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-03-31"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.9904,
+     "basis": "ebitda margin 22.4% (+4.8pp YoY); EBITDA growth minus revenue growth +35.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2242,
+      "margin_delta": 0.0484,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.6296,
+      "op_leverage": 0.3518,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 34979170000.0,
+      "growth_used": 0.2777,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 9,
+   "ticker": "KIRLOSENG.NS",
+   "name": "Kirloskar Oil Eng Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 2264.300048828125,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.4775748703573761,
+   "mom_rank": 0.9745762711864406,
+   "momvol_rank": 0.9745762711864406,
+   "vol_ann": 0.4833312848951846,
+   "dd_from_52w_high": -0.11488247388520634,
+   "ext_above_200dma": 0.28970586001262033,
+   "adv": 854636658.9761963,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:57.766624+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.836,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9746,
+      "momvol_rank": 0.9746,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2699,
+     "basis": "level only: latest quarter revenue YoY +13.5%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.1349,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0419,
+     "basis": "ebitda margin 15.8% (-4.7pp YoY); EBITDA growth minus revenue growth -26.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1578,
+      "margin_delta": -0.0473,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.1267,
+      "op_leverage": -0.2616,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 79367400000.0,
+      "growth_used": 0.1349,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 10,
+   "ticker": "TDPOWERSYS.NS",
+   "name": "TD Power Systems Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 823.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.4204520245540264,
+   "mom_rank": 0.9717514124293786,
+   "momvol_rank": 0.9519774011299436,
+   "vol_ann": 0.5494321998177647,
+   "dd_from_52w_high": 0.0,
+   "ext_above_200dma": 0.5057275508429397,
+   "adv": 1544460564.288391,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:02.420245+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8315,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9718,
+      "momvol_rank": 0.952,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.7862,
+     "basis": "latest quarter revenue YoY +72.1% vs previous quarter YoY +69.2% (change +2.9pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.721,
+      "rev_yoy1": 0.6921,
+      "rev_accel": 0.029,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.4805,
+     "basis": "ebitda margin 19.4% (-0.2pp YoY); EBITDA growth minus revenue growth -1.4pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1941,
+      "margin_delta": -0.0016,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.7066,
+      "op_leverage": -0.0144,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.721,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 11,
+   "ticker": "ACUTAAS.NS",
+   "name": "Acutaas Chemicals Ltd.",
+   "sector": "Healthcare",
+   "segment": "small",
+   "market": "IN",
+   "price": 3140.10009765625,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.3170466793570914,
+   "mom_rank": 0.9689265536723164,
+   "momvol_rank": 0.963276836158192,
+   "vol_ann": 0.44648428206835333,
+   "dd_from_52w_high": -0.14949417722058045,
+   "ext_above_200dma": 0.1643187973403586,
+   "adv": 985308434.5091553,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:49.493376+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8321,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9689,
+      "momvol_rank": 0.9633,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.9879,
+     "basis": "latest quarter revenue YoY +59.1% vs previous quarter YoY +40.0% (change +19.0pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.5908,
+      "rev_yoy1": 0.4005,
+      "rev_accel": 0.1903,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.7405,
+     "basis": "ebitda margin 34.8% (+2.6pp YoY); EBITDA growth minus revenue growth +12.8pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3484,
+      "margin_delta": 0.0259,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.7185,
+      "op_leverage": 0.1277,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.5908,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 12,
+   "ticker": "AETHER.NS",
+   "name": "Aether Industries Ltd.",
+   "sector": "Chemicals",
+   "segment": "small",
+   "market": "IN",
+   "price": 1655.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.1992289971820318,
+   "mom_rank": 0.9661016949152542,
+   "momvol_rank": 0.9661016949152542,
+   "vol_ann": 0.39924840918303106,
+   "dd_from_52w_high": -0.06338426711941147,
+   "ext_above_200dma": 0.3341440279662007,
+   "adv": 258719004.30737305,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:50.022865+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8314,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9661,
+      "momvol_rank": 0.9661,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.545,
+     "basis": "level only: latest quarter revenue YoY +27.2%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.2725,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.7092,
+     "basis": "ebitda margin 33.8% (+2.4pp YoY); EBITDA growth minus revenue growth +9.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3382,
+      "margin_delta": 0.024,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.3699,
+      "op_leverage": 0.0974,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 12239000000.0,
+      "growth_used": 0.2725,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 13,
+   "ticker": "APARINDS.NS",
+   "name": "Apar Industries Ltd.",
+   "sector": "Capital Goods",
+   "segment": "mid",
+   "market": "IN",
+   "price": 17955.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.1548199229110043,
+   "mom_rank": 0.963276836158192,
+   "momvol_rank": 0.9463276836158192,
+   "vol_ann": 0.46468787077909945,
+   "dd_from_52w_high": -0.052256532066508266,
+   "ext_above_200dma": 0.4159942454855572,
+   "adv": 2012987485.4863281,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:39.859055+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8273,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9633,
+      "momvol_rank": 0.9463,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.573,
+     "basis": "latest quarter revenue YoY +29.2% vs previous quarter YoY +26.6% (change +2.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.2916,
+      "rev_yoy1": 0.2664,
+      "rev_accel": 0.0251,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.8602,
+     "basis": "ebitda margin 12.1% (+2.7pp YoY); EBITDA growth minus revenue growth +36.8pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1205,
+      "margin_delta": 0.0267,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.6591,
+      "op_leverage": 0.3675,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.2916,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 14,
+   "ticker": "LAURUSLABS.NS",
+   "name": "Laurus Labs Ltd.",
+   "sector": "Healthcare",
+   "segment": "mid",
+   "market": "IN",
+   "price": 1968.5999755859375,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.1466784181695493,
+   "mom_rank": 0.96045197740113,
+   "momvol_rank": 0.9858757062146892,
+   "vol_ann": 0.2828550772856099,
+   "dd_from_52w_high": -0.03215340433336411,
+   "ext_above_200dma": 0.4395665986593531,
+   "adv": 2930048046.6776123,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:44.618050+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8321,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9605,
+      "momvol_rank": 0.9859,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.791,
+     "basis": "latest quarter revenue YoY +29.1% vs previous quarter YoY +5.3% (change +23.8pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.291,
+      "rev_yoy1": 0.0531,
+      "rev_accel": 0.2379,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 32.0% (+6.9pp YoY); EBITDA growth minus revenue growth +35.8pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3195,
+      "margin_delta": 0.0694,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.6493,
+      "op_leverage": 0.3583,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.291,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 15,
+   "ticker": "RRKABEL.NS",
+   "name": "R R Kabel Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 2619.5,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.0741009338107346,
+   "mom_rank": 0.9576271186440678,
+   "momvol_rank": 0.96045197740113,
+   "vol_ann": 0.3901228985780336,
+   "dd_from_52w_high": -0.10548419363643657,
+   "ext_above_200dma": 0.338825865755481,
+   "adv": 794136531.109375,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:00.227222+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8271,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9576,
+      "momvol_rank": 0.9605,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "latest quarter revenue YoY +53.9% vs previous quarter YoY +33.7% (change +20.3pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.539,
+      "rev_yoy1": 0.3365,
+      "rev_accel": 0.2025,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.8758,
+     "basis": "ebitda margin 10.5% (+2.9pp YoY); EBITDA growth minus revenue growth +59.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1048,
+      "margin_delta": 0.0293,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 1.1364,
+      "op_leverage": 0.5974,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.539,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 16,
+   "ticker": "CHENNPETRO.NS",
+   "name": "Chennai Petroleum Corporation Ltd.",
+   "sector": "Oil Gas & Consumable Fuels",
+   "segment": "small",
+   "market": "IN",
+   "price": 1359.800048828125,
+   "price_date": "2026-10-05",
+   "mom_12_1": 1.0006616025213821,
+   "mom_rank": 0.9548022598870056,
+   "momvol_rank": 0.9180790960451978,
+   "vol_ann": 0.5209218446812879,
+   "dd_from_52w_high": -0.16392029733397506,
+   "ext_above_200dma": 0.27960265943066487,
+   "adv": 1873166926.75,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:52.804241+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8196,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9548,
+      "momvol_rank": 0.9181,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "latest quarter revenue YoY +84.8% vs previous quarter YoY -2.5% (change +87.3pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.8477,
+      "rev_yoy1": -0.025,
+      "rev_accel": 0.8728,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 5.2% (+5.4pp YoY); EBITDA turned positive vs year-ago; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0523,
+      "margin_delta": 0.0541,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.8477,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 17,
+   "ticker": "MCX.NS",
+   "name": "Multi Commodity Exchange of India Ltd.",
+   "sector": "Financial Services",
+   "segment": "mid",
+   "market": "IN",
+   "price": 3219.60009765625,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.9866023199013578,
+   "mom_rank": 0.9519774011299436,
+   "momvol_rank": 0.9548022598870056,
+   "vol_ann": 0.38155133256735685,
+   "dd_from_52w_high": -0.06223990677211977,
+   "ext_above_200dma": 0.1645247550536557,
+   "adv": 5917943655.672852,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:45.714087+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.824,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.952,
+      "momvol_rank": 0.9548,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.5,
+     "basis": "latest quarter revenue YoY +88.1% vs previous quarter YoY +205.1% (change -117.0pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1); financial company: revenue definition differs",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.881,
+      "rev_yoy1": 2.0513,
+      "rev_accel": -1.1703,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": null,
+     "basis": "financial company: EBITDA/operating margin not meaningful",
+     "data_quality": "missing",
+     "raw": {
+      "margin0": 0.7749,
+      "margin_delta": 0.0414,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.987,
+      "op_leverage": 0.1061,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.881,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off",
+    "financial_sector_ebitda_not_meaningful"
+   ]
+  },
+  {
+   "rank": 18,
+   "ticker": "SONACOMS.NS",
+   "name": "Sona BLW Precision Forgings Ltd.",
+   "sector": "Automobile and Auto Components",
+   "segment": "small",
+   "market": "IN",
+   "price": 793.9000244140625,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.9454550635977619,
+   "mom_rank": 0.9491525423728814,
+   "momvol_rank": 0.9717514124293786,
+   "vol_ann": 0.3121535836744311,
+   "dd_from_52w_high": -0.04693874620160565,
+   "ext_above_200dma": 0.28849983580695016,
+   "adv": 1837919213.5,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:01.718740+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8254,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9492,
+      "momvol_rank": 0.9718,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.8371,
+     "basis": "latest quarter revenue YoY +52.4% vs previous quarter YoY +45.4% (change +7.0pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.5238,
+      "rev_yoy1": 0.4542,
+      "rev_accel": 0.0696,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.25,
+     "basis": "ebitda margin 25.2% (-2.6pp YoY); EBITDA growth minus revenue growth -14.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2523,
+      "margin_delta": -0.0259,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.3819,
+      "op_leverage": -0.1419,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.5238,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 19,
+   "ticker": "NAVINFLUOR.NS",
+   "name": "Navin Fluorine International Ltd.",
+   "sector": "Chemicals",
+   "segment": "small",
+   "market": "IN",
+   "price": 8187.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.8861366417059025,
+   "mom_rank": 0.9463276836158192,
+   "momvol_rank": 0.943502824858757,
+   "vol_ann": 0.3639258372993578,
+   "dd_from_52w_high": -0.06706170588570448,
+   "ext_above_200dma": 0.162536162097352,
+   "adv": 827023801.25,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:58.914685+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8201,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9463,
+      "momvol_rank": 0.9435,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.8193,
+     "basis": "latest quarter revenue YoY +44.1% vs previous quarter YoY +33.8% (change +10.3pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.4407,
+      "rev_yoy1": 0.3378,
+      "rev_accel": 0.1029,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 37.5% (+7.1pp YoY); EBITDA growth minus revenue growth +33.6pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3752,
+      "margin_delta": 0.071,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.7769,
+      "op_leverage": 0.3362,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.4407,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 20,
+   "ticker": "INOXINDIA.NS",
+   "name": "INOX India Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 2114.60009765625,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.8494329991183065,
+   "mom_rank": 0.943502824858757,
+   "momvol_rank": 0.9293785310734464,
+   "vol_ann": 0.42645826341219756,
+   "dd_from_52w_high": -0.07892671283127084,
+   "ext_above_200dma": 0.3470010372464678,
+   "adv": 465453282.6690674,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:55.799417+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8168,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9435,
+      "momvol_rank": 0.9294,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.1477,
+     "basis": "latest quarter revenue YoY +9.2% vs previous quarter YoY +24.7% (change -15.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.0918,
+      "rev_yoy1": 0.247,
+      "rev_accel": -0.1553,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.2565,
+     "basis": "ebitda margin 23.4% (-2.8pp YoY); EBITDA growth minus revenue growth -11.6pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2338,
+      "margin_delta": -0.0277,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.024,
+      "op_leverage": -0.1157,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.0918,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 21,
+   "ticker": "SYRMA.NS",
+   "name": "Syrma SGS Technology Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 1709.5999755859375,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.8085886449206559,
+   "mom_rank": 0.940677966101695,
+   "momvol_rank": 0.9096045197740112,
+   "vol_ann": 0.4408660299088303,
+   "dd_from_52w_high": -0.041112820586905574,
+   "ext_above_200dma": 0.5349173302571528,
+   "adv": 2474882291.0217285,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:02.189724+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8127,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9407,
+      "momvol_rank": 0.9096,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "level only: latest quarter revenue YoY +68.3%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.6829,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.5399,
+     "basis": "ebitda margin 11.1% (+0.2pp YoY); EBITDA growth minus revenue growth +3.8pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1112,
+      "margin_delta": 0.0024,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.7207,
+      "op_leverage": 0.0378,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 54636970000.0,
+      "growth_used": 0.6829,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 22,
+   "ticker": "BHEL.NS",
+   "name": "Bharat Heavy Electricals Ltd.",
+   "sector": "Capital Goods",
+   "segment": "mid",
+   "market": "IN",
+   "price": 427.8999938964844,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.8036927508789342,
+   "mom_rank": 0.9350282485875706,
+   "momvol_rank": 0.9350282485875706,
+   "vol_ann": 0.3633028609029188,
+   "dd_from_52w_high": -0.033322038186787695,
+   "ext_above_200dma": 0.22720781682803715,
+   "adv": 2776706728.7892303,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:40.412994+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8143,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.935,
+      "momvol_rank": 0.935,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.6955,
+     "basis": "latest quarter revenue YoY +40.3% vs previous quarter YoY +36.9% (change +3.4pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.4029,
+      "rev_yoy1": 0.3688,
+      "rev_accel": 0.0341,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 9.5% (+15.9pp YoY); EBITDA turned positive vs year-ago; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0948,
+      "margin_delta": 0.159,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.4029,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 23,
+   "ticker": "FEDERALBNK.NS",
+   "name": "Federal Bank Ltd.",
+   "sector": "Financial Services",
+   "segment": "mid",
+   "market": "IN",
+   "price": 324.1000061035156,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.7845648774506182,
+   "mom_rank": 0.9322033898305084,
+   "momvol_rank": 0.9689265536723164,
+   "vol_ann": 0.2607472822939772,
+   "dd_from_52w_high": -0.12508142549629908,
+   "ext_above_200dma": 0.06498615314728018,
+   "adv": 1755414174.9581451,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:41.870886+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8182,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9322,
+      "momvol_rank": 0.9689,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.2766,
+     "basis": "latest quarter revenue YoY +16.7% vs previous quarter YoY +27.9% (change -11.2pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1); financial company: revenue definition differs",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.1668,
+      "rev_yoy1": 0.279,
+      "rev_accel": -0.1122,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": null,
+     "basis": "financial company: EBITDA/operating margin not meaningful",
+     "data_quality": "missing",
+     "raw": {
+      "margin0": null,
+      "margin_delta": null,
+      "margin_basis": null,
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.1668,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off",
+    "financial_sector_ebitda_not_meaningful"
+   ]
+  },
+  {
+   "rank": 24,
+   "ticker": "SAILIFE.NS",
+   "name": "Sai Life Sciences Ltd.",
+   "sector": "Healthcare",
+   "segment": "small",
+   "market": "IN",
+   "price": 1507.199951171875,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.7751225897426266,
+   "mom_rank": 0.9293785310734464,
+   "momvol_rank": 0.940677966101695,
+   "vol_ann": 0.33290902289475127,
+   "dd_from_52w_high": -0.1003939780298213,
+   "ext_above_200dma": 0.30662458758609223,
+   "adv": 703649966.8414307,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:01.034266+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8129,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9294,
+      "momvol_rank": 0.9407,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.4635,
+     "basis": "latest quarter revenue YoY +11.7% vs previous quarter YoY +3.9% (change +7.8pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.1166,
+      "rev_yoy1": 0.0391,
+      "rev_accel": 0.0775,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.5869,
+     "basis": "ebitda margin 27.3% (+1.0pp YoY); EBITDA growth minus revenue growth +4.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2734,
+      "margin_delta": 0.0099,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.1583,
+      "op_leverage": 0.0417,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.1166,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 25,
+   "ticker": "DATAPATTNS.NS",
+   "name": "Data Patterns (India) Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 4213.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.747424630049661,
+   "mom_rank": 0.9265536723163842,
+   "momvol_rank": 0.8813559322033898,
+   "vol_ann": 0.5016605274883594,
+   "dd_from_52w_high": -0.1458345666668317,
+   "ext_above_200dma": 0.11808914630899925,
+   "adv": 1663353522.1611328,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:53.619456+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8028,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9266,
+      "momvol_rank": 0.8814,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.3363,
+     "basis": "level only: latest quarter revenue YoY +16.8%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.1681,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0261,
+     "basis": "ebitda margin 33.3% (-9.6pp YoY); EBITDA growth minus revenue growth -26.1pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3334,
+      "margin_delta": -0.0958,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.0927,
+      "op_leverage": -0.2608,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 9414700000.0,
+      "growth_used": 0.1681,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 26,
+   "ticker": "WELSPUNLIV.NS",
+   "name": "Welspun Living Ltd.",
+   "sector": "Textiles",
+   "segment": "small",
+   "market": "IN",
+   "price": 232.3000030517578,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.7177010056783841,
+   "mom_rank": 0.9209039548022598,
+   "momvol_rank": 0.8898305084745762,
+   "vol_ann": 0.45457083786707464,
+   "dd_from_52w_high": -0.028724318141001404,
+   "ext_above_200dma": 0.5448844263550783,
+   "adv": 756507637.7878876,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:03.831386+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8018,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9209,
+      "momvol_rank": 0.8898,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.4732,
+     "basis": "level only: latest quarter revenue YoY +23.7%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.2366,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.6938,
+     "basis": "ebitda margin 12.7% (+1.5pp YoY); EBITDA growth minus revenue growth +16.0pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.127,
+      "margin_delta": 0.0145,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.3964,
+      "op_leverage": 0.1598,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 99339900000.0,
+      "growth_used": 0.2366,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 27,
+   "ticker": "AZAD.NS",
+   "name": "Azad Engineering Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 2855.300048828125,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.7175045948750776,
+   "mom_rank": 0.9180790960451978,
+   "momvol_rank": 0.9011299435028248,
+   "vol_ann": 0.43052971819881525,
+   "dd_from_52w_high": -0.036413304576722205,
+   "ext_above_200dma": 0.38414865061473846,
+   "adv": 1129166669.0170898,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:51.335180+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8024,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9181,
+      "momvol_rank": 0.9011,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.4919,
+     "basis": "latest quarter revenue YoY +25.9% vs previous quarter YoY +27.3% (change -1.4pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.259,
+      "rev_yoy1": 0.2727,
+      "rev_accel": -0.0137,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.2682,
+     "basis": "ebitda margin 39.3% (-2.9pp YoY); EBITDA growth minus revenue growth -8.6pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3935,
+      "margin_delta": -0.029,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.1725,
+      "op_leverage": -0.0865,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.259,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 28,
+   "ticker": "SHRIPISTON.NS",
+   "name": "SPR Auto Technologies Ltd.",
+   "sector": "Automobile and Auto Components",
+   "segment": "small",
+   "market": "IN",
+   "price": 4395.2998046875,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.6934206023839082,
+   "mom_rank": 0.9152542372881356,
+   "momvol_rank": 0.9067796610169492,
+   "vol_ann": 0.3905708437128291,
+   "dd_from_52w_high": -0.07451789271260933,
+   "ext_above_200dma": 0.20619851281749857,
+   "adv": 279999210.7036133,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:10:01.124302+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8021,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9153,
+      "momvol_rank": 0.9068,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.8221,
+     "basis": "latest quarter revenue YoY +53.1% vs previous quarter YoY +47.3% (change +5.8pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.5306,
+      "rev_yoy1": 0.4729,
+      "rev_accel": 0.0577,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0819,
+     "basis": "ebitda margin 19.2% (-4.0pp YoY); EBITDA growth minus revenue growth -26.5pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1918,
+      "margin_delta": -0.0402,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.2653,
+      "op_leverage": -0.2652,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.5306,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 29,
+   "ticker": "AEGISLOG.NS",
+   "name": "Aegis Logistics Ltd.",
+   "sector": "Oil Gas & Consumable Fuels",
+   "segment": "small",
+   "market": "IN",
+   "price": 1370.300048828125,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.6899232993238298,
+   "mom_rank": 0.9124293785310734,
+   "momvol_rank": 0.8757062146892656,
+   "vol_ann": 0.47324359518601233,
+   "dd_from_52w_high": -0.07785999405913524,
+   "ext_above_200dma": 0.4737456759331842,
+   "adv": 839268188.9291992,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:49.954716+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7963,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9124,
+      "momvol_rank": 0.8757,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.7415,
+     "basis": "level only: latest quarter revenue YoY +37.1%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.3707,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 32.5% (+17.4pp YoY); EBITDA growth minus revenue growth +157.1pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.3254,
+      "margin_delta": 0.1738,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 1.9417,
+      "op_leverage": 1.5709,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 89706600000.0,
+      "growth_used": 0.3707,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 30,
+   "ticker": "KARURVYSYA.NS",
+   "name": "Karur Vysya Bank Ltd.",
+   "sector": "Financial Services",
+   "segment": "small",
+   "market": "IN",
+   "price": 321.6000061035156,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.6747642763585939,
+   "mom_rank": 0.9096045197740112,
+   "momvol_rank": 0.9152542372881356,
+   "vol_ann": 0.35946849046927265,
+   "dd_from_52w_high": -0.09242274428078545,
+   "ext_above_200dma": 0.06760219360071384,
+   "adv": 448720718.00668335,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:57.554344+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8011,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9096,
+      "momvol_rank": 0.9153,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.4541,
+     "basis": "latest quarter revenue YoY +22.1% vs previous quarter YoY +23.5% (change -1.4pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1); financial company: revenue definition differs",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.2214,
+      "rev_yoy1": 0.2352,
+      "rev_accel": -0.0138,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": null,
+     "basis": "financial company: EBITDA/operating margin not meaningful",
+     "data_quality": "missing",
+     "raw": {
+      "margin0": null,
+      "margin_delta": null,
+      "margin_basis": null,
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.2214,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off",
+    "financial_sector_ebitda_not_meaningful"
+   ]
+  },
+  {
+   "rank": 31,
+   "ticker": "CRAFTSMAN.NS",
+   "name": "Craftsman Automation Ltd.",
+   "sector": "Automobile and Auto Components",
+   "segment": "small",
+   "market": "IN",
+   "price": 10305.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.6719290621090721,
+   "mom_rank": 0.9067796610169492,
+   "momvol_rank": 0.9124293785310734,
+   "vol_ann": 0.3619182332171826,
+   "dd_from_52w_high": -0.13045312631845418,
+   "ext_above_200dma": 0.1810773976724076,
+   "adv": 500487457.5,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:53.268033+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7996,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9068,
+      "momvol_rank": 0.9124,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.726,
+     "basis": "level only: latest quarter revenue YoY +36.3%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.363,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.7538,
+     "basis": "ebitda margin 16.8% (+2.1pp YoY); EBITDA growth minus revenue growth +19.3pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1676,
+      "margin_delta": 0.0208,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.5563,
+      "op_leverage": 0.1933,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 87168500000.0,
+      "growth_used": 0.363,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 32,
+   "ticker": "PFOCUS.NS",
+   "name": "Prime Focus Ltd.",
+   "sector": "Media Entertainment & Publication",
+   "segment": "small",
+   "market": "IN",
+   "price": 287.79998779296875,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.657667328915795,
+   "mom_rank": 0.903954802259887,
+   "momvol_rank": 0.8248587570621468,
+   "vol_ann": 0.5321847662974348,
+   "dd_from_52w_high": -0.19485248855921689,
+   "ext_above_200dma": 0.05353321013169321,
+   "adv": 1177570997.006775,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:59.987277+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7853,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.904,
+      "momvol_rank": 0.8249,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.5718,
+     "basis": "level only: latest quarter revenue YoY +28.6%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.2859,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0,
+     "basis": "ebitda margin 21.7% (-20.4pp YoY); EBITDA growth minus revenue growth -62.3pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2171,
+      "margin_delta": -0.2039,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.3369,
+      "op_leverage": -0.6227,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 48665865000.0,
+      "growth_used": 0.2859,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 33,
+   "ticker": "GRANULES.NS",
+   "name": "Granules India Ltd.",
+   "sector": "Healthcare",
+   "segment": "small",
+   "market": "IN",
+   "price": 810.2000122070312,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.6549876255779068,
+   "mom_rank": 0.9011299435028248,
+   "momvol_rank": 0.9378531073446328,
+   "vol_ann": 0.29412027827228787,
+   "dd_from_52w_high": -0.10898490807909345,
+   "ext_above_200dma": 0.12225352066760742,
+   "adv": 745377948.2813721,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:54.898170+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.8011,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.9011,
+      "momvol_rank": 0.9379,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.4239,
+     "basis": "level only: latest quarter revenue YoY +21.2%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.2119,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.8714,
+     "basis": "ebitda margin 23.3% (+3.7pp YoY); EBITDA growth minus revenue growth +22.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2329,
+      "margin_delta": 0.0367,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.4387,
+      "op_leverage": 0.2267,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 55950980000.0,
+      "growth_used": 0.2119,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 34,
+   "ticker": "MAHABANK.NS",
+   "name": "Bank of Maharashtra",
+   "sector": "Financial Services",
+   "segment": "mid",
+   "market": "IN",
+   "price": 80.0999984741211,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.5901456278579396,
+   "mom_rank": 0.8926553672316384,
+   "momvol_rank": 0.8983050847457628,
+   "vol_ann": 0.35576083952154114,
+   "dd_from_52w_high": -0.14651039130055532,
+   "ext_above_200dma": 0.07115384064691299,
+   "adv": 1038711398.8531723,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:40.219980+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7918,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.8927,
+      "momvol_rank": 0.8983,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.4569,
+     "basis": "latest quarter revenue YoY +16.6% vs previous quarter YoY +13.3% (change +3.3pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1); financial company: revenue definition differs",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.1656,
+      "rev_yoy1": 0.1326,
+      "rev_accel": 0.033,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": null,
+     "basis": "financial company: EBITDA/operating margin not meaningful",
+     "data_quality": "missing",
+     "raw": {
+      "margin0": null,
+      "margin_delta": null,
+      "margin_basis": null,
+      "ebitda_yoy0": null,
+      "op_leverage": null,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.1656,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off",
+    "financial_sector_ebitda_not_meaningful"
+   ]
+  },
+  {
+   "rank": 35,
+   "ticker": "RADICO.NS",
+   "name": "Radico Khaitan Ltd",
+   "sector": "Fast Moving Consumer Goods",
+   "segment": "mid",
+   "market": "IN",
+   "price": 4279.7001953125,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.5821584489789624,
+   "mom_rank": 0.8898305084745762,
+   "momvol_rank": 0.903954802259887,
+   "vol_ann": 0.33085464591316954,
+   "dd_from_52w_high": -0.09575518527379456,
+   "ext_above_200dma": 0.20893788292397808,
+   "adv": 980578718.5932617,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:47.216663+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7915,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.8898,
+      "momvol_rank": 0.904,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.324,
+     "basis": "latest quarter revenue YoY +11.8% vs previous quarter YoY +15.3% (change -3.5pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.118,
+      "rev_yoy1": 0.1531,
+      "rev_accel": -0.0351,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 21.3% (+6.2pp YoY); EBITDA growth minus revenue growth +45.9pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2126,
+      "margin_delta": 0.0618,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.5765,
+      "op_leverage": 0.4586,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.118,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 36,
+   "ticker": "BALRAMCHIN.NS",
+   "name": "Balrampur Chini Mills Ltd.",
+   "sector": "Fast Moving Consumer Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 666.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.5530931566945076,
+   "mom_rank": 0.8870056497175142,
+   "momvol_rank": 0.8615819209039548,
+   "vol_ann": 0.39875016659251444,
+   "dd_from_52w_high": -0.1317950447185373,
+   "ext_above_200dma": 0.23340414070379234,
+   "adv": 731818436.0247803,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:51.397155+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.784,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.887,
+      "momvol_rank": 0.8616,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.1226,
+     "basis": "level only: latest quarter revenue YoY +6.1%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.0613,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.3028,
+     "basis": "ebitda margin 8.3% (-1.5pp YoY); EBITDA growth minus revenue growth -16.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0827,
+      "margin_delta": -0.0149,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.1006,
+      "op_leverage": -0.1618,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 63656650000.0,
+      "growth_used": 0.0613,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 37,
+   "ticker": "FINCABLES.NS",
+   "name": "Finolex Cables Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 1472.300048828125,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.5509930623115677,
+   "mom_rank": 0.884180790960452,
+   "momvol_rank": 0.8389830508474576,
+   "vol_ann": 0.43268611282015124,
+   "dd_from_52w_high": -0.00520266971072636,
+   "ext_above_200dma": 0.4662213937402999,
+   "adv": 1138094166.75,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:54.398015+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7795,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.8842,
+      "momvol_rank": 0.839,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.8852,
+     "basis": "level only: latest quarter revenue YoY +44.3%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.4426,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.6447,
+     "basis": "ebitda margin 16.7% (+1.2pp YoY); EBITDA growth minus revenue growth +11.0pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.1671,
+      "margin_delta": 0.0119,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.5528,
+      "op_leverage": 0.1103,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 69386400000.0,
+      "growth_used": 0.4426,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 38,
+   "ticker": "JINDALSAW.NS",
+   "name": "Jindal Saw Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 274.25,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.5342035042607338,
+   "mom_rank": 0.8785310734463276,
+   "momvol_rank": 0.8135593220338984,
+   "vol_ann": 0.4717057951731182,
+   "dd_from_52w_high": -0.13622047244094493,
+   "ext_above_200dma": 0.19607025343954065,
+   "adv": 437703069.195282,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:57.028417+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7734,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.8785,
+      "momvol_rank": 0.8136,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.5548,
+     "basis": "latest quarter revenue YoY +9.0% vs previous quarter YoY -8.2% (change +17.2pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+     "data_quality": "ok",
+     "raw": {
+      "rev_yoy0": 0.09,
+      "rev_yoy1": -0.0819,
+      "rev_accel": 0.1719,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 0.0,
+     "basis": "ebitda margin 9.3% (-7.8pp YoY); EBITDA growth minus revenue growth -49.6pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.0932,
+      "margin_delta": -0.0779,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": -0.4061,
+      "op_leverage": -0.4961,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.09,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 39,
+   "ticker": "PTCIL.NS",
+   "name": "PTC Industries Ltd.",
+   "sector": "Capital Goods",
+   "segment": "small",
+   "market": "IN",
+   "price": 21795.0,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.5340030911901081,
+   "mom_rank": 0.8757062146892656,
+   "momvol_rank": 0.8785310734463276,
+   "vol_ann": 0.36497897613754293,
+   "dd_from_52w_high": -0.08539655895929499,
+   "ext_above_200dma": 0.19362066028937153,
+   "adv": 359842325.0,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:59.697623+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7821,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.8757,
+      "momvol_rank": 0.8785,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 1.0,
+     "basis": "level only: latest quarter revenue YoY +97.4%; no prior-period YoY so acceleration unknown",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.9743,
+      "rev_yoy1": null,
+      "rev_accel": null,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": 1.0,
+     "basis": "ebitda margin 28.3% (+8.3pp YoY); EBITDA growth minus revenue growth +82.7pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+     "data_quality": "ok",
+     "raw": {
+      "margin0": 0.2827,
+      "margin_delta": 0.0835,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 1.8014,
+      "op_leverage": 0.8271,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": 6974279000.0,
+      "growth_used": 0.9743,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off"
+   ]
+  },
+  {
+   "rank": 40,
+   "ticker": "ANANDRATHI.NS",
+   "name": "Anand Rathi Wealth Ltd.",
+   "sector": "Financial Services",
+   "segment": "small",
+   "market": "IN",
+   "price": 2117.89990234375,
+   "price_date": "2026-10-05",
+   "mom_12_1": 0.5336544877460909,
+   "mom_rank": 0.8728813559322034,
+   "momvol_rank": 0.9491525423728814,
+   "vol_ann": 0.21154174275894827,
+   "dd_from_52w_high": -0.050056110184458436,
+   "ext_above_200dma": 0.16809741336709672,
+   "adv": 601631289.5,
+   "adv_floor": 50000000.0,
+   "market_cap": null,
+   "fundamentals": {
+    "freq": "Q",
+    "latest_period": "2026-06-30",
+    "source": "yfinance_quarterly",
+    "filed_date": null,
+    "retrieved_at": "2026-10-05T06:09:50.446338+00:00",
+    "backtestable": false,
+    "staleness_days": 97,
+    "latest_only": true
+   },
+   "scores": {
+    "market_confirmation": {
+     "name": "market_confirmation",
+     "value": 0.7915,
+     "basis": "weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+     "data_quality": "ok",
+     "raw": {
+      "mom_rank": 0.8729,
+      "momvol_rank": 0.9492,
+      "trend_passed": 3.0,
+      "regime_on": false
+     }
+    },
+    "growth_acceleration": {
+     "name": "growth_acceleration",
+     "value": 0.273,
+     "basis": "latest quarter revenue YoY +17.5% vs previous quarter YoY +29.7% (change -12.2pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1); financial company: revenue definition differs",
+     "data_quality": "partial",
+     "raw": {
+      "rev_yoy0": 0.1751,
+      "rev_yoy1": 0.2967,
+      "rev_accel": -0.1217,
+      "freq": "Q",
+      "latest_period": "2026-06-30"
+     }
+    },
+    "earnings_inflection": {
+     "name": "earnings_inflection",
+     "value": null,
+     "basis": "financial company: EBITDA/operating margin not meaningful",
+     "data_quality": "missing",
+     "raw": {
+      "margin0": 0.6799,
+      "margin_delta": 0.1767,
+      "margin_basis": "ebitda",
+      "ebitda_yoy0": 0.5876,
+      "op_leverage": 0.4126,
+      "ocf_ebitda": null
+     }
+    },
+    "valuation_asymmetry": {
+     "name": "valuation_asymmetry",
+     "value": null,
+     "basis": "needs market cap, TTM/latest revenue and a revenue growth rate",
+     "data_quality": "missing",
+     "raw": {
+      "mcap": null,
+      "ttm_revenue": null,
+      "growth_used": 0.1751,
+      "ps": null,
+      "ps_to_growth": null,
+      "pe": null,
+      "peg": null
+     }
+    }
+   },
+   "risk_flags": [
+    "regime_off",
+    "financial_sector_ebitda_not_meaningful"
+   ]
+  }
+ ]
+}
