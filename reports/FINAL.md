@@ -60,3 +60,9 @@ with kill-switches (-25% warning, -35% stop, >30 months underwater) before real 
 - US (S&P 500 survivors, tune only, same rule, not re-tuned): 16.2% CAGR / -20.8% vs SPY 11.4% / -19.3%; beats SPY and random on return but not on drawdown. Not validated; US 2019+ sealed and unused.
 - US quality gate with SEC point-in-time filings: hurts (best gated variants 5.8-13.3% CAGR vs 14.6% ungated on the same universe; no drawdown benefit). See reports/US_quality_gate.md.
   Implication: the "quality" leg is not supported by evidence so far. It remains untested for India.
+
+## Update 2026-10-05: forward paper trading and small/micro caps
+- Forward paper trading set up (paper/): 6 frozen books (India/US rebalanced and hold-winners, India small and micro hold-winners), first signal 2026-10-30, Rs 10,00,000 each,
+  weekly scheduled run, point-in-time membership snapshots, kill-switches. Nothing is proven until these books have 12 months of results.
+- Small/micro caps (reports/SMALL_CAPS.md): the only place the engine produced real multi-bagger trades (India small/micro, hold winners: 7-8 trades of 5x+ in 9 years),
+  but with drawdowns of -29% to -34%, higher costs, and the worst survivorship bias. Momentum's selection edge fades to about zero in micro caps. US small caps: nothing.

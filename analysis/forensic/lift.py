@@ -5,7 +5,13 @@ import sys, numpy as np, pandas as pd
 sys.path.insert(0, "/home/user/multibagger-lab")
 MK = sys.argv[1] if len(sys.argv) > 1 else "india"
 RAW = "/home/user/multibagger-lab/data/raw/"
-px = pd.read_parquet(RAW + ("prices_tune.parquet" if MK == "india" else "us_prices_tune.parquet"))
+def _u(f): return set(pd.read_csv(RAW + f)["Symbol"].str.strip() + ".NS")
+if MK == "india": px = pd.read_parquet(RAW + "prices_tune.parquet")
+elif MK == "india_mid": px = pd.read_parquet(RAW + "prices_tune.parquet"); px = px[[c for c in px.columns if c in _u("ind_niftymidcap150list.csv")]]
+elif MK == "india_small": px = pd.read_parquet(RAW + "prices_tune.parquet"); px = px[[c for c in px.columns if c in _u("ind_niftysmallcap250list.csv")]]
+elif MK == "india_micro": px = pd.read_parquet(RAW + "micro_prices_tune.parquet")
+elif MK == "us": px = pd.read_parquet(RAW + "us_prices_tune.parquet")
+elif MK == "us_small": px = pd.read_parquet(RAW + "sp600_prices_tune.parquet")
 px = px.ffill(limit=5)
 mom = px.shift(21) / px.shift(252) - 1; m6 = px.shift(21) / px.shift(126) - 1
 hi = px.rolling(252).max(); ma = px.rolling(200).mean()

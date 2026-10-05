@@ -8,3 +8,5 @@ Books start at the 2026-10-30 month-end signal with Rs 1,000,000 each; before th
 | IN_hold | not yet | OFF | 0 | 1,000,000 | 1,000,000 | 0.0% | 0.0% | - |
 | US_rebal | not yet | ON | 0 | 1,000,000 | 1,000,000 | 0.0% | 0.0% | - |
 | US_hold | not yet | ON | 0 | 1,000,000 | 1,000,000 | 0.0% | 0.0% | - |
+| INS_hold | not yet | OFF | 0 | 1,000,000 | 1,000,000 | 0.0% | 0.0% | - |
+| INM_hold | not yet | OFF | 0 | 1,000,000 | 1,000,000 | 0.0% | 0.0% | - |

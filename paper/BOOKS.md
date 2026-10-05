@@ -9,6 +9,8 @@ Do not edit parameters. A new idea = a new book with its own start date, declare
 | IN_hold | India, Nifty 500 | Pre-declared challenger: same filters/regime/rank, top 40, hold until 40% stop or close below 200d MA, new names fill free slots | Tune only; best drawdown cell in the grid |
 | US_rebal | US, S&P 500 | Same rule as IN_rebal with S&P 500 regime, 10 bps, 1% cash | Tune: failed drawdown vs SPY; unvalidated |
 | US_hold | US, S&P 500 | Same as IN_hold | Tune only; unvalidated |
+| INS_hold | India, Nifty Smallcap 250 | IN_hold logic on small caps, 40 bps assumed cost (declared 2026-10-05, before start) | Tune only, survivors: 22.3% / -29.4%, 19 trades >= 3x |
+| INM_hold | India, Nifty Microcap 250 | IN_hold logic on micro caps, 75 bps assumed cost (declared 2026-10-05, before start) | Tune only, survivors: 28.3% / -33.7%, 17 trades >= 3x; worst survivor bias |
 Benchmarks: Nifty BeES (India, dividend-adjusted) and SPY (US).
 
 Universe: current index members, re-snapshotted on every run into paper/universe/ (dated). From now on membership is point-in-time: a name is eligible at date d only if it

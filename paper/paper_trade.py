@@ -25,6 +25,8 @@ H = {"User-Agent": "Mozilla/5.0"}
 MARKETS = {
     "IN": dict(index="^CRSLDX", bench="NIFTYBEES.NS", cost=25, cash=0.06, suffix=".NS"),
     "US": dict(index="^GSPC", bench="SPY", cost=10, cash=0.01, suffix=""),
+    "INS": dict(index="^CRSLDX", bench="NIFTYBEES.NS", cost=40, cash=0.06, suffix=".NS", list="ind_niftysmallcap250list.csv"),   # Nifty Smallcap 250
+    "INM": dict(index="^CRSLDX", bench="NIFTYBEES.NS", cost=75, cash=0.06, suffix=".NS", list="ind_niftymicrocap250_list.csv"),  # Nifty Microcap 250
 }
 # name -> (market, engine kwargs). FROZEN at PAPER_START. 'rebal' = frozen candidate; 'hold' = pre-declared challenger.
 BOOKS = {
@@ -32,12 +34,16 @@ BOOKS = {
     "IN_hold": ("IN", dict(top_n=40, stop=0.40, keep_winners=True, exit_ma_break=True)),
     "US_rebal": ("US", dict(top_n=25, stop=0.30, keep_winners=False)),
     "US_hold": ("US", dict(top_n=40, stop=0.40, keep_winners=True, exit_ma_break=True)),
+    # declared 2026-10-05, before the 2026-10-30 start: small/micro-cap challengers (higher assumed costs for illiquidity)
+    "INS_hold": ("INS", dict(top_n=40, stop=0.40, keep_winners=True, exit_ma_break=True)),
+    "INM_hold": ("INM", dict(top_n=40, stop=0.40, keep_winners=True, exit_ma_break=True)),
 }
 
 
 def members(mk):
-    if mk == "IN":
-        t = pd.read_csv(io.StringIO(requests.get("https://archives.nseindia.com/content/indices/ind_nifty500list.csv", headers=H, timeout=60).text))
+    if mk in ("IN", "INS", "INM"):
+        f = MARKETS[mk].get("list", "ind_nifty500list.csv")
+        t = pd.read_csv(io.StringIO(requests.get(f"https://archives.nseindia.com/content/indices/{f}", headers=H, timeout=60).text))
         return sorted(t["Symbol"].str.strip() + ".NS")
     t = pd.read_html(io.StringIO(requests.get("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies", headers=H, timeout=60).text))[0]
     return sorted(t["Symbol"].str.replace(".", "-", regex=False))
