@@ -174,12 +174,13 @@ def base_ticker(t: Any) -> str:
 # A holding gets a theme if its (base) ticker is listed OR a keyword occurs as a whole word/phrase in its name/industry. Tags are a coarse lens.
 # =====================================================================================================================
 THEME_RULES = {
-    "ai": {"tickers": {"NVDA", "MSFT", "GOOGL", "GOOG", "META", "AMZN", "ORCL", "AVGO", "AMD", "PLTR", "TSM", "MU", "SMCI", "ARM", "SNOW", "ANET", "MRVL", "VRT"},
+    "ai": {"tickers": {"NVDA", "MSFT", "GOOGL", "GOOG", "META", "AMZN", "ORCL", "AVGO", "AMD", "PLTR", "TSM", "MU", "SMCI", "ARM", "SNOW", "ANET", "MRVL", "VRT",
+                       "VICR", "MXL", "VIAV", "FORM", "STLTECH", "HFCL"},
            "keywords": ["artificial intelligence", "machine learning", "nvidia", "palantir", "generative ai"]},
-    "semiconductors": {"tickers": {"NVDA", "TSM", "MU", "AMD", "AVGO", "INTC", "ASML", "QCOM", "AMAT", "LRCX", "KLAC", "ARM", "MRVL", "TXN", "ADI", "ON", "MCHP", "NXPI", "MPWR"},
+    "semiconductors": {"tickers": {"NVDA", "TSM", "MU", "AMD", "AVGO", "INTC", "ASML", "QCOM", "AMAT", "LRCX", "KLAC", "ARM", "MRVL", "TXN", "ADI", "ON", "MCHP", "NXPI", "MPWR", "MXL", "FORM"},
                        "keywords": ["semiconductor", "semiconductors", "micron", "nvidia", "broadcom", "foundry", "chipmaker", "advanced micro devices", "applied materials"]},
     "data_centre_power": {"tickers": {"VRT", "ETN", "GEV", "CEG", "VST", "NRG", "DELL", "SMCI", "ANET", "EQIX", "DLR", "PWR", "HUBB", "NVT",
-                                       "POWERGRID", "TATAPOWER", "ADANIPOWER", "ADANIENSOL", "CGPOWER", "VOLTAMP", "ABB", "SIEMENS", "THERMAX", "NTPC", "BHEL"},
+                                       "POWERGRID", "TATAPOWER", "ADANIPOWER", "ADANIENSOL", "CGPOWER", "VOLTAMP", "ABB", "SIEMENS", "THERMAX", "NTPC", "BHEL", "VICR", "KIRLOSENG", "TDPOWERSYS"},
                           "keywords": ["data cent", "data center", "data centre", "transformers", "switchgear", "power", "grid", "energy solutions", "bharat heavy electricals"]},
     "defence_aerospace": {"tickers": {"LMT", "RTX", "NOC", "GD", "LHX", "HII", "KTOS", "RKLB", "AVAV", "HAL", "BEL", "BDL", "MAZDOCK", "COCHINSHIP", "GRSE", "DATAPATTNS"},
                           "keywords": ["aeronautics", "defence", "defense", "shipyard", "aerospace", "ordnance", "rocket", "bharat electronics", "bharat dynamics", "mazagon", "garden reach"]},

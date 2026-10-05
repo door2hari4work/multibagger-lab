@@ -1,0 +1,596 @@
+{
+ "ticker": "FORM",
+ "company": "FormFactor, Inc.",
+ "market": "US",
+ "version": 4,
+ "status": "watchlist",
+ "research_level": 4,
+ "as_of": "2026-10-05",
+ "created_at": "2026-10-05T06:52:53+00:00",
+ "price": 149.15,
+ "price_ts": "2026-10-02",
+ "currency": "USD",
+ "why_now": "The evidence suggests FormFactor moved from a flat year to a sharp upswing in about three quarters. FY25 revenue grew only 2.8% (USD 785.0M versus USD 763.6M), and Q3 FY25 revenue was down 2.5% year on year; then Q1 FY26 grew 32.0% and Q2 FY26 grew 31.9% (USD 258.2M), with record revenue, non-GAAP gross margin up from 38.5% (Q2 FY25) to 53.3% (Q2 FY26) and non-GAAP EPS from USD 0.27 to USD 0.82. Management and the 10-Q attribute the growth to HBM probe cards (about 75% of the Q2 year-on-year DRAM increase), foundry and logic probe cards for networking and HPC, and the Triton co-packaged-optics (CPO) test system. Other changes: a January 2026 restructuring to consolidate two California plants, the Keystone Photonics acquisition (December 2025, USD 20.6M), a new Texas factory due to start late Q4 FY26, and an 11 May 2026 Investor Day setting a 2030 target model of USD 1.6B revenue, 55% gross margin and USD 5.00 non-GAAP EPS. The quant screen ranks the stock 10th on 12-1 month momentum (+149%) and the stock is within 7% of its 52-week high, so much of the change is already in the price.",
+ "thesis": "FormFactor makes wafer-test probe cards (about 81% of FY25 revenue) and probe stations, thermal and cryogenic systems used to test semiconductors before packaging. It is a second-order AI semiconductor-equipment beneficiary: more chiplets, taller HBM stacks and faster interfaces raise test intensity per wafer, which the company argues increases demand for its advanced MEMS probe cards and CPO test systems. Filing evidence shows a genuine inflection in revenue, gross margin and EPS, a nearly debt-free balance sheet (about USD 346M cash and securities, USD 11.6M debt) and a company-set 2030 target model. The research read is that FormFactor is a high-quality, AI-exposed cyclical with a real near-term upcycle, but at USD 149.15 (about USD 11.65B market cap, about 10.5x EV/annualised sales and about 43x annualised guided EPS) the market already capitalises that the 2030 target is achieved: USD 149 is about 30x the company's own 2030 EPS target of USD 5.00. For a several-fold outcome in 12-24 months, earnings would have to reach levels the company itself places five years out and the multiple would have to hold or expand. The evidence does not support that as a base case; the stock looks more like a strong business with an unfavourable risk/reward skew than an asymmetric 3-5x setup. Customer concentration (SK hynix about 24-27% of revenue) and memory-cycle exposure add drawdown risk if AI spending slows. Research read: interesting company, not an asymmetric 1-2 year opportunity at this price; keep on a watchlist for a price reset or evidence that revenue is tracking well ahead of the 2030 plan.",
+ "multibagger_mechanism": "Testable chain for a 3x outcome (about USD 447), as model arithmetic: price = non-GAAP EPS x multiple. At 45x, EPS of about USD 9.9 is needed (about 2.9x the annualised Q3 FY26 guided USD 3.44 and about 2x the company's own 2030 target of USD 5.00); even on the company's 2030 target EPS of USD 5.00, USD 447 would be about 89x. Links: (a) HBM4/HBM4E test intensity and probe-card share gains persist (e3, e5); (b) CPO and GPU/ASIC probe cards ramp ahead of plan (e8, e9); (c) Farmers Branch lifts capacity and gross margin toward 55% sooner than 2030 (e7, e8); (d) the multiple stays at 40x+. Even a bull case where revenue reaches about USD 1.4B with 56% gross margin and 24% opex gives EPS near USD 4.6 and a price of USD 185-230 (1.25-1.55x) at 40-50x. The sourced evidence does not support a chain to 3x in 24 months; by my model estimate the probability of 3x or more is well under 5%.",
+ "expectations_gap": "Reverse arithmetic: at USD 149.15 and 78.12M shares the equity value is about USD 11.65B and EV about USD 11.3B (cash and marketable securities USD 345.6M, debt USD 11.6M). That is about 12.5x trailing-four-quarter revenue (USD 902.2M) and about 10.5x the Q3 FY26 guided annualised revenue (USD 1,080M). On non-GAAP EPS it is about 68.7x the trailing four quarters (USD 2.17), about 43x annualised Q3 guided EPS of USD 0.86, and about 29.8x the company's 2030 target EPS of USD 5.00. In other words the price already capitalises the company's own five-year plan at a roughly 30x multiple, with the plan itself marked by the company as dependent on share gains in GPU, custom ASIC and CPO, markets it calls nascent with limited visibility. At 25x the 2030 target EPS the value would be about USD 125, below the current price even if the target is fully met. What the market may be right about: Q2 revenue and gross margin beat the top of guidance, the Q3 guide implies another record quarter, HBM4 test intensity is rising, and the company has hit its 2020 target model. What the market may be under-weighting: the Q3 guide midpoint is only +4.6% sequentially versus +14.2% in Q2; DRAM was +49% year on year in Q2 and could slow as HBM comparisons harden; SK hynix alone is 24-27% of revenue; revenue is not backed by a disclosed order backlog; and the gross margin jump included mix and utilisation benefits that may normalise. The Level-1 screen showed a low growth score (0.12) based on stale FY25 annual growth of +2.8%; the TTM picture is far stronger, so the screen understated the operating story but the valuation score (0.0) was fair. Sell-side consensus and price history could not be verified from an opened source in this session.",
+ "time_horizon_months": 24,
+ "bull_case": {
+  "name": "bull",
+  "description": "Model-estimate scenario. HBM4/HBM4E, GPU/ASIC and CPO ramp ahead of the plan; revenue reaches about USD 1.4B annual run-rate within 24 months (versus the company's USD 1.6B 2030 target), non-GAAP gross margin about 56% as Farmers Branch ramps, opex about 24% of revenue, EPS about USD 4.6 on about 80M shares, and the market pays 40-50x. Implies roughly USD 185-230 per share. Probability 30%: needs the upcycle to run at or above the company's own multi-year trajectory without a memory pause and with the multiple holding.",
+  "multiple_low": 1.25,
+  "multiple_high": 1.55,
+  "probability": 0.3,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "base_case": {
+  "name": "base",
+  "description": "Model-estimate scenario. Revenue grows toward about USD 1.15-1.25B with gross margin 52-54% and opex about 25-25.5% of revenue, non-GAAP EPS about USD 3.2-3.8, and the multiple compresses to 30-40x as growth slows toward the planned rate. Implies roughly USD 96-152 per share, i.e. below to about flat versus USD 149.15 over 24 months. Probability 40%: consistent with the Q3 guide and a company plan that doubles revenue over five years while the price already reflects that outcome.",
+  "multiple_low": 0.65,
+  "multiple_high": 1.02,
+  "probability": 0.4,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "bear_case": {
+  "name": "bear",
+  "description": "Model-estimate scenario. AI/memory capex pauses or HBM supply catches up with demand; revenue falls back to about USD 800-900M, non-GAAP gross margin 43-46% with under-absorbed Farmers Branch costs, opex 28-30% of revenue, EPS about USD 1.15-1.75, and the multiple compresses to 22-30x. Implies roughly USD 25-52 per share (0.2-0.4x). Probability 30%: the stock has 86% annualised volatility, SK hynix is about a quarter of revenue and revenue went flat in FY25 and fell 2.5% year on year in Q3 FY25, so the cycle has turned quickly before.",
+  "multiple_low": 0.2,
+  "multiple_high": 0.4,
+  "probability": 0.3,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "catalysts": [
+  {
+   "description": "Q3 FY26 results (quarter ending 26 Sep 2026): guided USD 270M +/- 10M revenue, 54.0% +/- 1.5% non-GAAP gross margin and USD 0.86 +/- 0.09 non-GAAP EPS; also the first read on DRAM growth after the +49% Q2 print and on Triton CPO shipments.",
+   "window": "about 28 Oct to 4 Nov 2026 (not announced as of 5 Oct 2026; inferred from 29 Oct 2025 and 29 Jul 2026 timing)",
+   "status": "pending",
+   "evidence_ids": [
+    "e2",
+    "e3",
+    "e31"
+   ]
+  },
+  {
+   "description": "Farmers Branch, Texas factory: production expected to begin late in Q4 FY26 with a ramp to initial target production levels over FY27, intended to add capacity and gross-margin accretion; start-up costs were USD 4.9M in Q2 FY26 and USD 11.9M in the first half.",
+   "window": "Dec 2026 start; FY27 ramp (Q1-Q4 2027 results)",
+   "status": "pending",
+   "evidence_ids": [
+    "e7"
+   ]
+  },
+  {
+   "description": "Completion of the 2026 restructuring: Baldwin Park stopped manufacturing in January 2026 and the Carlsbad site is expected to manufacture through December 2026, with USD 30-40M of total charges guided and the stated aim of supporting gross-margin improvement.",
+   "window": "through Dec 2026",
+   "status": "pending",
+   "evidence_ids": [
+    "e6",
+    "e7"
+   ]
+  },
+  {
+   "description": "Q4 FY26 results and FY27 first-quarter guide: whether revenue keeps climbing toward the company's USD 1.6B 2030 plan (current annualised guide about USD 1.08B) and whether gross margin holds above 50% as the new factory starts.",
+   "window": "Feb 2027 (date not confirmed; Q4 FY25 was reported 4 Feb 2026)",
+   "status": "pending",
+   "evidence_ids": [
+    "e2",
+    "e8"
+   ]
+  }
+ ],
+ "risks": [
+  "Customer concentration: SK hynix was 24.3% of Q2 FY26 revenue (26.8% for the first half) and TSMC 11.0%; the top 10% customers together were 35.3% of Q2 revenue and three customers were 17.1%, 16.9% and 12.9% of gross receivables; Taiwan was 36.6% and South Korea 28.4% of Q2 revenue (e4).",
+  "Memory and AI capex cyclicality: DRAM was 32.9% of Q2 revenue and HBM growth explained about 75% of the year-on-year DRAM increase; revenue was nearly flat in FY25 (+2.8%) and fell 2.5% year on year in Q3 FY25, so demand has turned quickly before; the 10-K says there is generally not sufficient backlog to meet quarterly revenue and revenue depends on in-quarter orders (e3, e10).",
+  "Valuation and crowding: about 43x annualised guided non-GAAP EPS, about 69x trailing EPS, about 30x the company's own 2030 EPS target, 12-1 month momentum +149%, 37% above its 200-day average, 86% annualised volatility; very little margin for a guidance miss (e11, e12).",
+  "Target-model dependence: the 2030 plan relies on share gains in GPU, custom ASIC and CPO, which the company describes as mostly in qualification or initial ramp, with some nascent markets and limited visibility; achieving 36% share by 2030 (about 28% on the trailing figures) is a company aspiration, not a forecast (e8, e9).",
+  "Margin quality: gross margin rose sharply on mix and factory utilisation; GAAP gross margin was 38.4% in Q1 FY26 because of USD 21.5M of restructuring charges in cost of revenue; Farmers Branch start-up costs, new capacity and a possible pricing response could pressure the 54% guide; non-GAAP excludes restructuring and stock compensation (e3, e6, e7).",
+  "Execution: simultaneous factory consolidation (Carlsbad, Baldwin Park), a new Texas plant and ramps of HBM4 and CPO products; supplier concentration for substrates and boards with purchase orders rather than long-term contracts (e6, e7, e10).",
+  "Competition: the 10-K lists Japan Electronic Materials, Micronics Japan, Technoprobe, MPI, STAr, Korea Instrument and others in probe cards, several using similar MEMS technology; the Investor Day shows unnamed competitors in each segment; market-share data are company/Yole estimates only (e9, e10).",
+  "Cash flow volatility: FY25 free cash flow was only about USD 11.7M (operating cash flow USD 115.4M less capex USD 103.7M) in a period of heavy capex that included the Texas site purchase; free cash flow was USD 83.3M in the first half of FY26, so the improvement is recent (e1, e3).",
+  "Trade and geopolitical: export controls and US-China restrictions, tariffs (the company expects USD 7-9M of IEEPA tariff refunds in Q3 FY26) and a Taiwan/Korea-heavy customer base (e3, e4).",
+  "Not verified: no earnings-call transcript (Q1 or Q2 FY26) was read; call commentary on HBM4 share gains, DRAM shifting from HBM to DDR and CPO revenue above USD 20M in 2026 appears only in AI-generated secondary summaries and is not used as FACT (e13). Sell-side consensus and price history were not verified in this session.",
+  "Growth source is lumpier than the thesis implies: about 64% of the Q2 FY26 sequential revenue gain came from Systems (Triton CPO test: USD 27.9M to USD 48.5M; Q1 was down 20% year on year), DRAM rose only 2.5% sequentially and SK hynix revenue fell about 6% sequentially (e21, e22). The Q2 inflection is therefore not simply an HBM probe-card story.",
+  "Decelerating DRAM and SK hynix growth: DRAM year-on-year growth slowed from +69.7% to +49.0% and SK hynix from about +67% to about +28% (e22); the Q3 guide midpoint adds only 4.6% sequentially.",
+  "Customer set is broader and shifts quarter to quarter: NVIDIA was 10.2% of Q1 FY26 revenue, TSMC 11.0% of Q2, Intel 12.4% of Q2 FY25 and then below 10%; three customers were 46.9% of Q2 gross receivables (e4, e21, e23).",
+  "Memory-cycle extreme: Micron's quarterly revenue was USD 54.2B versus USD 11.3B a year earlier and its capex USD 10.8B a quarter (e25); both a demand signal and a sign that memory profit pools are at a cycle extreme, which has historically been followed by capex digestion in FORM's own history (FY22-FY23 revenue -14%, 2024-25 stock -62%) (e27, e28).",
+  "Competition: Technoprobe reported H1 2026 revenue +42.4% versus FORM +31.9% and raised its full-year guide; FORM's Foundry and Logic line grew about +26% in H1, so the plan to gain GPU/ASIC share is not yet visible in the numbers (e26).",
+  "Price path and volatility: the stock fell 43% in four weeks to 29 Jul 2026 (83.45) before a +26% one-day jump on the Q2 print and a further rise to 149.15, about 5.1x in 13 months; the mean analyst target of USD 145.44 is below the price (e24, e30).",
+  "Data quality: sell-side consensus, institutional ownership, short interest, a call transcript and the Q3 report date are not verified; the Investor Day TTM (USD 884M revenue, EPS USD 1.96) used the Q2 outlook and differs from the actual TTM (USD 902.2M, USD 2.17), already noted in e8/e11."
+ ],
+ "valuation": {
+  "market_cap": 11651705656.94,
+  "market_cap_usd_m": 11651.6,
+  "ev_usd_m": 11317.6,
+  "ev_to_ttm_sales": 12.54,
+  "ev_to_annualised_q3fy26_guide_sales": 10.48,
+  "pe_ttm_nongaap_eps": 68.7,
+  "pe_annualised_q3fy26_guide_nongaap_eps": 43.4,
+  "pe_on_2030_target_eps": 29.8,
+  "fcf_yield_h1fy26_annualised_pct": 1.43,
+  "cash_and_securities_usd_m": 345.6,
+  "debt_usd_m": 11.6,
+  "notes": "Price USD 149.15 (2 Oct 2026); 78.12M shares outstanding (29 Jul 2026). TTM = Q3 FY25 to Q2 FY26 (USD 902.2M revenue; non-GAAP EPS 0.33+0.46+0.56+0.82). Annualised guide = Q3 FY26 midpoint x4. 2030 target EPS USD 5.00 is a company target, not guidance. Non-GAAP figures are company-defined."
+ },
+ "scores": [
+  {
+   "name": "market_confirmation",
+   "value": 0.9823,
+   "weight": 1.0,
+   "basis": "discovery screen: weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "growth_acceleration",
+   "value": 0.1236,
+   "weight": 1.0,
+   "basis": "discovery screen: latest fiscal year revenue YoY +2.8% vs previous fiscal year YoY +15.2% (change -12.4pp); 0.5*level(50%=1) + 0.5*accel(+20pp=1)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "earnings_inflection",
+   "value": 0.4523,
+   "weight": 1.0,
+   "basis": "discovery screen: ebitda margin 12.4% (-0.4pp YoY); EBITDA growth minus revenue growth -3.4pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+   "data_quality": "ok"
+  },
+  {
+   "name": "valuation_asymmetry",
+   "value": 0.244,
+   "weight": 1.0,
+   "basis": "declared map of the scenario-weighted expected multiple (0.84x, model estimate): 0.6x -> 0, 1.6x -> 1",
+   "data_quality": "ok"
+  },
+  {
+   "name": "risk",
+   "value": 0.58,
+   "weight": 1.0,
+   "basis": "risk-adjusted SAFETY (higher = safer) from the thesis bear case: probability-weighted loss 21% mapped so 0% -> 1 and 50% -> 0",
+   "data_quality": "ok"
+  },
+  {
+   "name": "thesis_robustness",
+   "value": 0.4,
+   "weight": 1.0,
+   "basis": "independent adversarial review verdict 'downgraded' (declared map: survives 0.8, downgraded 0.4, killed 0)",
+   "data_quality": "ok"
+  }
+ ],
+ "overall_score": 0.421,
+ "confidence": "low",
+ "entry": {
+  "state": "overextended",
+  "ideal_zone": [
+   111.0,
+   119.0
+  ],
+  "acceptable_zone": [
+   108.0,
+   129.0
+  ],
+  "chase_zone": [
+   132.0,
+   143.0
+  ],
+  "add_zone": null,
+  "invalidation_price": 101.0,
+  "rationale": "Price is 4.9 ATR (+29%) above its 50d MA, beyond the 4 ATR / 30% limits: stretched, so a normal pullback to the trend would cost a lot from here. (Tune-window evidence did NOT show overextended names underperform; this label is about entry price, not a forecast.) Ideal zone = 50d MA (115.3) +/- 0.5 ATR(14) (6.85) = 111.0-119.0; acceptable = 50d MA -1.0/+2.0 ATR = 108.0-129.0; chase zone = 50d MA +2.5..+4.0 ATR = 132.0-143.0 (a stretched entry). No add zone: it would sit below the 200d MA band. Technical invalidation = the higher of (200d MA 108.5 - 1 ATR) and (60-day swing low - 0.5 ATR), pushed below the ideal zone if needed = 101.0. All levels rounded outward to a 1 tick. Timing describes entry price risk, not a forecast: validation on history found no return edge from timing states."
+ },
+ "exit_rules": [
+  {
+   "type": "thesis_invalidation",
+   "condition": "Non-GAAP gross margin below 50% in any quarter after the Texas factory starts (Q2 FY26 53.3%, Q3 guide 54.0% +/- 1.5%), or revenue falling sequentially by more than 10%, checkable in the quarterly earnings release.",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "Quarterly non-GAAP EPS below USD 0.70 (Q2 FY26 USD 0.82; Q3 guide USD 0.86 +/- 0.09), or two consecutive quarters of revenue at or below the low end of company guidance (USD 260M for Q3 FY26).",
+   "status": "armed"
+  },
+  {
+   "type": "catalyst_failure",
+   "condition": "Farmers Branch has not begun production by the Q1 FY27 earnings release (about Feb to May 2027), or factory start-up costs remain above USD 5M a quarter after the stated start date.",
+   "status": "armed"
+  },
+  {
+   "type": "valuation_excess",
+   "condition": "Price above about USD 175 (about 50x annualised Q3 FY26 guided EPS) unless the annualised run-rate EPS from the latest guide or actuals has risen above about USD 3.5.",
+   "status": "armed"
+  },
+  {
+   "type": "narrative_saturation",
+   "condition": "DRAM probe-card revenue growth below +20% year on year for two consecutive quarters (Q2 FY26 +49.0%), or SK hynix share of revenue falling below 15% while DRAM revenue is flat or down, both checkable in the 10-Q.",
+   "status": "armed"
+  }
+ ],
+ "adversarial": {
+  "done": true,
+  "reviewer": "devils_advocate",
+  "verdict": "downgraded",
+  "strongest_bear_case": "Peak-cycle numbers at a peak-cycle multiple: 43x guided EPS and 30x the company's own 2030 EPS target after a 5.1x move in 13 months, with SK hynix at about a quarter of revenue and Micron/SK hynix profits at an extreme. The Q2 inflection was two-thirds lumpy Systems (down 20% in Q1), DRAM grew 2.5% sequentially, SK hynix revenue fell about 6% sequentially, the Q3 guide adds only 4.6%, and Technoprobe is growing faster in AI logic. FORM fell 62% after its 2024 HBM run while revenue grew 2.8%; a memory capex pause gives EPS of USD 1.15-1.75 at 22-30x, i.e. USD 25-52.",
+  "questions": {
+   "what_evidence_would_make_it_wrong": "The cautious stance (strong company, price already capitalises the 2030 plan, no asymmetric entry) would be wrong on the low side if Q3 revenue exceeds about USD 285M with non-GAAP gross margin above 54% and Systems/CPO and HBM4 orders keep climbing: FORM beat the top of its guide in Q2 (e2), Micron's revenue is up 379% year on year (e25) and the company says it already reached its 2020 target model. Evidence that has already appeared against the thesis' demand story: about 64% of the Q2 sequential increase was Systems, DRAM grew 2.5% sequentially and SK hynix revenue fell about 6% (e22), Technoprobe is growing faster (e26). The cautious stance would be vindicated by a Systems revenue drop back toward USD 28M, SK hynix share falling and gross margin below 51%.",
+   "what_is_missing": "No call transcript (the third-party page could not be read and IR returned 503, so management remarks stay INFERENCE, e13); no consensus EPS/revenue or whether the Q3 guide is above or below it (only target prices, e30); no identification of the Triton/CPO customer or of how recurring Systems revenue is; no disclosure of HBM probe-card revenue, share versus Technoprobe/MJC/MPI, pricing, or order backlog (the 10-K says there is generally not enough backlog, e10); no ownership or short-interest data; the Q3 report date is an assumption (e31). The thesis also omitted NVIDIA at 10.2% of Q1 revenue and Intel's loss of 10% status (e21, e23), the sequential decomposition (e22) and the July drawdown (e24).",
+   "is_catalyst_priced_in": "Mostly priced. After the Q2 print the stock rose 26% in one day and is up about 41% since (105.38 to 149.15), and on 30 Sep it rose 9.6% on the day Micron reported (e24, e25), so the memory-super-cycle catalyst was digested within a session. Consensus estimates could not be checked, but the mean analyst target (USD 145.44) is below the price (e30) and the price already equals about 30x the company's own 2030 EPS target (e19). The next print needs to beat a guide that implies +4.6% sequential growth, and the company has beaten its guide before, so a beat is probably expected; I cannot size it.",
+   "does_valuation_fit_growth": "Not on durable growth. The multiple is 43x annualised guided EPS and 69x trailing (arithmetic verified), with year-on-year growth of about 32% but slowing sequentially (+14.2% to +4.6% guided) and with DRAM growth decelerating (e22). Revenue history is cyclical (FY21 770, FY23 663, FY25 785; e27) and the 10-K says there is generally no backlog (e10). To reach a 25x P/E on today's price EPS would have to be about USD 6.0 (1.7x the annualised guide), above the company's own 2030 target of USD 5.00, which is why the thesis' conclusion that the price already includes the plan checks out.",
+   "great_company_vs_great_stock": "Evidence suggests a much better company than a year ago (non-GAAP gross margin 38.5% to 53.3%, EPS 0.27 to 0.82, net cash about USD 334M) but the stock has already risen about 5.1x in 13 months and trades at about 12.5x TTM EV/sales, 30x the company's 2030 EPS target and above the mean analyst target (e24, e30). Great company, and at this price a stock whose payoff depends on the plan being exceeded while the cycle stays at an extreme.",
+   "merely_an_ai_narrative": "Not merely a narrative: revenue (+32% y/y), gross margin and EPS (tripled) are in the filings, HBM drove about 75% of the DRAM increase and Triton drove Systems (e3). But FY25 revenue was only +2.8% in a year when HBM was already hot (e1), the Q2 sequential gain was mostly Systems (e22), CPO revenue size comes only from unverified summaries (e13), and the valuation (43x guided EPS) exceeds what current revenue evidence supports, so narrative carries a large share of the multiple.",
+   "is_it_crowded": "The evidence suggests crowded: momentum rank 10 and +149% 12-1 month (e12), a 5.1x move in 13 months, 37% above the 200-day average, 86% annualised volatility, average daily value about USD 140M, and a price above the mean analyst target (e24, e30). Insider sales are modest (e29). The competitor Technoprobe also re-rated on the same theme (e26). Institutional ownership, short interest and flow data were not verified, so the degree of crowding cannot be quantified.",
+   "strongest_bear_argument": "As its best advocate would put it: FormFactor makes a cyclical consumable for memory and logic fabs and has just printed peak-cycle numbers. Micron's revenue is 4.8x year on year and SK hynix, 24-27% of FORM's revenue, is the very customer whose shipments are at a cycle extreme (e25). Strip the numbers: Q2's sequential growth was two-thirds Systems, a lumpy product that was down 20% in Q1, DRAM grew 2.5% sequentially and SK hynix revenue fell about 6% (e22); the Q3 guide adds only 4.6%; a faster-growing competitor (Technoprobe) is taking the AI logic business (e26); gross margin has gone from 38% to 54% in a year on mix and utilisation that can reverse as the Texas plant starts. At 43x guided EPS and 30x the 2030 target, with the stock already 5.1x in 13 months, the same stock fell 62% after its 2024 HBM run while revenue grew 2.8% (e28). A pause leaves EPS of USD 1.15-1.75 at 22-30x, USD 25-52.",
+   "what_happened_in_similar_setups": "Three analogues from sources I could open: (1) FORM in 2024: HBM/AI enthusiasm took the stock from about 39 to 61.7 (Jul 2024) and it then fell to 23.2 (Apr 2025), -62%, with FY25 revenue +2.8%; (2) FORM after the FY21 peak: revenue USD 770M to USD 663M (-14%) and the stock about 44-45 to about 19.7 (-56%); (3) VIAV after FY22: revenue -23% and the stock -59% (e27, e28, e33 in the VIAV thesis). These are same-company/sector anecdotes from a sampled price series; I did not find or read a base-rate study of multi-fold small caps. The present cycle is larger and supported by Micron and peers (e25), so history is a caution, not a forecast.",
+   "what_must_happen_for_5x": "A 5x outcome is USD 745.75, about USD 58.3B equity value. At the current 12.5x EV/TTM sales it needs about USD 4.6B annual revenue (5.1x TTM and above the company's own USD 4.5B 2030 served market); at 40x non-GAAP EPS it needs about USD 18.6 (8.6x TTM EPS, 3.7x the 2030 target) (e32). Operationally that means revenue and margin reaching more than three times the company's plan, with SAM, share and the multiple all far above plan, and no memory-cycle pause.",
+   "is_5x_plausible_in_1_2_years": "No. I estimate under 2% (model estimate); even a 3x needs EPS about 2x the 2030 target (author's e19/mechanism). A more realistic range is the author's: bull about 1.25-1.55x, base about 0.65-1.0x, bear about 0.2-0.4x. I would not lower the bull probability (30%) mechanically: annualised guided revenue is already USD 1.08B so the USD 1.4B bull revenue needs only about 3% sequential growth for eight quarters; the skew is instead in the multiple (43x guided EPS) and the memory-cycle risk, and a 43% fall in four weeks in July (e24) shows how quickly the bear range can be reached.",
+   "probability_market_already_right": "Model estimate: about 55-60% that the price is about right, i.e. that there is no edge at the 12-24 month horizon. Reasons: the stock rose 5.1x in 13 months and now exceeds the mean analyst target and about 30x the company's 2030 EPS (e30, e19); the author's scenario expected value is about 0.85x; but the company has repeatedly beaten its guides, Micron's numbers show a memory super-cycle and the plan appears conservative relative to the current USD 1.08B run-rate (e25), so the price is not obviously too high either. Consensus could not be checked."
+  },
+  "reviewed_at": "2026-10-05T06:44:08+00:00"
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "FormFactor revenue was USD 785.0M in FY25 (+2.8%), USD 763.6M in FY24 and USD 663.1M in FY23; FY25 net income USD 54.4M; operating cash flow USD 115.4M and capex USD 103.7M.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000009/form-20251227.htm",
+   "source_date": "2026-02-20",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Form 10-K, income and cash-flow statements; the lab's quant file gave the same FY25 revenue."
+  },
+  {
+   "id": "e2",
+   "claim": "Q2 FY26 revenue was USD 258.2M, up 14.2% sequentially and 31.9% year on year; non-GAAP gross margin 53.3% (GAAP 50.7%) versus 38.5% a year earlier; non-GAAP EPS USD 0.82 versus USD 0.27; free cash flow USD 52.6M; revenue, gross margin and EPS exceeded the high end of the outlook range. Q3 FY26 outlook: revenue USD 270M +/- 10M, non-GAAP gross margin 54.0% +/- 1.5%, non-GAAP EPS USD 0.86 +/- 0.09.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000030/ex9901-earningsreleasexq226.htm",
+   "source_date": "2026-07-29",
+   "period": "Q2 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "8-K Exhibit 99.01 earnings release."
+  },
+  {
+   "id": "e3",
+   "claim": "Q2 FY26 revenue by market: Foundry and Logic USD 121.8M (+22.4%), DRAM USD 85.0M (+49.0%), Flash USD 2.9M (-48.4%), Systems USD 48.5M (+44.1%); HBM growth accounted for about 75% (Q2) and 69% (first half) of the year-on-year DRAM increase; the Systems increase was driven by Triton, the high-volume co-packaged-optics test system; first-half FY26 segment gross margin Probe Cards 52.5% and Systems 44.7%.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+   "source_date": "2026-08-04",
+   "period": "Q2 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Form 10-Q MD&A."
+  },
+  {
+   "id": "e4",
+   "claim": "Customers at or above 10% of revenue in Q2 FY26: SK hynix 24.3% (26.8% in the first half) and TSMC 11.0%, together 35.3%; three customers were 17.1%, 16.9% and 12.9% of gross receivables; Taiwan was 36.6% and South Korea 28.4% of Q2 revenue; SK hynix was 19.2% to 25.0% of quarterly revenue across 2025 quarters.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+   "source_date": "2026-08-04",
+   "period": "Q2 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "10-Q Note 2 and MD&A; 2025 quarterly history from the FY25 10-K. ANNOTATED by adversarial review: Q1 FY26 had SK hynix 29.5% and NVIDIA 10.2% (e21) and Q2 FY25 had Intel at 12.4%; the thesis listed only the Q2 FY26 names. See e21-e23."
+  },
+  {
+   "id": "e5",
+   "claim": "FormFactor acquired Keystone Photonics (silicon-photonics optical probing technology) on 15 Dec 2025 for USD 20.6M net of cash; the FY25 10-K says it is collaborating with customers to move co-packaged optics test from lab to fab and that SiPh and CPO moving to high-volume production may provide new growth.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+   "source_date": "2026-08-04",
+   "period": "Q2 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Form 10-Q Note on acquisitions; 10-K business section for the CPO text."
+  },
+  {
+   "id": "e6",
+   "claim": "On 5 Jan 2026 FormFactor adopted restructuring plans to consolidate its Carlsbad and Baldwin Park manufacturing sites (200-300 employees affected), with about USD 30-40M of GAAP charges (about USD 20-25M non-cash, USD 10-15M cash) and actions largely complete by end of Dec 2026; Q1 FY26 cost of revenue included USD 21.5M of restructuring charges, which cut GAAP gross margin to 38.4% versus 49.0% non-GAAP.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000002/form-20260105.htm",
+   "source_date": "2026-01-09",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "8-K Items 2.05/2.06; Q1 charge from the Q2 FY26 release non-GAAP reconciliation (e2 source)."
+  },
+  {
+   "id": "e7",
+   "claim": "FormFactor bought a manufacturing site in Farmers Branch, Texas in June 2025 and expects to begin production late in Q4 FY26 with a ramp to initial target levels over FY27; factory start-up costs were USD 4.9M in Q2 FY26 and USD 11.9M in the first half; the company expects the facility to add capacity and a more favourable cost structure once ramped.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+   "source_date": "2026-08-04",
+   "period": "Q2 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Form 10-Q MD&A Recent Developments."
+  },
+  {
+   "id": "e8",
+   "claim": "At its 11 May 2026 Investor Day FormFactor set a 2030 target model of USD 1.6B revenue (versus USD 884M TTM and USD 850M in the 2020 model), 55% non-GAAP gross margin, 23% opex, USD 5.00 non-GAAP EPS and about USD 510M operating income; it assumes a USD 4.5B served addressable market in 2030 (USD 4.0B probes, USD 0.5B systems) versus USD 3.1B TTM and a 36% market share by 2030; sustaining capex 4-5% of revenue; the company says the model is not guidance.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://investors.formfactor.com/static-files/29f1154b-e1e4-4b57-afbd-f296b3f36504",
+   "source_date": "2026-05-11",
+   "period": "2030 target model",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Company Investor Day presentation (market sizing from Yole and internal estimates). TTM in the deck used the Q2 FY26 outlook, not the actual."
+  },
+  {
+   "id": "e9",
+   "claim": "The Investor Day states that growth drivers (ASICs, GPU, CPO and HBM) are mostly existing products in qualification or initial ramp, that some markets are nascent with limited visibility, and that market-share gains are targeted primarily in GPU, custom ASICs and CPO; it also shows unnamed competitors A-D in each probe segment.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://investors.formfactor.com/static-files/29f1154b-e1e4-4b57-afbd-f296b3f36504",
+   "source_date": "2026-05-11",
+   "period": "2030 target model",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Company Investor Day presentation, financials section."
+  },
+  {
+   "id": "e10",
+   "claim": "The 10-K lists probe-card competitors including Japan Electronic Materials, Korea Instrument, Micronics Japan, MPI, STAr, Max One, Technoprobe and TSE, says JEM, Micronics Japan and Technoprobe offer MEMS probe cards, cites high barriers to entry for MEMS, and warns that FormFactor generally does not have enough backlog to meet quarterly revenue targets at the start of a quarter.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000009/form-20251227.htm",
+   "source_date": "2026-02-20",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "10-K Item 1 Competition and Item 1A."
+  },
+  {
+   "id": "e11",
+   "claim": "Valuation arithmetic: at USD 149.15 and 78.12M shares the equity value is about USD 11.65B and EV about USD 11.3B; EV/TTM sales 12.5x (TTM revenue USD 902.2M from Q3 FY25 to Q2 FY26 releases); EV/annualised Q3 guide sales 10.5x; P/E 68.7x on TTM non-GAAP EPS USD 2.17 (0.33+0.46+0.56+0.82), 43.4x on annualised Q3 guided EPS USD 0.86, and 29.8x on the USD 5.00 2030 target EPS; first-half FY26 free cash flow annualised is about 1.4% of equity value.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "TTM to Jun-2026",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Derived from e1, e2, e8, e14, e15 and the Q3-Q1 releases (e16-e18). ANNOTATED by adversarial review: market cap uses 78.12M basic shares; on the 79.6M Q2 diluted weighted shares it is about USD 11.87B (+1.9%), which does not change any multiple materially."
+  },
+  {
+   "id": "e12",
+   "claim": "Lab discovery run (2 Oct 2026): FORM 12-1 month momentum +149.5% (rank 10), annualised volatility 85.8%, 6.7% below its 52-week high and 37.4% above its 200-day average; the Level-1 growth score (0.12) used FY25 annual growth of +2.8% and the valuation score was 0.0.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "12-1 month to Sep-2026",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "From research/candidates_US.json (repo model output). Momentum is the only selector validated in this lab and only modestly."
+  },
+  {
+   "id": "e13",
+   "claim": "An AI-generated secondary call summary (not the transcript) reports that management said DRAM demand is shifting from HBM toward DDR on supply constraints and pricing, that CPO revenue should exceed USD 20M in 2026, that a sustainable gross margin baseline is about 51%, and that the Texas plant is on track for Q4 2026. These points are unverified and not used as FACTs.",
+   "kind": "INFERENCE",
+   "source_type": "news",
+   "source_url": "https://www.stocktaper.com/earningsCallSummary/FORM/2026/Q2",
+   "source_date": "2026-07-29",
+   "period": "Q2 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Secondary summary; contains at least one evident error, so treat as low reliability; investors.formfactor.com call page returned HTTP 503 and no transcript was found."
+  },
+  {
+   "id": "e14",
+   "claim": "At 27 Jun 2026 FormFactor held cash and cash equivalents of USD 109.8M and marketable securities of USD 235.9M, total debt of about USD 11.6M (USD 1.2M current plus USD 10.5M long-term) and equity of USD 1,111.4M; 78,120,725 shares were outstanding on 29 Jul 2026; Q2 diluted weighted shares were 79.6M.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+   "source_date": "2026-08-04",
+   "period": "Q2 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "10-Q cover page and balance sheet (also in the Q2 release)."
+  },
+  {
+   "id": "e15",
+   "claim": "First-half FY26 free cash flow was USD 83.3M (Q1 USD 30.7M, Q2 USD 52.6M) versus negative USD 40.8M in the first half of FY25; capex was USD 24.8M versus USD 84.8M.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000030/ex9901-earningsreleasexq226.htm",
+   "source_date": "2026-07-29",
+   "period": "H1 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "8-K Exhibit 99.01 reconciliation."
+  },
+  {
+   "id": "e16",
+   "claim": "Quarterly revenue: Q1 FY26 USD 226.1M (+32.0% year on year; non-GAAP gross margin 49.0%; non-GAAP EPS USD 0.56) versus Q4 FY25 USD 215.2M.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000020/ex9901-earningsreleasexq126.htm",
+   "source_date": "2026-04-29",
+   "period": "Q1 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "8-K Exhibit 99.01."
+  },
+  {
+   "id": "e17",
+   "claim": "Q4 FY25 revenue was USD 215.2M (+13.6% year on year), non-GAAP gross margin 43.9%, non-GAAP EPS USD 0.46; FY25 non-GAAP EPS was USD 1.30.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000004/ex9901-earningsreleasexq425.htm",
+   "source_date": "2026-02-04",
+   "period": "Q4 FY25",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "8-K Exhibit 99.01."
+  },
+  {
+   "id": "e18",
+   "claim": "Q3 FY25 revenue was USD 202.7M, down 2.5% year on year and up 3.5% on Q2 FY25; non-GAAP gross margin 41.0%; non-GAAP EPS USD 0.33.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939925000110/ex9901-earningsreleasexq325.htm",
+   "source_date": "2025-10-29",
+   "period": "Q3 FY25",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "8-K Exhibit 99.01."
+  },
+  {
+   "id": "e19",
+   "claim": "Reading of the expectations gap: the stock already trades at about 30x the company's own 2030 EPS target and about 43x annualised guided EPS, so the price appears to assume the multi-year plan is delivered; the Q3 guide midpoint adds only about 4.6% sequentially versus 14.2% in Q2; the company's 2030 revenue target implies about 15% annual growth from the FY25 base of USD 785.0M (about USD 1.6B), and a share of about 28% of the TTM SAM (USD 884M of USD 3.1B) rising to 36% (company figures).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "24-month horizon",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Derived from e1, e2, e8, e11; scenario assumptions (80M shares, 19% tax, USD 10M interest income) are mine."
+  },
+  {
+   "id": "e20",
+   "claim": "AI value-chain position: FormFactor is a semiconductor-equipment/test layer (second-order) supplier: probe cards for HBM, GPUs/custom ASICs and networking chips, and probe systems for silicon photonics and CPO. Demand follows chipmakers' wafer starts and test intensity, which is driven by AI chip and HBM volume, so if AI spend slows, probe-card consumption would likely fall first at DRAM and logic customers (SK hynix 24-27% of revenue; DRAM 33% of Q2 revenue), while non-AI Foundry/Logic, RF and engineering-station revenue provides a partial cushion and growth in Flash is already negative. Historic evidence in the filings is limited: FY25 revenue was nearly flat (+2.8%) despite HBM growth, and gross margin was about 38-41% before the 2026 mix improvement.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY2025 to Q2 FY26",
+   "retrieved_at": "2026-10-05T06:31:00+00:00",
+   "note": "Reasoning from e1, e3, e4, e18; no cycle history beyond FY23-FY25 was read."
+  },
+  {
+   "id": "e21",
+   "claim": "Q1 FY26 (quarter ended 28 Mar 2026) 10-Q: market revenue Foundry and Logic USD 111.2M (+30.4%), DRAM USD 82.9M (+69.7%), Flash USD 4.1M, Systems USD 27.9M (versus USD 34.8M in Q1 FY25, i.e. -20%); customers at or above 10% of Q1 revenue: SK hynix 29.5% (23.3% a year earlier) and NVIDIA 10.2% (39.7% together); two customers were 26.1% and 13.3% of gross receivables.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000023/form-20260328.htm",
+   "source_date": "2026-05-05",
+   "period": "Q1 FY26",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Form 10-Q Note 2 and MD&A revenue tables. The thesis (e3, e4) used the Q2 and first-half figures only."
+  },
+  {
+   "id": "e22",
+   "claim": "Sequential decomposition Q1 to Q2 FY26 (USD M, from e3 and e21): total revenue +32.1M (226.1 to 258.2); Systems +20.7M (27.9 to 48.5, about 64% of the increase and +74% sequentially), Foundry and Logic +10.7M (+9.6%), DRAM +2.1M (+2.5%), Flash -1.3M; Probe Cards segment +5.8% (198.3 to 209.7). DRAM year-on-year growth slowed from +69.7% (Q1) to +49.0% (Q2). SK hynix revenue computed from shares was about USD 66.7M in Q1 (29.5% of 226.1) and about USD 62.8M in Q2 (24.3% of 258.2), about -6% sequentially and +28% year on year in Q2 versus +67% in Q1.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q1-Q2 FY26",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Derived from the Q1 and Q2 10-Q tables (e3, e21, e4); customer dollar amounts are share x revenue and carry rounding error of about +/-0.5pt of share. The thesis attributes the growth to HBM probe cards; HBM explains about 75% of the Q2 year-on-year DRAM increase (e3) but DRAM was only about 6% of the sequential gain."
+  },
+  {
+   "id": "e23",
+   "claim": "Q2 FY25 customers at or above 10% of revenue were SK hynix 25.0%, Intel 12.4% and TSMC 10.4% (47.8% together); in Q2 FY26 Intel was below 10%. Q2 FY25 Intel revenue was therefore about USD 24M.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+   "source_date": "2026-08-04",
+   "period": "Q2 FY25 comparison",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Form 10-Q Note 2 (comparative column)."
+  },
+  {
+   "id": "e24",
+   "claim": "FORM closing prices (USD, feed): 29.19 on 29 Aug 2025; 147.13 on 1 Jul 2026; 83.45 on 29 Jul 2026 (-43% in four weeks, the day of the Q2 release after the close); 105.38 on 30 Jul (+26% on the day after the release); 96.58 on 2 Sep; 136.25 on 29 Sep; 149.31 on 30 Sep (+9.6% on the day Micron reported); 149.15 on 2 Oct 2026 (about 5.1x the Aug 2025 close). 52-week range 37.14 to 160.27.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-02",
+   "period": "Aug 2025-Oct 2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "INDmoney market-data feed (secondary aggregator), read 2026-10-05; the 2 Oct close of 149.15 matches the lab's own candidates_US.json. The thesis cites +149% 12-1 month momentum and being within 7% of the 52-week high but not the July drawdown."
+  },
+  {
+   "id": "e25",
+   "claim": "Micron Technology 8-K release of 30 Sep 2026: fiscal Q4 2026 (ended 3 Sep 2026) revenue USD 54.23B versus USD 11.32B a year earlier, non-GAAP EPS USD 33.42, capital expenditure USD 10.77B in the quarter and USD 27.37B for FY26. Memory is FORM's largest end-market exposure (DRAM 33% of Q2 revenue, SK hynix 24%), so this is both a demand signal for HBM/DRAM probe cards and evidence that memory profits are at a cycle extreme.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+   "source_date": "2026-09-30",
+   "period": "Q4 FY26 (Micron)",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Opened SEC exhibit 99.1. Used for context only; no inference is drawn about FORM's share of memory capex."
+  },
+  {
+   "id": "e26",
+   "claim": "Technoprobe (Italian probe-card competitor named in the FORM 10-K): H1 2026 revenue EUR 464.1M, +42.4% year on year (FORM H1: +31.9%, e2/e3 arithmetic: 484.4 vs 367.2), EBITDA margin 44.4%, full-year 2026 revenue guide raised to EUR 1.05-1.10B (Teleborsa, 5 Aug 2026); a separate search summary said Technoprobe expects no more than about USD 10M of memory revenue in 2026 (not verified).",
+   "kind": "INFERENCE",
+   "source_type": "news",
+   "source_url": "https://www.teleborsa.it/AMP/News/2026/08/05/technoprobe-alza-ancora-target-2026-dopo-primo-semestre-in-forte-crescita-209.html",
+   "source_date": "2026-08-05",
+   "period": "H1 2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Secondary news (Italian), opened; the figures are the company's reported numbers as relayed. Suggests the AI logic probe-card market is growing faster for the competitor than for FORM's Foundry and Logic line (+26% H1, e3/e21), which sits oddly with the plan to gain GPU share."
+  },
+  {
+   "id": "e27",
+   "claim": "FormFactor annual revenue from XBRL company facts (USD M): FY2016 383.9, FY2017 548.4, FY2018 529.7, FY2019 589.5, FY2020 693.6, FY2021 769.7, FY2022 747.9, FY2023 663.1, FY2024 763.6, FY2025 785.0.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001039399.json",
+   "source_date": "2026-02-20",
+   "period": "FY2016-FY2025",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "SEC XBRL companyfacts API (RevenueFromContractWithCustomerExcludingAssessedTax). FY2021 to FY2023 fell 14%."
+  },
+  {
+   "id": "e28",
+   "claim": "Analogue price/revenue outcomes (feed prices; evenly sampled series so approximate): FORM about 44-45 (Dec 2021/Jan 2022) to about 19.7 (Nov 2022), -56%, with revenue USD 770M (FY21) to USD 663M (FY23); FORM from about 39 (Jan 2024) to 61.7 (10 Jul 2024) on HBM/AI enthusiasm, then 23.2 (8 Apr 2025), -62%, with FY25 revenue +2.8%; VIAV about 17 (Jan 2022) to about 7 (Jul 2024), -59%, with revenue USD 1,292M (FY22) to USD 1,000M (FY24). Same-sector anecdotes, not a base-rate study.",
+   "kind": "INFERENCE",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "2021-2025",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Derived from the INDmoney 5y series, e27 and VIAV's revenue series. Peaks and troughs approximate."
+  },
+  {
+   "id": "e29",
+   "claim": "Form 4 filings (SEC): CEO Mike Slessor sold stock in small open-market blocks on 10 Jun, 15 Jul, 14 Aug and 16 Sep 2026 at about USD 104-137 (a few thousand shares at a time, about 467,000 shares held after 16 Sep); several directors sold 1,000-6,300 shares each at USD 96-151 between May and Sep. Sales are modest relative to holdings; no Rule 10b5-1 status was checked.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001039399&type=4&dateb=&owner=include&count=40",
+   "source_date": "2026-09-17",
+   "period": "May-Sep 2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "EDGAR Form 4 list for CIK 1039399, parsed from primary XML. A weak signal either way."
+  },
+  {
+   "id": "e30",
+   "claim": "Analyst feed: 8 analysts, 62.5% Buy and 37.5% Hold, mean target USD 145.44, which is below the USD 149.15 price (-2.6%). Consensus EPS and revenue estimates were not available, so the size of the gap versus consensus is still not measured.",
+   "kind": "INFERENCE",
+   "source_type": "analyst",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Oct 2026",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "INDmoney analyst segment (aggregator); targets may lag the late-September rally."
+  },
+  {
+   "id": "e31",
+   "claim": "Timing check: FormFactor's IR page returned HTTP 503 and searches found no announced Q3 FY26 date on 5 Oct 2026; Q3 FY26 ends 26 Sep 2026 (13 weeks, like Q3 FY25 which ended 27 Sep 2025), and the Q3 FY25 release was on 29 Oct 2025 and Q2 FY26 on 29 Jul 2026 (30 days after quarter end), which points to about 28 Oct to 4 Nov 2026. The researcher's 'assumed from prior-year timing' note is confirmed as an assumption.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q3 FY26",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Derived from e18, e2 dates and the quarter calendar in the 10-Q."
+  },
+  {
+   "id": "e32",
+   "claim": "Five-times arithmetic: 5x of USD 149.15 is USD 745.75, about USD 58.3B of equity value on 78.12M shares. At the current 12.5x EV/TTM sales that needs about USD 4.6B annual revenue (5.1x TTM, 2.9x the 2030 target and above the company's own USD 4.5B 2030 served market, e8); at a 40x P/E it needs about USD 18.6 EPS (8.6x TTM non-GAAP EPS of 2.17 and 3.7x the 2030 target of USD 5.00). The thesis (multibagger_mechanism) sized only a 3x outcome.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "24-month horizon",
+   "retrieved_at": "2026-10-05T06:44:08+00:00",
+   "note": "Derived from e8, e11, e14; complements e19."
+  }
+ ],
+ "next_review": "2026-11-05",
+ "change_log": [
+  "integrated timing assessment and decomposed score (portfolio fit is computed privately at display time)",
+  "overall_score: 'None' -> '0.421'",
+  "entry state: unknown -> overextended"
+ ],
+ "parent_version": 3,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}

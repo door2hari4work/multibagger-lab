@@ -1,0 +1,562 @@
+{
+ "ticker": "KIRLOSENG.NS",
+ "company": "Kirloskar Oil Eng Ltd.",
+ "market": "IN",
+ "version": 4,
+ "status": "watchlist",
+ "research_level": 4,
+ "as_of": "2026-10-05",
+ "created_at": "2026-10-05T06:52:53+00:00",
+ "price": 2264.3,
+ "price_ts": "2026-10-05",
+ "currency": "INR",
+ "why_now": "What changed in the last 6-12 months (company documents): FY26 was a strong year (standalone net sales Rs 5,604 crore, +25%; EBITDA Rs 737 crore, +24% per the audited table (the Chairman's letter says +33%)), the domestic genset franchise grew 41% in units against an 18% market, HHP market share moved from negligible to approaching double digits, Rs 700 crore plus Rs 1,400 crore of Kagal capacity capex was announced, and on the Q1 FY27 call (7-Aug-2026) management disclosed a first hyperscale data-centre order of about 192 MW (value undisclosed). But Q1 FY27 earnings fell (standalone EBITDA -4%, margin 11.2% vs 13.5%; consolidated profit -17%) on export weakness, commodity costs and a price-realisation lag. The stock rose about 154% in 12 months and sits about 12% below a June 2026 closing high, so the market has already paid for the data-centre story while the latest earnings moved the other way.",
+ "thesis": "KOEL is an Indian engine and genset maker (standalone about Rs 5,600 crore of sales) that has been taking domestic share (about 28% of units in FY26 by the company's figures), moving up into higher-horsepower gensets for data centres and into defence, marine, rail and nuclear applications, with a growing aftermarket and an additional pump business and a lending subsidiary (Arka). The evidence suggests a solid, improving challenger franchise rather than an AI-capex winner at present: the data-centre link is one disclosed 192 MW order of undisclosed value, versus the incumbent Cummins India's 30-35% data-centre share of domestic powergen revenue. Q1 FY27 profits fell despite revenue growth, the stock trades at about 62x trailing consolidated earnings (about 75x on standalone profit), and the capacity plan (about Rs 2,100 crore) is large relative to operating cash flow. It remains on the watchlist; the evidence does not support a 3-5x within 12-24 months.",
+ "multibagger_mechanism": "Testable chain: revenue x margin x multiple. Management targets about Rs 16,600 crore ($2 billion) of revenue by FY30 (from about Rs 7,900 crore trailing) with an unspecified 'higher double-digit' EBITDA margin; Kagal phase 1 (50,000 engines, April 2027) and phase 2 (20,000 high-HP engines) add capacity; the 192 MW order and further data-centre wins lift HHP mix. Reverse arithmetic (k11): a 3x needs about Rs 98,900 crore of market value, which is about 85x FY30 earnings even if the full FY30 plan is delivered at a 7% consolidated profit margin. A plausible good case is 1.35-1.8x over 24 months if margins recover to the 13%+ standalone range, more hyperscale orders are won and the market holds a 55-70x multiple; the evidence does not support 3-5x. If a mechanism cannot be constructed, the playbook asks for watchlist or rejection; watchlist is chosen because the underlying franchise is improving and the key unknowns (order value, HHP revenue, margin recovery) can be tested over the next two quarters.",
+ "expectations_gap": "What the price seems to assume: sustained 15-20% revenue growth towards the $2 billion FY30 target, standalone margins recovering above 13% and a meaningful data-centre/HHP contribution, all while the consolidated multiple stays near 60x. What the evidence shows: Q1 FY27 standalone EBITDA down 4% and profit down 9-17%, employee cost up 39%, exports weak with no quantified recovery, a single data-centre order of undisclosed value, HHP revenue and order book not disclosed, and a capex programme (Rs 2,100 crore) well above FY26 operating cash flow (Rs 511 crore). The gap is that the market pays a growth multiple before margins recover and before data-centre revenue is visible; the 3-6 month normalisation management refers to will be tested by Q2 and Q3 FY27 results. Model view, not a prediction.",
+ "time_horizon_months": 24,
+ "bull_case": {
+  "name": "bull",
+  "description": "Model estimate. Price realisation and cost actions restore standalone EBITDA margin to 13%+ by Q4 FY27, the 192 MW order converts to revenue in H2 FY27 with service income, further data-centre or gas-power orders are announced, Kagal phase 1 starts on time in April 2027, Middle East exports normalise; FY28 consolidated profit of about Rs 800-850 crore at a 55-70x multiple (market cap about Rs 44,000-59,000 crore, with a re-rating from the data-centre and Arka narratives lifting the top end). Probability 0.20.",
+  "multiple_low": 1.35,
+  "multiple_high": 1.8,
+  "probability": 0.2,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "base_case": {
+  "name": "base",
+  "description": "Model estimate. Margins recover only partly (standalone EBITDA 12-13%), revenue grows about 15% a year, the data-centre order is delivered but is not repeated at scale, and the multiple derates to 40-50x on FY28 consolidated profit of about Rs 700-750 crore (market cap about Rs 28,000-37,000 crore, roughly flat to modestly down from today). Probability 0.45.",
+  "multiple_low": 0.85,
+  "multiple_high": 1.15,
+  "probability": 0.45,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "bear_case": {
+  "name": "bear",
+  "description": "Model estimate. Export weakness and commodity costs persist, standalone EBITDA stays near or below 11%, the data-centre order is delayed or earns thin margins, capex and ESOP/hiring costs weigh on cash flow and the multiple falls to 30-35x on FY28 profit of about Rs 550-600 crore (market cap about Rs 16,500-21,000 crore). Probability 0.35.",
+  "multiple_low": 0.5,
+  "multiple_high": 0.65,
+  "probability": 0.35,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "catalysts": [
+  {
+   "description": "Q2 FY27 results and call: first test of the 3-6 month price-realisation and margin normalisation management described, plus export recovery and any update on the 192 MW order and Arka.",
+   "window": "About early-mid Nov 2026 (results date not verified; Q1 FY27 results came on 6-Aug-2026)",
+   "status": "pending",
+   "evidence_ids": [
+    "k04",
+    "k01"
+   ]
+  },
+  {
+   "description": "Revenue recognition on the 192 MW hyperscale genset supply (management says in FY27) and the start of the 5-6 year O&M contract; first disclosure of how it affects powergen growth and margin.",
+   "window": "H2 FY27 (Oct 2026 to Mar 2027)",
+   "status": "pending",
+   "evidence_ids": [
+    "k03"
+   ]
+  },
+  {
+   "description": "Kagal capacity phase 1 (Rs 700 crore, 50,000 engines) due online by April 2027; phase 2 (Rs 1,400 crore, 20,000 high-HP engines) over two years.",
+   "window": "April 2027 (phase 1); FY27-FY28 (phase 2)",
+   "status": "pending",
+   "evidence_ids": [
+    "k06"
+   ]
+  },
+  {
+   "description": "Q4 FY27 results and call: FY27 delivery on the 'EBITDA delivery' commitment, the first full read on HHP and data-centre contribution, and capex versus cash flow.",
+   "window": "About May 2027 (date not verified)",
+   "status": "pending",
+   "evidence_ids": [
+    "k04",
+    "k05",
+    "k06"
+   ]
+  },
+  {
+   "description": "NPCIL nuclear engine order milestones and defence/marine execution, which management says begin to flow into revenue in FY27.",
+   "window": "FY27-FY28",
+   "status": "pending",
+   "evidence_ids": [
+    "k03",
+    "k06"
+   ]
+  }
+ ],
+ "risks": [
+  "Earnings direction: Q1 FY27 standalone EBITDA -4%, consolidated profit -17%; margin recovery rests on price increases and cost actions whose pace management could not quantify (k01, k02, k04, k14).",
+  "Valuation: about 62x trailing consolidated earnings, 75x on standalone, 9x book after a 154% 12-month rise; a 3x requires about 85x FY30 earnings even if the $2 billion plan is delivered in full (k09, k10, k11).",
+  "Data-centre exposure is early and unquantified: one disclosed 192 MW order with undisclosed value; the customer's data-centre track record was questioned on the call and not answered; hyperscale is an 'emerging portion' of the mix; HHP revenue and order book are not disclosed (k03, k06, k12).",
+  "Competition: Cummins India is the localised incumbent in 60-litre-class data-centre engines with 30-35% of domestic powergen revenue from data centres; Perkins, Baudouin and Adani-linked players are named as winning large data-centre orders; competition in high horsepower is 'heating up' (k07).",
+  "Capex and cash: about Rs 2,100 crore of announced capacity capex vs FY26 standalone operating cash flow of Rs 511 crore and net cash of Rs 485 crore; HHP-focused capacity would have utilisation risk if data-centre or infrastructure demand slows (k05, k06, k13).",
+  "Cost base: employee cost +39% YoY (annual increments, ESOP, capability hiring; ESOP expense not disclosed) running ahead of revenue; fixed-cost absorption depends on export and HHP volumes (k02).",
+  "Export and geopolitical risk: Middle East logistics and demand disrupted exports (-11% in Q1 FY27); management's 3-6 month normalisation view is unverified (k02, k04).",
+  "Arka Financial Services: Rs 5,033 crore of debt (3.7x debt-to-equity), Q1 FY27 segment profit -31%, consolidated borrowings Rs 5,314 crore; the hive-off has no timetable; asset-quality or funding stress would affect consolidated earnings (k05, k08).",
+  "Not verified in this thesis: the exchange intimation or press release for the 192 MW order and the customer's identity and the order value (HyperNext and 96 x 2,500 kVA appear only in press coverage); the order book (not disclosed); promoter holding and pledge; Cummins India's Q1 FY27 (Aug-2026) call, which could not be reached in primary form (secondary summaries suggest data centres were about 40% of its domestic powergen revenue, unverified). BSE and NSE web portals were not used; the BSE announcements API returned 403 and NSE pages redirected, so KOEL documents were read from the company website.",
+  "Earnings growth is weaker than the headline: FY26 standalone profit after tax grew 13.3% (EBITDA +24.1%, not the +33% in the Chairman's letter) on 25% sales growth, and Q1 FY27 profit fell 9% standalone and 17% consolidated (k05, ka01, k01).",
+  "Industry-wide margin pressure: a secondary summary of Cummins India's Q1 FY27 call reports profit before tax before exceptional items down 0.7% despite powergen revenue +35%, and management doubt that gross margin returns quickly to its 36-37% range, which would make KOEL's 3-6 month normalisation harder (ka06, not verified in a primary source).",
+  "Narrative-driven re-rating: the stock rose 28.7% in three sessions after a 192 MW order of undisclosed value (announced after the close on 2026-06-19) and has since given back about 11.5%; the order's customer record was questioned on the call and not answered (ka05, k03).",
+  "Capital allocation: about Rs 1,053 crore of KOEL capital sits in Arka, which earned about Rs 6.9 crore in Q1 FY27 (about 2.6% annualised) on Rs 5,033 crore of debt; standalone net cash fell Rs 67 crore in the quarter despite Rs 99 crore of profit while Rs 2,100 crore of capex is planned (ka02, k05).",
+  "data quality: the 2026-10-05 price (Rs 2,264.3) is an intraday last print, not a close; the earlier 'close of Rs 2,256' is not verified (k09).",
+  "data quality: the Chairman's letter (EBITDA +33%, margin +90 basis points) conflicts with the MD&A table (+24.1%, +29 basis points); the table is treated as authoritative and the cause of the difference is unexplained (k05).",
+  "data quality: Cummins India comparisons come from secondary summaries that disagree on the data-centre share (about 40% of power generation vs 23% of domestic power generation); no primary Q1 FY27 Cummins document was read (ka06)."
+ ],
+ "valuation": {
+  "price_inr": 2264.3,
+  "market_cap_inr_crore": 32981.0,
+  "ttm_consolidated_continuing_pat_inr_crore_model": 535.0,
+  "pe_ttm_model": 62.0,
+  "pe_on_standalone_fy26_pat_model": 75.0,
+  "pb_model": 9.2,
+  "market_cap_to_ttm_revenue_model": 4.2,
+  "standalone_fy26_ebitda_margin_pct": 13.1,
+  "standalone_q1fy27_ebitda_margin_pct": 11.2,
+  "fy30_revenue_target_inr_crore": 16600.0,
+  "announced_capacity_capex_inr_crore": 2100.0,
+  "standalone_net_cash_inr_crore_jun2026": 485.0,
+  "price_change_12m_pct": 154.0
+ },
+ "scores": [
+  {
+   "name": "market_confirmation",
+   "value": 0.8361,
+   "weight": 1.0,
+   "basis": "discovery screen: weighted 0.40 mom12-1 rank + 0.15 mom/vol rank + 0.30 trend filters + 0.15 index regime (declared weights, unvalidated)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "growth_acceleration",
+   "value": 0.2699,
+   "weight": 1.0,
+   "basis": "discovery screen: level only: latest quarter revenue YoY +13.5%; no prior-period YoY so acceleration unknown",
+   "data_quality": "partial"
+  },
+  {
+   "name": "earnings_inflection",
+   "value": 0.0419,
+   "weight": 1.0,
+   "basis": "discovery screen: ebitda margin 15.8% (-4.7pp YoY); EBITDA growth minus revenue growth -26.2pp; 0.6*margin(+5pp=1) + 0.4*leverage",
+   "data_quality": "ok"
+  },
+  {
+   "name": "valuation_asymmetry",
+   "value": 0.366,
+   "weight": 1.0,
+   "basis": "declared map of the scenario-weighted expected multiple (0.97x, model estimate): 0.6x -> 0, 1.6x -> 1",
+   "data_quality": "ok"
+  },
+  {
+   "name": "risk",
+   "value": 0.703,
+   "weight": 1.0,
+   "basis": "risk-adjusted SAFETY (higher = safer) from the thesis bear case: probability-weighted loss 15% mapped so 0% -> 1 and 50% -> 0",
+   "data_quality": "ok"
+  },
+  {
+   "name": "thesis_robustness",
+   "value": 0.4,
+   "weight": 1.0,
+   "basis": "independent adversarial review verdict 'downgraded' (declared map: survives 0.8, downgraded 0.4, killed 0)",
+   "data_quality": "ok"
+  }
+ ],
+ "overall_score": 0.424,
+ "confidence": "low",
+ "entry": {
+  "state": "setup_forming",
+  "ideal_zone": [
+   2100.0,
+   2230.0
+  ],
+  "acceptable_zone": [
+   2040.0,
+   2410.0
+  ],
+  "chase_zone": [
+   2460.0,
+   2650.0
+  ],
+  "add_zone": [
+   1970.0,
+   2110.0
+  ],
+  "invalidation_price": 1870.0,
+  "rationale": "[attractive_entry on the stock's own chart, deferred because the market regime filter is OFF] Uptrend intact (above a rising 200d MA, 50d MA above 200d) and price has pulled back to +0.8 ATR of the 50d MA, -17% from the 52w high: a normal pullback inside the trend. Ideal zone = 50d MA (2162) +/- 0.5 ATR(14) (122) = 2100.0-2230.0; acceptable = 50d MA -1.0/+2.0 ATR = 2040.0-2410.0; chase zone = 50d MA +2.5..+4.0 ATR = 2460.0-2650.0 (a stretched entry). Add zone (only if the thesis is intact) = a pullback of 0.5-1.5 ATR below the 50d MA that still holds above the 200d MA = 1970.0-2110.0. Technical invalidation = the higher of (200d MA 1756 - 1 ATR) and (60-day swing low - 0.5 ATR), pushed below the ideal zone if needed = 1870.0. All levels rounded outward to a 10 tick. Timing describes entry price risk, not a forecast: validation on history found no return edge from timing states."
+ },
+ "exit_rules": [
+  {
+   "type": "earnings_deterioration",
+   "condition": "Standalone EBITDA margin below 11.0% in Q2 FY27, or below 12.0% in Q3 FY27 (Q1 FY27: 11.2%; Q4 FY26: 12.6%), i.e. no visible recovery inside the 3-6 months management gave.",
+   "status": "armed"
+  },
+  {
+   "type": "thesis_invalidation",
+   "condition": "The 192 MW hyperscale order is delayed, reduced or cancelled (check Q2-Q4 FY27 calls and exchange filings), or no further data-centre or gas-power order of 50 MW or more is disclosed by the Q4 FY27 results (about May 2027).",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "Domestic powergen growth below 10% YoY for two consecutive quarters, or international sales falling more than 10% YoY for three consecutive quarters (Q1 FY27: powergen +18%, international -11%).",
+   "status": "armed"
+  },
+  {
+   "type": "catalyst_failure",
+   "condition": "Kagal phase 1 (Rs 700 crore, 50,000 engines) is not reported operational by the Q1 FY28 results (about Aug 2027) against the company's 'by April 2027' date, or phase 2 capex is raised above Rs 1,400 crore without matching order evidence.",
+   "status": "armed"
+  },
+  {
+   "type": "valuation_excess",
+   "condition": "Price above about 75x trailing consolidated continuing EPS without at least a 20% rise in trailing consolidated profit from the Q1 FY27 level of about Rs 535 crore (Oct-2026: about 62x).",
+   "status": "armed"
+  },
+  {
+   "type": "narrative_saturation",
+   "condition": "Arka Financial Services reports a segment loss for two consecutive quarters, or consolidated debt-to-equity of the Arka business rises above 4.5x (Q1 FY27: 3.7x), or a hyperscaler/data-centre capex cut of 20% or more is reported by major customers.",
+   "status": "armed"
+  },
+  {
+   "type": "technical",
+   "condition": "Closing price more than 35% below the 2026-06-24 closing high of about Rs 2,558 (about Rs 1,660) without a company-specific negative event: trigger an emergency thesis review rather than an automatic exit.",
+   "status": "armed"
+  }
+ ],
+ "adversarial": {
+  "done": true,
+  "reviewer": "devils_advocate",
+  "verdict": "downgraded",
+  "strongest_bear_case": "KOEL is priced as a data-centre power winner on one 192 MW order of undisclosed value and an unexamined customer, while its core earnings shrink (Q1 standalone EBITDA -4%, consolidated profit -17%, FY26 profit after tax +13% on +25% sales). The incumbent Cummins India reportedly earns far more from data centres, grew faster and still saw margins squeezed, suggesting the problem is industry-wide rather than a short lag. Rs 2,100 crore of capex and Rs 1,053 crore tied up in a lender earning about 2.6% add capital intensity, and at 62-76x earnings a 30-35x multiple on FY28 profit means a 35-50% fall (bear 0.5-0.65x), with the base case flat. This is the closer call to a kill of the two reviewed.",
+  "questions": {
+   "what_evidence_would_make_it_wrong": "Observable breaks: standalone EBITDA margin below 11.0% in Q2 FY27 or below 12% in Q3 (thesis rule; Q1 was 11.2%), the 192 MW order being delayed, cut or earning thin margins, domestic powergen growth below 10% for two quarters, or Arka reporting losses. Already appeared without yet breaking the thesis: Q1 standalone EBITDA -4% and consolidated profit -17% (k01); FY26 profit after tax growth of only 13.3% on 25% sales growth (ka01); Arka profit -32% (ka02); a possible industry-wide margin squeeze at Cummins India that would make the 3-6 month normalisation optimistic (ka06, secondary); and a reported powergen growth of 18% versus about 35% for Cummins' domestic power generation (ka06, not like-for-like).",
+   "what_is_missing": "Missing: the value, margin and timetable of the 192 MW order (not disclosed on the call or in any document read, k03); the customer's data-centre track record (the CEO did not answer, k03); HHP revenue and order book (not disclosed, k06); the ESOP expense behind employee cost +39% (not given); Arka's asset quality and funding terms; how the Rs 2,100 crore of capex will be funded beyond Rs 485 crore of standalone net cash and about Rs 500 crore of annual operating cash flow (k05, ka03); promoter pledge and the June 2026 shareholding (ka07); consensus estimates; and a primary-source read of Cummins India's Q1 FY27 results (ka06).",
+   "is_catalyst_priced_in": "Yes, for the data-centre catalyst. After an after-hours announcement on 2026-06-19 of a 192 MW order of undisclosed value, the stock rose 20.0% on 2026-06-22 and 28.7% by 2026-06-24, adding about Rs 8,300 crore of market capitalisation (ka05). It has since given back about 11.5% to Rs 2,264 as Q1 earnings fell, so the market has partly re-marked the story but still pays about 62x trailing consolidated earnings (k10). The margin-recovery catalyst (price realisation in 3-6 months) is exposed to a Q2 test and is probably embedded in a 62x multiple on depressed margins.",
+   "does_valuation_fit_growth": "No. The stock is about 62x trailing consolidated and about 76x trailing standalone earnings and about 9.8x standalone net worth for a 13.95% return on net worth (k10, ka01, ka08). FY26 profit after tax grew 13.3% (EBITDA +24%) and Q1 FY27 profit fell, so earnings growth is below the 25% sales growth. The base case needs FY28 profit of Rs 700-750 crore (about 44-47x) and the bull Rs 800-850 crore; reaching those from a Rs 535 crore trailing figure needs 14-26% annual profit growth plus margin recovery and an HHP mix shift that is not yet disclosed.",
+   "great_company_vs_great_stock": "A decent, improving challenger franchise at a full price. The positives are real (about 28% of domestic genset units by the company's measure, AA rating, standalone net cash, 108% HHP volume growth, k06, ka04), but the stock is valued like a data-centre winner while profit is falling and Rs 1,053 crore of capital sits in a lender earning about 2.6% (ka02). On the thesis' own scenario midpoints weighted by probability the expected value is about 0.97x of today's price (ka08), so this reads as a good company, not yet a good stock at Rs 2,264.",
+   "merely_an_ai_narrative": "Mostly narrative so far. The AI/data-centre link is one 192 MW order of undisclosed value (k03), the annual report calls hyperscale 'an emerging portion' of the mix (k06), HHP revenue and order book are undisclosed, and the stock rose 28.7% in three sessions on that announcement (ka05). Real revenue evidence exists in the broader franchise (Q1 powergen +18%, industrial +19%, aftermarket +20%, k02, domestic share gain) but that is mostly not data-centre. The incumbent Cummins India reportedly has data centres at 30-40% of its power generation revenue (k07, ka06), which KOEL does not yet approach.",
+   "is_it_crowded": "Moderately by ownership, heavily by momentum. At 31-Mar-2026 mutual funds held 24.87%, FIIs 10.79% and insurers 1.45% (about 37% institutions, ka07) and the stock has risen about 154% in 12 months to a 2026-06-24 high of Rs 2,558 before falling 11.5% (k09). Peer valuation comparisons and social buzz were not verified (social media is not evidence), the June 2026 shareholding was not obtained and brokerage consensus could not be confirmed in a usable source, so I cannot say crowding is worse than at peers.",
+   "strongest_bear_argument": "KOEL is priced as a data-centre power winner on the strength of one 192 MW order whose value was never disclosed and whose customer's track record management would not discuss, while its core earnings are shrinking: Q1 standalone EBITDA fell 4% with margin at 11.2% vs 13.5%, consolidated profit fell 17%, and FY26 profit after tax grew only 13% on 25% higher sales (k01, ka01). The incumbent Cummins India reportedly earns a third or more of its power generation revenue from data centres, grew domestic power generation about 35% against KOEL's 18% and also saw margins squeezed by commodities, which suggests the margin problem is industry-wide, not a short lag (ka06, secondary). Rs 2,100 crore of capex nearly doubles the gross block ahead of demand it cannot quantify, and Rs 1,053 crore of capital is tied up in a lender earning about 2.6% on Rs 5,033 crore of debt (ka02). At 62x trailing consolidated and 76x standalone earnings, a 30-35x multiple on Rs 550-600 crore of FY28 profit would mean a 35-50% fall (bear 0.5-0.65x) and even the base case is flat.",
+   "what_happened_in_similar_setups": "Good analogues were not found. Weak, secondary cases: BHEL peaked in 2007 and was still 'the shadow of its past avatar' per Outlook Business in 2023, and Indian capital-goods stocks fell sharply in 2008 and again in 2010 partly on 'high valuations' (ka09). Those are domestic capex cycles, not genset makers re-rated on data-centre orders. The closest live comparison is Cummins India, where reported profit before tax before exceptional items was down 0.7% in Q1 FY27 despite powergen revenue growth of about 35% (ka06, secondary), which suggests data-centre volume alone does not guarantee earnings growth. I did not use cases from memory.",
+   "what_must_happen_for_5x": "A 5x needs a market capitalisation of about Rs 164,900 crore: about Rs 3,300 crore of profit at 50x (5.9x FY26 consolidated profit) or about 142x the FY30 profit of Rs 1,160 crore implied by the $2 billion plan at a 7% margin (ka08). Operationally KOEL would have to win data-centre and HHP volume at roughly Cummins scale, lift standalone EBITDA margin above 13% and keep Arka from consuming capital, while the market pays 80-100x or more. Management's own asset-turn remark (Rs 5,000-6,000 crore of revenue from the Rs 1,400 crore phase, ka03) would only roughly double standalone sales and is unverified.",
+   "is_5x_plausible_in_1_2_years": "No. Capacity phase 1 starts only in April 2027 and phase 2 over two years (k06), the 192 MW order revenue is a one-off supply plus service whose value is unknown, and Q1 earnings fell. A more realistic range from the thesis' scenarios is about 0.5x to 1.15x with a bull tail of 1.35-1.8x (probability 0.20, model estimate), and the evidence does not support 3x within 24 months.",
+   "probability_market_already_right": "Model estimate: about 0.65-0.75 that the price is about right or too high, because the stock still pays 62-76x for falling profit, the data-centre catalyst re-rated it by Rs 8,300 crore in three sessions (ka05), and the scenario-weighted value is about 0.97x (ka08). It is not higher because the domestic franchise is gaining share, the balance sheet is clean at standalone level (ka04) and margin recovery plus H2 FY27 order revenue are visible within six months, which could validate part of the multiple. This is a reviewer estimate, not a prediction."
+  },
+  "reviewed_at": "2026-10-05T06:46:04+00:00"
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "Last price 2264.3 INR on 2026-10-05 (market data snapshot).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Price snapshot only; says nothing about business quality."
+  },
+  {
+   "id": "e2",
+   "claim": "Quantitative discovery output for KIRLOSENG.NS: rank 9. Model output, not a verified business fact.",
+   "kind": "FACT",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "",
+   "retrieved_at": "2026-10-05T06:20:13+00:00",
+   "note": "Momentum rank is the only selector validated in this lab, and only modestly; it is a reason to spend research time, not a thesis."
+  },
+  {
+   "id": "k01",
+   "claim": "Kirloskar Oil Engines Q1 FY27 (quarter to 30-Jun-2026), standalone continuing operations: revenue from operations Rs 1,471 crore (+16% YoY), EBITDA Rs 165 crore (-4%; margin 11.2% vs 13.5%), net profit Rs 99 crore (-9%). Consolidated revenue from operations Rs 2,000 crore (+13%), net profit Rs 111 crore (-17%). Standalone cash net of debt Rs 485 crore.",
+   "kind": "FACT",
+   "source_type": "exchange",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/8034400/SE_Pressrelease_6Aug26.pdf/b50e7b7c-5112-5dde-0ea8-6b38ff49621d",
+   "source_date": "2026-08-06",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Press release filed with the exchanges on 6-Aug-2026."
+  },
+  {
+   "id": "k02",
+   "claim": "Q1 FY27 standalone sales by unit: Powergen Rs 720 crore (+18%), Industrial Rs 368 crore (+19%), Distribution and aftermarket Rs 268 crore (+20%), International Rs 106 crore (-11%). Standalone EBITDA margin: 11.2% (Q1 FY27), 12.6% (Q4 FY26), 13.5% (Q1 FY26); employee cost Rs 111.0 crore (+39% YoY, +22% QoQ); raw material cost 65.7% of revenue vs 65.0%. Consolidated segment profit before interest and tax: B2B Rs 114.6 crore (-18%), B2C Rs 25.8 crore (-7%), financial services Rs 9.4 crore (-31%).",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/8034670/Investor+Presentation_Q1_FY26-27.pdf/45b0ad24-cf19-7257-d0bd-dcdffcbce919",
+   "source_date": "2026-08-07",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Earnings presentation dated 7-Aug-2026; ratio computed from the presentation's P&L."
+  },
+  {
+   "id": "k03",
+   "claim": "Q1 FY27 call (7-Aug-2026): the CFO said the company secured 'our first hyperscale data center order of approximately 192 megawatts', a composite contract of genset supply (revenue recognised in FY27) plus an operation-and-maintenance contract of at least 5-6 years; management said it will 'be disciplined about distinguishing pipeline from actual orders and actual revenue' and declined to discuss further orders; asked about the customer's experience in data centres, the CEO did not answer directly. The order value was not disclosed on the call. The NPCIL (nuclear) engine order is milestone-based with no revenue in Q1 and some revenue in FY27.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/8088416/Transcript_Q1_FY+26-27.pdf/cc74b59c-e6db-3cfb-bcd9-18737f8221ff",
+   "source_date": "2026-08-07",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "The customer name (HyperNext) and the 96 x 2,500 kVA Optiprime configuration come only from press coverage, not from a document read here."
+  },
+  {
+   "id": "k04",
+   "claim": "Q1 FY27 call: management attributed the EBITDA decline to lower export volumes (Middle East logistics disruption), elevated commodity costs and a lag between price increases and realisation, and said 3-6 months is a reasonable time for normalisation; it said it remains 'committed to our EBITDA delivery for the full year' without a figure; the target is a $2 billion (about Rs 16,600 crore) revenue company by FY30 with a 'higher double-digit' EBITDA margin and no specific margin range; on Arka Financial Services the long-term plan to hive off the business is stepwise with no date.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/8088416/Transcript_Q1_FY+26-27.pdf/cc74b59c-e6db-3cfb-bcd9-18737f8221ff",
+   "source_date": "2026-08-07",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Management statements; the 'EBITDA delivery' remark is not quantified."
+  },
+  {
+   "id": "k05",
+   "claim": "FY26 annual report: standalone net sales Rs 5,603.85 crore (+25%), standalone EBITDA Rs 737.27 crore (13.06% margin per the MD&A table; the Chairman's letter says 13.10%), standalone profit after tax from continuing operations Rs 441.5 crore, standalone operating cash flow Rs 511.1 crore and capital expenditure on PPE and intangibles Rs 317.4 crore; consolidated revenue from operations Rs 7,701.0 crore, profit from continuing operations Rs 557.7 crore, total equity Rs 3,575.1 crore, borrowings Rs 5,313.8 crore (largely the Arka financial-services business). CORRECTED on adversarial review: the Chairman's letter says EBITDA was 'up 33%' with margin +90 basis points, but the audited MD&A table in the same report shows EBITDA Rs 737.27 crore vs Rs 593.84 crore (+24.1%) and margin 13.06% vs 12.77% (+29 basis points); the +24% figure is used here.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.kirloskaroilengines.com/documents/d/oil-engines-ltd/annual-report_koel_fy-25-26",
+   "source_date": "2026-05-14",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Re-opened 2026-10-05. Net sales, PAT, operating cash flow, capex, consolidated revenue, profit, equity and borrowings all match the report. The thesis' earlier '+33%' was taken from the Chairman's letter and does not reconcile to the table. Auditor reports dated 14-May-2026."
+  },
+  {
+   "id": "k06",
+   "claim": "Q4 FY26 call (14-May-2026) and annual report: high-horsepower (HHP) market share was 'negligible a couple of years ago' and is 'approaching double digits'; the diesel generator market grew 18% to about 179,000 units while KOEL grew 41% to over 50,000 units; HHP engine volume rose 108% in FY26 (annual report); a few hundred Optiprime units were sold; capacity capex: Rs 700 crore for 50,000 engines (online by April 2027) and a further Rs 1,400 crore over two years for 20,000 high-HP engines at Kagal; ten 6.3 MW nuclear engines are being executed for NPCIL; the annual report describes the hyperscaler segment as 'an emerging portion of our overall mix'. Management does not disclose HHP revenue or an order book.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/7639987/SE_Transcript_20May26/1d37d73b-d825-e39a-56bc-f29aabcddcf9",
+   "source_date": "2026-05-14",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "HHP volume figure is from the annual report; call transcript filed with the exchanges on 20-May-2026."
+  },
+  {
+   "id": "k07",
+   "claim": "Competitor primary source, Cummins India Q4 FY26 call (29-May-2026): data centres were 30-35% of its FY26 domestic power-generation revenue (about 35% in Q4); domestic powergen sales Rs 4,758 crore in FY26 (+24%); capacity utilisation about 70%; the QSK60 engine used in data centres is localised, a shift to 78-litre or 95-litre engines (imported) is possible, competition in high horsepower 'has been there' with unchanged intensity, and an analyst noted large data-centre orders finalised by Perkins, Baudouin and Adani; Cummins India expected 'moderate growth' in FY27.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5fc0ce89-0765-417a-b55b-fdf1efa7d419.pdf",
+   "source_date": "2026-05-29",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Competitor evidence; Cummins India's Q1 FY27 call (Aug-2026) could not be reached in primary form."
+  },
+  {
+   "id": "k08",
+   "claim": "Q1 FY27 working capital (standalone): inventory 64 days, receivables 42 days, payables 81 days (cash conversion cycle 25 days, per the CFO); net cash Rs 485 crore vs Rs 552 crore at FY26 end; Arka Financial Services total debt Rs 5,033 crore with debt-to-equity 3.7x and KOEL's investment in it Rs 1,053 crore; Arka segment profit before tax fell 31% YoY.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/8034670/Investor+Presentation_Q1_FY26-27.pdf/45b0ad24-cf19-7257-d0bd-dcdffcbce919",
+   "source_date": "2026-08-07",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Standalone working capital and Arka disclosures from the earnings presentation."
+  },
+  {
+   "id": "k09",
+   "claim": "Market data: KIRLOSENG.NS last price Rs 2,264.3 on 2026-10-05 versus about Rs 889.6 on 2025-10-06 (about +154% in 12 months), after a closing high of about Rs 2,558 on 2026-06-24 (the lab's price history), i.e. about 11.5% below that high; market capitalisation Rs 32,981 crore in the lab's 2026-10-05 snapshot. CORRECTED: the 2026-10-05 value is an intraday last print (data retrieved about 11:50 IST, before the close), so the earlier statement of a 'close' of Rs 2,256 on that date is not verified; the 2026-06-24 closing high is a full-session close.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "12 months to 2026-10-05",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Price history from the lab's market-data library (Yahoo-sourced, may be adjusted). Share count about 14.57 crore (Rs 32,981 crore / Rs 2,264.3), consistent with 5,97,05,363 promoter shares being 41.07% of the register at 31-Mar-2026."
+  },
+  {
+   "id": "k10",
+   "claim": "Model arithmetic (INFERENCE): trailing consolidated continuing-operations profit is about Rs 535 crore (FY26 Rs 557.7 crore minus Q1 FY26 Rs 134.2 crore plus Q1 FY27 Rs 111.1 crore), so the Rs 32,981 crore market capitalisation is about 62x trailing earnings, about 9.2x book (equity Rs 3,575 crore) and about 4.2x trailing consolidated revenue (about Rs 7,939 crore); on standalone FY26 profit of Rs 441.5 crore it is about 75x. The consolidated figures include the Arka lending book, so the multiple on the engines business alone is higher than the consolidated multiple suggests.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "TTM to Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: k01, k05, k09; Q1 FY26 profit from the Q1 FY27 presentation (Rs 134.2 crore, continuing, regrouped)."
+  },
+  {
+   "id": "k11",
+   "claim": "Reverse arithmetic (INFERENCE): a 3x needs a market capitalisation of about Rs 98,900 crore. If the $2 billion (Rs 16,600 crore) FY30 revenue plan is met in full at a consolidated profit margin of about 7% (FY26: 7.2%), FY30 profit would be about Rs 1,160 crore, so the 3x value is about 85x FY30 earnings; at a 60x multiple the same plan implies about 2.1x, in FY30 rather than within 24 months. For FY28, an illustrative Rs 10,500 crore revenue at 7.5% gives about Rs 790 crore, or about 1.4x at 60x. No sourced chain gets to 3x within 24 months.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY28-FY30 model",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: k04, k05, k09; revenue and margin paths are the researcher's assumptions, model estimate."
+  },
+  {
+   "id": "k12",
+   "claim": "Data-centre link (INFERENCE): the link is real but early and unquantified. KOEL has one disclosed hyperscale order of about 192 MW with value undisclosed (k03), HHP market share is approaching double digits (k06), and the annual report calls hyperscale an 'emerging portion' of the mix; Cummins India, the incumbent, already earns 30-35% of domestic powergen revenue from data centres (k07). The evidence is consistent with KOEL being a challenger gaining share in a growing domestic market rather than an AI-capex winner at present; the Q1 FY27 numbers show powergen +18% overall and no disclosed contribution from the 192 MW order yet.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY26-Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: k02, k03, k06, k07."
+  },
+  {
+   "id": "k13",
+   "claim": "If data-centre or AI spending slows (INFERENCE): the domestic base is broad (powergen, industrial, distribution and aftermarket all grew double digits in Q1 FY27; aftermarket described as growing double digits for 12 quarters), so the near-term revenue exposure to a data-centre slowdown looks modest; the exposure is through the capital-expenditure plan and the multiple: Rs 700 crore plus Rs 1,400 crore of capacity capex (about Rs 2,100 crore) compares with FY26 standalone operating cash flow of Rs 511 crore and net cash of Rs 485 crore, and the Rs 1,400 crore phase is aimed at higher-horsepower engines that depend on data-centre-type demand. A slowdown would lower utilisation and the premium multiple more than it would hit current earnings.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Forward",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: k02, k05, k06, k08."
+  },
+  {
+   "id": "k14",
+   "claim": "Earnings direction (INFERENCE): in Q1 FY27 revenue grew 16% but standalone EBITDA fell 4% and consolidated profit fell 17%, with employee cost +39% (partly ESOP and capability hiring, not quantified) and exports weak; Q4 FY26 had been a record (EBITDA +27%). The stock is therefore being valued on the growth and data-centre story while the latest quarterly earnings moved the other way; management says price realisation and cost actions should help over 3-6 months (unverified).",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: k01, k02, k04, k06."
+  },
+  {
+   "id": "k15",
+   "claim": "SPECULATION: the Arka Financial Services hive-off, if executed, could narrow the conglomerate discount and simplify the leverage picture, but management gives no timetable and Arka profit fell in Q1 FY27, so it carries no weight in the scenarios.",
+   "kind": "SPECULATION",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Undated",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Fact: k04, k08."
+  },
+  {
+   "id": "k16",
+   "claim": "SPECULATION: a second large data-centre or gas-gensets order (the company mentions a 'landmark' oil-and-gas gas-genset order up to 500 kVA ratings and further data-centre enquiries) might lift HHP mix and margins, but no value or timing is disclosed.",
+   "kind": "SPECULATION",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "Undated",
+   "retrieved_at": "2026-10-05T06:32:54+00:00",
+   "note": "Facts: k03, k06."
+  },
+  {
+   "id": "ka01",
+   "claim": "FY26 standalone earnings growth (annual report, continuing operations): EBITDA Rs 737.27 crore vs Rs 593.84 crore (+24.1%); profit before exceptional items and tax Rs 623.59 crore vs Rs 502.76 crore (+24.0%); exceptional items -Rs 29.68 crore vs +Rs 20.90 crore; profit after tax Rs 441.50 crore vs Rs 389.82 crore (+13.3%); net profit margin 7.88% vs 8.51%; return on net worth 13.95% vs 13.93%; standalone net worth Rs 3,354.5 crore. Sales grew 25.1% while profit after tax grew 13.3%.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.kirloskaroilengines.com/documents/d/oil-engines-ltd/annual-report_koel_fy-25-26",
+   "source_date": "2026-05-14",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Directors' report financial results table and MD&A key-ratio table. Profit after tax growth is held down by exceptional items and a higher tax charge; before exceptional items profit before tax grew about 24%."
+  },
+  {
+   "id": "ka02",
+   "claim": "Q1 FY27 investor presentation: Arka Financial Services group profit after tax Rs 6.9 crore vs Rs 10.1 crore (-32%), revenue Rs 210 crore (+9%), total debt Rs 5,033 crore (debt-to-equity 3.7 vs 4.2 a year earlier), loan book Rs 5,519 crore, AUM Rs 7,651 crore; KOEL's total investment in the Arka holding company Rs 1,053 crore, which the presentation says includes a Rs 53 crore profit on a holding-structure change. Consolidated finance cost Rs 116.0 crore for the quarter. Consolidated profit after tax from continuing operations Rs 111.1 crore vs Rs 155.2 crore in Q4 FY26 (-28% QoQ) and Rs 134.2 crore in Q1 FY26 (-17% YoY). Standalone net cash fell from Rs 552 crore to Rs 485 crore in the quarter although standalone profit after tax was Rs 99.3 crore.",
+   "kind": "FACT",
+   "source_type": "investor_presentation",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/8034670/Investor+Presentation_Q1_FY26-27.pdf/45b0ad24-cf19-7257-d0bd-dcdffcbce919",
+   "source_date": "2026-08-07",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Slides 9, 13, 15. Annualised Arka profit of about Rs 27.6 crore on Rs 1,053 crore of KOEL capital is about 2.6% (arithmetic, see ka08)."
+  },
+  {
+   "id": "ka03",
+   "claim": "Q4 FY26 call (14-May-2026): asked about the Rs 1,400 crore Kagal phase-2 capex for 20,000 high-horsepower engines, the CFO said the asset turn is about 4 (transcribed as '4% to 5%' in one place) and that 'at the asset turn of 4' peak revenue from it would be 'close to 5,000 crores, 6,000 crores', with capitalisation targeted over the next two years and revenue starting after that; another participant noted the Rs 700 crore plus Rs 1,400 crore capex roughly doubles the gross block (management: 'once we complete the capex cycle'). Utilisation was not given for KOEL; the new capex is fully new, not replacement.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/7639987/SE_Transcript_20May26/1d37d73b-d825-e39a-56bc-f29aabcddcf9",
+   "source_date": "2026-05-14",
+   "period": "FY2026",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Management statement, unverified. It is the most favourable disclosed link between capex and revenue and is not in the original scenarios; it implies revenue of about Rs 5,000-6,000 crore from phase 2 alone would roughly double today's standalone sales, which this reviewer treats as an aspiration (utilisation, HHP demand and pricing are unknown)."
+  },
+  {
+   "id": "ka04",
+   "claim": "Q1 FY27 call (7-Aug-2026): management said standalone total borrowings reduced from Rs 167 crore to Rs 77 crore, working capital improved by 11 days and the credit rating was upgraded to AA (entity basis of the borrowing figure not specified); that Q1 profitability was hit by lower export volumes, elevated commodity costs and the timing difference between cost inflation and price realisation; that it was 'amongst the first' to start price-increase conversations while 'realization has lagged for most players'; that normalisation in 3-6 months is 'a fairly reasonable assumption'; and, on margins, that the business has improved EBITDA margin by more than 400 basis points in three years but would not give a range for FY30.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://www.kirloskaroilengines.com/documents/6887317/8088416/Transcript_Q1_FY+26-27.pdf/cc74b59c-e6db-3cfb-bcd9-18737f8221ff",
+   "source_date": "2026-08-07",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Balances the downside items: the standalone balance sheet is clean and the rating improved. Management statements, not independently verified."
+  },
+  {
+   "id": "ka05",
+   "claim": "Price reaction to the 192 MW order (INFERENCE): a secondary news site (whalesbook.com) timestamps the order announcement at 4:06 pm on 2026-06-19 (a Friday, after the market); the lab's price history shows closes of Rs 1,987.3 on 2026-06-19, Rs 2,384.8 on 2026-06-22 (+20.0% in one session) and Rs 2,558.2 on 2026-06-24 (+28.7% from the 19-Jun close), an increase of about Rs 8,300 crore of market capitalisation, for an order whose value was never disclosed. The price has since fallen about 11.5% to Rs 2,264.3 as Q1 earnings declined.",
+   "kind": "INFERENCE",
+   "source_type": "news",
+   "source_url": "https://www.whalesbook.com/corporate-news/English/industrial-goodsservices/Kirloskar-Oil-Engines-Secures-192-MW-Data-Center-Order-from-HyperNext/6a351af9b6609c8f9dd408c4",
+   "source_date": "2026-06-19",
+   "period": "Jun-Oct 2026",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Announcement date from a news site (exchange filing not opened); price moves from the lab price library. Facts: k03, k09. Order value not stated in the article either."
+  },
+  {
+   "id": "ka06",
+   "claim": "Competitor read-across (INFERENCE, secondary only): summaries of Cummins India's Q1 FY27 call (5/6-Aug-2026) on quartr.com and cofacto.ai report domestic power-generation revenue of Rs 1,424 crore, up 35% year on year, data centres at about 40% of power-generation revenue, profit before tax before exceptional items of Rs 721 crore (-0.7% YoY) because of higher commodity and freight costs, utilisation of 70-75%, and a management view that gross margins are not expected to return quickly to 36-37% with price realisation lagging about a quarter; the Managing Director's resignation is also reported. KOEL's standalone Powergen segment grew 18% to Rs 720 crore in Q1 FY27 (k02). The bases differ (KOEL's segment is not identical to Cummins' domestic power generation) and a search-result snippet of another summary (page not opened) gave 23% of domestic power generation for data centres, so the data-centre share is unresolved.",
+   "kind": "INFERENCE",
+   "source_type": "news",
+   "source_url": "https://quartr.com/events/cummins-india-limited-500480-q1-26-27_FVq66wnG",
+   "source_date": "2026-08-06",
+   "period": "Q1 FY27",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Cummins India's primary Q1 FY27 transcript was not reached; second secondary source https://cofacto.ai/market-news/cumminsind-q1-fy27-earnings-call. Treat as a lead, not a FACT. If confirmed it suggests (a) the margin squeeze is industry-wide, not a short KOEL-specific lag, and (b) KOEL's powergen is growing slower than the incumbent."
+  },
+  {
+   "id": "ka07",
+   "claim": "Shareholding at 31-Mar-2026 (annual report): promoter and promoter group 41.07%, mutual funds 24.87%, FIIs 10.79%, insurance companies 1.45%, individuals 16.39%; institutions together about 37%. The June 2026 pattern was not obtained. Promoter pledge was not checked.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.kirloskaroilengines.com/documents/d/oil-engines-ltd/annual-report_koel_fy-25-26",
+   "source_date": "2026-05-14",
+   "period": "31-Mar-2026",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Shareholding pattern in the corporate-governance section of the annual report."
+  },
+  {
+   "id": "ka08",
+   "claim": "Reverse and scenario arithmetic (INFERENCE, model estimate): a 5x needs a market capitalisation of about Rs 164,900 crore, i.e. about Rs 3,300 crore of profit at 50x (about 5.9x FY26 consolidated profit of Rs 557.7 crore) or about 142x the Rs 1,160 crore FY30 profit implied by the $2 billion plan at a 7% margin; even management's asset-turn remark (ka03) of Rs 5,000-6,000 crore of revenue from phase 2 would roughly double standalone sales. At Rs 32,981 crore the stock is about 76x trailing standalone profit (Rs 431 crore: FY26 Rs 441.5 crore - Q1 FY26 Rs 109.5 crore + Q1 FY27 Rs 99.3 crore) and about 9.8x standalone net worth for a 13.95% return on net worth. The thesis' own scenario midpoints (1.575x bull at 0.20, 1.0x base at 0.45, 0.575x bear at 0.35) give a probability-weighted value of about 0.97x of the current price.",
+   "kind": "INFERENCE",
+   "source_type": "",
+   "source_url": "",
+   "source_date": "2026-10-05",
+   "period": "FY28-FY30 model",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Facts: k01, k05, k09, ka01, ka02, ka03; scenario inputs are this thesis' bull/base/bear fields; arithmetic by the reviewer."
+  },
+  {
+   "id": "ka09",
+   "claim": "Historical analogues (INFERENCE, weak): BHEL, an Indian power-equipment maker, 'achieved its peak back in 2007 when its share price crossed Rs 370' and was 'still the shadow of its past avatar' at Rs 127.65 on 16-Sep-2023 per Outlook Business (price basis not verified); an Equitymaster article of Sept-2010 says Indian capital-goods stocks were 'among the worst sufferers' of the 2008 crisis and were falling again partly on 'high valuations'. These are domestic capex-cycle cases, not data-centre genset or engine makers; no close analogue with sourced outcomes was found. The nearest live comparison is the incumbent Cummins India, whose Q1 FY27 profit before tax was slightly down despite higher sales (ka06, secondary).",
+   "kind": "INFERENCE",
+   "source_type": "news",
+   "source_url": "https://www.outlookbusiness.com/markets/bhel-stock-price-can-the-maharatna-continue-its-multibagger-tag-going-forward",
+   "source_date": "2023-09-18",
+   "period": "2007-2023",
+   "retrieved_at": "2026-10-05T06:46:04+00:00",
+   "note": "Second source https://equitymaster.com/indian-share-markets/09/06/2010/Whats-worrying-capital-goods-stocks. Never used as a FACT."
+  }
+ ],
+ "next_review": "2026-11-09",
+ "change_log": [
+  "integrated timing assessment and decomposed score (portfolio fit is computed privately at display time)",
+  "overall_score: 'None' -> '0.424'",
+  "entry state: unknown -> setup_forming"
+ ],
+ "parent_version": 3,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}

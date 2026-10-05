@@ -81,6 +81,21 @@ def discoveries_from_candidates(theses: list, limit: int = 10) -> list:
     return out[:limit]
 
 
+def _attach_private_fit(theses: list) -> None:
+    """In-memory only: sets t.portfolio_fit from private/portfolio_analytics.json. Nothing here is written to theses/."""
+    import json
+    from mblab.integrate import candidate_row
+    from mblab.portfolio import fit_score
+    f = store.ROOT / "private" / "portfolio_analytics.json"
+    if not f.exists(): return
+    try: a = json.loads(f.read_text())
+    except Exception: return
+    for t in theses:
+        c = candidate_row(t.market, t.ticker) or {}
+        t.portfolio_fit = fit_score({"ticker": t.ticker, "name": t.company, "sector": c.get("sector"), "market": t.market,
+                                     "market_cap_bucket": "mid" if c.get("segment") == "mid" else "small"}, a)
+
+
 def link_for(t: Thesis) -> str:
     return f"opportunity/{t.market.upper()}_{re.sub(r'[^A-Za-z0-9_.-]', '_', t.ticker.upper())}.html"
 
@@ -94,6 +109,8 @@ def build(out_dir: Path = OUT, force_fixtures: bool = False, as_of: Optional[str
         pf, ps, as_of = fx.sample_portfolio_summary(), fx.sample_paper_status(), as_of or fx.SAMPLE_AS_OF
     else:
         alerts, cands, pf, ps, as_of = [], discoveries_from_candidates(theses), portfolio_summary_from_private(), paper_status_from_md(), as_of or date.today().isoformat()
+    if not sample:   # portfolio fit is computed at display time from the private analytics and is never saved into theses/ (public repo)
+        _attach_private_fit(theses)
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "opportunity").mkdir(exist_ok=True)
     for t in theses:

@@ -26,7 +26,9 @@ def is_active(t: Thesis) -> bool:
 def is_high_priority(t: Thesis) -> bool:
     if not is_active(t): return False
     if t.status in LATE_STAGE: return True
-    return (t.overall_score or 0) >= 0.70 and t.research_level >= 3
+    # a high score alone never qualifies: it needs deep research, an adversarial review that SURVIVED, non-low confidence and a workable entry state
+    return ((t.overall_score or 0) >= 0.70 and t.research_level >= 4 and t.adversarial.done and t.adversarial.verdict == "survives"
+            and t.confidence in ("medium", "high") and t.entry.state not in ("overextended", "wait_for_pullback", "thesis_deteriorating", "too_early"))
 
 
 def is_changed(t: Thesis, as_of: str) -> bool:
@@ -35,7 +37,7 @@ def is_changed(t: Thesis, as_of: str) -> bool:
 
 def entry_improved(t: Thesis, as_of: str) -> bool:
     if not (t.version > 1 and _recent(t, as_of) and is_active(t)): return False
-    moved = any(str(x).startswith("entry state:") for x in t.change_log)
+    moved = any(str(x).startswith("entry state:") and "unknown ->" not in str(x) for x in t.change_log)  # the first assessment is not an improvement
     return moved and (t.entry.state in GOOD_ENTRY or t.entry.state == "setup_forming")
 
 
@@ -278,7 +280,7 @@ def build_today(theses: list, alerts: list, candidates: list, portfolio_summary:
 {banner}
 <section aria-labelledby="h-counts"><h2 class="sr" id="h-counts">Today in numbers</h2>
 <ul class="tiles">
-{_tile(n_high, "High-priority ideas", "Late-stage status, or score 0.70+ with deep research", "#opportunities")}
+{_tile(n_high, "High-priority ideas", "Late-stage status, or score 0.70+ with a surviving adversarial review and a workable entry state", "#opportunities")}
 {_tile(n_changed, "Theses changed", f"New version in the last {RECENT_DAYS} days", "#opportunities")}
 {_tile(n_improved, "Entry setups improved", "Timing moved closer to an entry zone", "#opportunities")}
 {_tile(len(exits), "Exit conditions triggered", "Review before anything else", "#alerts", hot=True)}
