@@ -33,7 +33,7 @@ def apply_end_policy(px, policy="zero"):
 def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
              mode="momentum", lookback=252, skip=21, ma=200, seed=0, end_policy="zero", start=None,
              regime_series=None, score=None, dd_breaker=None, cash_rate=0.0, gate=None,
-             keep_winners=False, exit_ma_break=True):
+             keep_winners=False, exit_ma_break=True, state=None):
     """Monthly rebalance. Signals at close of day t are executed at close of t+1 (no look-ahead).
     Trailing stop breaches seen at close t are also executed at close t+1."""
     rng = np.random.default_rng(seed)
@@ -46,7 +46,7 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
     if regime_series is not None:  # caller-supplied boolean regime (breadth, other index, combos); computed from past data only
         b_ok = regime_series.reindex(px.index).ffill().fillna(False).astype(bool)
     if gate is not None:  # point-in-time eligibility matrix (rebalance dates x symbols, bool), forward-filled; names absent => not eligible
-        gate = gate.reindex(px.index).ffill().reindex(columns=px.columns).fillna(False).astype(bool)
+        gate = gate.reindex(gate.index.union(px.index)).ffill().reindex(px.index).reindex(columns=px.columns).fillna(False).astype(bool)
     rank = mom if score is None else score  # caller-supplied ranking score (e.g. momentum/vol), also past-data only
     peak_nav = 1.0; cool = False
     dates = px.index
@@ -141,6 +141,8 @@ def backtest(px, bench, top_n=15, stop=0.30, cost_bps=25, regime=True,
             pending_target = tw
 
     eq = pd.Series(eq, index=eq_dates)
+    if state is not None:  # expose end-of-run holdings for paper trading / live monitoring
+        state.update(w=w.copy(), entry=dict(entry), pending=(None if pending_target is None else pending_target.copy()), pending_exit=set(pending_exit))
     return eq, trades
 
 def metrics(eq, trades=None):
