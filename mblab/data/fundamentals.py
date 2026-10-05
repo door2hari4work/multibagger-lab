@@ -253,7 +253,7 @@ def _near(days: float, target: float, tol: float) -> bool:
 def _bridge_ttm(q: pd.DataFrame, a: Optional[pd.DataFrame], col: str) -> Optional[float]:
     """TTM via the latest annual figure: FY + sum(quarters after FY end) - sum(same quarters one year earlier).
     Requires every quarter after FY end (up to the latest) and its year-ago counterpart to be present."""
-    if a is None or len(a) == 0 or pd.isna(a[col].iloc[-1]) if a is not None and len(a) else True:
+    if a is None or len(a) == 0 or pd.isna(a[col].iloc[-1]):
         return None
     pa = a.index[-1]
     p0 = q.index[-1]
