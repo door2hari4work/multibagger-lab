@@ -54,3 +54,6 @@ Sources: files 06-09. Illustrative plan, not advice; no orders placed or prepare
 - Costs: about Rs 540 a year per Rs 1 lakh (funds about 0.48% weighted on Rs 70,000 plus about Rs 200 for the tracker plus Rs 24 AutoSIP fees); tax only on redemption for funds; smallcase rebalances are taxable.
 - Loss arithmetic on a 2020-style fall: about Rs 35,000-38,000 on Rs 1 lakh (limit Rs 25,000). Staying within Rs 25,000 implies an equity stake of about Rs 65,000 with the rest held in a liquid fund until a month-6 review.
 - Overlap with the investor's existing portfolio (lower bound, partial look-through): Energy Tracker names about 0.3% of the portfolio; auto names about 1.2%.
+
+## Final choice (2026-10-09): the investor chose the four-sleeve plan with the full Rs 1 lakh staged over 5 months (autos index fund Rs 30,000; Windmill Energy Tracker Rs 30,000; Tata India Consumer Rs 20,000; Nippon India Multi Cap Rs 20,000), knowing a 2020-style fall could exceed the Rs 25,000 limit.
+Execution aid: reports/smallcase/staged_plan.html (pre-flight checklist, tickable calendar, 15% / 25% pause-rule calculator; saved only in the viewer's browser). The investor places every order; the assistant has placed none.

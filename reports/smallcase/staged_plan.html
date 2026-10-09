@@ -1,0 +1,213 @@
+<title>Staged Entry Plan</title>
+<style>
+/* Layout: one narrow column, summary first, then the schedule, then the pause calculator. Utilitarian, ledger-like. */
+:root {
+  --bg: #f6f5f1; --surface: #ffffff; --fg: #1d2420; --muted: #5d6a63; --line: #d9dcd4;
+  --accent: #1f5c4a; --accent-ink: #ffffff; --warn: #9a5b00; --warn-bg: #fbf0d9; --bad: #a3362c; --bad-bg: #f8e1de; --ok: #1f6b3a; --ok-bg: #e0f1e5;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101512; --surface: #171e1a; --fg: #e6ebe7; --muted: #9aa8a0; --line: #2a342e;
+    --accent: #6fc3a4; --accent-ink: #0c1a14; --warn: #e6b45a; --warn-bg: #2b2412; --bad: #ee8a80; --bad-bg: #2f1a18; --ok: #7fd49b; --ok-bg: #14281c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101512; --surface: #171e1a; --fg: #e6ebe7; --muted: #9aa8a0; --line: #2a342e;
+  --accent: #6fc3a4; --accent-ink: #0c1a14; --warn: #e6b45a; --warn-bg: #2b2412; --bad: #ee8a80; --bad-bg: #2f1a18; --ok: #7fd49b; --ok-bg: #14281c;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; display: grid; gap: 22px; }
+h1 { font: 600 1.7rem/1.15 var(--serif); margin: 0; text-wrap: balance; }
+h2 { font: 600 1.15rem/1.25 var(--serif); margin: 0 0 8px; text-wrap: balance; }
+p { margin: 0; max-width: 65ch; }
+.kicker { font: 600 0.72rem/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.small { font-size: .85rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; min-width: 0; }
+.note { border-left: 3px solid var(--warn); background: var(--warn-bg); padding: 10px 12px; border-radius: 4px; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 8px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 .72rem/1.2 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+.mono { font-family: var(--mono); font-size: .92em; }
+label.chk { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+label.chk:last-child { border-bottom: 0; }
+input[type=checkbox] { width: 20px; height: 20px; margin-top: 2px; flex: none; accent-color: var(--accent); }
+input[type=number] { width: 100%; max-width: 9.5rem; padding: 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); font: 1rem var(--mono); }
+button { font: 600 .9rem var(--sans); padding: 8px 12px; border-radius: 4px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font: 600 .78rem/1.5 var(--sans); }
+.pill.ok { background: var(--ok-bg); color: var(--ok); } .pill.warn { background: var(--warn-bg); color: var(--warn); } .pill.bad { background: var(--bad-bg); color: var(--bad); } .pill.idle { background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+.sleeves, .calc { display: grid; gap: 10px; }
+.sl { border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; display: grid; gap: 4px; min-width: 0; }
+.sl.total { margin-top: 10px; background: var(--bg); }
+.cgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; align-items: end; }
+.k { font: 600 .68rem/1.2 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+ul.tight { margin: 6px 0 0; padding-left: 1.1rem; display: grid; gap: 4px; }
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:8px">
+    <div class="row"><span class="kicker">Personal plan · Rs 1,00,000 over 5 months</span><button id="theme" type="button">Theme</button></div>
+    <h1>Staged Entry Plan</h1>
+    <p class="muted">Four sleeves, bought in five monthly steps through Zerodha Coin and Kite. Research notes and a checklist, not investment advice. You place every order yourself.</p>
+  </header>
+
+  <section class="card" aria-labelledby="h-plan">
+    <h2 id="h-plan">The plan</h2>
+    <div class="sleeves">
+      <div class="sl"><div class="row"><strong>Autos</strong><span class="mono">Rs 30,000</span></div><div>ICICI Prudential Nifty Auto Index Fund, Direct Growth (cost 0.25%)</div><div class="small muted">Coin SIP, Rs 6,000 a month</div></div>
+      <div class="sl"><div class="row"><strong>Energy and power</strong><span class="mono">Rs 30,000</span></div><div>Windmill Energy Tracker (smallcase, free to follow)</div><div class="small muted">Rs 15,000 in months 1 and 3</div></div>
+      <div class="sl"><div class="row"><strong>Consumption</strong><span class="mono">Rs 20,000</span></div><div>Tata India Consumer Fund, Direct Growth (manager Sonam Udasi, cost 0.62%)</div><div class="small muted">Coin SIP, Rs 4,000 a month</div></div>
+      <div class="sl"><div class="row"><strong>Diversified</strong><span class="mono">Rs 20,000</span></div><div>Nippon India Multi Cap Fund, Direct Growth (manager Sailesh Raj Bhan, cost 0.68%)</div><div class="small muted">Coin SIP, Rs 4,000 a month</div></div>
+    </div>
+    <p class="small muted" style="margin-top:10px">Running cost is about Rs 540 a year per Rs 1 lakh. Funds carry no tax until you sell. Smallcase rebalances you approve are taxable (20% on gains held under 12 months). Each purchase starts its own 12-month clock for the lower long-term rate.</p>
+  </section>
+
+  <section class="note" aria-label="Loss limit">
+    <p><strong>Your limit versus history.</strong> Every fund in this plan fell 31% to 44% in Feb–Mar 2020. A similar fall on the full Rs 1,00,000 would mean a loss of roughly Rs 35,000 to 38,000, above your Rs 25,000 limit. You chose the full amount knowingly. The pause rule below is the protection you have.</p>
+  </section>
+
+  <section class="card" aria-labelledby="h-pre">
+    <h2 id="h-pre">Before the first rupee</h2>
+    <div id="pre"></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-sched">
+    <h2 id="h-sched">The five steps</h2>
+    <p class="small muted" style="margin-bottom:8px">Tick each purchase when it is done. Dates are suggestions: the 10th of each month works for SIPs.</p>
+    <div id="sched"></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-pause">
+    <h2 id="h-pause">Pause-rule check, before every step</h2>
+    <p class="small muted" style="margin-bottom:10px">Enter today's value from Coin or Kite. If a sleeve is 15% or more below what you put in, skip its next purchase and review. At 25% below, review the whole plan; do not sell in a panic and do not add.</p>
+    <div id="calc" class="calc"></div>
+    <div class="sl total"><div class="row"><strong>Total</strong><span id="t-st"></span></div><div class="cgrid"><div><div class="k">Invested</div><div class="mono" id="t-inv">0</div></div><div><div class="k">Value now</div><div class="mono" id="t-val">0</div></div><div><div class="k">Change</div><div class="mono" id="t-chg">–</div></div></div></div>
+    <div class="row" style="margin-top:10px"><span class="small muted">Saved only in this browser.</span><button id="reset" type="button">Clear ticks and values</button></div>
+  </section>
+
+  <section class="card" aria-labelledby="h-rev">
+    <h2 id="h-rev">When to look again</h2>
+    <ul class="tight">
+      <li><strong>Month 3 and month 6:</strong> compare each sleeve with a plain Nifty 500 index fund bought on the same dates. A sleeve that trails it after costs for 12 months needs a reason to stay.</li>
+      <li><strong>Manager change:</strong> if Sonam Udasi leaves Tata India Consumer or Sailesh Raj Bhan leaves Nippon India Multi Cap, review that sleeve the same week.</li>
+      <li><strong>Energy Tracker:</strong> read each model-portfolio PDF after a rebalance. If the holdings or the share of power utilities change a lot, review before approving anything.</li>
+      <li><strong>Autos:</strong> the sector is down about 15% since August and margins have not turned. Weak months are expected; the pause rule decides what you do.</li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="h-know">
+    <h2 id="h-know">What is and is not known</h2>
+    <ul class="tight">
+      <li>Fund records come from AMFI NAV history and AMC factsheets, to 8 Oct 2026. Most strong numbers come from the 2021 and 2023 rallies; several funds are flat since December 2024.</li>
+      <li>Manager credentials are claims from the firms' own pages. SEBI's registry could not be searched by script, so check Windmill Capital's registration (INH200007645) yourself on SEBI's Research Analysts list.</li>
+      <li>The Energy Tracker is a hand-picked basket of 11 stocks, about 57% oil, gas and coal and 43% power utilities, mostly government-owned. It has no named analyst.</li>
+      <li>Nothing here predicts returns. This approach seeks sector exposure at low cost, not multi-baggers.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+(function () {
+  var KEY = 'staged-plan-v1';
+  var store = { get: function () { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }, set: function (v) { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {} } };
+  var state = store.get(); state.done = state.done || {}; state.val = state.val || {};
+  var fmt = function (n) { return 'Rs ' + Math.round(n).toLocaleString('en-IN'); };
+
+  var pre = [
+    'Check Windmill Capital (Research Analyst INH200007645) on SEBI, under Intermediaries, Research Analysts. Confirm it shows as active.',
+    'In Kite, open the Windmill Energy Tracker. Read the minimum amount today (about Rs 12,300), open the model-portfolio PDF and read the 11 stocks, and confirm the SIP option is offered at Rs 15,000.',
+    'In Coin, open the three funds above. Confirm the plan is Direct Growth and the cost matches. Set the SIP date and amount only after you have ticked this list.',
+    'Check that your bank mandate allows about Rs 29,000 in a month (months 1 and 3) without a failed debit.',
+    'Take screenshots of each fund page and the tracker page today, so you can compare later without relying on memory.'
+  ];
+  var preEl = document.getElementById('pre');
+  pre.forEach(function (t, i) {
+    var id = 'pre' + i, l = document.createElement('label'); l.className = 'chk';
+    l.innerHTML = '<input type="checkbox" id="' + id + '"><span></span>'; l.querySelector('span').textContent = t;
+    var c = l.querySelector('input'); c.checked = !!state.done[id];
+    c.addEventListener('change', function () { state.done[id] = c.checked; store.set(state); });
+    preEl.appendChild(l);
+  });
+
+  var sleeves = [
+    { key: 'auto', name: 'Autos', tr: [6000, 6000, 6000, 6000, 6000] },
+    { key: 'energy', name: 'Energy and power', tr: [15000, 0, 15000, 0, 0] },
+    { key: 'cons', name: 'Consumption', tr: [4000, 4000, 4000, 4000, 4000] },
+    { key: 'multi', name: 'Diversified', tr: [4000, 4000, 4000, 4000, 4000] }
+  ];
+  var months = ['Month 1 · this week or next', 'Month 2 · about the 10th', 'Month 3 · about the 10th', 'Month 4 · about the 10th', 'Month 5 · about the 10th'];
+  var sched = document.getElementById('sched');
+  months.forEach(function (m, mi) {
+    var total = sleeves.reduce(function (a, s) { return a + s.tr[mi]; }, 0);
+    var box = document.createElement('div'); box.style.cssText = 'padding:8px 0;border-bottom:1px solid var(--line)';
+    var h = document.createElement('div'); h.className = 'row'; h.innerHTML = '<strong></strong><span class="mono small"></span>';
+    h.querySelector('strong').textContent = m; h.querySelector('span').textContent = fmt(total) + ' this month'; box.appendChild(h);
+    sleeves.forEach(function (s) {
+      if (!s.tr[mi]) return;
+      var id = 'tr-' + s.key + '-' + mi, l = document.createElement('label'); l.className = 'chk';
+      l.innerHTML = '<input type="checkbox" id="' + id + '"><span></span>';
+      l.querySelector('span').textContent = s.name + ': ' + fmt(s.tr[mi]);
+      var c = l.querySelector('input'); c.checked = !!state.done[id];
+      c.addEventListener('change', function () { state.done[id] = c.checked; store.set(state); recalc(); });
+      box.appendChild(l);
+    });
+    sched.appendChild(box);
+  });
+
+  var calc = document.getElementById('calc');
+  sleeves.forEach(function (s) {
+    var d = document.createElement('div'); d.className = 'sl'; d.id = 'r-' + s.key;
+    d.innerHTML = '<div class="row"><strong></strong><span class="st"></span></div><div class="cgrid"><div><div class="k">Invested</div><div class="mono inv">0</div></div><div><div class="k">Value now (Rs)</div><input type="number" inputmode="numeric" min="0" step="100" aria-label="Value now"></div><div><div class="k">Change</div><div class="mono chg">–</div></div></div>';
+    d.querySelector('strong').textContent = s.name;
+    var inp = d.querySelector('input'); inp.id = 'v-' + s.key; if (state.val[s.key] != null) inp.value = state.val[s.key];
+    inp.addEventListener('input', function () { state.val[s.key] = inp.value === '' ? null : Number(inp.value); store.set(state); recalc(); });
+    calc.appendChild(d);
+  });
+  function status(inv, val) {
+    if (!inv) return ['idle', 'Not started'];
+    if (val == null || isNaN(val)) return ['idle', 'Enter value'];
+    var ch = val / inv - 1;
+    if (ch <= -0.25) return ['bad', 'Review the plan'];
+    if (ch <= -0.15) return ['warn', 'Pause next step'];
+    return ['ok', 'Continue'];
+  }
+  function recalc() {
+    var ti = 0, tv = 0, any = false;
+    sleeves.forEach(function (s) {
+      var inv = 0; s.tr.forEach(function (a, mi) { if (a && state.done['tr-' + s.key + '-' + mi]) inv += a; });
+      var v = state.val[s.key], row = document.getElementById('r-' + s.key);
+      row.querySelector('.inv').textContent = fmt(inv);
+      var st = status(inv, v), ch = (inv && v != null) ? (v / inv - 1) : null;
+      row.querySelector('.chg').textContent = ch == null ? '–' : (ch * 100).toFixed(1) + '%';
+      row.querySelector('.st').innerHTML = '<span class="pill ' + st[0] + '">' + st[1] + '</span>';
+      ti += inv; if (v != null && inv) { tv += v; any = true; }
+    });
+    document.getElementById('t-inv').textContent = fmt(ti);
+    document.getElementById('t-val').textContent = any ? fmt(tv) : '–';
+    var ch = (ti && any) ? (tv / ti - 1) : null;
+    document.getElementById('t-chg').textContent = ch == null ? '–' : (ch * 100).toFixed(1) + '%';
+    var st = status(ti, any ? tv : null); document.getElementById('t-st').innerHTML = '<span class="pill ' + st[0] + '">' + st[1] + '</span>';
+  }
+  document.getElementById('reset').addEventListener('click', function () {
+    state = { done: {}, val: {} }; store.set(state);
+    document.querySelectorAll('input[type=checkbox]').forEach(function (c) { c.checked = false; });
+    document.querySelectorAll('.calc input').forEach(function (i) { i.value = ''; });
+    recalc();
+  });
+  var root = document.documentElement;
+  document.getElementById('theme').addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.setAttribute('data-theme', dark ? 'light' : 'dark');
+  });
+  recalc();
+})();
+</script>
