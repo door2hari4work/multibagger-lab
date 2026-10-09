@@ -45,3 +45,12 @@ Investor answers: Zerodha; the 25% limit is measured on money invested in smallc
 - Illustrative stagings: (A, within limit) Autos fund Rs 5,000 x 5 months + Energy Tracker Rs 12,500 in months 1 and 4 = Rs 50,000. (B) Autos Rs 10,000 x 5 + Energy Tracker Rs 12,500 x 4 = Rs 1,00,000. Pause a tranche if the holding is more than 15% below the amount invested.
 - Open: investor's choice of A or B; whether to research actively managed sector/thematic mutual funds with named, verifiable fund managers as the way to satisfy the named-manager preference.
 - No orders placed or prepared by the assistant.
+
+## Update 3: comparison after active named-manager research (2026-10-09). Investor chose to plan around Rs 1 lakh staged over 5 months.
+Sources: files 06-09. Illustrative plan, not advice; no orders placed or prepared.
+- Only one smallcase passed the screens for Zerodha and this size: Windmill Energy Tracker (cap about Rs 30,000). Windmill Auto Tracker cannot be staged (minimum about Rs 85,865). No named-manager smallcase is purchasable on Zerodha.
+- Named-manager evidence is strongest in mutual funds: Tata India Consumer (Sonam Udasi, since Apr 2016, 17.6% a year vs 12.5% sector, worst fall 32.5%, BER 0.62%); Nippon India Multi Cap (Sailesh Raj Bhan, BER 0.68%, fell 41% in Feb-Mar 2020, flat since Dec 2024). HDFC Transportation & Logistics (one cycle, BER 0.93%) is at most a small satellite. ICICI Energy Opportunities lost its headline manager in Nov 2025.
+- Plan 2 (recommended structure): Autos ICICI Pru Nifty Auto Index Fund Rs 30,000 (SIP Rs 6,000 x 5); Energy: Windmill Energy Tracker Rs 30,000 (Rs 15,000 in months 1 and 3); Consumption: Tata India Consumer Rs 20,000 (SIP Rs 4,000 x 5); Diversified: Nippon India Multi Cap Rs 20,000 (SIP Rs 4,000 x 5). Monthly outflow Rs 29,000 / 14,000 / 29,000 / 14,000 / 14,000. Pause a tranche if the holding is more than 15% below the amount invested.
+- Costs: about Rs 540 a year per Rs 1 lakh (funds about 0.48% weighted on Rs 70,000 plus about Rs 200 for the tracker plus Rs 24 AutoSIP fees); tax only on redemption for funds; smallcase rebalances are taxable.
+- Loss arithmetic on a 2020-style fall: about Rs 35,000-38,000 on Rs 1 lakh (limit Rs 25,000). Staying within Rs 25,000 implies an equity stake of about Rs 65,000 with the rest held in a liquid fund until a month-6 review.
+- Overlap with the investor's existing portfolio (lower bound, partial look-through): Energy Tracker names about 0.3% of the portfolio; auto names about 1.2%.
