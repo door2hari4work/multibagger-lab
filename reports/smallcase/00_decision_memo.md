@@ -34,3 +34,14 @@ About Rs 1,576 all-in (1.6%), including Rs 800 STCG on rebalance sales. A paid b
 
 ## Open questions (do not assume)
 Broker; whether this money is separate from the existing portfolio; other realised equity gains this financial year (Rs 1.25 lakh LTCG exemption); whether free rule-based trackers are acceptable instead of a named manager; the actual holdings of any shortlisted basket (login-gated); a manual SEBI check of each registration number.
+
+## Update after deeper research (2026-10-09, evening): plan v1, pending the investor's two decisions
+Investor answers: Zerodha; the 25% limit is measured on money invested in smallcases; wants a named, verified manager; no large other gains this year; stage Rs 1 lakh over 4-6 months.
+- Named manager + Zerodha: no fit. Only 9 baskets from 4 named managers are published on Kite (Wright 2, Green Portfolio 2, WeekendInvesting 4, Estee 1), none a sector basket. Wright New India shows UNPUBLISHED on Kite since launch and a Rs 7,200/yr fee (7.2% of Rs 1 lakh); its factsheet returns do not reconcile with its own table. Not recommended.
+- Windmill Energy Tracker (free, published on Kite, 11 stocks, public holdings, minimum about Rs 12,296, about Rs 672/yr per Rs 1 lakh) is the only practical vehicle for power/energy: no clean fund exists. Roughly 57% oil, gas and coal, 43% power utilities; mostly government-owned; value/dividend/oil-hedge character.
+- Autos: ICICI Prudential Nifty Auto Index Fund (Direct) on Coin, 0.25%, SIP-able; Windmill Auto Tracker is not viable for staging (minimum about Rs 85,865). 55% of the fund is M&M, Maruti, Bajaj Auto and Eicher, already in Nifty 50 funds.
+- Skip: private-bank ETF (overlaps heavy existing financials exposure), pharma (expensive), IT, FMCG for now (32% below peak and still falling), capital goods/manufacturing/infra funds.
+- Loss limit: worst falls in Feb-Mar 2020 were -49% (banks), -43% (infra), -38% (Nifty 50). A 25% limit on money invested caps a stake at about Rs 51,000 at a -49% fall or Rs 62,500 at -40%. Rs 1 lakh staged would breach the limit in a 2020-style crash (loss Rs 38,000-49,000).
+- Illustrative stagings: (A, within limit) Autos fund Rs 5,000 x 5 months + Energy Tracker Rs 12,500 in months 1 and 4 = Rs 50,000. (B) Autos Rs 10,000 x 5 + Energy Tracker Rs 12,500 x 4 = Rs 1,00,000. Pause a tranche if the holding is more than 15% below the amount invested.
+- Open: investor's choice of A or B; whether to research actively managed sector/thematic mutual funds with named, verifiable fund managers as the way to satisfy the named-manager preference.
+- No orders placed or prepared by the assistant.
