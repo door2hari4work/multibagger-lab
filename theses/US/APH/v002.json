@@ -1,0 +1,1051 @@
+{
+ "ticker": "APH",
+ "company": "Amphenol Corporation",
+ "market": "US",
+ "version": 2,
+ "status": "watchlist",
+ "research_level": 4,
+ "as_of": "2026-10-13",
+ "created_at": "2026-10-13T18:23:42+00:00",
+ "price": 85.3,
+ "price_ts": "2026-10-13",
+ "currency": "USD",
+ "why_now": "The Q3 2026 results and hyperscaler capex updates are due in late October 2026, with the stock near its 52-week high (USD 89.93 on 6 Oct) after a 2-for-1 split on 2 Sep 2026 and a +38% 12-month move. Company guidance already implies +50% reported growth for Q3; what matters is whether organic growth, orders and margin quality hold up when the tariff one-off and CommScope step-up are stripped out.",
+ "thesis": "Evidence suggests that Amphenol is a high-quality, diversified interconnect franchise that is currently riding a large AI infrastructure cycle: FY2025 sales USD 23.1bn (+52%, 38% organic), Q2 2026 sales USD 8.76bn (+55%, 30% organic, +24 points acquisitions), orders USD 10.7bn (book-to-bill 1.23), adjusted operating margin 29.8% (28.9% without an USD 80m one-off tariff recovery), IT datacom 43% of sales (+63% organic) and the rest of the business growing about 12% organically. The USD 10.5bn CommScope CCS purchase (closed 9 Jan 2026, funded with USD 7.4bn of notes, term loans and cash; about 11x 2025E EBITDA) is performing above plan (2026 sales view raised from USD 4.1bn to USD 4.6bn, accretion from USD 0.15 to USD 0.30 pre-split) and adds fibre content for AI; leverage is still moderate (net debt about 1.4-1.5x EBITDA). Insider activity is option-exercise-and-sell selling (discretionary, not Rule 10b5-1 plan sales, e55) (about USD 512m in about 9.5 months, corrected from USD 463m by the devil's advocate review, e48) with no open-market buying except a USD 1.3m director purchase.\n\nAI value-chain map (interconnect layer): role = passive and active links, power connectors, busbars and fibre inside and between racks; bottleneck = high-speed signal integrity (224G), power density and liquid cooling, and fibre supply, none of which management says is limiting shipments; second/third-order exposure on a revenue basis is AI-linked IT datacom USD 3.77bn a quarter (disclosed share 43% of sales, AI share of that not disclosed); pricing power is moderate (CFO: CCS margin gains did not come from pricing). If AI spend slows: IT datacom is the first line to fall (about 19% EPS hit per 30% decline on my assumptions, e42), inventory (USD 4.55bn) and receivables (USD 6.79bn) are the first balance-sheet strains, and defence, commercial air and industrial are the buffer; competing layers (Corning, Credo) trade at about 68x earnings so crowding is high across the chain. Peer valuations: TE Connectivity 21x and Belden 17x earnings versus Amphenol 43x GAAP / 40x adjusted.\n\nGreat company is not the same as a great stock at this price: at USD 85.30 the stock trades at the top of its own five-year range and the probability-weighted outcome of my scenarios is about 1.0x the current price, with bear-case downside to roughly 0.45x-0.60x. The evidence does not support a 12-24 month 3-5x outcome. A level-3 watchlist rating means: worth monitoring around results, no valuation asymmetry visible now.",
+ "multibagger_mechanism": "No plausible chain to a 3-5x outcome within 12-24 months was found. The most favourable chain is: IT datacom keeps growing at 25-40% organic (hyperscaler capex +68-100% y/y today) x CCS fibre content and power products lift revenue to about USD 51bn in 2028 at a 30% adjusted margin (EPS USD 4.17) x a 30-34x multiple = USD 125-142, i.e. 1.5x-1.7x of today's price (e44). Reaching 3x (USD 256) would need roughly USD 7.5-8.5 of EPS at 30-34x, about three times my 2026E EPS of USD 2.65, which is not supported by any disclosed backlog, capacity or guidance. The asymmetry, if any, would come from an entry after a drawdown (e.g. a digestion-driven fall to 18-24x on USD 2.1 of EPS), not from the current price.",
+ "expectations_gap": "At USD 85.30 the price is 39.6x TTM adjusted EPS (USD 2.155), 42.8x GAAP and 24.5x EV/EBITDA (19x on the annualised Q2 run-rate), with a 2.25% free-cash-flow yield (e37). To earn 10% a year for two years the market needs CY2028 adjusted EPS of about USD 3.44 at 30x or USD 4.13 at 25x versus my 2026E of USD 2.65, i.e. 14% or 25% a year of EPS growth, equal to roughly USD 52bn of revenue at a 30% margin in the 25x case (e43). My base case (USD 3.27 of 2028 EPS) falls short of the 25x requirement and only the bull case clears it. What the evidence suggests the price already assumes: organic growth in the 20s through 2027, stable 29% margins despite the tariff one-off, and no AI digestion; what it may not assume: a 30% organic rate that has decelerated four quarters in a row (41, 37, 33, 30), the 27% tax rate, rising interest costs from the CCS financing, and a possible mix shift toward active cables and optics. The user-supplied aggregator statistics (trailing P/E 42.7, forward P/E 25.6, mean target about USD 102.7) are consistent with my own GAAP TTM figure of 42.8x but the forward EPS (about USD 3.33) and the target could not be verified; revenue growth of 55% is mostly acquisition-boosted (organic 30%).",
+ "time_horizon_months": 24,
+ "bull_case": {
+  "name": "bull",
+  "description": "MODEL ESTIMATE. AI infrastructure spending keeps compounding and APH gains content (copper, fibre via CCS, power): revenue +26% in 2027 and +15% in 2028 to USD 51.4bn, adjusted operating margin 30.0-30.5%, 2028 adjusted EPS USD 4.17 (e44); multiple held at 30-34x calendar-2028 EPS (only slightly below today's 32x on 2026E) gives USD 125-142 = 1.47x-1.66x of USD 85.30. Needs earnings above the USD 3.33 forward EPS implied by the user-supplied forward P/E of 25.6 (unverified) and a multiple that does not compress. Probability 20% because both must hold and organic growth is already slowing.",
+  "multiple_low": 1.47,
+  "multiple_high": 1.66,
+  "probability": 0.2,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "base_case": {
+  "name": "base",
+  "description": "MODEL ESTIMATE. Growth normalises: revenue +14% in 2027 and +9% in 2028 to USD 44.1bn (organic growth in the low teens as AI spending plateaus at a high level), adjusted margin steady at 28.5%, 2028 adjusted EPS USD 3.27 (2027: USD 3.00; e44). Multiple eases to 25-30x (the lower half of the five-year year-end range of 25-40x, e38): USD 82-98 = 0.96x-1.15x of USD 85.30, an annual return of roughly -2% to +7% before a 0.6% dividend. Probability 50%: most disclosed inputs (backlog USD 8.9bn at year-end, book-to-bill 1.23, Q3 guide) support growth, but the price already includes it.",
+  "multiple_low": 0.96,
+  "multiple_high": 1.15,
+  "probability": 0.5,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "bear_case": {
+  "name": "bear",
+  "description": "MODEL ESTIMATE. Hyperscaler capex digests in 2027 or architectures shift (AEC/CPO): IT datacom falls about 20-30% from the Q2 2026 level, revenue -6% in 2027 and +3% in 2028 to USD 34.3bn, adjusted margin 24.5% (operating deleverage, tariff recovery gone, integration costs), 2028 adjusted EPS USD 2.12 (e44, e42); multiple compresses to 18-24x, below the five-year low year-end figure of 24.9x (2022), as a cyclical derating would imply: USD 38-51 = 0.45x-0.60x. Probability 30% because hardware capex cycles generally include a digestion phase (an inference, not tested in this lab) and the stock is near a high; the 24-month window is long enough to include one.",
+  "multiple_low": 0.45,
+  "multiple_high": 0.6,
+  "probability": 0.3,
+  "horizon_months": 24,
+  "probability_is_model_estimate": true
+ },
+ "catalysts": [
+  {
+   "description": "Q3 2026 results and Q4 outlook (company guide: sales USD 9.3-9.4bn, adjusted EPS USD 0.70-0.71 post-split / USD 1.40-1.42 pre-split). Tests: whether the record is beaten again (April guide was beaten by 7% on sales), organic growth vs the high-20s estimate, IT datacom +mid-teens sequentially, orders and book-to-bill (1.23), adjusted operating margin ex-tariff vs 28.9%, and Q4 outlook.",
+   "window": "Late Oct 2026; date not confirmed by the company (Q3 2025 was released 22 Oct 2025; a third-party calendar lists 28 Oct 2026, unverified)",
+   "status": "pending",
+   "evidence_ids": [
+    "e17",
+    "e15",
+    "e23",
+    "e45"
+   ]
+  },
+  {
+   "description": "Hyperscaler Q3 2026 results and 2027 capex signals (Alphabet, Microsoft, Meta, Amazon): the Q2 prints showed capex up 68-100% y/y and Meta guiding USD 130-145bn for 2026; any 2027 guide-down or 'digestion' language is the main external catalyst for APH's IT datacom exposure.",
+   "window": "Late Oct 2026 (Q2 reports were 22-30 Jul 2026; Q3 dates not verified)",
+   "status": "pending",
+   "evidence_ids": [
+    "e31",
+    "e32",
+    "e41"
+   ]
+  },
+  {
+   "description": "Q3 2026 10-Q: CCS purchase accounting finalisation, CCS internal-control scope, leverage and any new restructuring; first full quarter on a post-split share base; the remaining USD 400m of the 364-day term loan (repaid or not) and April 2027 notes (USD 700.7m, 5.05%).",
+   "window": "Within days of Q3 results (late Oct 2026)",
+   "status": "pending",
+   "evidence_ids": [
+    "e19",
+    "e22",
+    "e10"
+   ]
+  },
+  {
+   "description": "Capital allocation: USD 0.125 post-split dividend payable 14 Oct 2026; the USD 2.0bn 2024 buyback authorisation (USD 411.1m left at 29 Jul 2026) expires 28 Apr 2027, so a new authorisation or a dividend increase (last increase +52% announced with Q3 2025 results) is likely around Q3-Q1 results.",
+   "window": "Oct 2026 - Apr 2027",
+   "status": "pending",
+   "evidence_ids": [
+    "e2",
+    "e22",
+    "e15"
+   ]
+  },
+  {
+   "description": "Q4/FY2026 results with Q1 2027 guidance: first quarter when CCS is in both comparison periods (organic growth comparison cleaner) and the first read on 2027 AI demand and whether tariff recoveries recur.",
+   "window": "Late Jan 2027 (date not announced)",
+   "status": "pending",
+   "evidence_ids": [
+    "e14",
+    "e40"
+   ]
+  },
+  {
+   "description": "Harsh Environment division leadership transition (Walter to Fisher) and further integration milestones for CCS and Trexon.",
+   "window": "1 Jan 2027",
+   "status": "pending",
+   "evidence_ids": [
+    "e30",
+    "e10"
+   ]
+  }
+ ],
+ "risks": [
+  "AI concentration: IT datacom was 43% of Q2 2026 sales (36% in FY2025) and drove 'virtually all' of growth; the CEO says the only dependency is that 'people continue to invest'. Hyperscaler capex is up 68-100% y/y (Alphabet, Meta, Amazon, Q2 2026); a plateau or digestion year would hit sales, orders and inventory (USD 4.55bn) together (e23, e25, e31, e32, e42).",
+  "Organic growth is decelerating (41%, 37%, 33%, 30% over the last four quarters) and the Q3 guide implies another step down to roughly the high 20s; reported growth of 50%+ is flattered by CCS (+24 points from acquisitions in Q2). The user-quoted 55% revenue growth is only about 30% organic (e12, e40, e45).",
+  "Valuation: 39.6x TTM adjusted EPS, 42.8x GAAP and 24.5x EV/EBITDA, above every year-end in a five-year set (25-40x GAAP); FCF yield 2.25%; the price sits within 5% of its 52-week high after a +38% year. Even my base case returns under 10% a year, and the bull case is needed for a market-beating return (e37, e38, e43, e44).",
+  "Technology shift: active electrical cables (Credo AEC revenue +206% in FY2026) and CPO/optical scale-up (Nvidia 'both', Feynman 2028 with CPO option) could shift content and margin away from passive copper connectors; Amphenol's mix across copper, fibre and power is a hedge but per-GPU content and its AI revenue split were not disclosed (e25, e33, e34, e49).",
+  "Margin quality: the Q2 29.8% adjusted margin includes an USD 80m one-off IEEPA tariff recovery (28.9% without); acquired businesses run below the company margin (CCS 'over 20%' vs 29.5%); adjusted tax rate rose to 27.0% from 24.5% after USD 329m of China tax charges in H1; tariff policy and China (15.9% of FY2025 sales, +8% vs +52% total) remain exposures (e5, e16, e24).",
+  "Acquisition and leverage risk: USD 10.7bn spent on 2026 deals alone; debt USD 18.8bn vs USD 15.5bn at year-end, interest expense USD 213.7m a quarter (2.6x the prior year); goodwill plus intangibles USD 22.8bn = 51% of total assets and 146% of equity (tangible equity is negative); CCS is excluded from the internal-control assessment; the 10-K calls CCS the largest deal in company history and admits past integration difficulties (e6, e10, e19).",
+  "Cash conversion fell to 75% of net income in H1 2026 (102% in FY2025) as receivables rose USD 1.3bn; a demand slowdown could turn the working-capital build (receivables USD 6.79bn, inventory USD 4.55bn) into a cash drag (e18, e47).",
+  "Diluted share count still rises 1-1.6% a year (Q2 2026 +1.3% y/y) despite USD 386m of H1 buybacks, so repurchases only offset dilution and do not shrink the base; insiders sold about USD 512m of stock in about 9.5 months (corrected from USD 463m, e48), all through discretionary option exercise-and-sell with no Rule 10b5-1 plan flagged (e55), and the only open-market purchase was a USD 1.3m director buy; ownership by insiders is 1.42% (e22, e29, e48, e28).",
+  "End-customer concentration is not disclosed: no customer is at 10%, but sales through ODMs/EMS and distributors (about 19%) hide the hyperscaler and GPU-vendor exposure; I could not size it (e5).",
+  "Not verified / source gaps: the company IR site returned no event or transcript content (Q3 2026 release date unconfirmed); the Q1 2026 and earlier call transcripts could not be read (paywall/403) and the Q2 2026 call was read only on a third-party host (allmind.ai) and in part; Microsoft's capex release was not parsed; a Tom's Hardware report of a Kyber delay was readable only as a headline; consensus estimates, price targets and the user-supplied forward P/E (25.6) and USD 102.7 mean target are unverified aggregator data; Q4 2026 and 2027 numbers are my own estimates.",
+  "China footprint (DA review): 37% of long-lived assets were in China at end-2025 (29% a year earlier) mainly for AI-related capacity, against about 16% of sales; US-China trade measures, the China tax matter (USD 329m of H1 2026 charges) or export controls would hit AI supply, and the gross tariff cost behind the USD 80m net recovery is not disclosed (e51, e52).",
+  "Hyperscaler capex second derivative (DA review): one third-party path has hyperscaler capex growth falling from about 85% in 2026 to 27.5% in 2027 and 7.4% in 2028 (DoubleLine, e60); APH's IT datacom growth tracks capex growth with an elasticity of roughly 0.6-0.9 (e41), so growth can decelerate sharply in 2027-28 without any spending cut, which is when a 25-34x multiple is hardest to hold.",
+  "Consensus crowding (DA review): 16 of 18 analysts rate it buy, institutions own about 97% of the shares, and the average target of about USD 97 is only about 14% above the price (e59); the stock is a consensus long where a guidance miss would be punished and a beat is expected.",
+  "Share-count and EV basis (DA review): the thesis' market cap uses basic shares; on the filing's diluted count EV/EBITDA is about 25.5x and the FCF yield about 2.15% (e54). Options (88.8m pre-split at USD 36.62 average strike, e53) are the main equity pay, so dilution persists.",
+  "Roadmap lead, unverified (DA review): a report that Nvidia's Kyber rack (Rubin Ultra) slips to 2028 (e62) could delay the next rack-level copper content step-up; the effect on Amphenol is unknown.",
+  "Data quality: the thesis price was captured intraday on 13 Oct, not at the close (e1); the Q2 call was read only on third-party hosts and the 43% IT datacom share is call-only (e23); the Q3 2026 results date is unconfirmed and two calendars disagree (projected 21 Oct versus 28 Oct), so the 'next review 30 Oct' date may fall after results; 2027 consensus EPS is unverified (e59); AI share of IT datacom, hyperscaler/GPU-vendor concentration and gross tariff cost are not disclosed."
+ ],
+ "valuation": {
+  "price_usd": 85.3,
+  "price_date": "2026-10-13",
+  "shares_post_split_million": 2466.0,
+  "market_cap_usd_billion": 210.3,
+  "net_debt_usd_billion": 13.39,
+  "enterprise_value_usd_billion": 223.9,
+  "ttm_sales_usd_million": 29012,
+  "ttm_adjusted_operating_income_usd_million": 8161,
+  "ttm_ebitda_gaap_based_usd_million": 9145,
+  "pe_ttm_gaap_x": 42.8,
+  "pe_ttm_adjusted_x": 39.6,
+  "pe_2026e_adjusted_x": 32.2,
+  "pe_q3_guide_annualised_x": 30.2,
+  "ev_ebitda_ttm_x": 24.5,
+  "ev_ebitda_q2_annualised_x": 19.1,
+  "ev_sales_ttm_x": 7.7,
+  "fcf_ttm_usd_million": 4728,
+  "fcf_yield_pct": 2.25,
+  "dividend_yield_pct": 0.59,
+  "net_debt_to_ttm_ebitda_x": 1.46,
+  "own_5y_year_end_trailing_pe_gaap_x_range": [
+   24.9,
+   40.5
+  ],
+  "peer_pe_ttm_gaap_x": {
+   "TEL": 21.1,
+   "GLW": 67.5,
+   "BDC": 17.2,
+   "CRDO": 68.7
+  },
+  "peer_ev_ebitda_ttm_x": {
+   "TEL": 13.9,
+   "BDC": 10.5
+  },
+  "note": "Post-split per-share figures (2-for-1 on 2 Sep 2026). Derived from filings plus an aggregator price; 2026E EPS and scenarios are model estimates.",
+  "shares_diluted_q2_weighted_post_split_million": 2578.4,
+  "market_cap_diluted_usd_billion": 219.9,
+  "enterprise_value_diluted_usd_billion": 233.5,
+  "ev_ebitda_ttm_diluted_basis_x": 25.5,
+  "ev_ebitda_ttm_diluted_pro_forma_ccs_x": 24.2,
+  "fcf_yield_diluted_pct": 2.15,
+  "pe_ttm_adjusted_ex_tariff_x": 40.0,
+  "pe_forward_on_2026e_at_dec_2025_close_x": 25.5,
+  "note_da": "DA review (e54, e56): basic-share figures above are kept for audit; diluted-basis keys added. Forward-basis year-end multiples 2021-2024 were 20.8x-28.6x on next-year actual GAAP EPS."
+ },
+ "scores": [
+  {
+   "name": "business_quality",
+   "value": 0.85,
+   "weight": 1.0,
+   "basis": "GAAP operating margin 29.5%, segment margins 21-34%, FCF about USD 4.7bn TTM, no customer at 10%, about 40-country footprint; leverage 1.4x EBITDA (e3, e16, e37)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "growth_acceleration",
+   "value": 0.55,
+   "weight": 1.0,
+   "basis": "Reported +55% but organic decelerated 41->30% over four quarters; orders +94% y/y and book-to-bill 1.23 point to continued strength; Q3 guide +50% (e12, e23, e40)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "earnings_inflection",
+   "value": 0.6,
+   "weight": 1.0,
+   "basis": "Adjusted EPS +67% y/y in Q2 (USD 0.81 to 1.35 pre-split), beat guidance by 16%; but part is one-off tariff recovery and acquisition accretion (e16, e17)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "tam_expansion",
+   "value": 0.7,
+   "weight": 1.0,
+   "basis": "AI interconnect, power and fibre; CCS adds optics; hyperscaler capex +68-100% y/y (e31, e32)",
+   "data_quality": "partial"
+  },
+  {
+   "name": "catalyst_strength",
+   "value": 0.45,
+   "weight": 1.0,
+   "basis": "Q3 results and hyperscaler capex updates in late Oct 2026 are near-dated but the stock already trades near its high; no unpriced company-specific catalyst identified (e17)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "competitive_advantage",
+   "value": 0.8,
+   "weight": 1.0,
+   "basis": "Broad portfolio across copper, fibre, power and sensors; named competitors TE, Molex, Luxshare, Corning, Belden; AEC and CPO are credible disruptors (e6, e33, e34)",
+   "data_quality": "partial"
+  },
+  {
+   "name": "valuation_asymmetry",
+   "value": 0.2,
+   "weight": 1.0,
+   "basis": "Probability-weighted scenario outcome about 1.0x of the current price; top of own five-year trailing P/E range; FCF yield 2.25% (e37, e38, e44)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "market_confirmation",
+   "value": 0.9,
+   "weight": 1.0,
+   "basis": "Price USD 85.30 within 5% of the 52-week high of USD 89.93; +38% in 12 months (e1)",
+   "data_quality": "ok"
+  },
+  {
+   "name": "risk",
+   "value": 0.4,
+   "weight": 1.0,
+   "basis": "Inverse risk score: AI concentration 43%, technology-shift and capex-cycle risk, leverage up but moderate, large integration (e23, e19, e6)",
+   "data_quality": "partial"
+  },
+  {
+   "name": "thesis_robustness",
+   "value": 0.5,
+   "weight": 1.0,
+   "basis": "Core facts are from filings; forward numbers are my estimates; key transcripts only partly read; end-customer concentration unknown (e5, e25)",
+   "data_quality": "partial"
+  }
+ ],
+ "overall_score": null,
+ "confidence": "low",
+ "entry": {
+  "state": "unknown",
+  "ideal_zone": null,
+  "acceptable_zone": null,
+  "chase_zone": null,
+  "add_zone": null,
+  "invalidation_price": null,
+  "rationale": ""
+ },
+ "exit_rules": [
+  {
+   "type": "catalyst_failure",
+   "condition": "Q3 2026 results (due late Oct 2026) show sales below USD 9.3bn or adjusted EPS below USD 0.70 post-split (USD 1.40 pre-split), or Q4 guidance below Q3 actual sales; any quarter in which sales miss the low end of company guidance.",
+   "status": "armed"
+  },
+  {
+   "type": "thesis_invalidation",
+   "condition": "Consolidated book-to-bill below 1.0 in any quarter, or reported orders down sequentially for two consecutive quarters (Q2 2026: USD 10.732bn, 1.23), or IT datacom organic growth below +20% y/y (Q2 2026: +63%) while hyperscalers cut 2027 capex guidance.",
+   "status": "armed"
+  },
+  {
+   "type": "earnings_deterioration",
+   "condition": "Adjusted operating margin excluding one-off tariff recoveries below 26.5% in two consecutive quarters (Q1 2026 27.3%; Q2 2026 28.9% ex-USD 80m), or adjusted free cash flow below 70% of adjusted net income on a trailing-four-quarter basis (H1 2026: 65%).",
+   "status": "armed"
+  },
+  {
+   "type": "valuation_excess",
+   "condition": "Price above about USD 100 (about 46x TTM adjusted EPS of USD 2.155 or 38x my 2026E USD 2.65) without an upward revision to the 2027 EPS path, or EV/annualised-quarter EBITDA above 24x; or price below USD 67 (-25% from the 52-week high of USD 89.93) accompanied by an orders miss, which triggers a thesis review rather than an average-down.",
+   "status": "armed"
+  },
+  {
+   "type": "thesis_invalidation",
+   "condition": "New debt-funded acquisition above USD 5bn, or net debt/EBITDA above 2.5x, or an impairment of CCS goodwill (USD 6.96bn), or any restatement or material weakness reported in the CCS internal-control scope.",
+   "status": "armed"
+  },
+  {
+   "type": "narrative_saturation",
+   "condition": "Hyperscaler or GPU-vendor roadmap disclosure (10-Q, call, Nvidia GTC) that shifts rack-scale links to CPO or active cables earlier than 2028 together with a statement from Amphenol that its share of the new architecture is lower than today's.",
+   "status": "armed"
+  }
+ ],
+ "adversarial": {
+  "done": true,
+  "reviewer": "devils_advocate",
+  "verdict": "downgraded",
+  "strongest_bear_case": "At about USD 233bn of enterprise value the market pays 25.5x EBITDA (e54) for earnings of which roughly 43% of sales come from AI datacom that is itself driven by a handful of hyperscalers whose capex growth is expected to fall from about 85% to 27% to 7% over 2026-28 (e60) and whose free cash flow is already near zero (Amazon trailing -USD 7.6bn, e32). Organic growth has slowed four quarters in a row (e40), margins in the last quarter included an USD 80m non-repeatable tariff refund (e16), the rack-level content may migrate to active cables, optics or architectures that arrive late (e49, e61, e62), 51% of assets are acquired goodwill and intangibles (e19), the CCS contribution flatters 2026 growth and peak AI-fibre demand, and executives sold USD 512m at the highs without a pre-arranged plan (e48). In a digestion year IT datacom falls 25-30%, EPS is about 20% below the 2026E and the multiple drops to the low 20s: roughly USD 40-50 (e44), a 40-55% loss, which is what happened to Amphenol itself in 2000-02 and 2008 (e64).",
+  "questions": {
+   "what_evidence_would_make_it_wrong": "Evidence that would show the 'great company, not asymmetric' view is too cautious: Q3 results (date unconfirmed, likely 21 or 28 Oct) with sales well above the USD 9.3-9.4bn guide, organic growth re-accelerating from 30% and book-to-bill staying above 1.2 while 2027 hyperscaler capex guides rise, because that would push 2027 EPS toward the bull path (USD 3.5 or more, e57). Evidence that it is too warm: book-to-bill below 1.0, two sequential order declines, or a hyperscaler 2027 capex guide-down, none of which has appeared (orders USD 10.73bn, +14% sequentially, e23). Already visible and cooling the story: organic growth 41, 37, 33, 30% (e40) and a plateau-shaped capex path from third parties (e60); a thesis-level error found is that insider sales were USD 512m, not USD 463m (e48).",
+   "what_is_missing": "Not disclosed or not verified: the AI share of IT datacom (management says 'virtually all of the growth' is AI but gives no split, e23, e25); end-customer concentration (no 10% customer, but ODM/EMS and distributor sales hide hyperscaler and GPU-vendor exposure, e5); content per rack or per accelerator; the gross tariff cost behind the USD 80m net recovery and whether replacement tariffs apply (e52); a primary 2027 consensus (snippets conflict, e59); the Q3 results date; backlog at 30 June (the 10-Q gives none; USD 8.9bn at 31 Dec, e5); Amphenol's own AEC and CPO revenue (e61); and the effect of the reported Kyber slip (e62). The thesis also missed that 37% of long-lived assets are in China (e51) and measured EV on basic shares (e54).",
+   "is_catalyst_priced_in": "Largely yes for the known catalyst. The stock was USD 59 on 19 May 2026 and about USD 85-89 in October, +45% in five months, through the Q2 beat (sales 7% and EPS 16% above the top of the April guide, e17); the street's 2026 EPS of 2.66 equals the thesis' 2.65 (e59) and targets of USD 97-112 sit only 14-31% above the price. The Q3 guide of +50% reported growth is public and contains no tariff recovery, so a further beat of 5-10% on EPS is the pattern (Q2: +16% on EPS) but is not a surprise to analysts who raised targets after July. The unpriced parts are the 2027 capex path and the Q4 guide.",
+   "does_valuation_fit_growth": "On trailing numbers it looks full (39.6x adjusted, 42.8x GAAP, 25.5x EV/EBITDA on diluted shares, 2.15% FCF yield, e37, e54). On a forward and growth-adjusted basis it is less stretched than the thesis suggests: about 32x 2026E, but on the like-for-like next-year basis about 26-28x 2027 EPS versus 25.5x at Dec 2025 and 21-29x at the 2021-2024 year-ends (e56); P/E to growth is about 1.4, no worse than TE at about 1.5 (e65). The fit breaks in 2027-28 if growth fades to the single digits that third-party capex paths imply (e60), because 25-34x is then a multiple for a cyclical plateau; the bull case's 30-34x on 2028 EPS with +15% growth is the least comfortable assumption.",
+   "great_company_vs_great_stock": "Great company, ordinary-to-good stock at this price, not a candidate for a 3-5x. The business facts hold: 25-29% margins, 2025 sales USD 23.1bn, orders USD 10.7bn a quarter, net debt about 1.4x EBITDA (e3, e19, e23). The expected return from the corrected base (1.03x-1.24x, e57) and the probability-weighted 1.04x is about 2% a year plus a 0.6% dividend, wide error bars, with a bear tail near 0.5x (e64 shows what the left tail has looked like). Consensus upside of about 14% to targets (e59) says the same thing from the other side.",
+   "merely_an_ai_narrative": "No, the revenue evidence is real and filed: IT datacom is about 43% of Q2 sales (USD 3.77bn a quarter, +63% organic, call-only figure, e23, e41), the 10-K cites AI-related products repeatedly and backlog rose from USD 6.1bn to USD 8.9bn mostly on AI (e5). It is, however, a narrative-dependent multiple: the non-AI 57% of the business grows about 12% organically (e41) and would deserve roughly TE-like multiples, so about half the equity value rests on AI continuing; the exact AI share is not disclosed. Amphenol's AI capacity has also been built mainly in China (e51).",
+   "is_it_crowded": "Yes by ownership and sentiment, no by price action. Institutions hold about 97% of the shares, Vanguard 10.2%, BlackRock 8.0%, FMR 7.0% (e29, e59), and 16 of 18 analysts rate it buy with a new wave of initiations in September (Bernstein, Wolfe, e59). The stock has not run away in 2026 (month-end USD 72 in January, 85 now, e1, e63) and trades below AI-optics peers (Corning 67.5x, Credo 68.7x trailing, e39). Short interest and flows were not available from a primary source; social buzz is not evidence. Because the consensus is long and the positioning is institutional, upside surprises tend to be partly absorbed and misses punished.",
+   "strongest_bear_argument": "At about USD 233bn of enterprise value the market pays 25.5x EBITDA (e54) for earnings of which roughly 43% of sales come from AI datacom that is itself driven by a handful of hyperscalers whose capex growth is expected to fall from about 85% to 27% to 7% over 2026-28 (e60) and whose free cash flow is already near zero (Amazon trailing -USD 7.6bn, e32). Organic growth has slowed four quarters in a row (e40), margins in the last quarter included an USD 80m non-repeatable tariff refund (e16), the rack-level content may migrate to active cables, optics or architectures that arrive late (e49, e61, e62), 51% of assets are acquired goodwill and intangibles (e19), the CCS contribution flatters 2026 growth and peak AI-fibre demand, and executives sold USD 512m at the highs without a pre-arranged plan (e48). In a digestion year IT datacom falls 25-30%, EPS is about 20% below the 2026E and the multiple drops to the low 20s: roughly USD 40-50 (e44), a 40-55% loss, which is what happened to Amphenol itself in 2000-02 and 2008 (e64).",
+   "what_happened_in_similar_setups": "Three analogues from aggregator month-end data (e64): Corning in the 2000 fibre boom fell 98% peak to trough and took 25 years to regain the peak; Cisco fell 86% and took about 26 years; Amphenol itself fell 53% in 2000-02 and 51% in 2008 although its earnings stayed positive. A milder one is APH in 2022-23, -26% with flat earnings. They are imperfect matches (the 2000 stocks had far higher multiples and, in Corning's case, a balance-sheet crisis; Amphenol today has a 12x interest cover and real earnings, e37), so they bound the left tail rather than predict it. A good analogue for a still-growing, fully valued franchise that produced a market-like return is not available from the sources used.",
+   "what_must_happen_for_5x": "A 5x means a price near USD 426 and a market value of about USD 1.1 trillion. At 30-35x that needs 2028 EPS of USD 12-14 (about 4.6-5.4 times the 2026E of 2.65) and roughly USD 147-171bn of revenue at a 30% margin, i.e. revenue compounding above 100% a year from USD 35.5bn (e58), against orders of about USD 43bn a year today. It would also need the multiple to hold at the top of its history while growth is, by every capex path found, decelerating. No filing, guide or backlog figure supports it, and it is also well beyond what acquisitions could add given leverage of 1.4x net.",
+   "is_5x_plausible_in_1_2_years": "No: I would put it well below 1% (model estimate). Even 3x needs about USD 89-104bn of 2028 revenue (e58), roughly 2.5-3 times the 2026E, so it is also below 1%. A realistic range for the 1-2 year outcome, using the corrected scenarios, is about 0.45x-0.60x (bear, probability about 30%), 1.0x-1.25x (base, about 50%) and 1.5x-1.7x (bull, about 20%), plus a thin tail where 2x needs revenue near USD 60-70bn (a model estimate of about 3-7% probability, e58). That is a quality compounder range with a fat left tail, not a multibagger setup.",
+   "probability_market_already_right": "Model estimate: about 55-65% that the price is roughly right (within about plus or minus 15% of a fair 24-month-forward value). Reasons: the street's 2026 EPS equals mine and its targets are only 14-30% higher (e59); the forward multiple of about 26-28x on 2027 EPS sits in the upper half of APH's own 21-29x forward range (e56); and the main uncertainty (2027-28 capex path, e60) is symmetric to the market's. The residual 35-45% splits unevenly: a bear skew from capex digestion or technology shift (about 25-30%) and a smaller bull tail from sustained 5-6% sequential growth (about 10-15%). I do not see a reproducible edge on either side from public information."
+  },
+  "reviewed_at": "2026-10-13T18:23:42+00:00"
+ },
+ "portfolio_fit": {
+  "score": null,
+  "summary": "",
+  "overlap_notes": [],
+  "suggested_max_weight_pct": null
+ },
+ "evidence": [
+  {
+   "id": "e1",
+   "claim": "APH traded at about USD 85.3 to 85.6 intraday on 2026-10-13 (the series' last print, about 18:17 UTC, was USD 85.64; the thesis was built at about 18:08 UTC) and was NOT a closing price. Daily closes: 6 Oct 88.62, 7 Oct 87.55, 8 Oct 85.32, 9 Oct 87.24, 12 Oct 86.19. 52-week high USD 89.93 and low USD 59.005 (19 May 2026) confirmed. The close of USD 61.955 on 2025-10-13 gives about +38% over 12 months (the user-quoted +41% not reproduced). Month-end closes in 2026: Jan 72.04, Feb 73.03, Mar 63.17, Apr 73.64, May 74.38, Jun 88.16, Jul 80.35, Aug 79.28, Sep 84.30.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/APH?range=10y&interval=1d",
+   "source_date": "2026-10-13",
+   "period": "price snapshot",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "CORRECTED by devil's advocate review: original wording said 'closed at USD 85.30 on 2026-10-13', but 13 Oct was still trading when it was captured. Aggregator series (Yahoo chart endpoint), context only; split-adjusted. The 12-month change and the 52-week range were re-checked and hold."
+  },
+  {
+   "id": "e2",
+   "claim": "8-K (4 Sep 2026): the 2-for-1 stock split (announced 6 Aug 2026, record date 17 Aug) was effected on 2 Sep 2026; the quarterly dividend payable 14 Oct 2026 (record 22 Sep) is now USD 0.125 per share (previously USD 0.25). All per-share figures in the FY2025 10-K, the Q1/Q2 2026 10-Qs, earnings releases and Form 4s are PRE-split; this thesis converts them to post-split by halving and says so.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926105485/tm2624775d1_8k.htm",
+   "source_date": "2026-09-04",
+   "period": "Sep 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "The user's USD 85 price and USD 210B market cap are consistent with the split: 1,232,983,457 pre-split shares at 28 Jul 2026 (Q2 10-Q cover) = about 2.466 billion post-split shares x USD 85.30 = about USD 210 billion."
+  },
+  {
+   "id": "e3",
+   "claim": "FY2025 10-K: net sales USD 23,094.7 million (+52% in USD, +38% organic; acquisitions contributed about 13 points, FX about 1 point) vs USD 15,222.7 million in FY2024 and 12,554.7 million in FY2023. GAAP operating income USD 5,868.6 million (25.4% margin; adjusted 26.2%, USD 6,049.8 million per the Q4 release); GAAP diluted EPS USD 3.34 (pre-split) vs 1.92 and 1.55; net income attributable USD 4,270.3 million; operating cash flow USD 5,374.7 million; capex USD 996.6 million; free cash flow USD 4,392.9 million (Q4 release).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+   "source_date": "2026-02-11",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Per-share data pre-split. FY2025 free cash flow and adjusted operating income are from the Q4 2025 release (e14)."
+  },
+  {
+   "id": "e4",
+   "claim": "FY2025 10-K end-market mix (share of net sales): IT datacom about 36%, industrial 19%, automotive 15%, communications networks 10%, defense 9%, mobile devices 6%, commercial aerospace 5% (sums to 100%; broadband is inside communications networks, not shown separately). IT datacom sales rose about USD 4,593.7 million in 2025 'in particular next-generation AI-related applications'. Segments: Communications Solutions USD 12,056.0 million (52%), Harsh Environment USD 5,881.7 million (26%), Interconnect and Sensor Systems USD 5,157.0 million (22%).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+   "source_date": "2026-02-11",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Shares are rounded approximations stated by the company ('approximately')."
+  },
+  {
+   "id": "e5",
+   "claim": "FY2025 10-K geography and customers: United States USD 7,987.7 million (34.6%), China USD 3,673.1 million (15.9%; +8% vs USD 3,399.9 million in 2024), other foreign USD 11,433.9 million (49.5%). No single customer accounted for 10% or more of net sales in 2023, 2024 or 2025; distributors and resellers were USD 4,297.2 million (about 19%); the company sells to thousands of OEMs, EMS companies, ODMs and service providers. Backlog of unfilled firm orders about USD 8.9 billion at 31 Dec 2025 vs about USD 6.1 billion a year earlier, mostly AI-related and acquisitions.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+   "source_date": "2026-02-11",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "The 10-K gives no end-customer (hyperscaler, GPU vendor) concentration: sales through ODMs/EMS are not traced to the end buyer."
+  },
+  {
+   "id": "e6",
+   "claim": "FY2025 10-K risk factors: the company states that 'some of our customers are making significant investments in AI' driving 'robust demand' and that continued growth 'will be dependent upon' share, customers' capital spending mix and changing technology priorities; CommScope is 'the largest acquisition in the Company's history'; goodwill was USD 10.6 billion at 31 Dec 2025 (USD 17.55 billion at 30 Jun 2026 after CommScope). Named competitors include Aptiv, Belden, Corning, Foxconn Interconnect, Glenair, HUBER+SUHNER, Luxshare (ICT), Jonhon, Molex, Rosenberger, Sensata, TE Connectivity and Yazaki.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+   "source_date": "2026-02-11",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": ""
+  },
+  {
+   "id": "e7",
+   "claim": "8-K exhibit (4 Aug 2025): agreement to acquire CommScope's Connectivity and Cable Solutions (CCS) business for USD 10.5 billion in cash; CCS expected to generate about USD 3.6 billion sales and about 26% EBITDA margin in calendar 2025; funded by cash on hand and debt with committed financing from J.P. Morgan, BNP Paribas and Mizuho; three units (Data Center Connectivity Solutions, Broadband Communications, Building Connectivity Solutions); expected accretive to EPS in the first full year.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465925073344/tm2522435d1_ex99-1.htm",
+   "source_date": "2025-08-04",
+   "period": "2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Implied price about 11.2x 2025E EBITDA (USD 10.5bn / (3.6bn x 26%)); see e46."
+  },
+  {
+   "id": "e8",
+   "claim": "8-K exhibit (12 Jan 2026): CCS acquisition completed on 9 Jan 2026 for about USD 10.5 billion in cash; CCS expected to generate about USD 4.1 billion of 2026 sales and be about USD 0.15 accretive to 2026 adjusted diluted EPS (pre-split); included in Communications Solutions; about 20,000 employees.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926002737/tm262701d1_ex99-1.htm",
+   "source_date": "2026-01-12",
+   "period": "2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": ""
+  },
+  {
+   "id": "e9",
+   "claim": "Q2 2026 release (29 Jul 2026): 'given the better than expected performance of CommScope', Amphenol now expects CCS to produce full-year 2026 sales of USD 4.6 billion (previously USD 4.1 billion) and USD 0.30 of adjusted EPS accretion (previously USD 0.15), pre-split. Also completed El.Com (Italy, about USD 150 million annual sales; industrial, defence, aerospace) and Wilder Technologies (about USD 15 million; test and measurement) in Q2.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926087904/aph-20260729xex99d1.htm",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "EPS figures are pre-split (USD 0.30 pre-split = about USD 0.15 post-split)."
+  },
+  {
+   "id": "e10",
+   "claim": "Q2 2026 10-Q, Note 11: CCS purchase accounting (preliminary, acquisition date 9 Jan 2026): net assets acquired USD 10,735.8 million, of which goodwill USD 6,958.0 million and intangibles USD 3,289.0 million (weighted life about 16 years); CCS contributed net sales of USD 2,100.9 million and net income of USD 190.2 million from 9 Jan to 30 Jun 2026 (including USD 179.0 million of non-cash backlog/inventory step-up amortisation); CCS was 14% of Q2 and 13% of H1 net sales and is excluded from the internal-control assessment. Pro forma net sales (as if CCS owned from 1 Jan 2025): Q2 2025 USD 6,525.7 million vs reported Q2 2026 USD 8,758.1 million; H1 2025 USD 12,060.8 million vs H1 2026 USD 16,465.8 million. The 2026 acquisitions (three) cost USD 10,684.0 million net of cash; 2025 acquisitions (five incl. Andrew and Trexon) USD 3,818.6 million.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm",
+   "source_date": "2026-07-31",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": ""
+  },
+  {
+   "id": "e11",
+   "claim": "10-K Note 11: Andrew (outdoor wireless and DAS from CommScope parent) closed 31 Jan 2025 for USD 2,022.7 million net of cash; Trexon (high-reliability interconnect and cable assemblies, mainly defence, Harsh Environment segment) closed 6 Nov 2025 for USD 1,050.3 million net of cash (agreement 18 Aug 2025); CIT (2024) cost about USD 2,156.4 million for both 2024 deals. Q3 2025 release: Rochester Sensors (about USD 100 million sales) acquired August 2025.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+   "source_date": "2026-02-11",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Rochester Sensors detail is from the Q3 2025 release (e15)."
+  },
+  {
+   "id": "e12",
+   "claim": "Q2 2026 growth decomposition (10-Q and release): net sales USD 8,758.1 million, +55% in USD = FX +1 point, acquisitions +24 points, organic +30%. Communications Solutions +85% (acquisitions +42, organic +42), Harsh Environment +28% (organic +22), Interconnect and Sensor +17% (organic +13). United States +76% (organic +23%), foreign +44% (organic +33%). H1 2026: sales USD 16,378.2 million, +57% USD, +32% organic, acquisition impact +24 points.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm",
+   "source_date": "2026-07-31",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Company-defined organic growth excludes FX and acquisitions not owned for the full comparison period."
+  },
+  {
+   "id": "e13",
+   "claim": "Q1 2026 release (29 Apr 2026): sales USD 7,620.1 million, +58% USD, +33% organic (acquisition impact +23 points); orders USD 9.4 billion, book-to-bill 1.24; adjusted EPS USD 1.06 (pre-split) vs GAAP 0.72; adjusted operating margin 27.3% (GAAP 24.0%); free cash flow USD 831 million; Q2 2026 guidance was sales USD 8.1-8.2 billion and adjusted EPS USD 1.14-1.16 (pre-split).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926050984/aph-20260429xex99d1.htm",
+   "source_date": "2026-04-29",
+   "period": "Q1 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "The Q1 10-Q (000110465926054128) says CCS was 11% of Q1 sales."
+  },
+  {
+   "id": "e14",
+   "claim": "Q4 2025 release (28 Jan 2026): Q4 sales USD 6,439.0 million, +49% USD, +37% organic (acquisitions +11 points); adjusted EPS USD 0.97 (GAAP 0.93); adjusted operating margin 27.5%; FY2025 adjusted operating income USD 6,049.8 million (26.2%), adjusted EPS USD 3.34 (GAAP 3.34), free cash flow USD 4,392.9 million; returned nearly USD 1.5 billion to shareholders in 2025.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926007259/aph-20260128xex99d1.htm",
+   "source_date": "2026-01-28",
+   "period": "Q4 2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Per-share data pre-split."
+  },
+  {
+   "id": "e15",
+   "claim": "Q3 2025 release (22 Oct 2025): sales USD 6,194.4 million, +53% USD, +41% organic (acquisitions +11 points); adjusted EPS USD 0.93 (GAAP 0.97); operating margin 27.5%; quarterly dividend raised 52% to USD 0.25 (pre-split); Rochester Sensors acquired (about USD 100 million sales).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465925101429/aph-20251022xex99d1.htm",
+   "source_date": "2025-10-22",
+   "period": "Q3 2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Per-share data pre-split. Q3 2025 results were released on 22 Oct 2025."
+  },
+  {
+   "id": "e16",
+   "claim": "Q2 2026 release: GAAP operating margin 29.5%, adjusted 29.8%, both including an USD 80 million (USD 0.04 pre-split per share) net benefit from recovery of IEEPA tariffs (management said on the call that excluding it margins were 'nearly 29%', e23). Segment operating margins Q2: Communications Solutions 33.6% (30.6% a year earlier), Harsh Environment 30.1% (25.2%), Interconnect and Sensor 21.0% (19.5%). Adjusted operating income USD 2,608.1 million; GAAP EPS USD 1.37 vs adjusted USD 1.35 (pre-split; prior-year adjusted USD 0.81). H1 2026 GAAP EPS USD 2.10 vs adjusted USD 2.42, the gap being USD 329.0 million of discrete tax items (China tax matter, USD 0.26) and USD 272.4 million of acquisition costs (USD 0.17) less USD 0.10 of excess stock-compensation tax benefits. Adjusted tax rate raised to 27.0% (24.5% a year ago). The 10-Q says acquisitions 'currently have higher operating expenses as a percentage of net sales' than the company average.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926087904/aph-20260729xex99d1.htm",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "All EPS pre-split."
+  },
+  {
+   "id": "e17",
+   "claim": "Q2 2026 release guidance: Q3 2026 sales USD 9.3-9.4 billion (+50% to +52% y/y) and adjusted diluted EPS USD 1.40-1.42 (+51% to +53%; pre-split, i.e. USD 0.70-0.71 post-split), excluding any further tariff recoveries. Q2 actual (sales USD 8,758.1 million; adjusted EPS USD 1.35) beat the Q2 guidance given in April (sales USD 8.1-8.2 billion; EPS USD 1.14-1.16) by about 7% on sales and about 16% on EPS above the top end.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926087904/aph-20260729xex99d1.htm",
+   "source_date": "2026-07-29",
+   "period": "Q3 2026 guidance",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Beat percentages are computed against the top of the April range (e13)."
+  },
+  {
+   "id": "e18",
+   "claim": "Q2 2026 release and 10-Q: Q2 operating cash flow USD 1,557.2 million and free cash flow USD 1,205.5 million; H1 2026 operating cash flow USD 2,678.7 million, capex USD 647.1 million, free cash flow USD 2,036.7 million vs net income USD 2,727.5 million. Working capital absorbed USD 1,176.4 million in H1 (receivables +USD 1,310.7 million, inventories +USD 579.0 million, payables +USD 804.1 million). Cash taxes paid H1 USD 1,158.3 million including the USD 230.0 million China tax payments. Capex was 4.0% of H1 sales; CFO said Q2 was 'at the high end' of a 3-4% range (e25).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926087904/aph-20260729xex99d1.htm",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": ""
+  },
+  {
+   "id": "e19",
+   "claim": "Q2 2026 10-Q, Note 4: total debt USD 18,811.3 million at 30 Jun 2026 (USD 15,502.0 million at 31 Dec 2025); cash and short-term investments USD 5,419.1 million (USD 11,434.2 million at 31 Dec 2025, the difference largely spent on CCS); drawn term loans USD 934.1 million (364-day) and USD 1,534.1 million (three-year), of which USD 534.1 million of the 364-day loan was repaid on 2 and 27 Jul 2026 leaving USD 400.0 million; current portion of debt USD 1,634.3 million; USD 3.0 billion revolver undrawn; interest expense Q2 USD 213.7 million vs USD 80.9 million a year earlier; goodwill USD 17,554.7 million and other intangibles USD 5,288.9 million against total assets of USD 44,806.6 million; total equity USD 15,613.1 million.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm",
+   "source_date": "2026-07-31",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": ""
+  },
+  {
+   "id": "e20",
+   "claim": "8-K (10 Nov 2025): USD 7.5 billion of senior notes issued (floating 2027 USD 500m; 3.800% 2027 USD 750m; 3.900% 2028 USD 750m; 4.125% 2030 USD 1.0bn; 4.400% 2033 USD 1.25bn; 4.625% 2036 USD 1.6bn; 5.300% 2055 USD 1.65bn), net proceeds USD 7,431.8 million, with a special mandatory redemption if CCS did not close; 8-K (22 Aug 2025) separately arranged two undrawn USD 2 billion delayed-draw term loans (364-day and three-year) for CCS.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465925109222/tm2529234d4_8k.htm",
+   "source_date": "2025-11-10",
+   "period": "Q4 2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "The Aug 2025 term-loan terms are in the 8-K at 000110465925082531."
+  },
+  {
+   "id": "e21",
+   "claim": "8-K (12 May 2026): EUR 1.1 billion of euro senior notes (EUR 600m 3.375% due 2029 and EUR 500m 3.875% due 2034), net proceeds about EUR 1,093.1 million, used to repay commercial paper and the 364-day term loan; the company funded 'entirely' with cash and debt, no equity.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926059404/tm2613386d5_8k.htm",
+   "source_date": "2026-05-12",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": ""
+  },
+  {
+   "id": "e22",
+   "claim": "Q2 2026 10-Q: Q2 buybacks 1.5 million shares for USD 208.0 million (H1: 2.8 million for USD 386.0 million); 0.5 million more shares for USD 74.0 million from 1-28 Jul; USD 411.1 million of the USD 2.0 billion 2024 program remains at 29 Jul 2026 (program ends 28 Apr 2027); Q2 dividends USD 307.3 million; 1,232,983,457 shares outstanding at 28 Jul 2026 (pre-split). Weighted diluted shares 1,289.2 million in Q2 2026 vs 1,272.2 million in Q2 2025 (+1.3%) and FY2025 1,277.5 million vs 1,263.6 million in FY2024; FY2025 cash buybacks USD 665.2 million and dividends USD 802.2 million against USD 553.0 million of option-exercise proceeds.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm",
+   "source_date": "2026-07-31",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Share counts pre-split. FY2025 figures are from the 10-K (e3)."
+  },
+  {
+   "id": "e23",
+   "claim": "Q2 2026 call (29 Jul 2026), prepared remarks: IT datacom was 43% of Q2 sales, +89% in USD, +63% organic, +22% sequentially; 'virtually all of this growth was driven by sales of AI-related products'; Q3 IT datacom expected up mid-teens sequentially. Other end markets (share of Q2 sales; y/y USD; organic): industrial 20%, +56%, +18%; communications networks 11%, +55%, -6% (Q3 expected down mid-teens); defence 8%, +37%, +24%; automotive 10%, +9%, +6%; mobile devices 4%, +17%, +14%; commercial air 4%, +22%, +21%. Orders USD 10.732 billion (+94% y/y, +14% sequentially), book-to-bill 1.23 with every end market above 1.0; organic orders +63%. Management said that excluding the USD 80 million tariff benefit 'our operating margins still reached nearly 29%'.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://allmind.ai/earnings/event/2921290",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Transcript read on a third-party host (allmind.ai), not the company IR webcast; the company IR events page showed no content when fetched. Figures are consistent with the Q2 release (sales, orders USD 10.7bn, book-to-bill 1.23). DA REVIEW: the 43% share, +89% USD and +63% organic IT datacom figures, orders USD 10.732bn, book-to-bill 1.23 and 'nearly 29%' ex-tariff margin were re-read on the same host and are repeated by independent call summaries (MarketBeat, Gurufocus, Betafinch, Nasdaq per a web search); the 36% FY2025 share was re-checked in the 10-K. The 43% is NOT in the 10-Q or the release, so it remains a call-only figure (secondary host)."
+  },
+  {
+   "id": "e24",
+   "claim": "Q2 2026 call: CCS Q2 sales 'just over USD 1.2 billion'; CCS operating margin 'over 20%' including acquisition amortisation; CCS IT datacom 'essentially doubled' y/y and should be 'just a bit less than half' of CCS 2026 sales vs about one third in 2025; a speaker said the margin improvement 'I wouldn't say it really has come from pricing' (the transcript host attributes speakers inconsistently, so CFO versus CEO is not confirmed); management said it sees no bottlenecks and CCS has secured the fibre it needs.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://allmind.ai/earnings/event/2921290",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "CORRECTED by DA review: the thesis attributed the pricing remark to the CFO; the host's speaker labels are unreliable and the exact wording on the page is \"I wouldn't say it really has come from pricing\". The original thesis sentence 'pricing power is moderate (CFO ...)' should be read as 'management said'."
+  },
+  {
+   "id": "e25",
+   "claim": "Q2 2026 call, copper vs optics and durability: asked about copper vs fibre, management answered customers 'need more of everything - more high-speed copper, more fiber optic solutions, and more power solutions' and declined to give the AI/fibre split 'to the decimal point'; on scale-up architecture, optics 'still remains to be seen' with CCS having 'a great seat at the table'; it said it does not want 'all of our eggs in one basket' of one architecture; content per rack was not quantified; CEO: 'the only thing we are dependent on is that people continue to invest in this'; power interconnect (higher voltages, liquid cooling, busbars) described as a leadership position without figures; CFO guided capex to the higher end of 3-4% of sales and 'maybe even modestly higher' in H2. An analyst's AI-revenue run-rate figure was the analyst's, not management's.",
+   "kind": "FACT",
+   "source_type": "call",
+   "source_url": "https://allmind.ai/earnings/event/2921290",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Third-party transcript host. Not addressed in the portions retrieved: co-packaged optics, Credo/Marvell active electrical cables, per-GPU content, tariffs beyond the USD 80m, tax-rate guidance."
+  },
+  {
+   "id": "e26",
+   "claim": "Form 4 (CEO R. Adam Norwitt, filed 3 Aug 2026 for 31 Jul 2026): exercised 686,104 options at USD 22.37 and sold the same number at weighted average USD 161.6-162.3 (pre-split; about USD 111.0 million), keeping 1,927,507 shares directly. Earlier Form 4s show similar exercise-and-sell sales on 12 Feb 2026 (608,333 shares at about USD 147) and 1-5 May 2026 (130,775 shares at about USD 142-144).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089782/tm2622042-1_4seq1.xml",
+   "source_date": "2026-08-03",
+   "period": "Jul 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Pre-split shares and prices. The Form 4 footnotes do not mention a Rule 10b5-1 plan."
+  },
+  {
+   "id": "e27",
+   "claim": "Form 4 (CFO Craig Lampo, filed 5 Aug 2026 for 4 Aug 2026): exercised 193,200 options at USD 22.37 and sold 193,200 shares at USD 167.31 (pre-split; about USD 32.3 million), holding 90,665 shares afterwards; Lampo also sold 298,076 shares at about USD 143 on 11 Nov 2025 and 100,000 shares at about USD 150 on 18 Feb 2026.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926091064/tm2622188-2_4seq1.xml",
+   "source_date": "2026-08-05",
+   "period": "Aug 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Pre-split."
+  },
+  {
+   "id": "e28",
+   "claim": "Form 4 (director Robert Livingston, filed 6 Feb 2026): open-market purchase of 10,000 shares at USD 128.51 on 5 Feb 2026 (pre-split; about USD 1.29 million), holding 135,720 shares afterwards. This is the only open-market purchase by an insider among the 44 Form 4/4-A filings from Oct 2025 to Aug 2026 that I parsed.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926011488/tm265500-1_4seq1.xml",
+   "source_date": "2026-02-06",
+   "period": "Feb 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Pre-split."
+  },
+  {
+   "id": "e29",
+   "claim": "Proxy statement (DEF 14A, 8 Apr 2026): holders above 5% were Vanguard 10.2% (125.2 million pre-split shares; 26 Mar 2026 realignment into disaggregated Vanguard units), BlackRock 8.0% and FMR 7.0%; all directors and executive officers (16 persons) own 17,469,159 pre-split shares (1.42%), CEO Norwitt 8,219,557 including exercisable options; CEO 2025 total compensation USD 22.35 million (USD 14.65 million option awards); no stock awards, options are the equity instrument. The 'WHITE proxy card' wording refers to the company's own 2027 solicitation, not a contested election.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926040688/tm261344-1_def14a.htm",
+   "source_date": "2026-04-08",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": ""
+  },
+  {
+   "id": "e30",
+   "claim": "8-K (6 Oct 2026, Item 5.02): Luc Walter, President of the Harsh Environment Solutions division after 43 years, moves to Senior Vice President, Strategic Programs on 1 Jan 2027 and is succeeded by Ryan Fisher (currently Group GM of the North American Military Group). 8-K (5 Feb 2026): Chairman Martin Loeffler to retire from the board at the 2026 annual meeting and CEO Norwitt becomes Chairman.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926114035/tm2627036d1_8k.htm",
+   "source_date": "2026-10-06",
+   "period": "Oct 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Feb 2026 detail is from the 8-K at 000110465926010676."
+  },
+  {
+   "id": "e31",
+   "claim": "Meta Q2 2026 release (29 Jul 2026): capital expenditures including finance-lease principal USD 31.08 billion in Q2 (purchases of property and equipment USD 30.1 billion vs USD 16.5 billion a year earlier); full-year 2026 capex outlook USD 130-145 billion, narrowed from USD 125-145 billion.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-06302026xexhibit991.htm",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": ""
+  },
+  {
+   "id": "e32",
+   "claim": "Alphabet Q2 2026 release (22 Jul 2026): purchases of property and equipment USD 44.9 billion in Q2 vs USD 22.4 billion a year earlier (H1 USD 80.6 billion); Google Cloud revenue +82% to USD 24.8 billion. Amazon Q2 2026 release (30 Jul 2026): purchases of property and equipment USD 54.2 billion in Q2 vs USD 32.2 billion; trailing-twelve-month net capex USD 169.0 billion vs USD 103.0 billion a year earlier (+64%), trailing free cash flow USD -7.6 billion; AWS +36.7% y/y.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+   "source_date": "2026-07-22",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Alphabet from the 22 Jul 2026 release; Amazon figures are from its 30 Jul 2026 exhibit 99.1 (https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm), also read. Microsoft's release was not parsed."
+  },
+  {
+   "id": "e33",
+   "claim": "Credo FY2026 10-K (year to 2 May 2026, filed 15 Jun 2026): revenue USD 1,335.1 million vs USD 436.8 million (+205.7%), with the ramp of active electrical cables (AEC) at hyperscale customers contributing over 99% of the increase; top 10 customers about 90% of revenue and two customers above 10%; the product line is copper AECs plus optical transceivers and DSPs.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026043303/crdo-20260502.htm",
+   "source_date": "2026-06-15",
+   "period": "FY2026 (Credo)",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Credo is a direct competitor to passive copper cable assemblies in the rack-level link and a supplier-peer; the datapoint is evidence that value in rack-scale copper is migrating toward active silicon content."
+  },
+  {
+   "id": "e34",
+   "claim": "The Register (5 Apr 2026) on Nvidia GTC: Jensen Huang on copper vs optical scale-up: 'We're going to do both'; Vera Rubin keeps the first network layer in copper inside the rack with pluggable optics at the spine layer; the Feynman generation (shipping mid-to-late 2028) is offered with copper or co-packaged optical (CPO) NVLink and Nvidia's networking head declined to say which design Nvidia would choose; he also said 'Copper is the best connectivity, if you can use it'.",
+   "kind": "FACT",
+   "source_type": "news",
+   "source_url": "https://www.theregister.com/2026/04/05/nvidia_optical_scale_up/",
+   "source_date": "2026-04-05",
+   "period": "2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Secondary news source, read in full by WebFetch summary. A Tom's Hardware headline reports the Kyber rack for Rubin Ultra slipping to 2028 because of PCB midplane problems; only the headline and subhead were readable, so it is not used as a FACT."
+  },
+  {
+   "id": "e35",
+   "claim": "Peer filings (companyfacts, 10-Qs filed Jul-Sep 2026), trailing twelve months computed as latest fiscal year + current year-to-date - prior-year year-to-date: TE Connectivity (to 26 Jun 2026) revenue USD 19,322m, operating income USD 3,814m, D&A USD 1,002m, diluted GAAP EPS USD 10.21, operating cash flow USD 4,418m, capex USD 1,103m, 289.5m shares, debt about USD 5,632m, cash USD 1,239m. Corning (to 30 Jun 2026) revenue USD 16,964m, operating income USD 2,598m, EPS USD 2.17, operating cash flow USD 3,915m, 861.4m shares, debt about USD 8,424m, cash USD 2,504m. Belden (to 28 Jun 2026) revenue USD 2,864.9m, operating income USD 341.0m, D&A USD 136.1m, EPS USD 6.16, OCF USD 376.0m, capex USD 163.9m, 39.1m shares, debt USD 1,230.6m, cash USD 348.7m. Credo (to 1 Aug 2026) revenue USD 1,591.0m, operating income USD 505.0m, EPS USD 2.84, OCF USD 500.4m, capex USD 61.8m, 188.0m shares, cash and investments USD 764.3m.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001385157.json",
+   "source_date": "2026-07-24",
+   "period": "TTM to mid-2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "XBRL company-facts JSON for each peer (CIK 1385157 TE, 24741 Corning, 913142 Belden, 1807794 Credo); latest 10-Q filing dates TE 24 Jul, Corning 29 Jul, Belden 30 Jul, Credo 2 Sep 2026. Periods differ by up to five weeks and fiscal calendars are not aligned."
+  },
+  {
+   "id": "e36",
+   "claim": "Peer share prices on 2026-10-13 (aggregator chart endpoint): TE Connectivity USD 215.91 (-1.6% in 12 months; 52-week range 190.27-252.56); Corning USD 146.51 (+71.4%; 52-week high 271.78, low 77.39); Belden USD 106.13 (-4.5%; range 98.00-159.99); Credo USD 195.03 (+30.1%; range 86.49-308.67).",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GLW?range=5y&interval=1d",
+   "source_date": "2026-10-13",
+   "period": "price snapshot",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Aggregator, context only; same endpoint pattern for TEL, BDC, CRDO."
+  },
+  {
+   "id": "e37",
+   "claim": "Reverse-engineered APH multiples at USD 85.30 (post-split): 2.466bn shares -> market cap USD 210.3bn; net debt USD 13.4bn (debt USD 18,811m - cash and short-term investments USD 5,419m) plus non-controlling interests USD 130m -> enterprise value USD 223.9bn. TTM to Jun 2026 (FY2025 + H1 2026 - H1 2025): sales USD 29,012m; GAAP operating income USD 7,841m; adjusted operating income USD 8,161m; D&A USD 1,304m; EBITDA (GAAP operating income + D&A) USD 9,145m, adjusted about USD 9,377m; EV/EBITDA 24.5x (23.9x adjusted); EV/sales 7.7x; EV/adjusted EBIT 27.4x. Annualising Q2 2026 EBITDA (adjusted operating income 2,608 + D&A 341 - backlog amortisation 24 = USD 2,926m x 4 = USD 11.7bn) gives 19.1x (19.7x if the USD 80m tariff benefit is removed). TTM free cash flow USD 4,728m (OCF 5,872 - capex 1,158 + disposals 14) = 2.25% yield on market cap; Q2 annualised 2.3%. TTM adjusted EPS USD 2.155 (pre-split 0.93+0.97+1.06+1.35 = 4.31, halved) = 39.6x; TTM GAAP EPS USD 1.995 = 42.8x. Q3-guide annualised adjusted EPS USD 2.82 = 30.2x; my 2026E adjusted EPS USD 2.65 (H1 1.21 + Q3 0.705 + Q4 0.735 est.) = 32.2x. Net debt/TTM EBITDA about 1.46x (about 1.4x with a pro forma CCS), gross debt 2.1x; TTM interest expense USD 632m, EBIT/interest about 12x; dividend yield 0.59% (USD 0.50 annualised post-split).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "TTM to Jun 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Derived from e1, e3, e14, e16, e18, e19, e22. Q4 2026 EPS of 0.735 is my own estimate (+4% on the Q3 guide), not company guidance. The user-supplied Yahoo trailing P/E 42.7 matches my GAAP TTM 42.8x; the user-supplied forward P/E 25.6 implies forward EPS of about USD 3.33, which I could not verify (consensus is aggregator data). DA REVIEW CORRECTION: market cap here uses 2.466bn BASIC post-split shares. The filing's diluted weighted count (Q2 2026: 1,289.2m pre-split = 2,578m post-split) is 4.5% higher, so EV is about USD 233.5bn, EV/TTM EBITDA about 25.5x and FCF yield about 2.15%; a pro forma full-year CCS EBITDA (about USD 0.5bn more) pulls it back to about 24.2x. See e52, e53, e54. P/E figures use diluted EPS and are unaffected. TTM adjusted EPS also contains the USD 0.02 post-split tariff recovery; ex-tariff P/E is about 40.0x, not 39.6x."
+  },
+  {
+   "id": "e38",
+   "claim": "APH's own history, trailing GAAP P/E at calendar year-ends (post-2026-split EPS from filed diluted EPS: 2021 0.635, 2022 0.765, 2023 0.775, 2024 0.96, 2025 1.67; split-adjusted year-end closes 21.86, 19.03, 24.78, 34.72, 67.57): 34.4x, 24.9x, 32.0x, 36.2x, 40.5x. The current 42.8x GAAP (39.6x adjusted) TTM multiple is above every year-end in that five-year set; the forward EPS needed to bring it to the historic 25-36x band is USD 2.4-3.4.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "2021-2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Year-end prices are an aggregator series (e1); EPS from SEC XBRL company facts (10-K filings). GAAP EPS in 2021-2022 includes lower acquisition and tax noise than 2026; year-end snapshots are a crude proxy for a range. Forward-multiple history and EV/EBITDA history were not computed (not verified)."
+  },
+  {
+   "id": "e39",
+   "claim": "Peer comparison (TTM, my arithmetic from e35-e36; periods not aligned): TE Connectivity P/E 21.1x, EV/EBITDA 13.9x, EV/sales 3.5x, FCF yield 5.3%; Belden P/E 17.2x, EV/EBITDA 10.5x, FCF yield 5.1%; Corning P/E 67.5x, EV/sales 7.8x, EV/EBIT 50.9x; Credo P/E 68.7x, EV/sales 22.6x, FCF yield 1.2%. Amphenol (P/E 42.8x GAAP, EV/EBITDA 24.5x, EV/sales 7.7x, FCF yield 2.25%) sits between the connector incumbents (TE, Belden at 10-21x earnings) and the AI-optics/active-cable names (Corning, Credo at about 68x).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "TTM to mid-2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Derived from e35, e36 and e37. Molex (Koch, private) and Luxshare (China A-share) were not compared."
+  },
+  {
+   "id": "e40",
+   "claim": "Organic vs acquired: FY2025 growth +52% USD = organic +38, acquisitions +13, FX +1 (e3). Q3 2025 +41 organic; Q4 2025 +37; Q1 2026 +33; Q2 2026 +30 (acquisitions +24 points) (e12-e15): organic growth has decelerated for four quarters as comparisons stiffen even though orders and book-to-bill (1.24, 1.23) rose; sequential organic growth was +13% in Q2 (e25 call). CCS contributed about USD 1.23bn (14%) of Q2 sales vs a pro forma USD 0.875bn a year earlier (6,525.7 - 5,650.3), i.e. about +40% y/y, and about USD 2.1bn in H1. Pro forma (CCS owned in both years) Q2 growth is +34% and H1 +36%.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-07-31",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Derived from e10, e12-e15 and e24. Acquisition impact also includes Trexon, El.Com and others (about 2 points beyond CCS)."
+  },
+  {
+   "id": "e41",
+   "claim": "AI exposure: IT datacom = 43% x USD 8,758.1m = about USD 3.77bn in Q2 2026 (about USD 15bn annualised) vs about USD 1.99bn a year earlier (3.77/1.89); roughly USD 0.5bn of Q2 IT datacom is CCS (just under half of about USD 1.23bn), leaving about USD 3.2bn from the legacy business. Not all IT datacom is AI; management says 'virtually all of the growth' is AI-related. IT datacom organic +63% means the rest of the business (57% of sales) grew about 12% organically ((30 - 0.353 x 63)/0.647), with defence (+24%), industrial (+18%) and commercial air (+21%) strong, automotive +6% and communications networks -6%. Capex growth at the three hyperscalers in Q2 was Alphabet +100%, Meta +82%, Amazon +68% against APH IT datacom organic growth of +63%: the implied elasticity to hyperscaler capex growth is roughly 0.6-0.9 (my estimate).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-07-29",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Derived from e23, e24, e31, e32. Shares are rounded; a few points of error either way."
+  },
+  {
+   "id": "e42",
+   "claim": "AI-slowdown sensitivity (model estimate): if IT datacom revenue fell 30% from the Q2 2026 level (-USD 1.13bn per quarter) with a 40% incremental operating margin (my assumption; Communications Solutions runs a 33.6% average margin), adjusted operating income would fall about USD 450m per quarter, about 17% of Q2 adjusted operating income, and adjusted EPS about 19% (about USD 0.13 per quarter post-split vs USD 0.675). With less cost flexibility (inventory USD 4.55bn, receivables USD 6.79bn) cash conversion would also worsen. Layers most exposed first: AI-specific high-speed cable assemblies and backplane connectors (inventory and price), then fibre/CCS volumes, then power interconnect; least cyclical: defence, commercial air.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "Scenario",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Assumed incremental margin 40% and a 30% decline are scenario inputs, not company data; Q2 balance sheet figures from e19 and the 10-Q."
+  },
+  {
+   "id": "e43",
+   "claim": "Expectations arithmetic (model estimate): to earn 10% a year for 24 months (USD 103.2 by Oct 2028), the CY2028 adjusted EPS must be USD 3.44 at 30x or USD 4.13 at 25x, vs my 2026E USD 2.65: an EPS compound growth of about 14% (30x) or about 25% (25x). USD 4.13 of EPS means about USD 10.8bn of net income and about USD 15.6bn of adjusted operating income, i.e. roughly USD 52bn of revenue at a 30% margin (about 21% a year growth from my 2026E of USD 35.5bn). Even the base case (EPS USD 3.27, e44) returns under 10% a year at 25-30x.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "Scenario",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Derived from e37, e44. 2026E revenue USD 35.45bn = Q1 7,620 + Q2 8,758 + Q3 9,350 (guide midpoint) + Q4 9,724 (est. +4% sequential)."
+  },
+  {
+   "id": "e44",
+   "claim": "Scenario EPS arithmetic (all MODEL ESTIMATES, adjusted, post-split; tax 27%, other income USD 70m, NCI USD 65m). BULL: revenue +26% in 2027 and +15% in 2028 to USD 51.4bn, adjusted operating margin 30.0%/30.5%, interest USD 780m/700m, diluted shares 2.60/2.62bn gives 2028 EPS USD 4.17; x30-34 = USD 125-142 = 1.47x-1.66x of USD 85.30. BASE: +14% and +9% to USD 44.1bn, margin 28.5%, interest USD 800m/740m, shares 2.606/2.632bn gives 2028 EPS USD 3.27 (2027: USD 3.00); x25-30 = USD 82-98 = 0.96x-1.15x. BEAR: revenue -6% in 2027 and +3% in 2028 to USD 34.3bn, margin 24.5%, interest USD 820m/780m, shares 2.61/2.625bn gives 2028 EPS USD 2.12; x18-24 = USD 38-51 = 0.45x-0.60x. Probability-weighted mid-points (0.20 x 1.565 + 0.50 x 1.055 + 0.30 x 0.525) = 1.00x, i.e. about no expected change before the 0.6% dividend yield.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "Scenario",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "The multiples are applied to calendar-2028 adjusted EPS at about Oct 2028. 2026E adjusted operating margin of 28.8% blends Q1 27.3%, Q2 28.9% ex-tariff and 28.8-29% for H2 (my estimate)."
+  },
+  {
+   "id": "e45",
+   "claim": "Q3 2026 implied organic growth (estimate): guided sales USD 9.35bn midpoint is +51% y/y; CCS (about USD 1.25bn, 20 points of Q3 2025 sales) plus Trexon, El.Com and others suggest 22-24 points from acquisitions, so Q3 organic growth is likely in the mid-to-high 20s percent, a fifth straight quarter of deceleration in the organic rate even if sequentially up. IT datacom is guided up mid-teens sequentially, communications networks down mid-teens, industrial and automotive flat (e23).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-07-29",
+   "period": "Q3 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Derived from e17 and e23; the company does not guide organic growth."
+  },
+  {
+   "id": "e46",
+   "claim": "CCS purchase price context: USD 10.5bn for expected 2025 sales of USD 3.6bn and a 26% EBITDA margin (about USD 0.94bn) = about 11.2x EBITDA and 2.9x 2025 sales; on the raised 2026 sales view of USD 4.6bn it is 2.3x sales. Amphenol's own TTM EV/EBITDA of 24.5x means the deal was bought at a multiple under half of its own, which is the accretion logic; the risk is that CCS's 2026 earnings include peak AI-fibre demand (IT datacom just under half of CCS sales, up from a third).",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-01-12",
+   "period": "CCS",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Derived from e7, e9, e24, e37."
+  },
+  {
+   "id": "e47",
+   "claim": "Cash conversion: FY2025 free cash flow USD 4,392.9m = 102% of net income USD 4,305.3m (FY2024: 2,157.1 / 2,441.6 = 88%); H1 2026 free cash flow USD 2,036.7m = 75% of net income and 65% of adjusted net income USD 3,118.4m, because working capital absorbed USD 1.18bn (receivables +USD 1.3bn). Capital returned in H1 2026 was USD 1,000m (dividends 614 + buybacks 386) = 49% of H1 free cash flow; buybacks of USD 386m in H1 exceed option-exercise proceeds of USD 200.6m, yet diluted shares still grew 1.6% y/y (H1 1,289.4m vs 1,269.2m) as options and restricted stock vest.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-07-31",
+   "period": "H1 2026",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Derived from e3, e18, e22; adjusted net income from the Q2 release (e16)."
+  },
+  {
+   "id": "e48",
+   "claim": "Insider selling summary (DA re-parse of all 45 Form 4 filings dated 27 Oct 2025 to 6 Aug 2026 from the EDGAR submissions list): 3,423,606 pre-split shares (6.85 million post-split) were sold for about USD 511.9 million by EIGHT executives (CEO Norwitt about USD 219.3m, CFO Lampo 90.0m, Harsh Environment president Luc Walter 49.2m, General Counsel D'Amico 40.5m, Silverman 37.8m, Ivas 33.8m, Doherty 22.6m, Straub 18.7m). Every sale (transaction code S) followed an option exercise at USD 22-37 (cost about USD 86.7m) at pre-split prices of USD 134-174; in every one of the 26 sale rows the Form 4 'aff10b5One' (Rule 10b5-1 plan) flag is 0, i.e. discretionary open-window sales rather than pre-arranged plan sales. The only open-market purchase is the USD 1.29m director buy (e28). Sales cluster in the days after earnings (Oct-Nov, Dec, Feb, May, Aug). Window-by-window value: Oct 2025 77m, Nov 93m, Dec 30m, Feb 2026 112m, May 19m, Aug 180m. The sales equal about 0.24% of the market value.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-08-06",
+   "period": "Oct 2025-Aug 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "CORRECTED by DA review: the original claim (USD 463m, seven executives, 44 filings) omitted Luc Walter's USD 49.2m (365,118 pre-split shares at USD 134.65 on 24 Oct 2025, Form 4 filed 27 Oct 2025, https://www.sec.gov/Archives/edgar/data/820313/000110465925102586/tm2529542-1_4seq1.xml); every other executive total in the original matched. Mr Walter is the Harsh Environment president who moves to a strategic role on 1 Jan 2027 (e30). Method: parsed nonDerivativeTransaction rows, code S, shares x weighted-average price; no 4/A amendments were found. Derived from the Form 4 filings listed at https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000820313&type=4 and e26-e28."
+  },
+  {
+   "id": "e49",
+   "claim": "Potential technology shift: rack-scale links migrating to active electrical cables (Credo's AEC revenue +206%, e33) and the Feynman-era option of CPO (e34) could reduce passive copper connector and cable content per accelerator from about 2028, while optical content (CCS, Amphenol's own optics) rises; Amphenol is hedged across copper, fibre and power, so net content per rack is more likely to rise than fall in the 12-24 month window, but the mix and margin of that content are unquantified.",
+   "kind": "SPECULATION",
+   "source_type": "other",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "2027-2028",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "Not carried as a weight in the scenarios beyond the bear case multiple compression."
+  },
+  {
+   "id": "e50",
+   "claim": "Possible further large M&A: management has 'an active and successful acquisition program', net leverage of about 1.4x EBITDA and USD 5.4bn of cash; a further multi-billion deal would extend the pattern of 2024-2026 and add integration and financing risk, but nothing is announced.",
+   "kind": "SPECULATION",
+   "source_type": "other",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "2027",
+   "retrieved_at": "2026-10-13T18:08:02+00:00",
+   "note": "No filing supports a specific target."
+  },
+  {
+   "id": "e51",
+   "claim": "FY2025 10-K risk factor: approximately 79% of long-lived assets were outside the United States and approximately 37% were located in China at 31 Dec 2025 (73% and 29% in 2024); the increase 'relate[s] primarily to the significant investments the Company has made to support sales of its AI-related products'. China was about 16% of FY2025 sales (e5). The filing says tariffs 'have, in certain cases, increased our costs' and that the company 'cannot predict' whether it can fully mitigate by pricing; it also says some manufacturing sites operate under preferential duty or tariff programs whose compliance is under increased scrutiny. No gross tariff cost figure is given in the 10-K or the Q2 10-Q.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+   "source_date": "2026-02-11",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Not in the original thesis. The AI-related capacity build is concentrated in China (37% of long-lived assets vs 16% of sales), so AI revenue is more exposed to US-China trade policy and to the China tax matter (e16) than the sales mix suggests."
+  },
+  {
+   "id": "e52",
+   "claim": "Q2 2026 10-Q income statement (pre-split): weighted average shares BASIC 1,230.4 million vs DILUTED 1,289.2 million in Q2 (H1: 1,229.7 vs 1,289.4); Q2 GAAP net income attributable USD 1,769.2 million, GAAP diluted EPS USD 1.37, adjusted USD 1.35; Q2 GAAP effective tax rate 25.3% (adjusted 27.0%); H1 GAAP tax USD 1,306.5 million on pre-tax USD 4,034.0 million (32.4%). The USD 80.0 million IEEPA tariff recovery is described as a 'net benefit' recorded in operating income and equals USD 0.04 per pre-split share (USD 0.02 post-split). Q3 guidance 'does not include any additional tariff recoveries'.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm",
+   "source_date": "2026-07-31",
+   "period": "Q2 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Basic versus diluted is the evidence behind the share-count correction (e54). The release (https://www.sec.gov/Archives/edgar/data/820313/000110465926087904/aph-20260729xex99d1.htm) is the source of the 'no additional tariff recoveries' guidance wording and of the USD 0.04 figure."
+  },
+  {
+   "id": "e53",
+   "claim": "FY2025 10-K stock-option note: options outstanding at 31 Dec 2025 were 88,821,121 (pre-split) with weighted-average exercise price USD 36.62, weighted remaining life 5.43 years and aggregate intrinsic value USD 8,753.6 million; 86,782,652 expected to vest. That is 7.2% of the 1,226.6 million shares then outstanding. Stock-based compensation was USD 135.4 million in FY2025 (XBRL).",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+   "source_date": "2026-02-11",
+   "period": "FY2025",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Options, not restricted stock, are the equity instrument (e29). At the current price the in-the-money options represent a claim of several billion dollars that a market cap on basic shares leaves out; see e54."
+  },
+  {
+   "id": "e54",
+   "claim": "Share-count and EV basis correction (model arithmetic): the thesis used 1,232.98 million basic pre-split shares (2.466bn post-split) for market cap USD 210.3bn. On the Q2 weighted DILUTED count (2,578m post-split) at USD 85.30, market cap is USD 219.9bn, EV USD 233.5bn (net debt USD 13.39bn + NCI USD 0.13bn), EV/TTM EBITDA 25.5x (basic 24.5x), EV/adjusted EBITDA 24.9x, FCF yield 2.15%. A treasury-method count on the 31 Dec 2025 options gives 2,606m shares, EV USD 235.8bn, 25.8x. Adding about USD 0.5bn of pre-closing CCS EBITDA (USD 3.6bn x 26% x about 0.52 year, from e7) lowers diluted EV/EBITDA to about 24.2x. Net: the thesis' 24.5x is a fair central figure only because two errors offset; a defensible range is 24-26x. TTM adjusted EPS excluding the USD 0.02 post-split tariff item is USD 2.135, 40.0x. P/E, FCF per share and the GAAP-versus-adjusted gap are otherwise unaffected.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "TTM to Jun 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Derived from e37, e52, e53 and e7. Facts used: e52, e53."
+  },
+  {
+   "id": "e55",
+   "claim": "Form 4 of CEO R. Adam Norwitt (filed 3 Aug 2026 for 31 Jul 2026): transaction code M exercise of 500,000 options at USD 22.3725 followed by code S sale of 500,000 shares at weighted USD 161.5748 (pre-split), plus a second lot of 186,104; the form's Rule 10b5-1 flag 'aff10b5One' is 0. Form 144 filings by other officers (for example Lance D'Amico, 3 Aug 2026, 50,000 shares, USD 8.1 million) list the acquisition as 'Exercise of Options Under a Registered Plan' with an empty planAdoptionDates field.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089782/tm2622042-1_4seq1.xml",
+   "source_date": "2026-08-03",
+   "period": "Jul 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Supports the DA finding that the sales are option-exercise-and-sell but discretionary (not 10b5-1 plan sales). Form 144 read at https://www.sec.gov/Archives/edgar/data/820313/000195004726007496/primary_doc.xml."
+  },
+  {
+   "id": "e56",
+   "claim": "Valuation against own history on a like-for-like FORWARD basis (model arithmetic, hindsight EPS): year-end close divided by the NEXT calendar year's actual GAAP diluted EPS (post-2026-split EPS from e38) was 28.6x (Dec 2021), 24.6x (Dec 2022), 25.8x (Dec 2023) and 20.8x (Dec 2024); Dec 2025 close USD 67.57 over the 2026E of USD 2.65 (street 2026 EPS 2.66, e59) was 25.5x. The matching measure today is USD 85.30 over 2027 EPS: about 28.4x on the thesis' base 2027 EPS of USD 3.00 and about 25.6x on the aggregator-implied USD 3.33 (unverified). So the stock is in the upper half of its own 21-29x forward range, not above every point of it; the thesis' statement that the trailing 42.8x GAAP is above every year-end in a five-year set (e38) is true but overstates the premium because trailing P/E is inflated when EPS grows 30-50% a year. Against 2026E (current-year) EPS it is 32.2x. On trailing EPS the multiple has compressed since December 2025 (40.5x then, 39.6x adjusted now) while the price was in a USD 63-88 month-end range through 2026.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "2021-2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Derived from e38, e59 and e63. Hindsight EPS flatters the earlier years' forward multiples (analysts' expectations then were below the outcome), so the true historical forward multiples were higher than shown and the current premium is smaller still; the direction of the correction to e38 is toward a smaller premium, magnitude uncertain."
+  },
+  {
+   "id": "e57",
+   "claim": "Base-case run-rate check (model arithmetic): the thesis' own Q3 guide midpoint (USD 9.35bn) and Q4 estimate (USD 9.72bn) annualise to USD 38.9bn, already 9.7% above its 2026E revenue of USD 35.45bn. The base case's 2027 revenue of USD 40.4bn (+14%) is therefore only 3.9% above the Q4 2026 annualised run-rate, i.e. a plateau from Q1 2027 with essentially no sequential growth, although orders ran at USD 10.7bn a quarter (book-to-bill 1.23, e23). The bull case's +26% (USD 44.7bn) needs about 5% sequential growth per quarter. Re-running the thesis' own EPS arithmetic with 2027 revenue +22% (about 3% a quarter), +9% in 2028 and the same 28.5% margin gives 2027 EPS USD 3.22 and 2028 EPS USD 3.52 (thesis base 3.00 and 3.27), and USD 88-105 at 25-30x = 1.03x-1.24x (thesis base 0.96x-1.15x). Probability-weighted value (20/50/30) then moves from about 1.00x to about 1.04x.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "Scenario",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Derived from e17, e37, e44 and e23. The base case is a defensible 'AI plateau' scenario but labels a no-growth 2027 as the 50% central case; the conclusion (no asymmetry at this price) does not change."
+  },
+  {
+   "id": "e58",
+   "claim": "What 2x, 3x and 5x need (model arithmetic, 27% tax, 2.60bn diluted shares, 30% adjusted margin, USD 0.7bn net interest): 2x (USD 171, market cap USD 444bn) needs 2028 EPS USD 4.9-5.7 at 35-30x, i.e. about USD 60-70bn revenue (about 30-40% a year from 2026E USD 35.5bn); 3x (USD 256, USD 665bn) needs EPS USD 7.3-8.5 and about USD 89-104bn revenue (59-71% a year); 5x (USD 426, USD 1.1 trillion) needs EPS USD 12-14 and about USD 147-171bn revenue (above 100% a year). For scale, Q2 orders annualise to about USD 43bn. A 5x also implies a market value of roughly USD 1.1 trillion for an interconnect company.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "",
+   "source_date": "2026-10-13",
+   "period": "2028 targets",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Derived from e37 and e44; the thesis' 3x requirement of EPS USD 7.5-8.5 (mechanism field) is consistent. 2x within 24 months is not impossible (the stock rose 2.5x from Dec 2024 to now as TTM EPS roughly doubled, e56, e63) but needs revenue to compound about 30%+ a year from the Q3 run-rate with the multiple intact."
+  },
+  {
+   "id": "e59",
+   "claim": "MarketBeat (1 Oct 2026): consensus 'Moderate Buy' from 18 firms (16 buy, 2 hold), average 12-month target USD 96.85; recent targets: Bernstein initiated outperform USD 99 (23 Sep), BNP Paribas Exane USD 110 (22 Sep), UBS USD 98.50 (30 Jul), JPMorgan USD 107.50 (16 Jul), Wolfe initiated outperform USD 105; Zacks Research downgraded to hold; consensus 2026 EPS USD 2.66; institutions own 97.01% and insiders 1.42%; insiders sold 2,098,608 shares (USD 172.3m) over 90 days. The page gives no 2027 EPS or short-interest figure.",
+   "kind": "FACT",
+   "source_type": "analyst",
+   "source_url": "https://www.marketbeat.com/instant-alerts/consensus-amphenol-corporation-nyse-aph-stock-has-average-price-target-of-9685-2026-10-01/",
+   "source_date": "2026-10-01",
+   "period": "Oct 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Aggregator/analyst context only. A web-search snippet (page not opened, not verified) mentioned UBS USD 105 and Citi USD 112 targets in early October. Consensus 2026 EPS of 2.66 matches the thesis' 2026E of 2.65, so the thesis is not below the street for 2026. 2027 consensus remains unverified: web-search snippets mixed pre-split and post-split figures and ranged from about USD 2.5 to 3.3 post-split; the aggregator-implied USD 3.33 sits between the thesis' base (3.00) and bull (3.53) 2027 EPS."
+  },
+  {
+   "id": "e60",
+   "claim": "DoubleLine 'Between the Lines' (24 Jul 2026): expected annual capex growth for the hyperscaler group (Alphabet, Amazon, Meta, Microsoft, Oracle) declines from 84.7% in 2026 to 27.5% in 2027 and 7.4% in 2028; the authors do not name an external estimator. With the implied APH elasticity of about 0.6-0.9 to capex growth (e41), the growth impulse for IT datacom fades sharply in 2027 and approaches zero in 2028 even if nobody cuts spending.",
+   "kind": "FACT",
+   "source_type": "analyst",
+   "source_url": "https://doubleline.com/markets-insights/ai-capex-is-still-booming-as-momentum-slows/",
+   "source_date": "2026-07-24",
+   "period": "2026-2028",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Third-party view, not an APH or hyperscaler figure. Other search snippets (not opened) range from Goldman +54% for 2027 to Wolfe 10-15% growth by 2028; the direction (decelerating growth) is common to all of them. Relevant to the bull case's +15% revenue growth in 2028 and to a 30-34x multiple at the point where capex growth is single-digit."
+  },
+  {
+   "id": "e61",
+   "claim": "Credo (inventor of AECs) sued Amphenol, Molex, TE Connectivity and Volex over AEC patents in March 2025 and settled with Amphenol in August 2025 under a settlement and cross-licensing agreement with undisclosed terms (SDxCentral 22 Aug 2025; eeNews Europe 19 Aug 2025); Molex, TE and Volex remained in dispute at that date. Both articles imply but do not state that Amphenol offered AEC products.",
+   "kind": "INFERENCE",
+   "source_type": "news",
+   "source_url": "https://www.sdxcentral.com/news/credo-settles-patent-dispute-with-amphenol-over-cable-tech/",
+   "source_date": "2025-08-22",
+   "period": "2025",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Secondary news. Inference: Amphenol is itself a participant in active electrical cables, so AEC growth (Credo FY2026 +206%, e33) is partly a product Amphenol can sell, not purely a displacement threat; its AEC revenue and share are not disclosed. Counterweight to the thesis' technology-shift framing (e49)."
+  },
+  {
+   "id": "e62",
+   "claim": "Lead only, not verified: Tom's Hardware reports (headline and subhead only; article body not readable) that analyst firm SemiAnalysis attributes a slip of Nvidia's Kyber rack for Rubin Ultra to 2028 to PCB midplane problems and that a stopgap design was dropped after customer pushback; search snippets say Nvidia stated 'our roadmap is intact'. Effect on Amphenol content or timing was not found in any source opened.",
+   "kind": "SPECULATION",
+   "source_type": "news",
+   "source_url": "https://www.tomshardware.com/pc-components/gpus/nvidias-kyber-rack-for-rubin-ultra-slips-to-2028",
+   "source_date": "2026-07-08",
+   "period": "2027-2028",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Headline-level lead from a secondary source; carries no weight in the scenarios. If the next big rack-level copper content step-up (Kyber) really shifts to 2028, 2027 IT datacom growth leans on Oberon-class racks and CCS fibre instead."
+  },
+  {
+   "id": "e63",
+   "claim": "Yahoo daily series for APH (split-adjusted): closes 14 Sep 78.55, 21 Sep 80.72, 30 Sep 84.30, 1 Oct 85.67, 6 Oct 88.62, 8 Oct 85.32, 12 Oct 86.19; December month-end closes 2021 21.86, 2022 19.03, 2023 24.78, 2024 34.72, 2025 67.57 (these match e38). From Dec 2024 (34.72) to 13 Oct 2026 (about 85.6) the price rose about 2.5x while TTM GAAP EPS rose from 0.96 to about 2.0 post-split.",
+   "kind": "FACT",
+   "source_type": "price",
+   "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/APH?range=1mo&interval=1d",
+   "source_date": "2026-10-13",
+   "period": "2021-2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Aggregator, context only; the year-end closes agree with e38."
+  },
+  {
+   "id": "e64",
+   "claim": "Similar setups (aggregator month-end closes, split-adjusted, so true intraday peaks and troughs were worse): (1) Corning, a fibre/AI-capex-style boom stock, peaked at USD 109.33 in Jun 2000 and fell to USD 2.00 in Jun 2002 (-98%); it regained the Jun 2000 month-end level only in Dec 2025. (2) Cisco peaked at USD 77.31 in Mar 2000, fell to USD 10.48 in Sep 2002 (-86%) and regained that level in Jan 2026. (3) Amphenol itself, in the same telecom/datacom build-out, fell from USD 1.03 (Jun 2000) to USD 0.48 (Sep 2002), -53% (split-adjusted), and -51% from Jul 2008 to Nov 2008. (4) A milder case: APH fell 26% from Dec 2021 to Jun 2022 while earnings were flat in 2022-23 (sales -0.5% in 2023, e67). (5) Sep 2024: a BofA downgrade to neutral cited possible Nvidia GB200 design changes cutting Amphenol's content, target cut to USD 71 from USD 80 (TipRanks/The Fly, 4 Sep 2024). None of these is a clean match: Corning and Cisco carried far higher multiples and weaker balance sheets in 2000, and APH's current EPS base is real; they show the size of the left tail when an AI-capex-type cycle ends.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GLW?range=max&interval=1d",
+   "source_date": "2026-10-13",
+   "period": "2000-2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Drawdowns computed from Yahoo monthly series for GLW, CSCO, APH (context only). Item (5) is from https://www.tipranks.com/news/the-fly/amphenol-downgraded-to-neutral-from-buy-at-bofa-2 (opened). The thesis named no analogues (question 9)."
+  },
+  {
+   "id": "e65",
+   "claim": "Peer fairness check (XBRL companyfacts, TE Connectivity fiscal Q3 FY2026 to 26 Jun 2026): revenue USD 5,160 million vs USD 4,534 million (+13.8% y/y), operating income USD 981 million (19.0% margin); TTM operating margin 19.7% (e35). Amphenol Q2 2026: +55% reported, +30% organic (+34% pro forma for CCS, e40), GAAP operating margin 29.5% (28.9% ex tariff). TE therefore grows at roughly half to a third of Amphenol's rate with a margin about 10 points lower. On trailing P/E divided by growth, Amphenol (42.8x GAAP over 30% organic) is about 1.4 and TE (21.1x over about 14%) about 1.5; the comparison to TE and Belden is a floor reference for a de-rated, slower-growth connector franchise, not a like-for-like peer.",
+   "kind": "INFERENCE",
+   "source_type": "model",
+   "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001385157.json",
+   "source_date": "2026-07-24",
+   "period": "Q3 FY2026 / Q2 2026",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Derived from TE's XBRL companyfacts (revenue facts for 2026-03-28 to 2026-06-26 and 2025-03-29 to 2025-06-27; operating income 981m) and e12, e16, e35. TE revenue growth is reported (includes FX and any acquisitions)."
+  },
+  {
+   "id": "e66",
+   "claim": "10-K history from XBRL: Amphenol net sales were USD 12,623.0 million in 2022 and USD 12,554.7 million in 2023 (-0.5%); operating income USD 2,585.8 million vs USD 2,559.6 million; diluted EPS USD 1.53 vs USD 1.55 (both on the June-2024 split basis, 0.765 and 0.775 after the 2026 split). Interest expense was USD 139.5 million in 2023, USD 217.0 million in 2024 and USD 367.8 million in 2025, and USD 421.6 million in H1 2026 alone.",
+   "kind": "FACT",
+   "source_type": "filing",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
+   "source_date": "2026-02-11",
+   "period": "FY2022-FY2025",
+   "retrieved_at": "2026-10-13T18:23:42+00:00",
+   "note": "Shows that in the last ordinary down-cycle (2023) Amphenol's earnings were flat, not down; an AI digestion would be a larger, more concentrated shock than anything in this history. Interest burden has risen 3x in two years."
+  }
+ ],
+ "next_review": "2026-10-30",
+ "change_log": [
+  "devil's advocate + source reliability review of v001: verdict downgraded; corrections e1,e24,e37,e48; new evidence e51-e66",
+  "research_level: '3' -> '4'",
+  "confidence: 'medium' -> 'low'",
+  "thesis: 'Evidence suggests that Amphenol is a high-quality, diversified interconnect fran' -> 'Evidence suggests that Amphenol is a high-quality, diversified interconnect fran'",
+  "adversarial verdict: none -> downgraded",
+  "new evidence: e51, e52, e53, e54, e55, e56, e57, e58, e59, e60, e61, e62, e63, e64, e65, e66"
+ ],
+ "parent_version": 1,
+ "disclaimer": "Model estimates and research notes, not investment advice or a prediction. The user makes every decision."
+}
